@@ -51,30 +51,31 @@ A single request object.  The Request resource is the main component of the serv
 
 The Request resource has the following attributes: 
 
--id
--dateCreated
--dateRequired
--dateUpdated
--type
--requestStatus
--requester
--requesterPrimaryContact
--totalOperatorsNeeded
--contact
--assetStatus
--center
--fieldValue
--priority
--asset
--scheduledTask
--operators
--attachments
--warning
--room
--fields
--completed
--supplies
--valueFields
+- id
+- dateCreated
+- dateRequired
+- dateUpdated
+- type
+- requestStatus
+- requester
+- requesterPrimaryContact
+- totalOperatorsNeeded
+- contact
+- assetStatus
+- center
+- fieldValue
+- priority
+- asset
+- scheduledTask
+- operators
+- attachments
+- warning
+- room
+- fields
+- completed
+- supplies
+- valueFields
+
 
 + Parameters
     + id (string) ... ID of the Request
@@ -370,9 +371,12 @@ A single category object.
 
 The Request resource has the following attributes: 
 
--id
--name
--products
+- id
+- name
+- products
+- dateCreated
+- dateRequired
+- dateUpdated
 
 + Parameters
     + id (string) ... ID of the Category

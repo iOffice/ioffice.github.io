@@ -114,6 +114,25 @@ a.list-group-item.heading {
 <p>Requests with a message-body are using plain JSON to set or update resource states.</p>
 <h2 id="error-states">Error States</h2>
 <p>The common <a href="https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md">HTTP Response Status Codes</a> are used.</p>
+<h2 id="global-request-params">Global Request Params</h2>
+<table>
+<thead>
+<tr>
+<th>Paramater</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>limit</td>
+<td>maximum results to show (default: 50)</td>
+</tr>
+<tr>
+<td>startAt</td>
+<td>for pagination, the offset of where to start (default: 0)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="resource-requests">Resource Requests</h2>
 <p>NOTE: When creating/updating an object, all that is needed is the ID of new object</p>
 <pre><code>    e.g. Upating a resource's contact <span class="hljs-keyword">to</span> another <span class="hljs-keyword">with</span> an ID <span class="hljs-keyword">of</span> <span class="hljs-number">5</span>
@@ -126,30 +145,32 @@ a.list-group-item.heading {
 </code></pre></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="maintenance-request">Maintenance Request&nbsp;<a href="#maintenance-request"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>iOffice Service Request is known as the maintenance module internally.</p>
 <h4 id="maintenance-request-request">Request&nbsp;<a href="#maintenance-request-request"><i class="fa fa-link"></i></a></h4><p>A single request object.  The Request resource is the main component of the service request api.</p>
 <p>The Request resource has the following attributes: </p>
-<p>-id
--dateCreated
--dateRequired
--dateUpdated
--type
--requestStatus
--requester
--requesterPrimaryContact
--totalOperatorsNeeded
--contact
--assetStatus
--center
--fieldValue
--priority
--asset
--scheduledTask
--operators
--attachments
--warning
--room
--fields
--completed
--supplies
--valueFields</p>
+<ul>
+<li>id</li>
+<li>dateCreated</li>
+<li>dateRequired</li>
+<li>dateUpdated</li>
+<li>type</li>
+<li>requestStatus</li>
+<li>requester</li>
+<li>requesterPrimaryContact</li>
+<li>totalOperatorsNeeded</li>
+<li>contact</li>
+<li>assetStatus</li>
+<li>center</li>
+<li>fieldValue</li>
+<li>priority</li>
+<li>asset</li>
+<li>scheduledTask</li>
+<li>operators</li>
+<li>attachments</li>
+<li>warning</li>
+<li>room</li>
+<li>fields</li>
+<li>completed</li>
+<li>supplies</li>
+<li>valueFields</li>
+</ul>
 <section id="maintenance-request-request-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Request</span></div><div style="float:left"><a href="#maintenance-request-request-get" class="btn btn-xs btn-info">GET</a></div><div style="overflow:hidden"><code>/maintenance/requests/{id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Request</p>
 </dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#ca5af7ca91b3f2b3e261165205348c5d" class="pull-right">Toggle</a></li><li id="ca5af7ca91b3f2b3e261165205348c5d" class="list-group-item panel-collapse collapse"><div class="description"><p>JSON representation of the Request Resource</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-rules">{
@@ -488,9 +509,14 @@ a.list-group-item.heading {
 </code></pre></li></ul></section></div></div></div><div><div class="panel panel-default"><div class="panel-heading"><h3 id="maintenance-category">Maintenance Category&nbsp;<a href="#maintenance-category"><i class="fa fa-link"></i></a></h3></div><div class="panel-body"><p>The Category resource gives access to Products from which you can derive Request Types.</p>
 <h4 id="maintenance-category-category">Category&nbsp;<a href="#maintenance-category-category"><i class="fa fa-link"></i></a></h4><p>A single category object.</p>
 <p>The Request resource has the following attributes: </p>
-<p>-id
--name
--products</p>
+<ul>
+<li>id</li>
+<li>name</li>
+<li>products</li>
+<li>dateCreated</li>
+<li>dateRequired</li>
+<li>dateUpdated</li>
+</ul>
 <section id="maintenance-category-category-get" class="panel panel-info"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Retrieve a Single Category</span></div><div style="float:left"><a href="#maintenance-category-category-get" class="btn btn-xs btn-info">GET</a></div><div style="overflow:hidden"><code>/maintenance/categories/{id}</code></div></div><ul class="list-group"><li class="list-group-item bg-default"><strong>Parameters</strong></li><li class="list-group-item"><dl class="dl-horizontal"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Category</p>
 </dd></dl></li></ul><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>200</code></strong><a data-toggle="collapse" data-target="#967df2ca3a66bd8357b58b938ea83f8f" class="pull-right">Toggle</a></li><li id="967df2ca3a66bd8357b58b938ea83f8f" class="list-group-item panel-collapse collapse"><div class="description"><p>JSON representation of the Category Resource</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span><br></code></pre><h5>Body</h5><pre><code><span class="hljs-rules">{
