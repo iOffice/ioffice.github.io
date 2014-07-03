@@ -188,11 +188,201 @@ The following attributes are required to create a User: `firstName`, `lastName`,
     [User][]
 
 
+# Group Building
+Building API
+
+## Building [/buildings/{id}]
+A single building object.
+
+The Building resource has the following attributes: 
+
+- id
+- address
+- name
+- code
+
+
++ Parameters
+    + id (string) ... ID of the Building
+
++ Model (application/json)
+    JSON representation of the Building Resource
+
+    + Body
+
+            {
+                id: 43,
+                address: {...},
+                name: "Mystery Inc.",
+                code: "mystery"
+            }
+
+### Retrieve a Single Building [GET]
++ Response 200
+
+    [Building][]
+
+### Edit a Building [PUT]
+To update a Building send JSON with updated value for one or more of the attributes.
+    
++ Request (application/json)
+
+        {
+            "address": {
+                "postalCode": "77019"
+            }
+        }
+
++ Response 200
+    
+    [Building][]
+
+## Building Collection [/buildings]
+Collection of all Buildings.
+
++ Model (application/json)
+    JSON representation of the Building Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    ...
+                },
+                {
+                    "id":22
+                    ...
+                },
+                {
+                    "id":23
+                    ...
+                }
+            ]
+
+### List of all Buildings [GET]
+
++ Response 200
+    
+    [Building Collection][]
+
+
+### Create a Building [POST]
+The following attribute is required to create a Building: `name`.
+
++ Request (application/json)
+
+            {
+                name: 'Headquarters',
+            }
+
++ Response 201
+
+    [Building][]
+
+
+# Group Floor
+Floor API
+
+## Floor [/floors/{id}]
+A single floor object.
+
+The Floor resource has the following attributes: 
+
+- id
+- building
+- area
+- name
+
+
++ Parameters
+    + id (string) ... ID of the Floor
+
++ Model (application/json)
+    JSON representation of the Floor Resource
+
+    + Body
+
+            {
+                id: 5,
+                building: {...},
+                area: 2000,
+                name: "1st Floor"
+            }
+
+### Retrieve a Single Floor [GET]
++ Response 200
+
+    [Floor][]
+
+### Edit a Floor [PUT]
+To update a Floor send JSON with updated value for one or more of the attributes.
+    
++ Request (application/json)
+
+        {
+            "name": "2nd Floor"
+        }
+
++ Response 200
+    
+    [Floor][]
+
+## Floor Collection [/floors{?buildingId}]
+Collection of all Floors.
+
++ Model (application/json)
+    JSON representation of the Floor Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    ...
+                },
+                {
+                    "id":22
+                    ...
+                },
+                {
+                    "id":23
+                    ...
+                }
+            ]
+
+### List of all Floors [GET]
+
++ Parameters
+    + buildingId (optional, number, `3`) ... Id of building to base query
+
++ Response 200
+    
+    [Floor Collection][]
+
+
+### Create a Floor [POST]
+The following attributes are required to create a Floor: `name` and `building`.
+
++ Request (application/json)
+
+            {
+                name: '3rd Floor',
+                building: {
+                    "id": 45
+                }
+            }
+
++ Response 201
+
+    [Floor][]
+
+
 # Group Room
 Room API
 
 ## Room [/rooms/{id}]
-A single category object.
+A single room object.
 
 The Room resource has the following attributes: 
 
@@ -301,7 +491,7 @@ The following attributes are required to create a Room: `name` and `type`.
 Reservation booking management
 
 ## Reservation [/reservations/{id}]
-A single category object.
+A single reservation object.
 
 The Reservation resource has the following attributes: 
 
