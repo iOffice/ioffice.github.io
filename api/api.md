@@ -92,7 +92,7 @@ To update a Room send JSON with updated value for one or more of the attributes.
     
     [Room][]
 
-## Room Collection [/reservations{?includeReservable}{?includeNonReservable}{?locationSearch}{?nearLatitude}{?nearLongitude}{?startDate}{?endDate}{?numberOfPeople}{?search}{?building}{?roomType}{?floor}]
+## Room Collection [/rooms{?includeReservable}{?includeNonReservable}{?locationSearch}{?nearLatitude}{?nearLongitude}{?startDate}{?endDate}{?numberOfPeople}{?search}{?building}{?roomType}{?floor}]
 Collection of all Rooms.
 
 + Model (application/json)
