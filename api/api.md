@@ -43,6 +43,268 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
                 }
 
 
+# Group Room
+Room API
+
+## Room [/rooms/{id}]
+A single category object.
+
+The Room resource has the following attributes: 
+
+- id
+- floor
+- reservable
+- name
+
+
++ Parameters
+    + id (string) ... ID of the Room
+
++ Model (application/json)
+    JSON representation of the Room Resource
+
+    + Body
+
+            {
+                id: 52927,
+                floor: {...},
+                reservable: true,
+                name: "010211"
+            }
+
+### Retrieve a Single Room [GET]
++ Response 200
+
+    [Room][]
+
+### Edit a Room [PUT]
+To update a Room send JSON with updated value for one or more of the attributes.
+    
++ Request (application/json)
+
+        {
+            "type": {
+                id: 55
+            }
+        }
+
++ Response 200
+    
+    [Room][]
+
+## Room Collection [/reservations{?includeReservable}{?includeNonReservable}{?locationSearch}{?nearLatitude}{?nearLongitude}{?startDate}{?endDate}{?numberOfPeople}{?search}{?building}{?roomType}{?floor}]
+Collection of all Rooms.
+
++ Model (application/json)
+    JSON representation of the Room Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    ...
+                },
+                {
+                    "id":22
+                    ...
+                },
+                {
+                    "id":23
+                    ...
+                }
+            ]
+
+### List of all Rooms [GET]
+
++ Parameters
+    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable rooms
+    + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
+    + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
+    + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
+    + startDate (optional, number, `1404410211910`) ... Epoch time of room availablilty start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time of room availablilty end date
+    + search (optional, string, `conference`) ... String to search for room by name
+    + building (optional, number, `44`) ... Id of building to search in
+    + floor (optional, number, `3443`) ... Id of floor to search on
+    + roomType (optional, number, `65`) ... Id of room type to search for
+
++ Response 200
+    
+    [Room Collection][]
+
+
+### Create a Room [POST]
+The following attributes are required to create a Room: *name*, *type*
+
++ Request (application/json)
+
+            {
+                name: 'room 101',
+                type: {
+                    id: 44
+                }
+            }
+
++ Response 201
+
+    [Room][]
+
+
+# Group Reservation
+Reservation booking management
+
+## Reservation [/reservations/{id}]
+A single category object.
+
+The Reservation resource has the following attributes: 
+
+- id
+- center
+- numberOfPeople
+- allDay
+- name
+- user
+- dateUpdated
+- room
+
+
++ Parameters
+    + id (string) ... ID of the Reservation
+
++ Model (application/json)
+    JSON representation of the Reservation Resource
+
+    + Body
+
+            {
+                id: ID,
+                center: {},
+                numberOfPeople: INT,
+                allDay: BOOLEAN,
+                name: STRING,
+                user: {},
+                dateUpdated: EPOCH_TIME,
+                room: {}
+            }
+
+### Retrieve a Single Reservation [GET]
++ Response 200
+
+    [Reservation][]
+
+### Edit a Reservation [PUT]
+To update a Reservation send JSON with updated value for one or more of the attributes.
+    
++ Request (application/json)
+
+        {
+            "user": {
+                id: 56
+            }
+        }
+
++ Response 200
+    
+    [Reservation][]
+
+## Reservation Collection [/reservations{?includeCancelled}{?includePastReservations}{?includeNonCancelled}{?showOnlyMyReservations}]
+Collection of all Reservations.
+
++ Parameters
+    + includeCancelled = `false` (optional, boolean, , `true`) ... If true, query will include cancelled reservations
+    + includeNonCancelled = `true` (optional, boolean, , `false`) ... If true, query will include non-cancelled reservations
+    + includePastReservations = `false` (optional, boolean, `true`) ... If true, query will include past reservations
+    + showOnlyMyReservations = `true` (optional, boolean, `false`) ... If true, query will only include logged in user's reservations
+
++ Model (application/json)
+    JSON representation of the Reservation Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    ...
+                },
+                {
+                    "id":22
+                    ...
+                },
+                {
+                    "id":23
+                    ...
+                }
+            ]
+
+### List of all Reservations [GET]
++ Response 200
+    
+    [Reservation Collection][]
+
+
+### Create a Reservation [POST]
+The following attributes are required to create a Reservation: *startDate*, *endDate*, *user*, *room*, *allDay*
+
++ Request (application/json)
+
+            {
+                id: ID,
+                startDate: EPOCH_TIME,
+                endDate: EPOCH_TIME
+                numberOfPeople: INT,
+                allDay: BOOLEAN,
+                name: STRING,
+                user: {},
+                guests: [],
+                room: {},
+                notes: STRING
+            }
+
++ Response 201
+
+    [Reservation][]
+
+## Cancel [/reservations/{id}/cancel]
+Cancel Reservation
+
++ Parameters
+
+    + id (string) ... ID of the Reservation
+
+### Cancel Reservation [PUT]
++ Response 200
+    [Reservation][]
+
+
+## Check In [/reservations/{id}/checkIn]
+Reservation Check In
+
++ Parameters
+
+    + id (string) ... ID of the Reservation
+
+### Reservation Check In [PUT]
++ Response 200
+    [Reservation][]
+
+
+## Check Out [/reservations/{id}/checkOut]
+Reservation Check Out
+
+*Not available through the desktop app*
+
++ Parameters
+
+    + id (string) ... ID of the Reservation
+
+### Reservation Check Out [PUT]
++ Response 200
+    [Reservation][]
+
+
+
 # Group Maintenance Request
 iOffice Service Request is known as the maintenance module internally.
 
@@ -118,6 +380,7 @@ The Request resource has the following attributes:
 
 ### Edit a Request [PUT]
 To update a Request send JSON with updated value for one or more of the attributes.
+
 + Request (application/json)
 
         {
@@ -219,7 +482,7 @@ Add a comment to a request
 
 + Parameters
 
-    + id (string) ... ID of the Request
+    + id (string) ... Id of the Request
 
 + Model (application/json)
     HTML string of all comments for the request
@@ -246,7 +509,7 @@ Attach an image to a request
 
 + Parameters
 
-    + id (string) ... ID of the Request
+    + id (string) ... Id of the Request
 
 + Model (application/json)
     JSON representation of an attachment object
@@ -424,5 +687,3 @@ Collection of all Categories.
 + Response 200
     
     [Categories Collection][]
-
-
