@@ -663,6 +663,43 @@ Attach an image to a asset
 + Response 200
     [Attach Asset Image][]
 
+## Asset Type Collection [/assets/types]
+Asset Type
+
++ Model (application/json)
+    JSON representation of an attachment type object
+
+    + Body
+    
+            [
+                {
+                    "id": 11,
+                    "meteringEnabled": true,
+                    "description": "Desktop Computers",
+                    "sortOrder": 0,
+                    "name": "Computer",
+                    "active": true,
+                    "dateCreated": 1262626862660,
+                    "code": "COMP",
+                    "unitPriceEnabled": true,
+                    "dateUpdated": 1262626862660
+                },
+                {
+                    "id":12
+                    ...
+                },
+                {
+                    "id":13
+                    ...
+                }
+            ]
+
+### List of all Asset Types [GET]
+
++ Response 200
+    
+    [Asset Type Collection][]
+
 
 # Group Reservation
 Reservation-related resources of *iOffice API*
