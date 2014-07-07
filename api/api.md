@@ -187,6 +187,14 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 
     [User][]
 
+## Get current logged in user [/users/me]
+
+Get data for currently logged in user
+
+### Hold a Request [GET]
++ Response 200
+    [User][]
+
 
 # Group Building
 Building API
