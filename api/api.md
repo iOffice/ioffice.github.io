@@ -43,12 +43,12 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
                 }
 
 # Group User
-User API
+User-related resources of *iOffice API*
 
 ## User [/users/{id}]
 A single user object.
 
-The User resource has the following attributes: 
+<!-- The User resource has the following attributes: 
 
 - id
 - name
@@ -71,7 +71,7 @@ The User resource has the following attributes:
 - dateCreated
 - costCenter1
 - costCenter2
-- comments
+- comments -->
 
 
 + Parameters
@@ -83,37 +83,37 @@ The User resource has the following attributes:
     + Body
 
             {
-                employeeId: "34a43518334a4",
-                custom02: "",
-                phone: "55555555555",
-                custom01: "",
-                custom04: "",
-                custom03: "",
-                department: "",
-                custom06: "",
-                custom05: "",
-                custom08: "",
-                custom07: "",
-                custom09: "",
-                dateUpdated: 1382483811150,
-                id: 9,
-                firstName: "Fox",
-                middleName: "",
-                lastName: "McCloud",
-                name: "Fox McCloud",
-                userName: "foxmc",
-                jobTitle: "developer",
-                knownAs: "",
-                costCenter2: "",
-                fax: "",
-                extension: "",
-                email: "fmccloud@iofficecorp.com",
-                company: "",
-                dateCreated: 1382483811150,
-                costCenter1: "",
-                comments: "",
-                mobile: "",
-                room: {...}
+                "employeeId": "34a43518334a4",
+                "custom02": "",
+                "phone": "55555555555",
+                "custom01": "",
+                "custom04": "",
+                "custom03": "",
+                "department": "",
+                "custom06": "",
+                "custom05": "",
+                "custom08": "",
+                "custom07": "",
+                "custom09": "",
+                "dateUpdated": 1382483811150,
+                "id": 9,
+                "firstName": "Fox",
+                "middleName": "",
+                "lastName": "McCloud",
+                "name": "Fox McCloud",
+                "userName": "foxmc",
+                "jobTitle": "developer",
+                "knownAs": "",
+                "costCenter2": "",
+                "fax": "",
+                "extension": "",
+                "email": "fmccloud@iofficecorp.com",
+                "company": "",
+                "dateCreated": 1382483811150,
+                "costCenter1": "",
+                "comments": "",
+                "mobile": "",
+                "room": {...}
             }
 
 ### Retrieve a Single User [GET]
@@ -128,7 +128,7 @@ To update a User send JSON with updated value for one or more of the attributes.
 
         {
             "room": {
-                id: 4
+                "id": 4
             }
         }
 
@@ -178,9 +178,9 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 + Request (application/json)
 
             {
-                firstName: 'Falco',
-                lastName: 'Lombardi',
-                email: flombardi@iofficecorp.com
+                "firstName": "Falco",
+                "lastName": "Lombardi",
+                "email": "flombardi@iofficecorp.com"
             }
 
 + Response 201
@@ -197,17 +197,17 @@ Get data for currently logged in user
 
 
 # Group Building
-Building API
+Building-related resources of *iOffice API*
 
 ## Building [/buildings/{id}]
 A single building object.
 
-The Building resource has the following attributes: 
+<!-- The Building resource has the following attributes: 
 
 - id
 - address
 - name
-- code
+- code -->
 
 
 + Parameters
@@ -219,10 +219,10 @@ The Building resource has the following attributes:
     + Body
 
             {
-                id: 43,
-                address: {...},
-                name: "Mystery Inc.",
-                code: "mystery"
+                "id": 43,
+                "address": {...},
+                "name": "Mystery Inc.",
+                "code": "mystery"
             }
 
 ### Retrieve a Single Building [GET]
@@ -281,7 +281,7 @@ The following attribute is required to create a Building: `name`.
 + Request (application/json)
 
             {
-                name: 'Headquarters',
+                "name": "Headquarters",
             }
 
 + Response 201
@@ -290,17 +290,17 @@ The following attribute is required to create a Building: `name`.
 
 
 # Group Floor
-Floor API
+Floor-related resources of *iOffice API*
 
 ## Floor [/floors/{id}]
 A single floor object.
 
-The Floor resource has the following attributes: 
+<!-- The Floor resource has the following attributes: 
 
 - id
 - building
 - area
-- name
+- name -->
 
 
 + Parameters
@@ -312,10 +312,10 @@ The Floor resource has the following attributes:
     + Body
 
             {
-                id: 5,
-                building: {...},
-                area: 2000,
-                name: "1st Floor"
+                "id": 5,
+                "building": {...},
+                "area": 2000,
+                "name": "1st Floor"
             }
 
 ### Retrieve a Single Floor [GET]
@@ -375,8 +375,8 @@ The following attributes are required to create a Floor: `name` and `building`.
 + Request (application/json)
 
             {
-                name: '3rd Floor',
-                building: {
+                "name": "3rd Floor",
+                "building": {
                     "id": 45
                 }
             }
@@ -387,17 +387,17 @@ The following attributes are required to create a Floor: `name` and `building`.
 
 
 # Group Room
-Room API
+Room-related resources of *iOffice API*
 
 ## Room [/rooms/{id}]
 A single room object.
 
-The Room resource has the following attributes: 
+<!-- The Room resource has the following attributes: 
 
 - id
 - floor
 - reservable
-- name
+- name -->
 
 
 + Parameters
@@ -409,10 +409,10 @@ The Room resource has the following attributes:
     + Body
 
             {
-                id: 52927,
-                floor: {...},
-                reservable: true,
-                name: "010211"
+                "id": 52927,
+                "floor": {...},
+                "reservable": true,
+                "name": "010211"
             }
 
 ### Retrieve a Single Room [GET]
@@ -427,7 +427,7 @@ To update a Room send JSON with updated value for one or more of the attributes.
 
         {
             "type": {
-                id: 55
+                "id": 55
             }
         }
 
@@ -484,9 +484,9 @@ The following attributes are required to create a Room: `name` and `type`.
 + Request (application/json)
 
             {
-                name: 'room 101',
-                type: {
-                    id: 44
+                "name": "room 101",
+                "type": {
+                    "id": 44
                 }
             }
 
@@ -495,13 +495,182 @@ The following attributes are required to create a Room: `name` and `type`.
     [Room][]
 
 
+# Group Asset
+Asset-related resources of *iOffice API*
+
+## Asset [/assets/{id}]
+A single asset object.
+
+<!-- The Asset resource has the following attributes: 
+
+- id
+- name
+- model(asset model)
+- managed
+- boxLength
+- titleLocation
+- dateCreated
+- dateUpdated
+- active -->
+
++ Parameters
+    + id (string) ... ID of the Asset
+
++ Model (application/json)
+    JSON representation of the Asset Resource
+    Note: An asset can be assigned to either a room or an owner. If assigned to an owner
+    then the json object will have an `owner` property and not a `room` property and visa versa.
+
+    + Body
+
+            {
+                "id": 11,
+                "model": {...},
+                "managed": false,
+                "boxLength": "STRING",
+                "titleLocation": "STRING",
+                "name": "Computer",
+                "dateCreated": 1382994855640,
+                "active": "BOOLEAN",
+                "room": {...},
+                "owner": {...}
+                "dateUpdated": 1382994855640
+            }
+
+### Retrieve a Single Asset [GET]
++ Response 200
+
+    [Asset][]
+
+### Edit a Asset [PUT]
+To update a Asset send JSON with updated value for one or more of the attributes.
+    
++ Request (application/json)
+
+        {
+            "model": {
+                "id": 78
+            }
+        }
+
++ Response 200
+    
+    [Asset][]
+
+## Asset Collection [/assets{?search}{?searchSerialNumber}{?typeId}{?buildingId}{?floorId}{?roomId}{?owner}]
+Collection of all Assets.
+
++ Model (application/json)
+    JSON representation of the Asset Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id":11
+                    ...
+                },
+                {
+                    "id":12
+                    ...
+                },
+                {
+                    "id":13
+                    ...
+                }
+            ]
+
+### List of all Assets [GET]
+
++ Parameters
+    + search (optional, string, `apple`) ... String to search for asset by model name, owner name, room name, localUID, or serialNumber
+    + searchSerialNumber (optional, string, `11111111`) ... Search by serial number only
+    + typeId (optional, number) ... Id of the type to query from
+    + buildingId (optional, number) ... Id of the building to query from
+    + floorId (optional, number) ... Id of the floor to query from
+    + roomId (optional, number) ... Id of the room to query from
+    + owner (optional, number) ... Id of the owner to query from
+
++ Response 200
+    
+    [Asset Collection][]
+
+
+### Create a Asset [POST]
+The following attributes are required to create a Asset: `model`, `serialNumber`, and (`room` or `owner`).
+
++ Request (application/json)
+
+            {
+                "model": {
+                    "id": 454
+                },
+                "serialNumber": "49867233"
+                "room": {
+                    "id": "57"
+                }
+            }
+
++ Response 201
+
+    [Asset][]
+
+## Verify an asset [/assets/{id}/verify]
+
+Create a record of the time and user that audited an asset.
+
++ Parameters
+
+    + id (string) ... Id of the Asset
+
+### Verify Asset [PUT]
++ Response 204
+
+## Attach Asset Image [/assets/{id}/attachImage]
+Attach an image to a asset
+
++ Parameters
+
+    + id (string) ... Id of the Asset
+
++ Model (application/json)
+    JSON representation of an attachment object
+
+    + Body
+
+            {
+                "id": "ID"
+                "storedFile": {
+                    "id": "INTERNAL_STORAGEID"
+                }
+                "downloadURL": "URL_RELATIVE_TO_SITE"
+                "description": "DESCRIPTION"
+                "name": "IMAGE_NAME"
+                "fileName": "FILE_NAME"
+                "dateCreated": "EPOCH_TIME"
+                "image": "BOOLEAN"
+                "storageId": "INTERNAL_STORAGEID"
+            }
+
+### Attach an Image to a Asset[POST]
+
++ Request (application/json)
+
+        {
+            "image": "BASE-64-IMAGE-STRING"
+        }
+
++ Response 200
+    [Attach Asset Image][]
+
+
 # Group Reservation
-Reservation booking management
+Reservation-related resources of *iOffice API*
 
 ## Reservation [/reservations/{id}]
 A single reservation object.
 
-The Reservation resource has the following attributes: 
+<!-- The Reservation resource has the following attributes: 
 
 - id
 - center
@@ -510,7 +679,7 @@ The Reservation resource has the following attributes:
 - name
 - user
 - dateUpdated
-- room
+- room -->
 
 
 + Parameters
@@ -522,14 +691,14 @@ The Reservation resource has the following attributes:
     + Body
 
             {
-                id: ID,
-                center: {},
-                numberOfPeople: INT,
-                allDay: BOOLEAN,
-                name: STRING,
-                user: {},
-                dateUpdated: EPOCH_TIME,
-                room: {}
+                "id": ID,
+                "center": {...},
+                "numberOfPeople": INT,
+                "allDay": "BOOLEAN",
+                "name": "STRING",
+                "user": {...},
+                "dateUpdated": EPOCH_TIME,
+                "room": {...}
             }
 
 ### Retrieve a Single Reservation [GET]
@@ -544,7 +713,7 @@ To update a Reservation send JSON with updated value for one or more of the attr
 
         {
             "user": {
-                id: 56
+                "id": 56
             }
         }
 
@@ -593,16 +762,16 @@ The following attributes are required to create a Reservation: `startDate`, `end
 + Request (application/json)
 
             {
-                id: ID,
+                "id": ID,
                 startDate: EPOCH_TIME,
-                endDate: EPOCH_TIME
-                numberOfPeople: INT,
-                allDay: BOOLEAN,
-                name: STRING,
-                user: {},
-                guests: [],
-                room: {},
-                notes: STRING
+                "endDate": EPOCH_TIME
+                "numberOfPeople": INT,
+                "allDay": "BOOLEAN",
+                "name": "STRING",
+                "user": {...},
+                "guests": [..],
+                "room": {...},
+                "notes": "STRING"
             }
 
 + Response 201
@@ -649,12 +818,13 @@ Reservation Check Out
 
 
 # Group Maintenance Request
+Maintenance Request-related resources of *iOffice API*
 iOffice Service Request is known as the maintenance module internally.
 
 ## Request [/maintenance/requests/{id}]
 A single request object.  The Request resource is the main component of the service request api.
 
-The Request resource has the following attributes: 
+<!-- The Request resource has the following attributes: 
 
 - id
 - dateCreated
@@ -679,7 +849,7 @@ The Request resource has the following attributes:
 - fields
 - completed
 - supplies
-- valueFields
+- valueFields -->
 
 
 + Parameters
@@ -691,29 +861,29 @@ The Request resource has the following attributes:
     + Body
 
             {
-                requestStatus: {},
-                requester: {},
-                requesterPrimaryContact: BOOLEAN,
-                type: {},
-                totalOperatorsNeeded: INT,
-                dateRequired: EPOCH_TIME,
-                contact: {},
-                assetStatus: STATUS_STRING,
-                dateUpdated: EPOCH_TIME,
-                center: {},
-                id: REQUEST_ID,
-                fieldValue: [ ],
-                priority: {},
-                dateCreated: EPOCH_TIME,
-                scheduledTask: BOOLEAN,
-                operators: [],
-                attachments: [ ],
-                warning: {},
-                room: {},
-                fields: [ ],
-                completed: BOOLEAN,
-                supplies: [ ],
-                valueFields: [ ]
+                "requestStatus": {...},
+                "requester": {...},
+                "requesterPrimaryContact": "BOOLEAN",
+                "type": {...},
+                "totalOperatorsNeeded": INT,
+                "dateRequired": EPOCH_TIME,
+                "contact": {...},
+                "assetStatus": "STATUS_STRING",
+                "dateUpdated": EPOCH_TIME,
+                "center": {...},
+                "id": REQUEST_ID,
+                "fieldValue": [...],
+                "priority": {...},
+                "dateCreated": EPOCH_TIME,
+                "scheduledTask": "BOOLEAN",
+                "operators": [],
+                "attachments": [...],
+                "warning": {...},
+                "room": {...},
+                "fields": [...],
+                "completed": "BOOLEAN",
+                "supplies": [...],
+                "valueFields": [...]
             }
 
 ### Retrieve a Single Request [GET]
@@ -728,7 +898,7 @@ To update a Request send JSON with updated value for one or more of the attribut
 
         {
             "room": {
-                id: 5
+                "id": 5
             }
         }
 + Response 200
@@ -773,16 +943,16 @@ NOTE: If the request type's "assetRequest" attribute is TRUE, then an "asset" at
         {
             "dateRequired": EPOCH_TIME,
             "requester": {
-                id: REQUESTER_ID,
+                "id": REQUESTER_ID,
             },
             "type": {
-                id: TYPE_ID,
+                "id": TYPE_ID,
             },
             "priority": {
-                id: PRIORITY_ID,
+                "id": PRIORITY_ID,
             },
             "room": {
-                id: ROOM_ID,
+                "id": ROOM_ID,
             }
         }
 
@@ -807,11 +977,11 @@ The Stats resource has the following attributes:
     + Body
 
             {
-                assignedCount: INT
-                highPriorityCount: INT
-                lowPriorityCount: INT
-                pastDueCount: INT
-                totalCount: INT
+                "assignedCount": INT
+                "highPriorityCount": INT
+                "lowPriorityCount": INT
+                "pastDueCount": INT
+                "totalCount": INT
             }
 
 ### Request Statistics [GET]
@@ -821,6 +991,7 @@ The Stats resource has the following attributes:
 
 
 ## Add Comment [/maintenance/requests/{id}/addComment]
+
 Add a comment to a request
 
 + Parameters
@@ -839,7 +1010,7 @@ Add a comment to a request
 + Request (application/json)
 
         {
-            "dateRequired": COMMENT_STRING
+            "dateRequired": "COMMENT_STRING"
         }
 
 + Response 200
@@ -847,7 +1018,7 @@ Add a comment to a request
         <div class='Content'>YOUR COMMENT</div></div>
 
 
-## Attach Image [/maintenance/requests/{id}/attachImage]
+## Attach Request Image [/maintenance/requests/{id}/attachImage]
 Attach an image to a request
 
 + Parameters
@@ -860,17 +1031,17 @@ Attach an image to a request
     + Body
 
             {
-                id: ID
-                storedFile: {
-                    id: INTERNAL_STORAGEID
+                "id": ID
+                "storedFile": {
+                    "id": "INTERNAL_STORAGEID"
                 }
-                downloadURL: URL_RELATIVE_TO_SITE
-                description: DESCRIPTION
-                name: IMAGE_NAME
-                fileName: FILE_NAME
-                dateCreated: EPOCH_TIME
-                image: BOOLEAN
-                storageId: INTERNAL_STORAGEID
+                "downloadURL": "URL_RELATIVE_TO_SITE"
+                "description": "DESCRIPTION"
+                "name": "IMAGE_NAME"
+                "fileName": "FILE_NAME"
+                "dateCreated": EPOCH_TIME
+                "image": "BOOLEAN"
+                "storageId": "INTERNAL_STORAGEID"
             }
 
 ### Attach an Image to a Request[POST]
@@ -878,11 +1049,11 @@ Attach an image to a request
 + Request (application/json)
 
         {
-            "image": BASE-64-IMAGE-STRING
+            "image": "BASE-64-IMAGE-STRING"
         }
 
 + Response 200
-    [Attach Image][]
+    [Attach Request Image][]
 
 
 ## Accept Request [/maintenance/requests/{id}/accept]
@@ -970,19 +1141,20 @@ Set operator's status for a request as complete.
 
 
 # Group Maintenance Category
+Maintenance Category-related resources of *iOffice API*
 The Category resource gives access to Products from which you can derive Request Types.
 
 ## Category [/maintenance/categories/{id}]
 A single category object.
 
-The Request resource has the following attributes: 
+<!-- The Request resource has the following attributes: 
 
 - id
 - name
 - products
 - dateCreated
 - dateRequired
-- dateUpdated
+- dateUpdated -->
 
 + Parameters
     + id (string) ... ID of the Category
@@ -993,9 +1165,9 @@ The Request resource has the following attributes:
     + Body
 
             {
-                id: ID,
-                name: STRING,
-                products: []
+                "id": ID,
+                "name": "STRING",
+                "products": [...]
             }
 
 ### Retrieve a Single Category [GET]
