@@ -670,7 +670,7 @@ Asset Type
     JSON representation of an attachment type object
 
     + Body
-    
+
             [
                 {
                     "id": 11,
@@ -851,7 +851,6 @@ Reservation Check Out
 ### Reservation Check Out [PUT]
 + Response 200
     [Reservation][]
-
 
 
 # Group Maintenance Request
@@ -1239,3 +1238,205 @@ Collection of all Categories.
 + Response 200
     
     [Categories Collection][]
+
+### Create a Category [POST]
+The following attributes are required to create a Category: `center` and `name`.
+
+
++ Category (application/json)
+
+            {
+                "name": Create Copier/Printer Equipment Service Request",
+                "center": {
+                    "id": 70,
+                },
+            }
+
++ Response 201
+
+    [Category][]
+
+
+# Group Maintenance Product
+Maintenance Product-related resources of *iOffice API*
+
+
+## Product [/maintenance/products/{id}]
+A single product object.
+
+<!-- The Request resource has the following attributes: 
+
+- id
+- name
+- products
+- dateCreated
+- dateRequired
+- dateUpdated -->
+
++ Parameters
+    + id (string) ... ID of the Product
+
++ Model (application/json)
+    JSON representation of the Product Resource
+
+    + Body
+
+            {
+                id: 23,
+                name: "Copier",
+                dateCreated: 1403633288547,
+                dateUpdated: 1403633288547
+            }
+
+### Retrieve a Single Product [GET]
++ Response 200
+
+    [Product][]
+
+## Products Collection [/maintenance/products]
+Collection of all Products.
+
++ Model (application/json)
+    JSON representation of the Resource Collection Resource.
+
+    + Body
+
+            [
+                {
+                    id: 23,
+                    name: "Copier",
+                    dateCreated: 1403633288547,
+                    dateUpdated: 1403633288547
+                },
+                {
+                    "id":24
+                    ...
+                },
+                {
+                    "id":25
+                    ...
+                }
+            ]
+
+### List of all Products [GET]
++ Response 200
+    
+    [Products Collection][]
+
+### Create a Product [POST]
+The following attribute is required to create a Product: `name`.
+
+
++ Product (application/json)
+
+            {
+                "name": "Printer Equipment Service Request",
+            }
+
++ Response 201
+
+    [Product][]
+
+
+# Group Maintenance Priority
+Maintenance Priority-related resources of *iOffice API*
+The Priority resource gives access to Products from which you can derive Request Types.
+
+## Priority [/maintenance/priorities/{id}]
+A single priority object.
+
++ Parameters
+    + id (string) ... ID of the Priority
+
++ Model (application/json)
+    JSON representation of the Priority Resource
+
+    + Body
+
+            {
+                id: 1,
+                color: {
+                    red: 102,
+                    green: 51,
+                    blue: 153
+                },
+                sortOrder: 1,
+                name: "Urgent"
+            }
+
+### Retrieve a Single Priority [GET]
++ Response 200
+
+    [Priority][]
+
+## Priorities Collection [/maintenance/priorities]
+Collection of all Priorities.
+
++ Model (application/json)
+    JSON representation of the Resource Collection Resource.
+
+    + Body
+
+            [
+                {
+                    "id":49
+                    ...
+                },
+                {
+                    "id":50
+                    ...
+                },
+                {
+                    "id":51
+                    ...
+                }
+            ]
+
+### List of all Priorities [GET]
++ Response 200
+    
+    [Priorities Collection][]
+
+### Create a Priority [POST]
+The following attributes are required to create a Priority: `name` and `sortOrder`.
+
+
++ Priority (application/json)
+
+            {
+                "name": Create Copier/Printer Equipment Service Request",
+                "sortOrder": 3,
+            }
+
++ Response 201
+
+    [Priority][]
+
+
+
+## Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId}{?centerId}]
+
+Get the earliest available date that a Request can be required to be completed by.
+
+The time is calculated based on the following:
+
+    + Request Type
+    + Request Priority
+    + Service Level Agreement (SLA) for the Request type
+    + Center hours of operation
+
++ Parameters
+    + id (string) ... ID of the Request.
+    + typeId (required, number) ... Request Type Id
+    + centerId (required, number) ... Request's Center Id
+
+### Get Date [GET]
++ Response 200 (application/json)
+
+    + Body
+
+            { "time": 1404839102117 }
+
+
+
+
