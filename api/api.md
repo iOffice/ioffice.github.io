@@ -136,7 +136,7 @@ To update a User send JSON with updated value for one or more of the attributes.
     
     [User][]
 
-## User Collection [/users{?search}{?centerId}{?role}]
+## User Collection [/users{?search, centerId, role}]
 Collection of all Users.
 
 + Model (application/json)
@@ -435,7 +435,7 @@ To update a Room send JSON with updated value for one or more of the attributes.
     
     [Room][]
 
-## Room Collection [/rooms{?includeReservable}{?includeNonReservable}{?locationSearch}{?nearLatitude}{?nearLongitude}{?startDate}{?endDate}{?numberOfPeople}{?search}{?building}{?roomType}{?floor}]
+## Room Collection [/rooms{?includeReservable, includeNonReservable, locationSearch, nearLatitude, nearLongitude, startDate, endDate, numberOfPeople, search, building, roomType, floor}]
 Collection of all Rooms.
 
 + Model (application/json)
@@ -557,7 +557,7 @@ To update a Asset send JSON with updated value for one or more of the attributes
     
     [Asset][]
 
-## Asset Collection [/assets{?search}{?searchSerialNumber}{?typeId}{?buildingId}{?floorId}{?roomId}{?owner}]
+## Asset Collection [/assets{?search, searchSerialNumber, typeId, buildingId, floorId, roomId, owner}]
 Collection of all Assets.
 
 + Model (application/json)
@@ -758,7 +758,7 @@ To update a Reservation send JSON with updated value for one or more of the attr
     
     [Reservation][]
 
-## Reservation Collection [/reservations{?includeCancelled}{?includePastReservations}{?includeNonCancelled}{?showOnlyMyReservations}]
+## Reservation Collection [/reservations{?includeCancelled, includePastReservations, includeNonCancelled, showOnlyMyReservations}]
 Collection of all Reservations.
 
 + Parameters
@@ -853,9 +853,11 @@ Reservation Check Out
     [Reservation][]
 
 
-# Group Maintenance Request
-Maintenance Request-related resources of *iOffice API*
+# Group Maintenance
+Maintenance-related resources of *iOffice API*
+
 iOffice Service Request is known as the maintenance module internally.
+
 
 ## Request [/maintenance/requests/{id}]
 A single request object.  The Request resource is the main component of the service request api.
@@ -922,12 +924,12 @@ A single request object.  The Request resource is the main component of the serv
                 "valueFields": [...]
             }
 
-### Retrieve a Single Request [GET]
+#### Retrieve a Single Request [GET]
 + Response 200
 
     [Request][]
 
-### Edit a Request [PUT]
+#### Edit a Request [PUT]
 To update a Request send JSON with updated value for one or more of the attributes.
 
 + Request (application/json)
@@ -941,7 +943,7 @@ To update a Request send JSON with updated value for one or more of the attribut
     
     [Request][]
 
-## Requests Collection [/maintenance/requests]
+### Requests Collection [/maintenance/requests]
 Collection of all Requests.
 
 + Model (application/json)
@@ -964,12 +966,12 @@ Collection of all Requests.
                 }
             ]
 
-### List of all Requests [GET]
+#### List of all Requests [GET]
 + Response 200
     
     [Requests Collection][]
 
-### Create a Request [POST]
+#### Create a Request [POST]
 The following attributes are required to create a Request: `dateRequired`, `requester`, `type`, `priority`, and `room`.
 
 NOTE: If the request type's "assetRequest" attribute is TRUE, then an "asset" attribute is required as well.
@@ -996,7 +998,7 @@ NOTE: If the request type's "assetRequest" attribute is TRUE, then an "asset" at
 
     [Request][]
 
-## Requests Collection Stats [/maintenance/requests/stats]
+### Requests Collection Stats [/maintenance/requests/stats]
 Statistics of Requests relative to the requesting user.
 
 The Stats resource has the following attributes:
@@ -1020,13 +1022,13 @@ The Stats resource has the following attributes:
                 "totalCount": INT
             }
 
-### Request Statistics [GET]
+#### Request Statistics [GET]
 + Response 200
     
     [Requests Collection Stats][]
 
 
-## Add Comment [/maintenance/requests/{id}/addComment]
+### Add Comment [/maintenance/requests/{id}/addComment]
 
 Add a comment to a request
 
@@ -1041,7 +1043,7 @@ Add a comment to a request
 
             <div class='Content'>YOUR COMMENT</div></div>
 
-### Add a comment to a Request [POST]
+#### Add a comment to a Request [POST]
 
 + Request (application/json)
 
@@ -1054,7 +1056,7 @@ Add a comment to a request
         <div class='Content'>YOUR COMMENT</div></div>
 
 
-## Attach Request Image [/maintenance/requests/{id}/attachImage]
+### Attach Request Image [/maintenance/requests/{id}/attachImage]
 Attach an image to a request
 
 + Parameters
@@ -1080,7 +1082,7 @@ Attach an image to a request
                 "storageId": "INTERNAL_STORAGEID"
             }
 
-### Attach an Image to a Request[POST]
+#### Attach an Image to a Request[POST]
 
 + Request (application/json)
 
@@ -1092,7 +1094,7 @@ Attach an image to a request
     [Attach Request Image][]
 
 
-## Accept Request [/maintenance/requests/{id}/accept]
+### Accept Request [/maintenance/requests/{id}/accept]
 ** User must be a valid operator**
 
 Set operator's status for a request as accepted.
@@ -1101,12 +1103,12 @@ Set operator's status for a request as accepted.
 
     + id (string) ... ID of the Request
 
-### Accept a Request [PUT]
+#### Accept a Request [PUT]
 + Response 200
     [Request][]
 
 
-## Reject Request [/maintenance/requests/{id}/reject]
+### Reject Request [/maintenance/requests/{id}/reject]
 ** User must be a valid operator**
 
 Set operator's status for a request as rejected.
@@ -1115,12 +1117,12 @@ Set operator's status for a request as rejected.
 
     + id (string) ... ID of the Request
 
-### Reject a Request [PUT]
+#### Reject a Request [PUT]
 + Response 200
     [Request][]
 
 
-## Start Request [/maintenance/requests/{id}/start]
+### Start Request [/maintenance/requests/{id}/start]
 ** User must be a valid operator**
 
 Set operator's status for a request as started.
@@ -1129,11 +1131,11 @@ Set operator's status for a request as started.
 
     + id (string) ... ID of the Request
 
-### Start a Request [PUT]
+#### Start a Request [PUT]
 + Response 200
     [Request][]
 
-## Hold Request [/maintenance/requests/{id}/hold]
+### Hold Request [/maintenance/requests/{id}/hold]
 ** User must be a valid operator**
 
 Set operator's status for a request as on hold.
@@ -1142,12 +1144,12 @@ Set operator's status for a request as on hold.
 
     + id (string) ... ID of the Request
 
-### Hold a Request [PUT]
+#### Hold a Request [PUT]
 + Response 200
     [Request][]
 
 
-## Resume Request [/maintenance/requests/{id}/resume]
+### Resume Request [/maintenance/requests/{id}/resume]
 ** User must be a valid operator**
 
 Set operator's status for a request as resumed.
@@ -1156,12 +1158,12 @@ Set operator's status for a request as resumed.
 
     + id (string) ... ID of the Request
 
-### Resume a Request [PUT]
+#### Resume a Request [PUT]
 + Response 200
     [Request][]
 
 
-## Complete Request [/maintenance/requests/{id}/complete]
+### Complete Request [/maintenance/requests/{id}/complete]
 ** User must be a valid operator**
 
 Set operator's status for a request as complete.
@@ -1170,17 +1172,108 @@ Set operator's status for a request as complete.
 
     + id (string) ... ID of the Request
 
-### Complete a Request [PUT]
+#### Complete a Request [PUT]
 + Response 200
     [Request][]
 
 
+## Request Type [/maintenance/types/{id}]
 
-# Group Maintenance Category
-Maintenance Category-related resources of *iOffice API*
-The Category resource gives access to Products from which you can derive Request Types.
+The Request Type is the building block from which requests are created.
+
+A single request type object.
+
++ Parameters
+    + id (string) ... ID of the Request Type
+
++ Model (application/json)
+    JSON representation of the Request Type Resource
+
+    + Body
+
+            {
+                "defaultPriority": {
+                    "id": 3,
+                    "color": {...},
+                    "sortOrder": 3,
+                    "name": "Normal"
+                },
+                "type": "ship",
+                "priorityEnableForCustomer": "true",
+                "dateRequiredEnabledForCustomer": "true",
+                "dateUpdated": 1126109927833,
+                "totalOperatorsRequired": 1,
+                "product": {
+                    "id": 10,
+                    "sortOrder": 4,
+                    "name": "Arwing",
+                    "dateCreated": 1126040636373,
+                    "dateUpdated": 1127922019337
+                },
+                "id": 68,
+                "SLAMinutes": 0,
+                "estimatedTime": 0,
+                "name": "Thruster Repair",
+                "dateCreated": 1126109927833,
+                "fields": [...]
+            }
+
+#### Retrieve a Single Request Type [GET]
++ Response 200
+
+    [Request Type][]
+
+### Request Types Collection [/maintenance/types]
+Collection of all Request Types.
+
++ Model (application/json)
+    JSON representation of the Resource Collection Resource.
+
+    + Body
+
+            [
+                {
+                    "id":65
+                    ...
+                },
+                {
+                    "id":66
+                    ...
+                },
+                {
+                    "id":67
+                    ...
+                }
+            ]
+
+#### List of all Request Types [GET]
++ Response 200
+    
+    [Request Types Collection][]
+
+#### Create a Request Type [POST]
+The following attributes are required to create a Request Type: `product` and `name`.
+
+
++ Request Type (application/json)
+
+            {
+                "name": "Ship Wing Repair",
+                "Product": {
+                    "id": 78
+                },
+            }
+
++ Response 201
+
+    [Request Type][]
+
+
 
 ## Category [/maintenance/categories/{id}]
+
+The Category resource gives access to Products from which you can derive Request Types.
+
 A single category object.
 
 <!-- The Request resource has the following attributes: 
@@ -1206,12 +1299,12 @@ A single category object.
                 "products": [...]
             }
 
-### Retrieve a Single Category [GET]
+#### Retrieve a Single Category [GET]
 + Response 200
 
     [Category][]
 
-## Categories Collection [/maintenance/categories]
+### Categories Collection [/maintenance/categories]
 Collection of all Categories.
 
 + Model (application/json)
@@ -1234,19 +1327,19 @@ Collection of all Categories.
                 }
             ]
 
-### List of all Categories [GET]
+#### List of all Categories [GET]
 + Response 200
     
     [Categories Collection][]
 
-### Create a Category [POST]
+#### Create a Category [POST]
 The following attributes are required to create a Category: `center` and `name`.
 
 
 + Category (application/json)
 
             {
-                "name": Create Copier/Printer Equipment Service Request",
+                "name": "Create Copier/Printer Equipment Service Request",
                 "center": {
                     "id": 70,
                 },
@@ -1257,11 +1350,7 @@ The following attributes are required to create a Category: `center` and `name`.
     [Category][]
 
 
-# Group Maintenance Product
-Maintenance Product-related resources of *iOffice API*
-
-
-## Product [/maintenance/products/{id}]
+### Product [/maintenance/products/{id}]
 A single product object.
 
 <!-- The Request resource has the following attributes: 
@@ -1282,18 +1371,18 @@ A single product object.
     + Body
 
             {
-                id: 23,
-                name: "Copier",
-                dateCreated: 1403633288547,
-                dateUpdated: 1403633288547
+                "id": 23,
+                "name": "Copier",
+                "dateCreated": 1403633288547,
+                "dateUpdated": 1403633288547
             }
 
-### Retrieve a Single Product [GET]
+#### Retrieve a Single Product [GET]
 + Response 200
 
     [Product][]
 
-## Products Collection [/maintenance/products]
+### Products Collection [/maintenance/products]
 Collection of all Products.
 
 + Model (application/json)
@@ -1303,10 +1392,10 @@ Collection of all Products.
 
             [
                 {
-                    id: 23,
-                    name: "Copier",
-                    dateCreated: 1403633288547,
-                    dateUpdated: 1403633288547
+                    "id": 23,
+                    "name": "Copier",
+                    "dateCreated": 1403633288547,
+                    "dateUpdated": 1403633288547
                 },
                 {
                     "id":24
@@ -1318,12 +1407,12 @@ Collection of all Products.
                 }
             ]
 
-### List of all Products [GET]
+#### List of all Products [GET]
 + Response 200
     
     [Products Collection][]
 
-### Create a Product [POST]
+#### Create a Product [POST]
 The following attribute is required to create a Product: `name`.
 
 
@@ -1338,11 +1427,10 @@ The following attribute is required to create a Product: `name`.
     [Product][]
 
 
-# Group Maintenance Priority
-Maintenance Priority-related resources of *iOffice API*
+
+### Priority [/maintenance/priorities/{id}]
 The Priority resource gives access to Products from which you can derive Request Types.
 
-## Priority [/maintenance/priorities/{id}]
 A single priority object.
 
 + Parameters
@@ -1354,22 +1442,22 @@ A single priority object.
     + Body
 
             {
-                id: 1,
-                color: {
-                    red: 102,
-                    green: 51,
-                    blue: 153
+                "id": 1,
+                "color": {
+                    "red": 102,
+                    "green": 51,
+                    "blue": 153
                 },
-                sortOrder: 1,
-                name: "Urgent"
+                "sortOrder": 1,
+                "name": "Urgent"
             }
 
-### Retrieve a Single Priority [GET]
+#### Retrieve a Single Priority [GET]
 + Response 200
 
     [Priority][]
 
-## Priorities Collection [/maintenance/priorities]
+### Priorities Collection [/maintenance/priorities]
 Collection of all Priorities.
 
 + Model (application/json)
@@ -1392,19 +1480,19 @@ Collection of all Priorities.
                 }
             ]
 
-### List of all Priorities [GET]
+#### List of all Priorities [GET]
 + Response 200
     
     [Priorities Collection][]
 
-### Create a Priority [POST]
+#### Create a Priority [POST]
 The following attributes are required to create a Priority: `name` and `sortOrder`.
 
 
 + Priority (application/json)
 
             {
-                "name": Create Copier/Printer Equipment Service Request",
+                "name": "Create Copier/Printer Equipment Service Request",
                 "sortOrder": 3,
             }
 
@@ -1414,7 +1502,7 @@ The following attributes are required to create a Priority: `name` and `sortOrde
 
 
 
-## Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId}{?centerId}]
+### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId, centerId}]
 
 Get the earliest available date that a Request can be required to be completed by.
 
@@ -1430,7 +1518,7 @@ The time is calculated based on the following:
     + typeId (required, number) ... Request Type Id
     + centerId (required, number) ... Request's Center Id
 
-### Get Date [GET]
+#### Get Date [GET]
 + Response 200 (application/json)
 
     + Body
