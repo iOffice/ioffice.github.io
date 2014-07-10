@@ -943,8 +943,31 @@ To update a Request send JSON with updated value for one or more of the attribut
     
     [Request][]
 
-### Requests Collection [/maintenance/requests]
+### Requests Collection [/maintenance/requests{?priority,?assigned,?pastDue}]
 Collection of all Requests.
+
++ Parameters
+
+    + priority (optional, string)
+
+        Query for high or low priority tickets:
+
+        high (sortOrder less than or equal to 2)
+
+        low (sortOrder greater than 2)
+
+        + Values
+            + `low`
+            + `high`
+
+    + assigned (optional, string)
+
+        Query for tickets assigned to logged in user
+
+        + Values
+            + `me`
+
+    + pastDue (optional, boolean)
 
 + Model (application/json)
     JSON representation of the Resource Collection Resource.
