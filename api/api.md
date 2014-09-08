@@ -1556,5 +1556,3 @@ The time is calculated based on the following:
             { "time": 1404839102117 }
 
 
-
-
