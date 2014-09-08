@@ -1,3 +1,5 @@
+FORMAT: X-1A
+
 # iOffice API
 The iOffice API provides access to many iOffice modules for CRUD operations
 
@@ -30,6 +32,8 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 | ------------- | ------------- |
 | limit | maximum results to show (default: 50)  |
 | startAt | for pagination, the offset of where to start (default: 0)  |
+| orderBy | Property to order results by (default: 'id')  |
+| orderByType | Choose to order results in either ascending(`asc`) or descending(`desc`)order (default: 'asc')  |
 
 ## Resource Requests
 NOTE: When creating/updating an object, all that is needed is the ID of new object
@@ -45,7 +49,7 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 # Group User
 User-related resources of *iOffice API*
 
-## User [/users/{id}]
+## User [/users{id}]
 A single user object.
 
 <!-- The User resource has the following attributes: 
@@ -136,7 +140,7 @@ To update a User send JSON with updated value for one or more of the attributes.
     
     [User][]
 
-## User Collection [/users{?search, centerId, role}]
+## User Collection [/users{?search,centerId,role}]
 Collection of all Users.
 
 + Model (application/json)
@@ -199,7 +203,7 @@ Get data for currently logged in user
 # Group Building
 Building-related resources of *iOffice API*
 
-## Building [/buildings/{id}]
+## Building [/buildings{id}]
 A single building object.
 
 <!-- The Building resource has the following attributes: 
@@ -292,7 +296,7 @@ The following attribute is required to create a Building: `name`.
 # Group Floor
 Floor-related resources of *iOffice API*
 
-## Floor [/floors/{id}]
+## Floor [/floors{id}]
 A single floor object.
 
 <!-- The Floor resource has the following attributes: 
@@ -338,6 +342,9 @@ To update a Floor send JSON with updated value for one or more of the attributes
 
 ## Floor Collection [/floors{?buildingId}]
 Collection of all Floors.
+
++ Parameters
+    + buildingId (optional,string) ... Id building to query from
 
 + Model (application/json)
     JSON representation of the Floor Collection resource.
@@ -389,7 +396,7 @@ The following attributes are required to create a Floor: `name` and `building`.
 # Group Room
 Room-related resources of *iOffice API*
 
-## Room [/rooms/{id}]
+## Room [/rooms{id}]
 A single room object.
 
 <!-- The Room resource has the following attributes: 
@@ -435,7 +442,7 @@ To update a Room send JSON with updated value for one or more of the attributes.
     
     [Room][]
 
-## Room Collection [/rooms{?includeReservable, includeNonReservable, locationSearch, nearLatitude, nearLongitude, startDate, endDate, numberOfPeople, search, building, roomType, floor}]
+## Room Collection [/rooms{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,search,buildingId,floorId,type}]
 Collection of all Rooms.
 
 + Model (application/json)
@@ -469,9 +476,9 @@ Collection of all Rooms.
     + startDate (optional, number, `1404410211910`) ... Epoch time of room availablilty start date
     + endDate (optional, number, `1404421051661`) ... Epoch time of room availablilty end date
     + search (optional, string, `conference`) ... String to search for room by name
-    + building (optional, number, `44`) ... Id of building to search in
-    + floor (optional, number, `3443`) ... Id of floor to search on
-    + roomType (optional, number, `65`) ... Id of room type to search for
+    + buildingId (optional, number, `44`) ... Id of building to search in
+    + floorId (optional, number, `3443`) ... Id of floor to search on
+    + type (optional, number, `65`) ... Id of room type to search for
 
 + Response 200
     
@@ -498,7 +505,7 @@ The following attributes are required to create a Room: `name` and `type`.
 # Group Asset
 Asset-related resources of *iOffice API*
 
-## Asset [/assets/{id}]
+## Asset [/assets{id}]
 A single asset object.
 
 <!-- The Asset resource has the following attributes: 
@@ -557,7 +564,7 @@ To update a Asset send JSON with updated value for one or more of the attributes
     
     [Asset][]
 
-## Asset Collection [/assets{?search, searchSerialNumber, typeId, buildingId, floorId, roomId, owner}]
+## Asset Collection [/assets{?search,searchSerialNumber,typeId,buildingId,floorId,roomId,owner}]
 Collection of all Assets.
 
 + Model (application/json)
@@ -704,7 +711,7 @@ Asset Type
 # Group Reservation
 Reservation-related resources of *iOffice API*
 
-## Reservation [/reservations/{id}]
+## Reservation [/reservations{id}]
 A single reservation object.
 
 <!-- The Reservation resource has the following attributes: 
@@ -758,7 +765,7 @@ To update a Reservation send JSON with updated value for one or more of the attr
     
     [Reservation][]
 
-## Reservation Collection [/reservations{?includeCancelled, includePastReservations, includeNonCancelled, showOnlyMyReservations}]
+## Reservation Collection [/reservations{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations}]
 Collection of all Reservations.
 
 + Parameters
@@ -859,7 +866,7 @@ Maintenance-related resources of *iOffice API*
 iOffice Service Request is known as the maintenance module internally.
 
 
-## Request [/maintenance/requests/{id}]
+## Request [/maintenance/requests{id}]
 A single request object.  The Request resource is the main component of the service request api.
 
 <!-- The Request resource has the following attributes: 
@@ -943,7 +950,7 @@ To update a Request send JSON with updated value for one or more of the attribut
     
     [Request][]
 
-### Requests Collection [/maintenance/requests{?priority,?assigned,?pastDue}]
+### Requests Collection [/maintenance/requests{?priority,assigned,pastDue}]
 Collection of all Requests.
 
 + Parameters
@@ -1200,7 +1207,7 @@ Set operator's status for a request as complete.
     [Request][]
 
 
-## Request Type [/maintenance/types/{id}]
+## Request Type [/maintenance/types{id}]
 
 The Request Type is the building block from which requests are created.
 
@@ -1293,7 +1300,7 @@ The following attributes are required to create a Request Type: `product` and `n
 
 
 
-## Category [/maintenance/categories/{id}]
+## Category [/maintenance/categories{id}]
 
 The Category resource gives access to Products from which you can derive Request Types.
 
@@ -1373,7 +1380,7 @@ The following attributes are required to create a Category: `center` and `name`.
     [Category][]
 
 
-### Product [/maintenance/products/{id}]
+### Product [/maintenance/products{id}]
 A single product object.
 
 <!-- The Request resource has the following attributes: 
@@ -1451,7 +1458,7 @@ The following attribute is required to create a Product: `name`.
 
 
 
-### Priority [/maintenance/priorities/{id}]
+### Priority [/maintenance/priorities{id}]
 The Priority resource gives access to Products from which you can derive Request Types.
 
 A single priority object.
@@ -1525,7 +1532,7 @@ The following attributes are required to create a Priority: `name` and `sortOrde
 
 
 
-### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId, centerId}]
+### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId,centerId}]
 
 Get the earliest available date that a Request can be required to be completed by.
 
