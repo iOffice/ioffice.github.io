@@ -249,7 +249,7 @@ To update a Building send JSON with updated value for one or more of the attribu
     
     [Building][]
 
-## Building Collection [/buildings]
+## Building Collection [/buildings{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude}]
 Collection of all Buildings.
 
 + Model (application/json)
@@ -274,6 +274,13 @@ Collection of all Buildings.
 
 ### List of all Buildings [GET]
 
++ Parameters
+    + includeReservable (optional, boolean, `true`) ... If true, query will include buildings with reservable rooms
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include buildings with non-reservable rooms
+    + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
+    + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
+    + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
+    
 + Response 200
     
     [Building Collection][]
