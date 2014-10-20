@@ -561,11 +561,11 @@ To update a Asset send JSON with updated value for one or more of the attributes
     
 + Request (application/json)
 
-        {
-            "model": {
-                "id": 78
+            {
+                "model": {
+                    "id": 78
+                }
             }
-        }
 
 + Response 200
     
@@ -1078,19 +1078,22 @@ Add a comment to a request
 
     + Body
 
-            <div class='Content'>YOUR COMMENT</div></div>
+            {
+                "comments": "<div class='Content'>YOUR COMMENT</div></div>"
+            }
+            
 
 #### Add a comment to a Request [POST]
 
 + Request (application/json)
 
-        {
-            "dateRequired": "COMMENT_STRING"
-        }
+            {
+                "comments": "Your new comment string"
+            }
 
 + Response 200
 
-        <div class='Content'>YOUR COMMENT</div></div>
+    [Add Comment][]
 
 
 ### Attach Request Image [/maintenance/requests/{id}/attachImage]
