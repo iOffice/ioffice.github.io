@@ -4,7 +4,7 @@ FORMAT: X-1A
 The iOffice API provides access to many iOffice modules for CRUD operations
 
 ## Endpoints
-The base URL will be https://[siteaddress]/external/api/rest/v2/
+The base URL will be https://`siteaddress`/external/api/rest/v2/
 
 All endpoints in the document are relative to this url.
 
@@ -12,12 +12,13 @@ Note: on development servers this will be http over port 8080 so there will be a
 
 
 ## Authentication
-In order to authenticate your request, in each request include the following in the header.
-+ Headers
-            x-auth-password:PASSWORD
-            x-auth-username:USERNAME
+In order to authenticate your request, in each request include the following in the request headers.
+All requests are over **HTTPS**.
 
-All requests are made over https. 
+```http
+x-auth-password: password
+x-auth-username: username
+```
 
 ## Media Types
 Where applicable this API uses the JSON media-type to represent resources states and affordances.
@@ -38,45 +39,20 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 ## Resource Requests
 NOTE: When creating/updating an object, all that is needed is the ID of new object
         
-        e.g. Upating a resource's contact to another with an ID of 5
-        + Request (application/json)
-                {
-                    contact: {
-                        id: 5
-                    }
-                }
+    e.g. Upating a resource's contact to another with an ID of 5
+    + Request (application/json)
+        {
+            contact: {
+                id: 5
+            }
+        }
+
 
 # Group User
 User-related resources of *iOffice API*
 
 ## User [/users{id}]
 A single user object.
-
-<!-- The User resource has the following attributes: 
-
-- id
-- name
-- userName
-- firstName
-- middleName
-- lastName
-- email
-- phone
-- extension
-- mobile
-- fax
-- room
-- employeeId
-- department
-- dateUpdated
-- jobTitle
-- knownAs
-- company
-- dateCreated
-- costCenter1
-- costCenter2
-- comments -->
-
 
 + Parameters
     + id (string) ... ID of the User
@@ -206,13 +182,6 @@ Building-related resources of *iOffice API*
 ## Building [/buildings{id}]
 A single building object.
 
-<!-- The Building resource has the following attributes: 
-
-- id
-- address
-- name
-- code -->
-
 
 + Parameters
     + id (string) ... ID of the Building
@@ -305,13 +274,6 @@ Floor-related resources of *iOffice API*
 
 ## Floor [/floors{id}]
 A single floor object.
-
-<!-- The Floor resource has the following attributes: 
-
-- id
-- building
-- area
-- name -->
 
 
 + Parameters
@@ -406,13 +368,6 @@ Room-related resources of *iOffice API*
 ## Room [/rooms{id}]
 A single room object.
 
-<!-- The Room resource has the following attributes: 
-
-- id
-- floor
-- reservable
-- name -->
-
 
 + Parameters
     + id (string) ... ID of the Room
@@ -493,12 +448,15 @@ Collection of all Rooms.
 
 
 ### Create a Room [POST]
-The following attributes are required to create a Room: `name` and `type`.
+The following attributes are required to create a Room: `name`, `floor`, and `type`.
 
 + Request (application/json)
 
             {
                 "name": "room 101",
+                "floor": {
+                    "id": 16
+                },
                 "type": {
                     "id": 44
                 }
@@ -515,17 +473,6 @@ Asset-related resources of *iOffice API*
 ## Asset [/assets{id}]
 A single asset object.
 
-<!-- The Asset resource has the following attributes: 
-
-- id
-- name
-- model(asset model)
-- managed
-- boxLength
-- titleLocation
-- dateCreated
-- dateUpdated
-- active -->
 
 + Parameters
     + id (string) ... ID of the Asset
@@ -721,17 +668,6 @@ Reservation-related resources of *iOffice API*
 ## Reservation [/reservations{id}]
 A single reservation object.
 
-<!-- The Reservation resource has the following attributes: 
-
-- id
-- center
-- numberOfPeople
-- allDay
-- name
-- user
-- dateUpdated
-- room -->
-
 
 + Parameters
     + id (string) ... ID of the Reservation
@@ -875,33 +811,6 @@ iOffice Service Request is known as the maintenance module internally.
 
 ## Request [/maintenance/requests{id}]
 A single request object.  The Request resource is the main component of the service request api.
-
-<!-- The Request resource has the following attributes: 
-
-- id
-- dateCreated
-- dateRequired
-- dateUpdated
-- type
-- requestStatus
-- requester
-- requesterPrimaryContact
-- totalOperatorsNeeded
-- contact
-- assetStatus
-- center
-- fieldValue
-- priority
-- asset
-- scheduledTask
-- operators
-- attachments
-- warning
-- room
-- fields
-- completed
-- supplies
-- valueFields -->
 
 
 + Parameters
@@ -1316,14 +1225,6 @@ The Category resource gives access to Products from which you can derive Request
 
 A single category object.
 
-<!-- The Request resource has the following attributes: 
-
-- id
-- name
-- products
-- dateCreated
-- dateRequired
-- dateUpdated -->
 
 + Parameters
     + id (string) ... ID of the Category
@@ -1393,14 +1294,6 @@ The following attributes are required to create a Category: `center` and `name`.
 ### Product [/maintenance/products{id}]
 A single product object.
 
-<!-- The Request resource has the following attributes: 
-
-- id
-- name
-- products
-- dateCreated
-- dateRequired
-- dateUpdated -->
 
 + Parameters
     + id (string) ... ID of the Product
