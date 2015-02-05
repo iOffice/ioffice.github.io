@@ -1,7 +1,7 @@
 FORMAT: X-1A
+# iOffice API
 
 # Group iOffice API
-# iOffice API
 The iOffice API provides access to many iOffice modules for CRUD operations
 
 ## Endpoints
