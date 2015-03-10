@@ -53,6 +53,8 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 
 <!-- include(endpoints/building.md) -->
 
+<!-- include(endpoints/country.md) -->
+
 <!-- include(endpoints/floor.md) -->
 
 <!-- include(endpoints/room.md) -->
