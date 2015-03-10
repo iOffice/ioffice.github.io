@@ -1494,7 +1494,8 @@ then the json object will have an <code>owner</code> property and not a <code>ro
         <span class="hljs-keyword">...</span>
     }
 ]
-</code></pre></li></ul></section><section id="agreement-agreement-collection-post" class="panel panel-success"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Create a Agreement</span></div><div style="float:left"><a href="#agreement-agreement-collection-post" class="btn btn-xs btn-success">POST</a></div><div style="overflow:hidden"><code>/agreements</code></div></div><div class="panel-body"><p>To create a Agreement send JSON with the values the new contact should have.</p>
+</code></pre></li></ul></section><section id="agreement-agreement-collection-post" class="panel panel-success"><div class="panel-heading"><div style="float:right"><span style="text-transform: lowercase">Create a Agreement</span></div><div style="float:left"><a href="#agreement-agreement-collection-post" class="btn btn-xs btn-success">POST</a></div><div style="overflow:hidden"><code>/agreements</code></div></div><div class="panel-body"><p>To create a Agreement send JSON with the values the new agreement should have.
+The field <code>type</code> is required in order to create a new agreement.</p>
 </div><ul class="list-group"><li class="list-group-item"><strong>Response&nbsp;&nbsp;<code>201</code></strong><a data-toggle="collapse" data-target="#ed14932aa1f35e36ac8d4f002a3e29b2" class="pull-right collapsed"><span class="closed">Show</span><span class="open">Hide</span></a></li><li id="ed14932aa1f35e36ac8d4f002a3e29b2" class="list-group-item panel-collapse collapse"><div class="description"><p>JSON representation of the Agreement Resource</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span><br></code></pre><h5>Body</h5><pre><code>{
     <span class="hljs-string">"id"</span>: <span class="hljs-number">23</span>,

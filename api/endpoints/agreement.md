@@ -68,7 +68,8 @@ Collection of all Agreements.
 
 
 ### Create a Agreement [POST]
-To create a Agreement send JSON with the values the new contact should have.
+To create a Agreement send JSON with the values the new agreement should have.
+The field `type` is required in order to create a new agreement.
 
 + Response 201
 
