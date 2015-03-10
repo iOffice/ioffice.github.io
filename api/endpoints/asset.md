@@ -191,3 +191,32 @@ Asset Type
 + Response 200
     
     [Asset Type Collection][]
+
+## Asset Model Collection [/assets/models]
+Asset Model
+
++ Model (application/json)
+    JSON representation of an attachment type object
+
+    + Body
+
+            [
+                {
+                    "id": 11,
+                    ...
+                },
+                {
+                    "id":12
+                    ...
+                },
+                {
+                    "id":13
+                    ...
+                }
+            ]
+
+### List of all Asset Models [GET]
+
++ Response 200
+    
+    [Asset Type Collection][]
