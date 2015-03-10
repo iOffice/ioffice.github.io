@@ -219,4 +219,4 @@ Asset Model
 
 + Response 200
     
-    [Asset Type Collection][]
+    [Asset Model Collection][]
