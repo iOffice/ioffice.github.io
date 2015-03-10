@@ -51,6 +51,8 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 
 <!-- include(endpoints/user.md) -->
 
+<!-- include(endpoints/contact.md) -->
+
 <!-- include(endpoints/building.md) -->
 
 <!-- include(endpoints/country.md) -->
