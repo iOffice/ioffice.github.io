@@ -79,8 +79,10 @@ The following attributes are required to create a Depth:
                 "dateCreated": 1434561059383
             }
 
-### Edit a Depth [PUT]
+### Edit a Depth [PUT /costcenters/depths/{id}]
 To update a Depth send JSON with updated value for one of more of the attributes.
++ Parameters
+    + id (string) ... ID of the Depth
 + Request (application/json)
     
         {
@@ -101,4 +103,6 @@ To update a Depth send JSON with updated value for one of more of the attributes
             }
 
 ### Remove a Depth [DELETE]
++ Parameters
+    + id (string) ... ID of the Category
 + Response 200
