@@ -1,1 +1,1 @@
-aglio -i api.md -t flatly-collapsible -s
+aglio -i api.md -t flatly -s
