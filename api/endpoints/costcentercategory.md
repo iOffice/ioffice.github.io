@@ -12,19 +12,25 @@ Collection of all Categories.
             [
                 {
                     "code": "co",
+                    "color": {},
                     "name": "Company",
-                    "id": 27
-              },
-              {
+                    "id": 27,
+                    "dateUpdated": 143567975913
+                },
+                {
                     "code": "fpp",
+                    "color": {},
                     "name": "Film Production",
                     "id": 28
-              },
-              {
+                    "dateUpdated": 143567975913
+                },
+                {
                     "code": "mv",
+                    "color": {},
                     "name": "Movie",
                     "id": 29
-              } 
+                    "dateUpdated": 143567975913
+                } 
             ]
 
 ### List of all Categories [GET]
@@ -39,11 +45,13 @@ A Single Depth object.
 
     + Body
     
-            {
-                "code": "co",
-                "name": "Company",
-                "id": 27 
-            }
+                {
+                    "code": "co",
+                    "color": {},
+                    "name": "Company",
+                    "id": 27,
+                    "dateUpdated": 143567975913
+                },
 
 ### Retrieve a single Category [GET]
 + Parameters
@@ -67,6 +75,7 @@ The following attributes are required to create a Category
             {
                 "id": 28,
                 "name": "new category",
+                "color": {},
                 "code": "new category code",
                 "dateCreated": 1434561059383
             }
@@ -88,6 +97,7 @@ The following attributes are required to create a Category
 
             { 
                 "id": 28,
+                "color": {},
                 "name": "a new name",
                 "code": "a new code",
                 "dateCreated": 1434561059383,

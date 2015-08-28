@@ -19,27 +19,22 @@ Collection of all Cost Centers.
                     "id": 21,
                     "name": "1 Blah s",
                     "code": "bldg1",
-                    "dateCreated": 1434561059383,
-                    "dateUpdated": 1435679209637 
-                },
-                {
-                    "id": 22,
-                    "name": "2 Blah s",
-                    "code": "bldg2",
-                    "dateCreated": 1434561059383,
-                    "dateUpdated": 1435679209637 
-                },
-                {
-                    "id": 23,
-                    "name": "floor 1",
-                    "code": "bldg3-flr1",
-                    "costCenterParent": {
-                      "code": "bldg1",
-                      "dateCreated": 1434561059383,
-                      "name": "1 Blah s",
-                      "id": 133,
-                      "dateUpdated": 1435679209637
+                    "depth": {
+                      "code": "flr",
+                      "dateCreated": 1435854598093,
+                      "level": 3,
+                      "name": "Floor",
+                      "id": 48,
+                      "dateUpdated": 1438958701470
                     },
+                    "category": {
+                        "code": "co",
+                        "color": {},
+                        "name": "Company",
+                        "id": 27,
+                        "dateUpdated": 1435679759130
+                    },
+                    costCenterParent: {},
                     "dateCreated": 1434561059383,
                     "dateUpdated": 1435679209637 
                 }
@@ -57,12 +52,28 @@ A single Cost Center object.
     + Body
         
             {
-                "id": 23,
-                "name": "3 Blah s",
-                "code": "bldg3",
-                "dateCreated": 1434561059383,
-                "dateUpdated": 1435679209637 
-            }
+                    "id": 21,
+                    "name": "1 Blah s",
+                    "code": "bldg1",
+                    "depth": {
+                      "code": "flr",
+                      "dateCreated": 1435854598093,
+                      "level": 3,
+                      "name": "Floor",
+                      "id": 48,
+                      "dateUpdated": 1438958701470
+                    },
+                    "category": {
+                        "code": "co",
+                        "color": {},
+                        "name": "Company",
+                        "id": 27,
+                        "dateUpdated": 1435679759130
+                    },
+                    costCenterParent: {},
+                    "dateCreated": 1434561059383,
+                    "dateUpdated": 1435679209637 
+                }
 
 ### Retrieve a Single Cost Center [GET]
 + Parameters
@@ -76,16 +87,38 @@ The following attributes are required to create a Cost Center:
 + Request (application/json)
     
         {
-        "name":"new cc",
-        "code":"new-cc-code", 
-        "category": {
-            "id": 31
-        }
+            "name":"new cc",
+            "code":"new-cc-code", 
+            "category": {
+                "id": 31
+            }
         }
 
 + Response 201
-    [Cost Center][]
-
+    
+        {
+            "id": 21,
+            "name": "1 Blah s",
+            "code": "bldg1",
+            "depth": {
+                "code": "flr",
+                "dateCreated": 1435854598093,
+                "level": 3,
+                "name": "Floor",
+                "id": 48,
+                "dateUpdated": 1438958701470
+             },
+            "category": {
+                "code": "co",
+                "color": {},
+                "name": "Company",
+                "id": 27,
+                "dateUpdated": 1435679759130
+            },
+            costCenterParent: {},
+            "dateCreated": 1434561059383,
+            "dateUpdated": 1435679209637 
+        }
 ### Edit a Cost Center [PUT /costcenters/{id}]
 To update a Cost Center send JSON with updated value for one or more of the attributes.
 + Parameters
@@ -105,6 +138,22 @@ To update a Cost Center send JSON with updated value for one or more of the attr
                 "id": 23,
                 "name": "newName",
                 "code": "bldg3",
+                "depth": {
+                    "code": "flr",
+                    "dateCreated": 1435854598093,
+                    "level": 3,
+                    "name": "Floor",
+                    "id": 48,
+                    "dateUpdated": 1438958701470
+                 },
+                "category": {
+                    "code": "co",
+                    "color": {},
+                    "name": "Company",
+                    "id": 27,
+                    "dateUpdated": 1435679759130
+                },
+                costCenterParent: {},
                 "dateCreated": 1434561059383,
                 "dateUpdated": 1435679209637 
             }
@@ -127,6 +176,13 @@ To update a Cost Center send JSON with updated value for one or more of the attr
             "dateCreated": 1434561227550,
             "name": "First Floor",
             "id": 137,
+            "category": {
+                "code": "co",
+                "color": {},
+                "name": "Company",
+                "id": 27,
+                "dateUpdated": 1435679759130
+            },
             "costCenterParent": {
               "code": "bldg1",
               "dateCreated": 1434561059383,
@@ -230,7 +286,7 @@ To update a Cost Center send JSON with updated value for one or more of the attr
                 "department": "",
                 "fax": "",
                 "costCenter2": "Edit Team 1",
-                "email": "eastconf@iofficecorp.onmicrosoft.com",
+                "email": "test@test.com",
                 "floorWarden": false,
                 "comments": "",
                 "costCenter": {},
@@ -328,7 +384,7 @@ To update a Cost Center send JSON with updated value for one or more of the attr
                 "department": "",
                 "fax": "",
                 "costCenter2": "Edit Team 1",
-                "email": "eastconf@iofficecorp.onmicrosoft.com",
+                "email": "test@test.com",
                 "floorWarden": false,
                 "comments": "",
                 "costCenter": {},

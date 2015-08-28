@@ -11,22 +11,43 @@ Collection of all Depths.
     
             [
                 {
-                    "code": "rcat2",
+                    "code": "d1",
                     "dateCreated": 1439399515923,
-                    "name": "rando cat 2",
-                    "id": 71
+                    "level": 0,
+                    "name": "depth one",
+                    "id": 71,
+                    "category": {
+                        "code": "cat-code",
+                        "color": {},
+                        "name": "category one",
+                        "id": "65"
+                    }
                 },
                 {
-                    "code": "rc3",
+                    "code": "d2",
                     "dateCreated": 1439399567183,
-                    "name": "rcat3",
+                    "level": 0,
+                    "name": "depth2",
                     "id": 72
+                    "category": {
+                        "code": "cat-two",
+                        "color": {},
+                        "name": "category two",
+                        "id": "65"
+                    }
                 },
                 {
-                    "code": "rc4",
+                    "code": "d3",
                     "dateCreated": 1439399627200,
-                    "name": "rcat4",
+                    "level": 1,
+                    "name": "depth3",
                     "id": 73
+                    "category": {
+                        "code": "cat-code",
+                        "color": {},
+                        "name": "category one",
+                        "id": "65"
+                    }
                 } 
             ]
 
@@ -43,11 +64,18 @@ A Single Depth object.
     + Body
 
               {
-                "code": "rcat2",
-                "dateCreated": 1439399515923,
-                "name": "rando cat 2",
-                "id": 71
-              }
+                    "code": "d1",
+                    "dateCreated": 1439399515923,
+                    "level": 0,
+                    "name": "depth one",
+                    "id": 71,
+                    "category": {
+                        "code": "cat-code",
+                        "color": {},
+                        "name": "category one",
+                        "id": "65"
+                    }
+                }
 
 ### Retrieve a Single Depth [GET]
 + Parameters
@@ -63,9 +91,9 @@ The following attributes are required to create a Depth:
         {
             "name": "new depth",
             "code": "new-depth-code",
-            "level": 2,
+            "level": 3,
             "category": {
-                "id": 31
+                "id": 65
             }
         }
 
@@ -76,6 +104,12 @@ The following attributes are required to create a Depth:
                 "id": 23,
                 "name": "new depth",
                 "code": "new-depth-code",
+                "category": {
+                    "code": "cat-code",
+                    "color": {},
+                    "name": "category one",
+                    "id": "65"
+                },
                 "dateCreated": 1434561059383
             }
 
@@ -96,10 +130,16 @@ To update a Depth send JSON with updated value for one of more of the attributes
 
             {
                 "id": 23,
-                "name": "a Different name",
+                "name": "a different name",
                 "code": "a-diff-code",
-                "dateCreated": 1434561059383,
-                "dateUpdated": 1435679209637 
+                "category": {
+                    "code": "cat-code",
+                    "color": {},
+                    "name": "category one",
+                    "id": "65"
+                },
+                "dateUpdated": 143567975913,
+                "dateCreated": 1434561059383
             }
 
 ### Remove a Depth [DELETE]
