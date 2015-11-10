@@ -37,6 +37,11 @@ To update a Agreement send JSON with the id and updated value for one or more of
     
     [Agreement][]
 
+### Remove an Agreement [DELETE]
++ Parameters
+    + id (string) ... ID of the Agreement
++ Response 200
+
 ## Agreement Collection [/agreements]
 Collection of all Agreements.
 
@@ -74,3 +79,5 @@ The field `type` is required in order to create a new agreement.
 + Response 201
 
     [Agreement][]
+
+

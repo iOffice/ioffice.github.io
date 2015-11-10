@@ -61,6 +61,11 @@ To update a Request send JSON with updated value for one or more of the attribut
     
     [Request][]
 
+### Remove a Request [DELETE]
++ Parameters
+    + id (string) ... ID of the Request
++ Response 200
+
 ### Requests Collection [/maintenance/requests{?priority,assigned,pastDue}]
 Collection of all Requests.
 

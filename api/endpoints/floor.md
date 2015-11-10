@@ -38,6 +38,11 @@ To update a Floor send JSON with updated value for one or more of the attributes
     
     [Floor][]
 
+### Remove a Floor [DELETE]
++ Parameters
+    + id (string) ... ID of the Floor
++ Response 200
+
 ## Floor Collection [/floors{?buildingId}]
 Collection of all Floors.
 
