@@ -44,6 +44,11 @@ To update a Reservation send JSON with updated value for one or more of the attr
     
     [Reservation][]
 
+### Remove a Reservation [DELETE]
++ Parameters
+    + id (string) ... ID of the Reservation
++ Response 200
+
 ## Reservation Collection [/reservations{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations}]
 Collection of all Reservations.
 

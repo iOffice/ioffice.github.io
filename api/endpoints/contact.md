@@ -37,6 +37,11 @@ To update a Contact send JSON with the id and updated value for one or more of t
     
     [Contact][]
 
+### Remove a Contact [DELETE]
++ Parameters
+    + id (string) ... ID of the Contact
++ Response 200
+
 ## Contact Collection [/contacts]
 Collection of all Contacts.
 

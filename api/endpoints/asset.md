@@ -49,6 +49,11 @@ To update a Asset send JSON with updated value for one or more of the attributes
     
     [Asset][]
 
+### Remove an Asset [DELETE]
++ Parameters
+    + id (string) ... ID of the Asset
++ Response 200
+
 ## Asset Collection [/assets{?search,searchSerialNumber,typeId,buildingId,floorId,roomId,owner}]
 Collection of all Assets.
 
