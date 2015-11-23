@@ -8,11 +8,11 @@ To make edits to the API documentation you will need to install
 To see the changes made to the API call the make file by running
 the `make` command. This will execute the following:
 
-	aglio -i api.md -t flatly-collapsible --full-width -s
+	aglio -i api.md -t flatly --full-width -s
 
 To export the changes run `make export` or
 
-	aglio -i api.md -t flatly-collapsible --full-width -o index.html
+	aglio -i api.md -t flatly --full-width -o index.html
 
 For more info on the syntax used see the [API Blueprint][1] documentation.
 

@@ -40,6 +40,11 @@ To update a Room send JSON with updated value for one or more of the attributes.
     
     [Room][]
 
+### Remove a Reservation [DELETE]
++ Parameters
+    + id (string) ... ID of the Reservation
++ Response 200
+
 ## Room Collection [/rooms{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,search,buildingId,floorId,type}]
 Collection of all Rooms.
 

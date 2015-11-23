@@ -66,6 +66,11 @@ To update a User send JSON with updated value for one or more of the attributes.
     
     [User][]
 
+### Remove a User [DELETE]
++ Parameters
+    + id (string) ... ID of the User
++ Response 200
+
 ## User Collection [/users{?search,centerId,role}]
 Collection of all Users.
 

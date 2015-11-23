@@ -29,6 +29,11 @@ Countries cannot be modified.
 
 + Response 500
 
+### Remove a Country [DELETE]
++ Parameters
+    + id (string) ... ID of the Country
++ Response 200
+
 ## Country Collection [/countries]
 Collection of all Countries.
 
