@@ -1,16 +1,16 @@
-# Group Cost Center
-Cost Center related resources of *iOffice API*
+# Group Category Item
+Item related resources of *iOffice API*
 
-## Cost Center Collection [/costcenters{?category,parent,root,startAt,limit}]
-Collection of all Cost Centers.
+## Item Collection [/categories/items{?category,parent,root,startAt,limit}]
+Collection of all Items.
 
 + Parameters
     + category = (optional, integer, , `1`) ... If present, query will filter by category
     + parent = (optional, integer, , `2`) ... If present, query will filter by parent
-    + root = `false` (optional, boolean, , `true`) ... If present, query will only return Cost Centers without a parent
+    + root = `false` (optional, boolean, , `true`) ... If present, query will only return Items without a parent
 
 + Model (application/json)
-    JSON represenation of the Cost Center Collection Resource
+    JSON represenation of the Item Collection Resource
 
     + Body
         
@@ -39,15 +39,15 @@ Collection of all Cost Centers.
                     "dateUpdated": 1435679209637 
                 }
             ]
-### List of all Cost Centers [GET]
+### List of all Items [GET]
 + Response 200
-    [Cost Center Collection][]
+    [Item Collection][]
 
-## Cost Center [/costcenters/{id}]
-A single Cost Center object.
+## Item [/categories/items/{id}]
+A single Item object.
 
 + Model (application/json)
-    JSON representation of the Cost Center Resource
+    JSON representation of the Item Resource
 
     + Body
         
@@ -75,14 +75,14 @@ A single Cost Center object.
                     "dateUpdated": 1435679209637 
                 }
 
-### Retrieve a Single Cost Center [GET]
+### Retrieve a Single Item [GET]
 + Parameters
-    + id (string) ... ID of the Cost Center
+    + id (string) ... ID of the Item
 + Response 200 
-    [Cost Center][]
+    [Item][]
 
-### Create a Cost Center [POST /costcenters]
-The following attributes are required to create a Cost Center: 
+### Create a Item [POST /categories/items]
+The following attributes are required to create an Item: 
 
 + Request (application/json)
     
@@ -119,10 +119,10 @@ The following attributes are required to create a Cost Center:
             "dateCreated": 1434561059383,
             "dateUpdated": 1435679209637 
         }
-### Edit a Cost Center [PUT /costcenters/{id}]
-To update a Cost Center send JSON with updated value for one or more of the attributes.
+### Edit a Item [PUT /categories/items/{id}]
+To update a Item send JSON with updated value for one or more of the attributes.
 + Parameters
-    + id (string) ... ID of the Cost Center
+    + id (string) ... ID of the Item
 + Request (application/json)
 
         {
@@ -158,15 +158,15 @@ To update a Cost Center send JSON with updated value for one or more of the attr
                 "dateUpdated": 1435679209637 
             }
 
-### Remove a Cost Center [DELETE]
+### Remove an Item [DELETE]
 
 + Response 200
 
-## Cost Center Helpers [/costcenters] 
+## Item Helpers [/categories/items] 
 
-### Get a Cost Center's children [GET /costcenters/{id}/children]
+### Get an Item's children [GET /categories/items/{id}/children]
 + Parameters
-    + id (string) ... ID of the Cost Center
+    + id (string) ... ID of the Item
 
 + Response 200
 
@@ -207,9 +207,9 @@ To update a Cost Center send JSON with updated value for one or more of the attr
           }
         ]
 
-### Get the users assigned to a specific Cost Center [GET /costcenters/{id}/users]
+### Get the users assigned to a specific Item [GET /categories/items/{id}/users]
 + Parameters
-    + id (string) ... ID of the Cost Center
+    + id (string) ... ID of the Item
 
 + Response 200
         
@@ -307,7 +307,7 @@ To update a Cost Center send JSON with updated value for one or more of the attr
               }
             ]
 
-### Get the users assigned to any Cost Center [GET /costcenters/users]
+### Get the users assigned to any Item [GET /categories/items/users]
 + Response 200
 
        
@@ -406,9 +406,9 @@ To update a Cost Center send JSON with updated value for one or more of the attr
             ]
  
 
-### Get the rooms assigned to a specific Cost Center [GET /costcenters/{id}/rooms]
+### Get the rooms assigned to a specific Item [GET /categories/items/{id}/rooms]
 + Parameters
-    + id (string) ... ID of the Cost Center
+    + id (string) ... ID of the Item
 
 + Response 200
 
@@ -451,7 +451,7 @@ To update a Cost Center send JSON with updated value for one or more of the attr
               "area": 0,
               "name": "Floor1",
               "id": 1,
-              "building": {
+              "building": { 
                 "address": {
                   "country": {},
                   "city": "Houston",
@@ -475,7 +475,7 @@ To update a Cost Center send JSON with updated value for one or more of the attr
           }
         ]
 
-### Get the rooms assigned to any Cost Center [GET /rooms]
+### Get the rooms assigned to any Item [GET /rooms]
 + Response 200
 
         [

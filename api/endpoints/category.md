@@ -1,7 +1,7 @@
-# Group Cost Center Category
-Cost Center Category related resources of iOffice API*
+# Group Category
+Category related resources of iOffice API*
 
-## Category Collection [/costcenters/categories]
+## Category Collection [/categories]
 Collection of all Categories.
 
 + Model (application/json)
@@ -37,7 +37,7 @@ Collection of all Categories.
 + Response 200
     [Category Collection][]
 
-## Cost Center Category [/costcenters/categories/{id}]
+## Cost Center Category [/categories/{id}]
 A Single Depth object.
 
 + Model (application/json)

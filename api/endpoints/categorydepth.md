@@ -1,7 +1,7 @@
-# Group Cost Center Depth
-Cost Center Depth related resources of *iOffice API*
+# Group Category  Depth
+Category Depth related resources of *iOffice API*
 
-## Depth Collection [/costcenters/depths]
+## Depth Collection [/categories/depths]
 Collection of all Depths.
 
 + Model (application/json)
@@ -55,7 +55,7 @@ Collection of all Depths.
 + Response 200
     [Depth Collection][]
 
-## Depth [/costcenters/depth/{id}]
+## Depth [/categories/depth/{id}]
 A Single Depth object.
 
 + Model (application/json)
@@ -113,7 +113,7 @@ The following attributes are required to create a Depth:
                 "dateCreated": 1434561059383
             }
 
-### Edit a Depth [PUT /costcenters/depths/{id}]
+### Edit a Depth [PUT /categories/depths/{id}]
 To update a Depth send JSON with updated value for one of more of the attributes.
 + Parameters
     + id (string) ... ID of the Depth
