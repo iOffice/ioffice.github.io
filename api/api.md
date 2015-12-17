@@ -68,3 +68,9 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 <!-- include(endpoints/maintenance.md) -->
 
 <!-- include(endpoints/agreement.md) -->
+
+<!-- include(endpoints/categoryitem.md) -->
+
+<!-- include(endpoints/category.md) -->
+
+<!-- include(endpoints/categorydepth.md) -->
