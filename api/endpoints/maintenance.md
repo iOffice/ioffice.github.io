@@ -197,7 +197,7 @@ Add a comment to a request
 + Request (application/json)
 
             {
-                "comments": "Your new comment string"
+                "comment": "Your new comment string"
             }
 
 + Response 200
