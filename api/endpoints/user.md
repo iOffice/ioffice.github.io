@@ -71,7 +71,7 @@ To update a User send JSON with updated value for one or more of the attributes.
     + id (string) ... ID of the User
 + Response 200
 
-## User Collection [/users{?search,centerId,role}]
+## User Collection [/users{?search,centerId,role,siteAdmin,hasRoom}]
 Collection of all Users.
 
 + Model (application/json)
@@ -100,7 +100,9 @@ Collection of all Users.
     + search (optional, string, `mario`) ... String to search for user by firstName, lastName, or email
     + centerId (optional, number, `12`) ... Id of center to query from. If `centerId` is provided `role` is _required_
     + role (optional, string, `operator`) ... Role name to query from. Valid values are: _administrator_, _operator_, _customer_, _manager_, and _technician_. If `role` is provided `centerId` is _required_
-    
+    + siteAdmin (optional, boolean, `true`) ... If true, query will include users with Admin permissions
+    + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
+    + hasDefaultVisitorCenter (optional, boolean, `true`) ... If true, query will include users with a default visitor center
 
 + Response 200
     
