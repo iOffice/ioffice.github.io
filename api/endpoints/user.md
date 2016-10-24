@@ -7,6 +7,7 @@ A single user object.
 + Parameters
     + id (string) ... ID of the User
 
+
 + Model (application/json)
     JSON representation of the User Resource
 
@@ -97,8 +98,8 @@ Collection of all Users.
 ### List of all Users [GET]
 
 + Parameters
-    + search (optional, string, `mario`) ... String to search for user by firstName, lastName, or email
     + centerId (optional, number, `12`) ... Id of center to query from. If `centerId` is provided `role` is _required_
+    + userTypeId (optional, number, `23`) ... If of user type to query from.
     + role (optional, string, `operator`) ... Role name to query from. Valid values are: _administrator_, _operator_, _customer_, _manager_, and _technician_. If `role` is provided `centerId` is _required_
     + siteAdmin (optional, boolean, `true`) ... If true, query will include users with Admin permissions
     + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
@@ -128,6 +129,15 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 
 Get data for currently logged in user
 
-### Hold a Request [GET]
+
+### Retrieve Current User [GET]
++ Response 200
+    [User][]
+
+## Get Current User Report Auth Data [/users/me/reportAuth]
+
+Get current user report auth data
+
+### Retrieve Current User Report Auth Data [GET]
 + Response 200
     [User][]

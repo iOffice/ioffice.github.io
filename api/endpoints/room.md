@@ -82,7 +82,6 @@ Collection of all Rooms.
     + endDate (optional, number, `1404421051661`) ... Epoch time of room availablilty end date
     + numberOfPeople (optional, number, `6`) ... Number to search for room by maximum occupancy
     + includeParking (optional, boolean, `true`) ... If true, query will include rooms with parking spaces
-    + search (optional, string, `conference`) ... String to search for room by name
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
     + type (optional, number, `65`) ... Id of room type to search for

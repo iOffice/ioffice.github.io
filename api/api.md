@@ -32,6 +32,7 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 ## Global Request Params
 | Paramater  | Value |
 | ------------- | ------------- |
+| search | String to search for asset  |
 | limit | maximum results to show (default: 50)  |
 | startAt | for pagination, the offset of where to start (default: 0)  |
 | orderBy | Property to order results by (default: 'id')  |
