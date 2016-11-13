@@ -141,3 +141,11 @@ Get current user report auth data
 ### Retrieve Current User Report Auth Data [GET]
 + Response 200
     [User][]
+
+## Get Current User Report Auth Data [/users/me/supportAuth]
+
+Get current user report auth data
+
+### Retrieve Current User Support Auth Data [GET]
++ Response 200
+    [User][]
