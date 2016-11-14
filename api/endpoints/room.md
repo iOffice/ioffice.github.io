@@ -78,8 +78,8 @@ Collection of all Rooms.
     + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
-    + startDate (optional, number, `1404410211910`) ... Epoch time of room availablilty start date
-    + endDate (optional, number, `1404421051661`) ... Epoch time of room availablilty end date
+    + startDate (optional, number, `1404410211910`) ... Epoch time of room availability start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time of room availability end date
     + numberOfPeople (optional, number, `6`) ... Number to search for room by maximum occupancy
     + includeParking (optional, boolean, `true`) ... If true, query will include rooms with parking spaces
     + buildingId (optional, number, `44`) ... Id of building to search in
