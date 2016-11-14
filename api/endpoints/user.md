@@ -14,37 +14,79 @@ A single user object.
     + Body
 
             {
-                "employeeId": "34a43518334a4",
-                "custom02": "",
-                "phone": "55555555555",
-                "custom01": "",
-                "custom04": "",
-                "custom03": "",
-                "department": "",
-                "custom06": "",
-                "custom05": "",
-                "custom08": "",
-                "custom07": "",
-                "custom09": "",
-                "dateUpdated": 1382483811150,
-                "id": 9,
-                "firstName": "Fox",
-                "middleName": "",
-                "lastName": "McCloud",
-                "name": "Fox McCloud",
-                "userName": "foxmc",
-                "jobTitle": "developer",
-                "knownAs": "",
-                "costCenter2": "",
-                "fax": "",
-                "extension": "",
-                "email": "fmccloud@iofficecorp.com",
-                "company": "",
-                "dateCreated": 1382483811150,
-                "costCenter1": "",
-                "comments": "",
-                "mobile": "",
-                "room": {...}
+              "floorWarden": false,
+              "lastName": "McCloud",
+              "firstName": "Fox",
+              "dateCreated": 1464727067663,
+              "color": "#89ffa1",
+              "name": "Fox McCloud",
+              "id": 420,
+              "userType": {
+                "dateCreated": 1430925570820,
+                "name": "Employee",
+                "id": 1,
+                "fields": [
+                  {
+                    "code": "company",
+                    "name": "Company",
+                    "id": 1
+                  },
+                  {
+                    "code": "jobTitle",
+                    "name": "Job Title",
+                    "id": 2
+                  },
+                  {
+                    "code": "phone",
+                    "name": "Phone",
+                    "id": 3
+                  },
+                  {
+                    "code": "extension",
+                    "name": "Extension",
+                    "id": 4
+                  },
+                  {
+                    "code": "mobile",
+                    "name": "Mobile Phone Number",
+                    "id": 6
+                  },
+                  {
+                    "code": "employeeId",
+                    "name": "Employee ID",
+                    "id": 8
+                  },
+                  {
+                    "code": "floorWarden",
+                    "name": "Floor Warden",
+                    "id": 12
+                  },
+                  {
+                    "code": "specialNeeds",
+                    "name": "Special Needs",
+                    "id": 13
+                  },
+                  {
+                    "code": "comments",
+                    "name": "Comments",
+                    "id": 14
+                  },
+                  {
+                    "code": "alternateDelivery",
+                    "name": "Alternate Delivery",
+                    "id": 16
+                  },
+                  {
+                    "code": "knownAs",
+                    "name": "Known As",
+                    "id": 17
+                  }
+                ]
+              },
+              "userName": "foxmc",
+              "specialNeeds": false,
+              "email": "fmccloud@iofficecorp.com",
+              "dateUpdated": 1479077061110
             }
 
 ### Retrieve a Single User [GET]
@@ -125,7 +167,7 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 
     [User][]
 
-## Get current logged in user [/users/me]
+### Get current logged in user [/users/me]
 
 Get data for currently logged in user
 
@@ -134,18 +176,156 @@ Get data for currently logged in user
 + Response 200
     [User][]
 
+## Get availability of a username [/users/username/{{username}]
+
+Get boolean value if {username} already exists
+
+
+### Check if Username Exists [GET]
+
++ Response 200 (application/json)
+
+            {
+                "available": "true",
+            }
+
 ## Get Current User Report Auth Data [/users/me/reportAuth]
 
 Get current user report auth data
 
 ### Retrieve Current User Report Auth Data [GET]
-+ Response 200
-    [User][]
+
++ Response 200 (application/json)
+
+            {
+                "server:" "http://andross.corp.iofficecorp.com",
+                "authToken:" "a234893fmdfjhdkjh345897djhdjkh59",
+                "orgId:" "dev_fmcloud",
+                "username: "foxmccloud"
+            }
 
 ## Get Current User Report Auth Data [/users/me/supportAuth]
 
 Get current user report auth data
 
 ### Retrieve Current User Support Auth Data [GET]
+
++ Response 200 (application/json)
+
+            {
+                "server:" "http://support.iofficecorp.com",
+                "authToken:" "imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"
+            }
+
+## Reset User Password [/users/{{id}/resetPassword]
+
+Sends password reset email to user
+
+### Reset User Password [PUT]
 + Response 200
     [User][]
+
+## Get User Permission Data [/users/{{id}/permissions]
+
+Get user permission data
+
+### Retrieve User Permissions [GET]
+
++ Response 200 (application/json)
+
+            [
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Asset Center",
+            id: 69
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Copy Center",
+            id: 67
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "File Room",
+            id: 77
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Inventory Center",
+            id: 73
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Mail Center",
+            id: 68
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Move",
+            id: 76
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Pending Queue",
+            id: 71
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Pokestop",
+            id: 79
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Reservation",
+            id: 74
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Reservation Center",
+            id: 78
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            allowRequestCancel: false,
+            allowReferenceNumber: false,
+            name: "Service Request",
+            id: 70,
+            requestResolutionRequired: false
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Space",
+            id: 75
+            }
+            },
+            {
+            role: "ADMINISTRATOR",
+            center: {
+            name: "Visitors Center",
+            id: 72
+            }
+            }
+            ]
