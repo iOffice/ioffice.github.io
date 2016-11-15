@@ -141,7 +141,7 @@ Collection of all Users.
 
 + Parameters
     + centerId (optional, number, `12`) ... Id of center to query from. If `centerId` is provided `role` is _required_
-    + userTypeId (optional, number, `23`) ... If of user type to query from.
+    + userTypeId (optional, number, `23`) ... Id of user type to query from.
     + role (optional, string, `operator`) ... Role name to query from. Valid values are: _administrator_, _operator_, _customer_, _manager_, and _technician_. If `role` is provided `centerId` is _required_
     + siteAdmin (optional, boolean, `true`) ... If true, query will include users with Admin permissions
     + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
@@ -234,98 +234,98 @@ Get user permission data
 + Response 200 (application/json)
 
             [
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Asset Center",
-            id: 69
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Copy Center",
-            id: 67
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "File Room",
-            id: 77
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Inventory Center",
-            id: 73
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Mail Center",
-            id: 68
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Move",
-            id: 76
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Pending Queue",
-            id: 71
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Pokestop",
-            id: 79
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Reservation",
-            id: 74
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Reservation Center",
-            id: 78
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            allowRequestCancel: false,
-            allowReferenceNumber: false,
-            name: "Service Request",
-            id: 70,
-            requestResolutionRequired: false
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Space",
-            id: 75
-            }
-            },
-            {
-            role: "ADMINISTRATOR",
-            center: {
-            name: "Visitors Center",
-            id: 72
-            }
-            }
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Asset Center",
+                  "id":69
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Copy Center",
+                  "id":67
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"File Room",
+                  "id":77
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Inventory Center",
+                  "id":73
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Mail Center",
+                  "id":68
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Move",
+                  "id":76
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Pending Queue",
+                  "id":71
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Pokestop",
+                  "id":79
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Reservation",
+                  "id":74
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Reservation Center",
+                  "id":78
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "allowRequestCancel":false,
+                  "allowReferenceNumber":false,
+                  "name":"Service Request",
+                  "id":70,
+                  "requestResolutionRequired":false
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Space",
+                  "id":75
+                }
+              },
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Visitors Center",
+                  "id":72
+                }
+              }
             ]
