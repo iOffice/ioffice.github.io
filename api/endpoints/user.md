@@ -106,8 +106,35 @@ To update a User send JSON with updated value for one or more of the attributes.
         }
 
 + Response 200
-    
-    [User][]
+
+### Attach a User Avatar [/users/{{id}/attachAvatar]
+Attach an avatar to a User
+
++ Parameters
+
+    + image: (string) ... Base64 binary encoded string of an image file.
+    + fileName: (string) ... Name of the image file.
+
++ Model (application/json)
+    JSON representation of an attachment object
+
+    + Body
+
+            {
+                "image": "BASE-64-IMAGE-STRING",
+                "fileName": "tiny_cat_12573_8950.jpg"
+            }
+
+#### Attach an Avatar to a User[PUT]
+
++ Request (application/json)
+
+           {
+                "image": "BASE-64-IMAGE-STRING",
+                "fileName": "tiny_cat_12573_8950.jpg"
+           }
+
++ Response 200
 
 ### Remove a User [DELETE]
 + Parameters
@@ -198,7 +225,7 @@ Get current user report auth data
 + Response 200 (application/json)
 
             {
-                "server:" "http://andross.corp.iofficecorp.com",
+                "server:" "http://andross.arwing.com",
                 "authToken:" "a234893fmdfjhdkjh345897djhdjkh59",
                 "orgId:" "dev_fmcloud",
                 "username: "foxmccloud"
@@ -213,7 +240,7 @@ Get current user report auth data
 + Response 200 (application/json)
 
             {
-                "server:" "http://support.iofficecorp.com",
+                "server:" "http://support.andross.arwing.com",
                 "authToken:" "imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"
             }
 
@@ -242,14 +269,14 @@ Get user permission data
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"MANAGER",
                 "center":{
                   "name":"Copy Center",
                   "id":67
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"OPERATOR",
                 "center":{
                   "name":"File Room",
                   "id":77
@@ -263,21 +290,21 @@ Get user permission data
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"MANAGER",
                 "center":{
                   "name":"Mail Center",
                   "id":68
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"CUSTOMER",
                 "center":{
                   "name":"Move",
                   "id":76
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"OPERATOR",
                 "center":{
                   "name":"Pending Queue",
                   "id":71
@@ -291,21 +318,21 @@ Get user permission data
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"CUSTOMER",
                 "center":{
                   "name":"Reservation",
                   "id":74
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"OPERATOR",
                 "center":{
                   "name":"Reservation Center",
                   "id":78
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"MANAGER",
                 "center":{
                   "allowRequestCancel":false,
                   "allowReferenceNumber":false,
@@ -322,7 +349,7 @@ Get user permission data
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"CUSTOMER",
                 "center":{
                   "name":"Visitors Center",
                   "id":72
