@@ -57,6 +57,10 @@ Collection of all Reservations.
     + includeNonCancelled = `true` (optional, boolean, , `false`) ... If true, query will include non-cancelled reservations
     + includePastReservations = `false` (optional, boolean, `true`) ... If true, query will include past reservations
     + showOnlyMyReservations = `true` (optional, boolean, `false`) ... If true, query will only include logged in user's reservations
+    + startDate (optional, number, `1404410211910`) ... Epoch time of reservation start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
+    + building (optional, number, `44`) ... Building to query from
+    + room (optional, number, `16`) ... Room to query from
 
 + Model (application/json)
     JSON representation of the Reservation Collection resource.

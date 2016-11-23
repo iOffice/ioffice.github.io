@@ -7,43 +7,86 @@ A single user object.
 + Parameters
     + id (string) ... ID of the User
 
+
 + Model (application/json)
     JSON representation of the User Resource
 
     + Body
 
             {
-                "employeeId": "34a43518334a4",
-                "custom02": "",
-                "phone": "55555555555",
-                "custom01": "",
-                "custom04": "",
-                "custom03": "",
-                "department": "",
-                "custom06": "",
-                "custom05": "",
-                "custom08": "",
-                "custom07": "",
-                "custom09": "",
-                "dateUpdated": 1382483811150,
-                "id": 9,
-                "firstName": "Fox",
-                "middleName": "",
-                "lastName": "McCloud",
-                "name": "Fox McCloud",
-                "userName": "foxmc",
-                "jobTitle": "developer",
-                "knownAs": "",
-                "costCenter2": "",
-                "fax": "",
-                "extension": "",
-                "email": "fmccloud@iofficecorp.com",
-                "company": "",
-                "dateCreated": 1382483811150,
-                "costCenter1": "",
-                "comments": "",
-                "mobile": "",
-                "room": {...}
+              "floorWarden": false,
+              "lastName": "McCloud",
+              "firstName": "Fox",
+              "dateCreated": 1464727067663,
+              "color": "#89ffa1",
+              "name": "Fox McCloud",
+              "id": 420,
+              "userType": {
+                "dateCreated": 1430925570820,
+                "name": "Employee",
+                "id": 1,
+                "fields": [
+                  {
+                    "code": "company",
+                    "name": "Company",
+                    "id": 1
+                  },
+                  {
+                    "code": "jobTitle",
+                    "name": "Job Title",
+                    "id": 2
+                  },
+                  {
+                    "code": "phone",
+                    "name": "Phone",
+                    "id": 3
+                  },
+                  {
+                    "code": "extension",
+                    "name": "Extension",
+                    "id": 4
+                  },
+                  {
+                    "code": "mobile",
+                    "name": "Mobile Phone Number",
+                    "id": 6
+                  },
+                  {
+                    "code": "employeeId",
+                    "name": "Employee ID",
+                    "id": 8
+                  },
+                  {
+                    "code": "floorWarden",
+                    "name": "Floor Warden",
+                    "id": 12
+                  },
+                  {
+                    "code": "specialNeeds",
+                    "name": "Special Needs",
+                    "id": 13
+                  },
+                  {
+                    "code": "comments",
+                    "name": "Comments",
+                    "id": 14
+                  },
+                  {
+                    "code": "alternateDelivery",
+                    "name": "Alternate Delivery",
+                    "id": 16
+                  },
+                  {
+                    "code": "knownAs",
+                    "name": "Known As",
+                    "id": 17
+                  }
+                ]
+              },
+              "userName": "foxmc",
+              "specialNeeds": false,
+              "email": "fmccloud@iofficecorp.com",
+              "dateUpdated": 1479077061110
             }
 
 ### Retrieve a Single User [GET]
@@ -63,15 +106,37 @@ To update a User send JSON with updated value for one or more of the attributes.
         }
 
 + Response 200
-    
-    [User][]
 
 ### Remove a User [DELETE]
 + Parameters
     + id (string) ... ID of the User
 + Response 200
 
-## User Collection [/users{?search,centerId,role}]
+
+## Attach an Avatar to a User [/users/{{id}/attachAvatar]
+Attach an Avatar to a User
+
++ Parameters
+    + image (string) ... Base64 binary encoded string of an image file.
+    + fileName (string) ... Name of the image file.
+
+
+    JSON representation of an attachment object
+
+### Attach an Avatar to a User [PUT]
+
++ Request (application/json)
+
+           {
+                "image": "BASE-64-IMAGE-STRING",
+                "fileName": "tiny_cat_12573_8950.jpg"
+           }
+
++ Response 200
+    [User][]
+
+
+## User Collection [/users{?search,centerId,role,siteAdmin,hasRoom}]
 Collection of all Users.
 
 + Model (application/json)
@@ -97,10 +162,12 @@ Collection of all Users.
 ### List of all Users [GET]
 
 + Parameters
-    + search (optional, string, `mario`) ... String to search for user by firstName, lastName, or email
     + centerId (optional, number, `12`) ... Id of center to query from. If `centerId` is provided `role` is _required_
+    + userTypeId (optional, number, `23`) ... Id of user type to query from.
     + role (optional, string, `operator`) ... Role name to query from. Valid values are: _administrator_, _operator_, _customer_, _manager_, and _technician_. If `role` is provided `centerId` is _required_
-    
+    + siteAdmin (optional, boolean, `true`) ... If true, query will include users with Admin permissions
+    + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
+    + hasDefaultVisitorCenter (optional, boolean, `true`) ... If true, query will include users with a default visitor center
 
 + Response 200
     
@@ -122,10 +189,139 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 
     [User][]
 
-## Get current logged in user [/users/me]
+### Get current logged in user [/users/me]
 
 Get data for currently logged in user
 
-### Hold a Request [GET]
+
+### Retrieve Current User [GET]
++ Response 200
+    [User][]
+
+## Get availability of a username [/users/username/{{username}]
+
+Get boolean value if {username} already exists
+
+
+### Check if Username Exists [GET]
+
++ Response 200 (application/json)
+
+            {
+                "available": "true",
+            }
+
+## Get Current User Report Auth Data [/users/me/reportAuth]
+
+Get current user report auth data
+
+### Retrieve Current User Report Auth Data [GET]
+
++ Response 200 (application/json)
+
+            {
+                "server:" "http://andross.arwing.com",
+                "authToken:" "a234893fmdfjhdkjh345897djhdjkh59",
+                "orgId:" "dev_fmcloud",
+                "username: "foxmccloud"
+            }
+
+## Get Current User Report Auth Data [/users/me/supportAuth]
+
+Get current user report auth data
+
+### Retrieve Current User Support Auth Data [GET]
+
++ Response 200 (application/json)
+
+            {
+                "server:" "http://support.andross.arwing.com",
+                "authToken:" "imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"
+            }
+
+## Reset User Password [/users/{{id}/resetPassword]
+
+Sends password reset email to user
+
+### Reset User Password [PUT]
++ Response 200
+    [User][]
+
+## Get User Permission Data [/users/{{id}/permissions]
+
+Get user permission data
+
+### Retrieve User Permissions [GET]
+
++ Response 200 (application/json)
+
+            [
+              {
+                "role":"ADMINISTRATOR",
+                "center":{
+                  "name":"Asset Center",
+                  "id":69
+                }
+              },
+              {
+                "role":"MANAGER",
+                "center":{
+                  "name":"Copy Center",
+                  "id":67
+                }
+              },
+              {
+                "role":"OPERATOR",
+                "center":{
+                  "name":"File Room",
+                  "id":77
+                }
+              },
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"Inventory Center",
+                  "id":73
+                }
+            ]
+
+## Edit User Permission Data [/users/{{id}/permissions]
+
+Edit user permission data
+
+### Edit User Permissions [PUT]
+
++ Request (application/json)
+
+            [
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"Asset Center",
+                  "id":69
+                }
+              },
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"Copy Center",
+                  "id":67
+                }
+              },
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"File Room",
+                  "id":77
+                }
+              },
+              {
+                "role":"MANAGER",
+                "center":{
+                  "name":"Inventory Center",
+                  "id":73
+                }
+            ]
+
 + Response 200
     [User][]
