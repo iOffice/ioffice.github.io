@@ -107,25 +107,23 @@ To update a User send JSON with updated value for one or more of the attributes.
 
 + Response 200
 
-### Attach a User Avatar [/users/{{id}/attachAvatar]
-Attach an avatar to a User
+### Remove a User [DELETE]
++ Parameters
+    + id (string) ... ID of the User
++ Response 200
+
+
+## Attach an Avatar to a User [/users/{{id}/attachAvatar]
+Attach an Avatar to a User
 
 + Parameters
+    + image (string) ... Base64 binary encoded string of an image file.
+    + fileName (string) ... Name of the image file.
 
-    + image: (string) ... Base64 binary encoded string of an image file.
-    + fileName: (string) ... Name of the image file.
 
-+ Model (application/json)
     JSON representation of an attachment object
 
-    + Body
-
-            {
-                "image": "BASE-64-IMAGE-STRING",
-                "fileName": "tiny_cat_12573_8950.jpg"
-            }
-
-#### Attach an Avatar to a User[PUT]
+### Attach an Avatar to a User [PUT]
 
 + Request (application/json)
 
@@ -135,11 +133,8 @@ Attach an avatar to a User
            }
 
 + Response 200
+    [User][]
 
-### Remove a User [DELETE]
-+ Parameters
-    + id (string) ... ID of the User
-+ Response 200
 
 ## User Collection [/users{?search,centerId,role,siteAdmin,hasRoom}]
 Collection of all Users.
@@ -283,76 +278,50 @@ Get user permission data
                 }
               },
               {
-                "role":"ADMINISTRATOR",
+                "role":"CUSTOMER",
                 "center":{
                   "name":"Inventory Center",
                   "id":73
                 }
-              },
-              {
-                "role":"MANAGER",
-                "center":{
-                  "name":"Mail Center",
-                  "id":68
-                }
-              },
-              {
-                "role":"CUSTOMER",
-                "center":{
-                  "name":"Move",
-                  "id":76
-                }
-              },
-              {
-                "role":"OPERATOR",
-                "center":{
-                  "name":"Pending Queue",
-                  "id":71
-                }
-              },
-              {
-                "role":"ADMINISTRATOR",
-                "center":{
-                  "name":"Pokestop",
-                  "id":79
-                }
-              },
-              {
-                "role":"CUSTOMER",
-                "center":{
-                  "name":"Reservation",
-                  "id":74
-                }
-              },
-              {
-                "role":"OPERATOR",
-                "center":{
-                  "name":"Reservation Center",
-                  "id":78
-                }
-              },
-              {
-                "role":"MANAGER",
-                "center":{
-                  "allowRequestCancel":false,
-                  "allowReferenceNumber":false,
-                  "name":"Service Request",
-                  "id":70,
-                  "requestResolutionRequired":false
-                }
-              },
-              {
-                "role":"ADMINISTRATOR",
-                "center":{
-                  "name":"Space",
-                  "id":75
-                }
-              },
-              {
-                "role":"CUSTOMER",
-                "center":{
-                  "name":"Visitors Center",
-                  "id":72
-                }
-              }
             ]
+
+## Edit User Permission Data [/users/{{id}/permissions]
+
+Edit user permission data
+
+### Edit User Permissions [PUT]
+
++ Request (application/json)
+
+            [
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"Asset Center",
+                  "id":69
+                }
+              },
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"Copy Center",
+                  "id":67
+                }
+              },
+              {
+                "role":"CUSTOMER",
+                "center":{
+                  "name":"File Room",
+                  "id":77
+                }
+              },
+              {
+                "role":"MANAGER",
+                "center":{
+                  "name":"Inventory Center",
+                  "id":73
+                }
+            ]
+
++ Response 200
+    [User][]
