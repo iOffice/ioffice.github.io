@@ -1,7 +1,7 @@
 # Group Asset
 Asset-related resources of *iOffice API*
 
-## Asset [/assets{id}]
+## Asset [/assets///{id}]
 A single asset object.
 
 
@@ -54,7 +54,7 @@ To update a Asset send JSON with updated value for one or more of the attributes
     + id (string) ... ID of the Asset
 + Response 200
 
-## Asset Collection [/assets{?search,searchSerialNumber,typeId,buildingId,floorId,roomId,owner}]
+## Asset Collection [/assets///{?search,searchSerialNumber,typeId,buildingId,floorId,roomId,owner}]
 Collection of all Assets.
 
 + Model (application/json)

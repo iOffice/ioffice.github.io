@@ -1,7 +1,7 @@
 # Group Building
 Building-related resources of *iOffice API*
 
-## Building [/buildings{id}]
+## Building [/buildings///{id}]
 A single building object.
 
 
@@ -46,7 +46,7 @@ To update a Building send JSON with updated value for one or more of the attribu
 + Response 200
 
 
-## Building Collection [/buildings{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude}]
+## Building Collection [/buildings///{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude}]
 Collection of all Buildings.
 
 + Model (application/json)

@@ -1,7 +1,7 @@
 # Group Agreement
 Agreement-related resources of *iOffice API*
 
-## Agreement [/agreements{id}]
+## Agreement [/agreements///{id}]
 A single agreement object.
 
 

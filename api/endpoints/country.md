@@ -1,7 +1,7 @@
 # Group Country
 Country-related resources of *iOffice API*
 
-## Country [/countries{id}]
+## Country [/countries///{id}]
 A single country object.
 
 

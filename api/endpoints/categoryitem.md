@@ -1,7 +1,7 @@
 # Group Category Item
 Item related resources of *iOffice API*
 
-## Item Collection [/categories/items{?category,parent,root,startAt,limit}]
+## Item Collection [/categories/items///{?category,parent,root,startAt,limit}]
 Collection of all Items.
 
 + Parameters

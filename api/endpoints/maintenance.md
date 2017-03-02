@@ -4,7 +4,7 @@ Maintenance-related resources of *iOffice API*
 iOffice Service Request is known as the maintenance module internally.
 
 
-## Request [/maintenance/requests{id}]
+## Request [/maintenance/requests///{id}]
 A single request object.  The Request resource is the main component of the service request api.
 
 
@@ -66,7 +66,7 @@ To update a Request send JSON with updated value for one or more of the attribut
     + id (string) ... ID of the Request
 + Response 200
 
-### Requests Collection [/maintenance/requests{?priority,assigned,pastDue}]
+### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue}]
 Collection of all Requests.
 
 + Parameters
@@ -326,7 +326,7 @@ Set operator's status for a request as complete.
     [Request][]
 
 
-## Request Type [/maintenance/types{id}]
+## Request Type [/maintenance/types///{id}]
 
 The Request Type is the building block from which requests are created.
 
@@ -419,7 +419,7 @@ The following attributes are required to create a Request Type: `product` and `n
 
 
 
-## Category [/maintenance/categories{id}]
+## Category [/maintenance/categories///{id}]
 
 The Category resource gives access to Products from which you can derive Request Types.
 
@@ -491,7 +491,7 @@ The following attributes are required to create a Category: `center` and `name`.
     [Category][]
 
 
-### Product [/maintenance/products{id}]
+### Product [/maintenance/products///{id}]
 A single product object.
 
 
@@ -561,7 +561,7 @@ The following attribute is required to create a Product: `name`.
 
 
 
-### Priority [/maintenance/priorities{id}]
+### Priority [/maintenance/priorities///{id}]
 The Priority resource gives access to Products from which you can derive Request Types.
 
 A single priority object.
@@ -635,7 +635,7 @@ The following attributes are required to create a Priority: `name` and `sortOrde
 
 
 
-### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate{?typeId,centerId}]
+### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate///{?typeId,centerId}]
 
 Get the earliest available date that a Request can be required to be completed by.
 

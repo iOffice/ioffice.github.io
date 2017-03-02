@@ -1,7 +1,7 @@
 # Group Contact
 Contact-related resources of *iOffice API*
 
-## Contact [/contacts{id}]
+## Contact [/contacts///{id}]
 A single contact object.
 
 

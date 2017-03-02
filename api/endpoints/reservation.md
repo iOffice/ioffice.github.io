@@ -1,7 +1,7 @@
 # Group Reservation
 Reservation-related resources of *iOffice API*
 
-## Reservation [/reservations{id}]
+## Reservation [/reservations///{id}]
 A single reservation object.
 
 
@@ -49,7 +49,7 @@ To update a Reservation send JSON with updated value for one or more of the attr
     + id (string) ... ID of the Reservation
 + Response 200
 
-## Reservation Collection [/reservations{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations}]
+## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations}]
 Collection of all Reservations.
 
 + Parameters
