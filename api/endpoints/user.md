@@ -113,7 +113,7 @@ To update a User send JSON with updated value for one or more of the attributes.
 + Response 200
 
 
-## Attach an Avatar to a User [/users/{{id}}/attachAvatar]
+## Attach an Avatar to a User [/users/{id}/attachAvatar]
 Attach an Avatar to a User
 
 + Parameters
@@ -198,7 +198,7 @@ Get data for currently logged in user
 + Response 200
     [User][]
 
-## Get availability of a username [/users/username/{{username}]
+## Get availability of a username [/users/username/{username}]
 
 Get boolean value if {username} already exists
 
@@ -239,7 +239,7 @@ Get current user report auth data
                 "authToken:" "imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"
             }
 
-## Reset User Password [/users/{{id}/resetPassword]
+## Reset User Password [/users/{id}/resetPassword]
 
 Sends password reset email to user
 
@@ -247,7 +247,7 @@ Sends password reset email to user
 + Response 200
     [User][]
 
-## Get User Permission Data [/users/{{id}/permissions]
+## Get User Permission Data [/users/{id}/permissions]
 
 Get user permission data
 
@@ -285,7 +285,7 @@ Get user permission data
                 }
             ]
 
-## Edit User Permission Data [/users/{{id}/permissions]
+## Edit User Permission Data [/users/{id}/permissions]
 
 Edit user permission data
 
