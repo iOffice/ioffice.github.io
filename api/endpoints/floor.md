@@ -1,7 +1,7 @@
 # Group Floor
 Floor-related resources of *iOffice API*
 
-## Floor [/floors{id}]
+## Floor [/floors///{id}]
 A single floor object.
 
 
@@ -43,7 +43,7 @@ To update a Floor send JSON with updated value for one or more of the attributes
     + id (string) ... ID of the Floor
 + Response 200
 
-## Floor Collection [/floors{?buildingId}]
+## Floor Collection [/floors///{?buildingId}]
 Collection of all Floors.
 
 + Parameters

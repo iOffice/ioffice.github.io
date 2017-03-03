@@ -41,7 +41,7 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 ## Resource Requests
 NOTE: When creating/updating an object, all that is needed is the ID of new object
         
-    e.g. Upating a resource's contact to another with an ID of 5
+    e.g. Updating a resource's contact to another with an ID of 5
     + Request (application/json)
         {
             contact: {
@@ -51,6 +51,8 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 
 
 <!-- include(endpoints/user.md) -->
+
+<!-- include(endpoints/move.md) -->
 
 <!-- include(endpoints/contact.md) -->
 
