@@ -288,7 +288,7 @@ A single move reservation object.
              }
            }
 
-### Retrieve a Single Move Request [GET]
+## Retrieve a Single Move Request [GET]
 + Response 200
 
     [Move][]
@@ -620,7 +620,7 @@ To update a Move Request send JSON with updated values for one or more of the at
              }
           }
 
-### Remove a Move Request [DELETE]
+## Remove a Move Request [DELETE]
 + Parameters
     + id (string) ... ID of the User
 + Response 200
@@ -917,15 +917,15 @@ To update a Move Request send JSON with updated values for one or more of the at
             ]
 
 
-### List of all Move Requests [GET]
+## List of all Move Requests [GET]
 
 + Response 200
 
     [Move Collection][]
 
 
-### Create a Move Request [POST /move/requests]
-The following attributes are required to create a Move Request: status `id` and type `id`.
+## Create a Move Request [POST /move/requests]
++ The following attributes are required to create a Move Request: status `id` and type `id`.
 
 + Request (application/json)
 
@@ -1258,7 +1258,7 @@ The following attributes are required to create a Move Request: status `id` and 
 
 Get move status ids
 
-### Retrieve Move Status Ids [GET]
+## Retrieve Move Status Ids [GET]
 
 + Response 200 (application/json)
 
@@ -1293,7 +1293,7 @@ Get move status ids
 
 Get move request type ids
 
-### Retrieve Move Request Type Ids [GET]
+## Retrieve Move Request Type Ids [GET]
 
 + Response 200 (application/json)
 
