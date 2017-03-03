@@ -26,10 +26,10 @@ A single move reservation object.
              "approvedBy": {
                "floorWarden": false,
                "lastName": "Admin",
-               "firstName": "Jason",
+               "firstName": "Han",
                "dateCreated": 1464727067663,
                "color": "#89ffa1",
-               "name": "Jason Admin",
+               "name": "Han Solo",
                "id": 9,
                "userType": {
                  "dateCreated": 1430925570820,
@@ -93,9 +93,9 @@ A single move reservation object.
                    }
                  ]
                },
-               "userName": "jasonadmin",
+               "userName": "hansolo",
                "specialNeeds": false,
-               "email": "jpoland@iofficecorp.com",
+               "email": "hansolo@iofficecorp.com",
                "dateUpdated": 1488566587390
              },
              "id": 16,
@@ -151,7 +151,7 @@ A single move reservation object.
                    "capacity": 1
                  },
                  "toRoomAvailable": true,
-                 "name": "Jason Admin",
+                 "name": "Han Solo",
                  "id": 31201,
                  "type": {
                    "dateCreated": 1067272496850,
@@ -202,13 +202,13 @@ A single move reservation object.
                    "extension": "",
                    "color": "#8cf7a4",
                    "employeeId": "",
-                   "userName": "jasonadmin",
+                   "userName": "hansolo",
                    "specialNeeds": false,
                    "dateUpdated": 1488566587390,
-                   "firstName": "Jason",
+                   "firstName": "Han",
                    "dateCreated": 1464727067663,
                    "phone": "",
-                   "name": "Jason Admin",
+                   "name": "Han Solo",
                    "mailStop": {
                      "name": "Stop 1",
                      "id": 140
@@ -275,7 +275,7 @@ A single move reservation object.
                        }
                      ]
                    },
-                   "email": "jasongpoland@gmail.com"
+                   "email": "hansolo@iofficecorp.com"
                  },
                  "tasksValueMap": {}
                }
@@ -327,12 +327,12 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "lastName": "Admin",
                    "extension": "",
                    "employeeId": "",
-                   "userName": "jasonadmin",
+                   "userName": "hansolo",
                    "specialNeeds": false,
-                   "firstName": "Jason",
+                   "firstName": "Han",
                    "phone": "",
-                   "name": "Jason Admin",
-                   "email": "jasongpoland@gmail.com"
+                   "name": "Han Solo",
+                   "email": "hansolo@iofficecorp.com"
                  },
                  "tasksValueMap": {}
                }
@@ -358,10 +358,10 @@ To update a Move Request send JSON with updated values for one or more of the at
              "approvedBy": {
                "floorWarden": false,
                "lastName": "Admin",
-               "firstName": "Jason",
+               "firstName": "Han",
                "dateCreated": 1464727067663,
                "color": "#89ffa1",
-               "name": "Jason Admin",
+               "name": "Han Solo",
                "id": 9,
                "userType": {
                  "dateCreated": 1430925570820,
@@ -425,9 +425,9 @@ To update a Move Request send JSON with updated values for one or more of the at
                    }
                  ]
                },
-               "userName": "jasonadmin",
+               "userName": "hansolo",
                "specialNeeds": false,
-               "email": "jpoland@iofficecorp.com",
+               "email": "hansolo@iofficecorp.com",
                "dateUpdated": 1488566587390
              },
              "id": 16,
@@ -483,7 +483,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "capacity": 1
                  },
                  "toRoomAvailable": true,
-                 "name": "Jason Admin",
+                 "name": "Han Solo",
                  "id": 31201,
                  "type": {
                    "dateCreated": 1067272496850,
@@ -534,13 +534,13 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "extension": "",
                    "color": "#8cf7a4",
                    "employeeId": "",
-                   "userName": "jasonadmin",
+                   "userName": "hansolo",
                    "specialNeeds": false,
                    "dateUpdated": 1488566587390,
-                   "firstName": "Jason",
+                   "firstName": "Han",
                    "dateCreated": 1464727067663,
                    "phone": "",
-                   "name": "Jason Admin",
+                   "name": "Han Solo",
                    "mailStop": {
                      "name": "Stop 1",
                      "id": 140
@@ -607,7 +607,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                        }
                      ]
                    },
-                   "email": "jasongpoland@gmail.com"
+                   "email": "hansolo@iofficecorp.com"
                  },
                  "tasksValueMap": {}
                }
@@ -630,7 +630,7 @@ To update a Move Request send JSON with updated values for one or more of the at
            }
 
 
-## Move Collection [/move/requests///{{?statusId,approved}]
+## Move Collection [/move/requests///{{?statusId,statusCode}]
 
 + Model (application/json)
     JSON representation of the Move Collection resource.
@@ -651,10 +651,10 @@ To update a Move Request send JSON with updated values for one or more of the at
                            "approvedBy": {
                              "floorWarden": false,
                              "lastName": "Admin",
-                             "firstName": "Jason",
+                             "firstName": "Han",
                              "dateCreated": 1464727067663,
                              "color": "#89ffa1",
-                             "name": "Jason Admin",
+                             "name": "Han Solo",
                              "id": 9,
                              "userType": {
                                "dateCreated": 1430925570820,
@@ -718,9 +718,9 @@ To update a Move Request send JSON with updated values for one or more of the at
                                  }
                                ]
                              },
-                             "userName": "jasonadmin",
+                             "userName": "Han Solo",
                              "specialNeeds": false,
-                             "email": "jpoland@iofficecorp.com",
+                             "email": "hansolo@iofficecorp.com",
                              "dateUpdated": 1488566587390
                            },
                            "id": 16,
@@ -776,7 +776,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                                  "capacity": 1
                                },
                                "toRoomAvailable": true,
-                               "name": "Jason Admin",
+                               "name": "Han Solo",
                                "id": 31201,
                                "type": {
                                  "dateCreated": 1067272496850,
@@ -827,13 +827,13 @@ To update a Move Request send JSON with updated values for one or more of the at
                                  "extension": "",
                                  "color": "#8cf7a4",
                                  "employeeId": "",
-                                 "userName": "jasonadmin",
+                                 "userName": "hansolo",
                                  "specialNeeds": false,
                                  "dateUpdated": 1488566587390,
-                                 "firstName": "Jason",
+                                 "firstName": "Han",
                                  "dateCreated": 1464727067663,
                                  "phone": "",
-                                 "name": "Jason Admin",
+                                 "name": "Han Solo",
                                  "mailStop": {
                                    "name": "Stop 1",
                                    "id": 140
@@ -900,7 +900,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                                      }
                                    ]
                                  },
-                                 "email": "jasongpoland@gmail.com"
+                                 "email": "hansolo@iofficecorp.com"
                                },
                                "tasksValueMap": {}
                              }
@@ -953,12 +953,12 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "lastName": "Admin",
                    "extension": "",
                    "employeeId": "",
-                   "userName": "jasonadmin",
+                   "userName": "hansolo",
                    "specialNeeds": false,
-                   "firstName": "Jason",
+                   "firstName": "Han",
                    "phone": "",
-                   "name": "Jason Admin",
-                   "email": "jasongpoland@gmail.com"
+                   "name": "Han Solo",
+                   "email": "hansolo@iofficecorp.com"
                  },
                  "tasksValueMap": {}
                }
@@ -984,10 +984,10 @@ To update a Move Request send JSON with updated values for one or more of the at
              "approvedBy": {
                "floorWarden": false,
                "lastName": "Admin",
-               "firstName": "Jason",
+               "firstName": "Han",
                "dateCreated": 1464727067663,
                "color": "#89ffa1",
-               "name": "Jason Admin",
+               "name": "Han Solo",
                "id": 9,
                "userType": {
                  "dateCreated": 1430925570820,
@@ -1051,9 +1051,9 @@ To update a Move Request send JSON with updated values for one or more of the at
                    }
                  ]
                },
-               "userName": "jasonadmin",
+               "userName": "hansolo",
                "specialNeeds": false,
-               "email": "jpoland@iofficecorp.com",
+               "email": "hansolo@iofficecorp.com",
                "dateUpdated": 1488566587390
              },
              "id": 34,
@@ -1120,7 +1120,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "dateUpdated": 1468875790390
                  },
                  "toRoomAvailable": true,
-                 "name": "Jason Admin",
+                 "name": "Han Solo",
                  "id": 31209,
                  "type": {
                    "dateCreated": 1067272496850,
@@ -1171,13 +1171,13 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "extension": "",
                    "color": "#ffbcc6",
                    "employeeId": "",
-                   "userName": "jasonadmin",
+                   "userName": "hansolo",
                    "specialNeeds": false,
                    "dateUpdated": 1488566587390,
-                   "firstName": "Jason",
+                   "firstName": "Han",
                    "dateCreated": 1464727067663,
                    "phone": "",
-                   "name": "Jason Admin",
+                   "name": "Han Solo",
                    "userType": {
                      "dateCreated": 1430925570820,
                      "name": "Employee",
@@ -1240,7 +1240,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                        }
                      ]
                    },
-                   "email": "jasongpoland@gmail.com"
+                   "email": "hansolo@iofficecorp.com"
                  },
                  "tasksValueMap": {}
                }
