@@ -14,20 +14,278 @@ A single move reservation object.
     + Body
 
            {
-                "comments": [
-                    {
-                        "id": 45,
-                        "content": "Your comment here!"
-                    }
-                ],
-                "dateCreated": 1469657150797,
-                "id": 4,
-                "status": {
-                    "code": "sub",
-                    "dateCreated": 1185984126540,
-                    "name": "In Progress",
-                    "id": 10
-                }
+             "date": 1504112404863,
+             "approved": true,
+             "comments": [
+               {
+                 "id": 92,
+                 "content": "your comment here!"
+               }
+             ],
+             "dateCreated": 1469818235210,
+             "approvedBy": {
+               "floorWarden": false,
+               "lastName": "Admin",
+               "firstName": "Jason",
+               "dateCreated": 1464727067663,
+               "color": "#89ffa1",
+               "name": "Jason Admin",
+               "id": 9,
+               "userType": {
+                 "dateCreated": 1430925570820,
+                 "name": "Employee",
+                 "id": 1,
+                 "fields": [
+                   {
+                     "code": "company",
+                     "name": "Company",
+                     "id": 1
+                   },
+                   {
+                     "code": "jobTitle",
+                     "name": "Job Title",
+                     "id": 2
+                   },
+                   {
+                     "code": "phone",
+                     "name": "Phone",
+                     "id": 3
+                   },
+                   {
+                     "code": "extension",
+                     "name": "Extension",
+                     "id": 4
+                   },
+                   {
+                     "code": "mobile",
+                     "name": "Mobile Phone Number",
+                     "id": 6
+                   },
+                   {
+                     "code": "employeeId",
+                     "name": "Employee ID",
+                     "id": 8
+                   },
+                   {
+                     "code": "floorWarden",
+                     "name": "Floor Warden",
+                     "id": 12
+                   },
+                   {
+                     "code": "specialNeeds",
+                     "name": "Special Needs",
+                     "id": 13
+                   },
+                   {
+                     "code": "comments",
+                     "name": "Comments",
+                     "id": 14
+                   },
+                   {
+                     "code": "alternateDelivery",
+                     "name": "Alternate Delivery",
+                     "id": 16
+                   },
+                   {
+                     "code": "knownAs",
+                     "name": "Known As",
+                     "id": 17
+                   }
+                 ]
+               },
+               "userName": "jasonadmin",
+               "specialNeeds": false,
+               "email": "jpoland@iofficecorp.com",
+               "dateUpdated": 1488566587390
+             },
+             "id": 16,
+             "items": [
+               {
+                 "toRoom": {
+                   "dateCreated": 1465572191247,
+                   "reservable": false,
+                   "name": "49.0",
+                   "description": "",
+                   "id": 416,
+                   "floor": {
+                     "area": 23600.0167,
+                     "dateCreated": 1465572160000,
+                     "drawingAvailable": true,
+                     "name": "1",
+                     "id": 2,
+                     "building": {
+                       "address": {
+                         "country": {
+                           "defaultSelected": true,
+                           "subdivisionCategoryName": "state",
+                           "alpha2Code": "US",
+                           "isoCode": "US",
+                           "name": "United States of America (the)",
+                           "id": 223
+                         },
+                         "city": "Houston",
+                         "postalCode": "",
+                         "state": {
+                           "defaultSelected": false,
+                           "code": "",
+                           "name": "Other",
+                           "id": 70
+                         }
+                       },
+                       "dateCreated": 1465572158677,
+                       "metric": false,
+                       "name": "Built",
+                       "id": 44,
+                       "dateUpdated": 1465572159707
+                     },
+                     "dateUpdated": 1465572186757
+                   },
+                   "type": {
+                     "hexColor": "33cc99",
+                     "color": {},
+                     "name": "WKST",
+                     "occupiable": true,
+                     "id": 1,
+                     "parkingSpace": false
+                   },
+                   "capacity": 1
+                 },
+                 "toRoomAvailable": true,
+                 "name": "Jason Admin",
+                 "id": 31201,
+                 "type": {
+                   "dateCreated": 1067272496850,
+                   "name": "Employee Move",
+                   "id": 2,
+                   "fields": [
+                     {
+                       "code": "firstName",
+                       "name": "First Name",
+                       "id": 17
+                     },
+                     {
+                       "code": "lastName",
+                       "name": "Last Name",
+                       "id": 18
+                     },
+                     {
+                       "code": "phone",
+                       "name": "Phone",
+                       "id": 19
+                     },
+                     {
+                       "code": "extension",
+                       "name": "Extension",
+                       "id": 20
+                     },
+                     {
+                       "code": "costCenter",
+                       "name": "Cost Center",
+                       "id": 21
+                     },
+                     {
+                       "code": "employeeId",
+                       "name": "Employee ID",
+                       "id": 22
+                     },
+                     {
+                       "code": "email",
+                       "name": "Email",
+                       "id": 23
+                     }
+                   ],
+                   "typeCode": "move"
+                 },
+                 "user": {
+                   "floorWarden": false,
+                   "lastName": "Admin",
+                   "extension": "",
+                   "color": "#8cf7a4",
+                   "employeeId": "",
+                   "userName": "jasonadmin",
+                   "specialNeeds": false,
+                   "dateUpdated": 1488566587390,
+                   "firstName": "Jason",
+                   "dateCreated": 1464727067663,
+                   "phone": "",
+                   "name": "Jason Admin",
+                   "mailStop": {
+                     "name": "Stop 1",
+                     "id": 140
+                   },
+                   "userType": {
+                     "dateCreated": 1430925570820,
+                     "name": "Employee",
+                     "id": 1,
+                     "fields": [
+                       {
+                         "code": "company",
+                         "name": "Company",
+                         "id": 1
+                       },
+                       {
+                         "code": "jobTitle",
+                         "name": "Job Title",
+                         "id": 2
+                       },
+                       {
+                         "code": "phone",
+                         "name": "Phone",
+                         "id": 3
+                       },
+                       {
+                         "code": "extension",
+                         "name": "Extension",
+                         "id": 4
+                       },
+                       {
+                         "code": "mobile",
+                         "name": "Mobile Phone Number",
+                         "id": 6
+                       },
+                       {
+                         "code": "employeeId",
+                         "name": "Employee ID",
+                         "id": 8
+                       },
+                       {
+                         "code": "floorWarden",
+                         "name": "Floor Warden",
+                         "id": 12
+                       },
+                       {
+                         "code": "specialNeeds",
+                         "name": "Special Needs",
+                         "id": 13
+                       },
+                       {
+                         "code": "comments",
+                         "name": "Comments",
+                         "id": 14
+                       },
+                       {
+                         "code": "alternateDelivery",
+                         "name": "Alternate Delivery",
+                         "id": 16
+                       },
+                       {
+                         "code": "knownAs",
+                         "name": "Known As",
+                         "id": 17
+                       }
+                     ]
+                   },
+                   "email": "jasongpoland@gmail.com"
+                 },
+                 "tasksValueMap": {}
+               }
+             ],
+             "status": {
+               "code": "sub",
+               "dateCreated": 1185984126540,
+               "name": "In Progress",
+               "id": 10
+             }
            }
 
 ### Retrieve a Single Move Request [GET]
@@ -45,39 +303,322 @@ To update a Move Request send JSON with updated values for one or more of the at
 
 
            {
-               "comments": [
-                    {
-                        "content": "new comment here!"
-                    }
-               ],
-               "id": 4,
-               "approved": true,
-               "status": {
-                    "id": 14
-                }
-}
-
-+ Response 200
-
-           {
-                "comments": [
-                    {
-                        "id": 81,
-                        "content": "new comment here!"
-                    }
-                ],
-                "dateCreated": 1469657150797,
-                "id": 4,
-                "dateUpdated": 1488473461303,
-                "status": {
-                    "code": "apr",
-                    "dateCreated": 1195932197030,
-                    "name": "Approved by Manager",
-                    "id": 14
-                }
+             "date": 1504112404863,
+             "approved": true,
+             "comments": [
+               {
+                 "content": "your comment here!"
+               }
+             ],
+             "approvedBy": {
+               "id": 9
+             },
+             "id": 18,
+             "items": [
+               {
+                 "toRoom": {
+                   "id": 2
+                 },
+                 "type": {
+                   "id": 2
+                 },
+                 "user": {
+                   "id": 9,
+                   "lastName": "Admin",
+                   "extension": "",
+                   "employeeId": "",
+                   "userName": "jasonadmin",
+                   "specialNeeds": false,
+                   "firstName": "Jason",
+                   "phone": "",
+                   "name": "Jason Admin",
+                   "email": "jasongpoland@gmail.com"
+                 },
+                 "tasksValueMap": {}
+               }
+             ],
+             "status": {
+               "id": 10
+             }
            }
 
 
++ Response 200
+
+          {
+             "date": 1504112404863,
+             "approved": true,
+             "comments": [
+               {
+                 "id": 92,
+                 "content": "your comment here!"
+               }
+             ],
+             "dateCreated": 1469818235210,
+             "approvedBy": {
+               "floorWarden": false,
+               "lastName": "Admin",
+               "firstName": "Jason",
+               "dateCreated": 1464727067663,
+               "color": "#89ffa1",
+               "name": "Jason Admin",
+               "id": 9,
+               "userType": {
+                 "dateCreated": 1430925570820,
+                 "name": "Employee",
+                 "id": 1,
+                 "fields": [
+                   {
+                     "code": "company",
+                     "name": "Company",
+                     "id": 1
+                   },
+                   {
+                     "code": "jobTitle",
+                     "name": "Job Title",
+                     "id": 2
+                   },
+                   {
+                     "code": "phone",
+                     "name": "Phone",
+                     "id": 3
+                   },
+                   {
+                     "code": "extension",
+                     "name": "Extension",
+                     "id": 4
+                   },
+                   {
+                     "code": "mobile",
+                     "name": "Mobile Phone Number",
+                     "id": 6
+                   },
+                   {
+                     "code": "employeeId",
+                     "name": "Employee ID",
+                     "id": 8
+                   },
+                   {
+                     "code": "floorWarden",
+                     "name": "Floor Warden",
+                     "id": 12
+                   },
+                   {
+                     "code": "specialNeeds",
+                     "name": "Special Needs",
+                     "id": 13
+                   },
+                   {
+                     "code": "comments",
+                     "name": "Comments",
+                     "id": 14
+                   },
+                   {
+                     "code": "alternateDelivery",
+                     "name": "Alternate Delivery",
+                     "id": 16
+                   },
+                   {
+                     "code": "knownAs",
+                     "name": "Known As",
+                     "id": 17
+                   }
+                 ]
+               },
+               "userName": "jasonadmin",
+               "specialNeeds": false,
+               "email": "jpoland@iofficecorp.com",
+               "dateUpdated": 1488566587390
+             },
+             "id": 16,
+             "items": [
+               {
+                 "toRoom": {
+                   "dateCreated": 1465572191247,
+                   "reservable": false,
+                   "name": "49.0",
+                   "description": "",
+                   "id": 416,
+                   "floor": {
+                     "area": 23600.0167,
+                     "dateCreated": 1465572160000,
+                     "drawingAvailable": true,
+                     "name": "1",
+                     "id": 2,
+                     "building": {
+                       "address": {
+                         "country": {
+                           "defaultSelected": true,
+                           "subdivisionCategoryName": "state",
+                           "alpha2Code": "US",
+                           "isoCode": "US",
+                           "name": "United States of America (the)",
+                           "id": 223
+                         },
+                         "city": "Houston",
+                         "postalCode": "",
+                         "state": {
+                           "defaultSelected": false,
+                           "code": "",
+                           "name": "Other",
+                           "id": 70
+                         }
+                       },
+                       "dateCreated": 1465572158677,
+                       "metric": false,
+                       "name": "Built",
+                       "id": 44,
+                       "dateUpdated": 1465572159707
+                     },
+                     "dateUpdated": 1465572186757
+                   },
+                   "type": {
+                     "hexColor": "33cc99",
+                     "color": {},
+                     "name": "WKST",
+                     "occupiable": true,
+                     "id": 1,
+                     "parkingSpace": false
+                   },
+                   "capacity": 1
+                 },
+                 "toRoomAvailable": true,
+                 "name": "Jason Admin",
+                 "id": 31201,
+                 "type": {
+                   "dateCreated": 1067272496850,
+                   "name": "Employee Move",
+                   "id": 2,
+                   "fields": [
+                     {
+                       "code": "firstName",
+                       "name": "First Name",
+                       "id": 17
+                     },
+                     {
+                       "code": "lastName",
+                       "name": "Last Name",
+                       "id": 18
+                     },
+                     {
+                       "code": "phone",
+                       "name": "Phone",
+                       "id": 19
+                     },
+                     {
+                       "code": "extension",
+                       "name": "Extension",
+                       "id": 20
+                     },
+                     {
+                       "code": "costCenter",
+                       "name": "Cost Center",
+                       "id": 21
+                     },
+                     {
+                       "code": "employeeId",
+                       "name": "Employee ID",
+                       "id": 22
+                     },
+                     {
+                       "code": "email",
+                       "name": "Email",
+                       "id": 23
+                     }
+                   ],
+                   "typeCode": "move"
+                 },
+                 "user": {
+                   "floorWarden": false,
+                   "lastName": "Admin",
+                   "extension": "",
+                   "color": "#8cf7a4",
+                   "employeeId": "",
+                   "userName": "jasonadmin",
+                   "specialNeeds": false,
+                   "dateUpdated": 1488566587390,
+                   "firstName": "Jason",
+                   "dateCreated": 1464727067663,
+                   "phone": "",
+                   "name": "Jason Admin",
+                   "mailStop": {
+                     "name": "Stop 1",
+                     "id": 140
+                   },
+                   "userType": {
+                     "dateCreated": 1430925570820,
+                     "name": "Employee",
+                     "id": 1,
+                     "fields": [
+                       {
+                         "code": "company",
+                         "name": "Company",
+                         "id": 1
+                       },
+                       {
+                         "code": "jobTitle",
+                         "name": "Job Title",
+                         "id": 2
+                       },
+                       {
+                         "code": "phone",
+                         "name": "Phone",
+                         "id": 3
+                       },
+                       {
+                         "code": "extension",
+                         "name": "Extension",
+                         "id": 4
+                       },
+                       {
+                         "code": "mobile",
+                         "name": "Mobile Phone Number",
+                         "id": 6
+                       },
+                       {
+                         "code": "employeeId",
+                         "name": "Employee ID",
+                         "id": 8
+                       },
+                       {
+                         "code": "floorWarden",
+                         "name": "Floor Warden",
+                         "id": 12
+                       },
+                       {
+                         "code": "specialNeeds",
+                         "name": "Special Needs",
+                         "id": 13
+                       },
+                       {
+                         "code": "comments",
+                         "name": "Comments",
+                         "id": 14
+                       },
+                       {
+                         "code": "alternateDelivery",
+                         "name": "Alternate Delivery",
+                         "id": 16
+                       },
+                       {
+                         "code": "knownAs",
+                         "name": "Known As",
+                         "id": 17
+                       }
+                     ]
+                   },
+                   "email": "jasongpoland@gmail.com"
+                 },
+                 "tasksValueMap": {}
+               }
+             ],
+             "status": {
+               "code": "sub",
+               "dateCreated": 1185984126540,
+               "name": "In Progress",
+               "id": 10
+             }
+          }
 
 ### Remove a Move Request [DELETE]
 + Parameters
@@ -89,9 +630,7 @@ To update a Move Request send JSON with updated values for one or more of the at
            }
 
 
-## Move Collection [/move/requests]
-
-List of all Move Requests
+## Move Collection [/move/requests///{{?statusId,approved}]
 
 + Model (application/json)
     JSON representation of the Move Collection resource.
@@ -99,54 +638,282 @@ List of all Move Requests
     + Body
 
             [
-              {
-                "comments": [
-                    {
-                      "id": 47,
-                      "content": "Word."
-                    }
-                ],
-                "dateCreated": 1469657281923,
-                "id": 6,
-                "status": {
-                  "code": "sub",
-                  "dateCreated": 1185984126540,
-                  "name": "In Progress",
-                  "id": 10
-                }
-              },
-              {
-                "comments": [
-                  {
-                    "id": 48,
-                    "content": "Word 2 ur mother."
-                  }
-                ],
-                "dateCreated": 1469657337973,
-                "id": 7,
-                "status": {
-                  "code": "sub",
-                  "dateCreated": 1185984126540,
-                  "name": "Pending",
-                  "id": 15
-                }
-              },
-              {
-                "comments": [
-                  {
-                    "id": 51,
-                    "content": "Word 'em up!"
-                  }
-                ],
-                "dateCreated": 1469657800263,
-                "id": 8,
-                "status": {
-                  "code": "sub",
-                  "dateCreated": 1185984126540,
-                  "name": "Approved by Manager",
-                  "id": 14
-                }
-              },
+                         {
+                           "date": 1504112404863,
+                           "approved": true,
+                           "comments": [
+                             {
+                               "id": 92,
+                               "content": "your comment here!"
+                             }
+                           ],
+                           "dateCreated": 1469818235210,
+                           "approvedBy": {
+                             "floorWarden": false,
+                             "lastName": "Admin",
+                             "firstName": "Jason",
+                             "dateCreated": 1464727067663,
+                             "color": "#89ffa1",
+                             "name": "Jason Admin",
+                             "id": 9,
+                             "userType": {
+                               "dateCreated": 1430925570820,
+                               "name": "Employee",
+                               "id": 1,
+                               "fields": [
+                                 {
+                                   "code": "company",
+                                   "name": "Company",
+                                   "id": 1
+                                 },
+                                 {
+                                   "code": "jobTitle",
+                                   "name": "Job Title",
+                                   "id": 2
+                                 },
+                                 {
+                                   "code": "phone",
+                                   "name": "Phone",
+                                   "id": 3
+                                 },
+                                 {
+                                   "code": "extension",
+                                   "name": "Extension",
+                                   "id": 4
+                                 },
+                                 {
+                                   "code": "mobile",
+                                   "name": "Mobile Phone Number",
+                                   "id": 6
+                                 },
+                                 {
+                                   "code": "employeeId",
+                                   "name": "Employee ID",
+                                   "id": 8
+                                 },
+                                 {
+                                   "code": "floorWarden",
+                                   "name": "Floor Warden",
+                                   "id": 12
+                                 },
+                                 {
+                                   "code": "specialNeeds",
+                                   "name": "Special Needs",
+                                   "id": 13
+                                 },
+                                 {
+                                   "code": "comments",
+                                   "name": "Comments",
+                                   "id": 14
+                                 },
+                                 {
+                                   "code": "alternateDelivery",
+                                   "name": "Alternate Delivery",
+                                   "id": 16
+                                 },
+                                 {
+                                   "code": "knownAs",
+                                   "name": "Known As",
+                                   "id": 17
+                                 }
+                               ]
+                             },
+                             "userName": "jasonadmin",
+                             "specialNeeds": false,
+                             "email": "jpoland@iofficecorp.com",
+                             "dateUpdated": 1488566587390
+                           },
+                           "id": 16,
+                           "items": [
+                             {
+                               "toRoom": {
+                                 "dateCreated": 1465572191247,
+                                 "reservable": false,
+                                 "name": "49.0",
+                                 "description": "",
+                                 "id": 416,
+                                 "floor": {
+                                   "area": 23600.0167,
+                                   "dateCreated": 1465572160000,
+                                   "drawingAvailable": true,
+                                   "name": "1",
+                                   "id": 2,
+                                   "building": {
+                                     "address": {
+                                       "country": {
+                                         "defaultSelected": true,
+                                         "subdivisionCategoryName": "state",
+                                         "alpha2Code": "US",
+                                         "isoCode": "US",
+                                         "name": "United States of America (the)",
+                                         "id": 223
+                                       },
+                                       "city": "Houston",
+                                       "postalCode": "",
+                                       "state": {
+                                         "defaultSelected": false,
+                                         "code": "",
+                                         "name": "Other",
+                                         "id": 70
+                                       }
+                                     },
+                                     "dateCreated": 1465572158677,
+                                     "metric": false,
+                                     "name": "Built",
+                                     "id": 44,
+                                     "dateUpdated": 1465572159707
+                                   },
+                                   "dateUpdated": 1465572186757
+                                 },
+                                 "type": {
+                                   "hexColor": "33cc99",
+                                   "color": {},
+                                   "name": "WKST",
+                                   "occupiable": true,
+                                   "id": 1,
+                                   "parkingSpace": false
+                                 },
+                                 "capacity": 1
+                               },
+                               "toRoomAvailable": true,
+                               "name": "Jason Admin",
+                               "id": 31201,
+                               "type": {
+                                 "dateCreated": 1067272496850,
+                                 "name": "Employee Move",
+                                 "id": 2,
+                                 "fields": [
+                                   {
+                                     "code": "firstName",
+                                     "name": "First Name",
+                                     "id": 17
+                                   },
+                                   {
+                                     "code": "lastName",
+                                     "name": "Last Name",
+                                     "id": 18
+                                   },
+                                   {
+                                     "code": "phone",
+                                     "name": "Phone",
+                                     "id": 19
+                                   },
+                                   {
+                                     "code": "extension",
+                                     "name": "Extension",
+                                     "id": 20
+                                   },
+                                   {
+                                     "code": "costCenter",
+                                     "name": "Cost Center",
+                                     "id": 21
+                                   },
+                                   {
+                                     "code": "employeeId",
+                                     "name": "Employee ID",
+                                     "id": 22
+                                   },
+                                   {
+                                     "code": "email",
+                                     "name": "Email",
+                                     "id": 23
+                                   }
+                                 ],
+                                 "typeCode": "move"
+                               },
+                               "user": {
+                                 "floorWarden": false,
+                                 "lastName": "Admin",
+                                 "extension": "",
+                                 "color": "#8cf7a4",
+                                 "employeeId": "",
+                                 "userName": "jasonadmin",
+                                 "specialNeeds": false,
+                                 "dateUpdated": 1488566587390,
+                                 "firstName": "Jason",
+                                 "dateCreated": 1464727067663,
+                                 "phone": "",
+                                 "name": "Jason Admin",
+                                 "mailStop": {
+                                   "name": "Stop 1",
+                                   "id": 140
+                                 },
+                                 "userType": {
+                                   "dateCreated": 1430925570820,
+                                   "name": "Employee",
+                                   "id": 1,
+                                   "fields": [
+                                     {
+                                       "code": "company",
+                                       "name": "Company",
+                                       "id": 1
+                                     },
+                                     {
+                                       "code": "jobTitle",
+                                       "name": "Job Title",
+                                       "id": 2
+                                     },
+                                     {
+                                       "code": "phone",
+                                       "name": "Phone",
+                                       "id": 3
+                                     },
+                                     {
+                                       "code": "extension",
+                                       "name": "Extension",
+                                       "id": 4
+                                     },
+                                     {
+                                       "code": "mobile",
+                                       "name": "Mobile Phone Number",
+                                       "id": 6
+                                     },
+                                     {
+                                       "code": "employeeId",
+                                       "name": "Employee ID",
+                                       "id": 8
+                                     },
+                                     {
+                                       "code": "floorWarden",
+                                       "name": "Floor Warden",
+                                       "id": 12
+                                     },
+                                     {
+                                       "code": "specialNeeds",
+                                       "name": "Special Needs",
+                                       "id": 13
+                                     },
+                                     {
+                                       "code": "comments",
+                                       "name": "Comments",
+                                       "id": 14
+                                     },
+                                     {
+                                       "code": "alternateDelivery",
+                                       "name": "Alternate Delivery",
+                                       "id": 16
+                                     },
+                                     {
+                                       "code": "knownAs",
+                                       "name": "Known As",
+                                       "id": 17
+                                     }
+                                   ]
+                                 },
+                                 "email": "jasongpoland@gmail.com"
+                               },
+                               "tasksValueMap": {}
+                             }
+                           ],
+                           "status": {
+                             "code": "sub",
+                             "dateCreated": 1185984126540,
+                             "name": "In Progress",
+                             "id": 10
+                           }
+                         },
+
+                         ...
             ]
 
 
@@ -158,64 +925,334 @@ List of all Move Requests
 
 
 ### Create a Move Request [POST /move/requests]
-The following attribute is required to update a Move Request: status `id`.
+The following attributes are required to create a Move Request: status `id` and type `id`.
 
 + Request (application/json)
 
-             {
-                "comments": [
-             {
-                "content": "this is a new move request"
+           {
+             "date": 1504112404863,
+             "approved": true,
+             "comments": [
+               {
+                 "content": "your comment here!"
+               }
+             ],
+             "approvedBy": {
+               "id": 9
+             },
+             "items": [
+               {
+                 "toRoom": {
+                     "id": 2
+                  },
+                 "type": {
+                   "id": 2
+                 },
+                 "user": {
+                   "id": 9,
+                   "lastName": "Admin",
+                   "extension": "",
+                   "employeeId": "",
+                   "userName": "jasonadmin",
+                   "specialNeeds": false,
+                   "firstName": "Jason",
+                   "phone": "",
+                   "name": "Jason Admin",
+                   "email": "jasongpoland@gmail.com"
+                 },
+                 "tasksValueMap": {}
+               }
+             ],
+             "status": {
+               "id": 10
              }
-                ],
-                "status": {
-                "id": 13
-                }
-            }
+           }
+
 
 + Response 201
 
-
-### Get Approval of a Move Request [GET /move/requests//{{id}//?selector=approved]
-
-Get boolean value if Move Request {id} is approved
-
-+ Response 200 (application/json)
-
-            {
-                "approved": "true",
-                "id": 6,
-        }
-
-### Get Approval of All Move Requests [GET /move/requests/?selector=approved]
-
-Get boolean values of all Move Request approvals
-
-+ Response 200 (application/json)
-
-            [
-              {
-                "approved": true,
-                "id": 1
-              },
-              {
-                "approved": true,
-                "id": 2
-              },
-              {
-                "approved": false,
-                "id": 3
-              },
-              {
-                "approved": true,
-                "id": 4
-              },
-              {
-                "approved": false,
-                "id": 6
-              }
-            ]
-
+           {
+             "date": 1504112404863,
+             "approved": true,
+             "comments": [
+               {
+                 "id": 97,
+                 "content": "your comment here!"
+               }
+             ],
+             "dateCreated": 1488576779346,
+             "approvedBy": {
+               "floorWarden": false,
+               "lastName": "Admin",
+               "firstName": "Jason",
+               "dateCreated": 1464727067663,
+               "color": "#89ffa1",
+               "name": "Jason Admin",
+               "id": 9,
+               "userType": {
+                 "dateCreated": 1430925570820,
+                 "name": "Employee",
+                 "id": 1,
+                 "fields": [
+                   {
+                     "code": "company",
+                     "name": "Company",
+                     "id": 1
+                   },
+                   {
+                     "code": "jobTitle",
+                     "name": "Job Title",
+                     "id": 2
+                   },
+                   {
+                     "code": "phone",
+                     "name": "Phone",
+                     "id": 3
+                   },
+                   {
+                     "code": "extension",
+                     "name": "Extension",
+                     "id": 4
+                   },
+                   {
+                     "code": "mobile",
+                     "name": "Mobile Phone Number",
+                     "id": 6
+                   },
+                   {
+                     "code": "employeeId",
+                     "name": "Employee ID",
+                     "id": 8
+                   },
+                   {
+                     "code": "floorWarden",
+                     "name": "Floor Warden",
+                     "id": 12
+                   },
+                   {
+                     "code": "specialNeeds",
+                     "name": "Special Needs",
+                     "id": 13
+                   },
+                   {
+                     "code": "comments",
+                     "name": "Comments",
+                     "id": 14
+                   },
+                   {
+                     "code": "alternateDelivery",
+                     "name": "Alternate Delivery",
+                     "id": 16
+                   },
+                   {
+                     "code": "knownAs",
+                     "name": "Known As",
+                     "id": 17
+                   }
+                 ]
+               },
+               "userName": "jasonadmin",
+               "specialNeeds": false,
+               "email": "jpoland@iofficecorp.com",
+               "dateUpdated": 1488566587390
+             },
+             "id": 34,
+             "items": [
+               {
+                 "toRoom": {
+                   "dateCreated": 1465569711690,
+                   "reservable": false,
+                   "name": "FP4028",
+                   "description": "",
+                   "id": 2,
+                   "floor": {
+                     "area": 29612.2818,
+                     "dateCreated": 1464726639557,
+                     "drawingAvailable": true,
+                     "name": "0",
+                     "id": 1,
+                     "building": {
+                       "address": {
+                         "country": {
+                           "defaultSelected": true,
+                           "subdivisionCategoryName": "state",
+                           "alpha2Code": "US",
+                           "isoCode": "US",
+                           "name": "United States of America (the)",
+                           "id": 223
+                         },
+                         "city": "",
+                         "street": "",
+                         "postalCode": "",
+                         "state": {
+                           "country": {
+                             "defaultSelected": true,
+                             "subdivisionCategoryName": "state",
+                             "alpha2Code": "US",
+                             "isoCode": "US",
+                             "name": "United States of America (the)",
+                             "id": 223
+                           },
+                           "defaultSelected": false,
+                           "code": "TX",
+                           "name": "Texas",
+                           "id": 61,
+                           "categoryName": "state"
+                         }
+                       },
+                       "code": "BLDG1",
+                       "dateCreated": 1107466065320,
+                       "metric": false,
+                       "name": "Building1",
+                       "id": 43
+                     },
+                     "dateUpdated": 1468875784277
+                   },
+                   "type": {
+                     "hexColor": "33cc99",
+                     "color": {},
+                     "name": "WKST",
+                     "occupiable": true,
+                     "id": 1,
+                     "parkingSpace": false
+                   },
+                   "capacity": 1,
+                   "dateUpdated": 1468875790390
+                 },
+                 "toRoomAvailable": true,
+                 "name": "Jason Admin",
+                 "id": 31209,
+                 "type": {
+                   "dateCreated": 1067272496850,
+                   "name": "Employee Move",
+                   "id": 2,
+                   "fields": [
+                     {
+                       "code": "firstName",
+                       "name": "First Name",
+                       "id": 17
+                     },
+                     {
+                       "code": "lastName",
+                       "name": "Last Name",
+                       "id": 18
+                     },
+                     {
+                       "code": "phone",
+                       "name": "Phone",
+                       "id": 19
+                     },
+                     {
+                       "code": "extension",
+                       "name": "Extension",
+                       "id": 20
+                     },
+                     {
+                       "code": "costCenter",
+                       "name": "Cost Center",
+                       "id": 21
+                     },
+                     {
+                       "code": "employeeId",
+                       "name": "Employee ID",
+                       "id": 22
+                     },
+                     {
+                       "code": "email",
+                       "name": "Email",
+                       "id": 23
+                     }
+                   ],
+                   "typeCode": "move"
+                 },
+                 "user": {
+                   "floorWarden": false,
+                   "lastName": "Admin",
+                   "extension": "",
+                   "color": "#ffbcc6",
+                   "employeeId": "",
+                   "userName": "jasonadmin",
+                   "specialNeeds": false,
+                   "dateUpdated": 1488566587390,
+                   "firstName": "Jason",
+                   "dateCreated": 1464727067663,
+                   "phone": "",
+                   "name": "Jason Admin",
+                   "userType": {
+                     "dateCreated": 1430925570820,
+                     "name": "Employee",
+                     "id": 1,
+                     "fields": [
+                       {
+                         "code": "company",
+                         "name": "Company",
+                         "id": 1
+                       },
+                       {
+                         "code": "jobTitle",
+                         "name": "Job Title",
+                         "id": 2
+                       },
+                       {
+                         "code": "phone",
+                         "name": "Phone",
+                         "id": 3
+                       },
+                       {
+                         "code": "extension",
+                         "name": "Extension",
+                         "id": 4
+                       },
+                       {
+                         "code": "mobile",
+                         "name": "Mobile Phone Number",
+                         "id": 6
+                       },
+                       {
+                         "code": "employeeId",
+                         "name": "Employee ID",
+                         "id": 8
+                       },
+                       {
+                         "code": "floorWarden",
+                         "name": "Floor Warden",
+                         "id": 12
+                       },
+                       {
+                         "code": "specialNeeds",
+                         "name": "Special Needs",
+                         "id": 13
+                       },
+                       {
+                         "code": "comments",
+                         "name": "Comments",
+                         "id": 14
+                       },
+                       {
+                         "code": "alternateDelivery",
+                         "name": "Alternate Delivery",
+                         "id": 16
+                       },
+                       {
+                         "code": "knownAs",
+                         "name": "Known As",
+                         "id": 17
+                       }
+                     ]
+                   },
+                   "email": "jasongpoland@gmail.com"
+                 },
+                 "tasksValueMap": {}
+               }
+             ],
+             "dateUpdated": 1488576779926,
+             "status": {
+               "code": "sub",
+               "dateCreated": 1185984126540,
+               "name": "In Progress",
+               "id": 10
+             }
+           }
 
 ## Get Move Status Ids [/move/statuses]
 
@@ -252,46 +1289,149 @@ Get move status ids
              }
            ]
 
+## Get Move Request Type Ids [/move/requestTypes]
 
-## Get Move Request by Status Id [/move/requests/?statusId={{id}]
+Get move request type ids
 
-Get move request by status id
-
-### Retrieve Move Request by Status Id [GET]
+### Retrieve Move Request Type Ids [GET]
 
 + Response 200 (application/json)
 
             [
-             {
-                 "comments": [
-                   {
-                     "id": 83,
-                     "content": "newer comment here!"
-                   }
-                 ],
-                 "dateCreated": 1488475111830,
-                 "id": 26,
-                 "status": {
-                   "code": "apr",
-                   "dateCreated": 1195932197030,
-                   "name": "Approved by Manager",
-                   "id": 14
-                 }
-               },
-               {
-                 "comments": [
-                   {
-                     "id": 84,
-                     "content": "newwer comment here!"
-                   }
-                 ],
-                 "dateCreated": 1488475131627,
-                 "id": 27,
-                 "status": {
-                   "code": "apr",
-                   "dateCreated": 1195932197030,
-                   "name": "Approved by Manager",
-                   "id": 14
-                 }
-               }
-             ]
+              {
+                "dateCreated": 1067272496850,
+                "name": "Employee Move",
+                "id": 2,
+                "fields": [
+                  {
+                    "code": "firstName",
+                    "name": "First Name",
+                    "id": 17
+                  },
+                  {
+                    "code": "lastName",
+                    "name": "Last Name",
+                    "id": 18
+                  },
+                  {
+                    "code": "phone",
+                    "name": "Phone",
+                    "id": 19
+                  },
+                  {
+                    "code": "extension",
+                    "name": "Extension",
+                    "id": 20
+                  },
+                  {
+                    "code": "costCenter",
+                    "name": "Cost Center",
+                    "id": 21
+                  },
+                  {
+                    "code": "employeeId",
+                    "name": "Employee ID",
+                    "id": 22
+                  },
+                  {
+                    "code": "email",
+                    "name": "Email",
+                    "id": 23
+                  }
+                ],
+                "typeCode": "move"
+              },
+              {
+                "dateCreated": 1064943098163,
+                "name": "New Person",
+                "id": 1,
+                "fields": [
+                  {
+                    "code": "firstName",
+                    "name": "First Name",
+                    "id": 10
+                  },
+                  {
+                    "code": "lastName",
+                    "name": "Last Name",
+                    "id": 11
+                  },
+                  {
+                    "code": "phone",
+                    "name": "Phone",
+                    "id": 12
+                  },
+                  {
+                    "code": "extension",
+                    "name": "Extension",
+                    "id": 13
+                  },
+                  {
+                    "code": "costCenter",
+                    "name": "Cost Center",
+                    "id": 14
+                  },
+                  {
+                    "code": "employeeId",
+                    "name": "Employee ID",
+                    "id": 15
+                  },
+                  {
+                    "code": "email",
+                    "name": "Email",
+                    "id": 16
+                  }
+                ],
+                "typeCode": "new"
+              },
+              {
+                "dateCreated": 1067272669320,
+                "name": "Exiting Employee",
+                "id": 6,
+                "fields": [
+                  {
+                    "code": "firstName",
+                    "name": "First Name",
+                    "id": 24
+                  },
+                  {
+                    "code": "lastName",
+                    "name": "Last Name",
+                    "id": 25
+                  },
+                  {
+                    "code": "phone",
+                    "name": "Phone",
+                    "id": 26
+                  },
+                  {
+                    "code": "extension",
+                    "name": "Extension",
+                    "id": 27
+                  },
+                  {
+                    "code": "costCenter",
+                    "name": "Cost Center",
+                    "id": 28
+                  },
+                  {
+                    "code": "employeeId",
+                    "name": "Employee ID",
+                    "id": 29
+                  },
+                  {
+                    "code": "email",
+                    "name": "Email",
+                    "id": 30
+                  }
+                ],
+                "typeCode": "terminate"
+              },
+              {
+                "dateCreated": 1067272647150,
+                "name": "Move Office Equipment",
+                "id": 5,
+                "fields": [],
+                "typeCode": "move"
+              }
+            ]
