@@ -113,7 +113,7 @@ To update a User send JSON with updated value for one or more of the attributes.
 + Response 200
 
 
-## Attach an Avatar to a User [/users/{{id}/attachAvatar]
+## Attach an Avatar to a User [/users/{{id}}/attachAvatar]
 Attach an Avatar to a User
 
 + Parameters
