@@ -925,7 +925,7 @@ To update a Move Request send JSON with updated values for one or more of the at
 
 
 ## Create a Move Request [POST /move/requests]
-+ The following attributes are required to create a Move Request: status `id`, type `id`, and `description`.
++ The following attributes are required to create a Move Request: status `id` and `description`.
 
 + Request (application/json)
 
