@@ -46,13 +46,13 @@ All requests are over <strong>HTTPS</strong>.</p>
 </table>
 <h2 id="header-resource-requests">Resource Requests <a class="permalink" href="#header-resource-requests" aria-hidden="true">¶</a></h2>
 <p>NOTE: When creating/updating an object, all that is needed is the ID of new object</p>
-<pre><code>e.g. Updating a resource's contact <span class="hljs-keyword">to</span> another <span class="hljs-keyword">with</span> an ID <span class="hljs-keyword">of</span> <span class="hljs-number">5</span>
-+ Request (<span class="hljs-type">application</span>/json)
-    {
-        contact: {
-            <span class="hljs-property">id</span>: <span class="hljs-number">5</span>
-        }
-    }</code></pre>
+<p>e.g. Updating a resource’s contact to another with an ID of 5
++ Request (application/json)
+{
+contact: {
+id: 5
+}
+}</p>
 </section><section id="user" class="resource-group"><h2 class="group-heading">User <a href="#user" class="permalink">&para;</a></h2><p>User-related resources of <em>iOffice API</em></p>
 <div id="user-user" class="resource"><h3 class="resource-heading">User <a href="#user-user" class="permalink">&nbsp;&para;</a></h3><p>A single user object.</p>
 <div id="user-user-get" class="action get"><h4 class="action-heading"><div class="name">Retrieve a Single User</div><a href="#user-user-get" class="method get">GET</a><code class="uri">/users{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the User</p>
@@ -139,7 +139,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   </span>}
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong></div></div><div id="user-user-delete" class="action delete"><h4 class="action-heading"><div class="name">Remove a User</div><a href="#user-user-delete" class="method delete">DELETE</a><code class="uri">/users{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname"></span>/users<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the User</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong></div></div></div><div id="user-attach-an-avatar-to-a-user" class="resource"><h3 class="resource-heading">Attach an Avatar to a User <a href="#user-attach-an-avatar-to-a-user" class="permalink">&nbsp;&para;</a></h3><p>Attach an Avatar to a User</p>
-<div id="user-attach-an-avatar-to-a-user-put" class="action put"><h4 class="action-heading"><div class="name">Attach an Avatar to a User</div><a href="#user-attach-an-avatar-to-a-user-put" class="method put">PUT</a><code class="uri">/users/{id}/attachAvatar</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/{id}/attachAvatar</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>image</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Base64 binary encoded string of an image file.</p>
+<div id="user-attach-an-avatar-to-a-user-put" class="action put"><h4 class="action-heading"><div class="name">Attach an Avatar to a User</div><a href="#user-attach-an-avatar-to-a-user-put" class="method put">PUT</a><code class="uri">/users/attachAvatar</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/attachAvatar</span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>image</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Base64 binary encoded string of an image file.</p>
 </dd><dt>fileName</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Name of the image file.</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"BASE-64-IMAGE-STRING"</span></span>,
@@ -397,7 +397,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"fmccloud@iofficecorp.com"</span></span>,
   "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1479077061110</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="user-get-availability-of-a-username" class="resource"><h3 class="resource-heading">Get availability of a username <a href="#user-get-availability-of-a-username" class="permalink">&nbsp;&para;</a></h3><p>Get boolean value if {username} already exists</p>
-<div id="user-get-availability-of-a-username-get" class="action get"><h4 class="action-heading"><div class="name">Check if Username Exists</div><a href="#user-get-availability-of-a-username-get" class="method get">GET</a><code class="uri">/users/username/{username}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/username/{username}</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+<div id="user-get-availability-of-a-username-get" class="action get"><h4 class="action-heading"><div class="name">Check if Username Exists</div><a href="#user-get-availability-of-a-username-get" class="method get">GET</a><code class="uri">/users/username/</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/username/</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
         "<span class="hljs-attribute">available</span>": <span class="hljs-value"><span class="hljs-string">"true"</span></span>,
     }</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="user-get-current-user-report-auth-data" class="resource"><h3 class="resource-heading">Get Current User Report Auth Data <a href="#user-get-current-user-report-auth-data" class="permalink">&nbsp;&para;</a></h3><p>Get current user report auth data</p>
 <div id="user-get-current-user-report-auth-data-get" class="action get"><h4 class="action-heading"><div class="name">Retrieve Current User Report Auth Data</div><a href="#user-get-current-user-report-auth-data-get" class="method get">GET</a><code class="uri">/users/me/reportAuth</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/me/reportAuth</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
@@ -410,7 +410,7 @@ All requests are over <strong>HTTPS</strong>.</p>
         <span class="hljs-string">"server:"</span> <span class="hljs-string">"http://support.andross.arwing.com"</span>,
         <span class="hljs-string">"authToken:"</span> <span class="hljs-string">"imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"</span>
     }</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="user-reset-user-password" class="resource"><h3 class="resource-heading">Reset User Password <a href="#user-reset-user-password" class="permalink">&nbsp;&para;</a></h3><p>Sends password reset email to user</p>
-<div id="user-reset-user-password-put" class="action put"><h4 class="action-heading"><div class="name">Reset User Password</div><a href="#user-reset-user-password-put" class="method put">PUT</a><code class="uri">/users/{id}/resetPassword</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/{id}/resetPassword</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the User Resource</p>
+<div id="user-reset-user-password-put" class="action put"><h4 class="action-heading"><div class="name">Reset User Password</div><a href="#user-reset-user-password-put" class="method put">PUT</a><code class="uri">/users/resetPassword</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/resetPassword</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the User Resource</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">floorWarden</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
   "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"McCloud"</span></span>,
@@ -486,7 +486,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"fmccloud@iofficecorp.com"</span></span>,
   "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1479077061110</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="user-get-user-permission-data" class="resource"><h3 class="resource-heading">Get User Permission Data <a href="#user-get-user-permission-data" class="permalink">&nbsp;&para;</a></h3><p>Get user permission data</p>
-<div id="user-get-user-permission-data-get" class="action get"><h4 class="action-heading"><div class="name">Retrieve User Permissions</div><a href="#user-get-user-permission-data-get" class="method get">GET</a><code class="uri">/users/{id}/permissions</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/{id}/permissions</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>[
+<div id="user-get-user-permission-data-get" class="action get"><h4 class="action-heading"><div class="name">Retrieve User Permissions</div><a href="#user-get-user-permission-data-get" class="method get">GET</a><code class="uri">/users/permissions</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/permissions</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>[
       {
         "<span class="hljs-attribute">role</span>":<span class="hljs-value"><span class="hljs-string">"ADMINISTRATOR"</span></span>,
         "<span class="hljs-attribute">center</span>":<span class="hljs-value">{
@@ -516,7 +516,7 @@ All requests are over <strong>HTTPS</strong>.</p>
         </span>}
     ]
 </span></code></pre><div style="height: 1px;"></div></div></div></div></div><div id="user-edit-user-permission-data" class="resource"><h3 class="resource-heading">Edit User Permission Data <a href="#user-edit-user-permission-data" class="permalink">&nbsp;&para;</a></h3><p>Edit user permission data</p>
-<div id="user-edit-user-permission-data-put" class="action put"><h4 class="action-heading"><div class="name">Edit User Permissions</div><a href="#user-edit-user-permission-data-put" class="method put">PUT</a><code class="uri">/users/{id}/permissions</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/{id}/permissions</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>[
+<div id="user-edit-user-permission-data-put" class="action put"><h4 class="action-heading"><div class="name">Edit User Permissions</div><a href="#user-edit-user-permission-data-put" class="method put">PUT</a><code class="uri">/users/permissions</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/permissions</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>[
       {
         "<span class="hljs-attribute">role</span>":<span class="hljs-value"><span class="hljs-string">"CUSTOMER"</span></span>,
         "<span class="hljs-attribute">center</span>":<span class="hljs-value">{
@@ -637,10 +637,10 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">approvedBy</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">floorWarden</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
     "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
-    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
     "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
     "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#89ffa1"</span></span>,
-    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
     "<span class="hljs-attribute">userType</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1430925570820</span></span>,
@@ -704,9 +704,9 @@ All requests are over <strong>HTTPS</strong>.</p>
         </span>}
       ]
     </span>}</span>,
-    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
     "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jpoland@iofficecorp.com"</span></span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span></span>,
     "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span>
   </span>}</span>,
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">16</span></span>,
@@ -762,7 +762,7 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">capacity</span>": <span class="hljs-value"><span class="hljs-number">1</span>
       </span>}</span>,
       "<span class="hljs-attribute">toRoomAvailable</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
-      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
       "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">31201</span></span>,
       "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1067272496850</span></span>,
@@ -813,13 +813,13 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
         "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#8cf7a4"</span></span>,
         "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
         "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
         "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span></span>,
-        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
         "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
         "<span class="hljs-attribute">mailStop</span>": <span class="hljs-value">{
           "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Stop 1"</span></span>,
           "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">140</span>
@@ -886,7 +886,7 @@ All requests are over <strong>HTTPS</strong>.</p>
             </span>}
           ]
         </span>}</span>,
-        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
       </span>}</span>,
       "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
     </span>}
@@ -926,12 +926,12 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
         "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
         "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
         "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
         "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
-        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
+        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
       </span>}</span>,
       "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
     </span>}
@@ -952,10 +952,10 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">approvedBy</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">floorWarden</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
     "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
-    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
     "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
     "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#89ffa1"</span></span>,
-    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
     "<span class="hljs-attribute">userType</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1430925570820</span></span>,
@@ -1019,9 +1019,9 @@ All requests are over <strong>HTTPS</strong>.</p>
         </span>}
       ]
     </span>}</span>,
-    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
     "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jpoland@iofficecorp.com"</span></span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span></span>,
     "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span>
   </span>}</span>,
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">16</span></span>,
@@ -1077,7 +1077,7 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">capacity</span>": <span class="hljs-value"><span class="hljs-number">1</span>
       </span>}</span>,
       "<span class="hljs-attribute">toRoomAvailable</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
-      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
       "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">31201</span></span>,
       "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1067272496850</span></span>,
@@ -1128,13 +1128,13 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
         "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#8cf7a4"</span></span>,
         "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
         "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
         "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span></span>,
-        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
         "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
         "<span class="hljs-attribute">mailStop</span>": <span class="hljs-value">{
           "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Stop 1"</span></span>,
           "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">140</span>
@@ -1201,7 +1201,7 @@ All requests are over <strong>HTTPS</strong>.</p>
             </span>}
           ]
         </span>}</span>,
-        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
       </span>}</span>,
       "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
     </span>}
@@ -1215,7 +1215,7 @@ All requests are over <strong>HTTPS</strong>.</p>
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="move-move-delete" class="action delete"><h4 class="action-heading"><div class="name">Remove a Move Request</div><a href="#move-move-delete" class="method delete">DELETE</a><code class="uri">/move/requests/{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname"></span>/move/requests/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the User</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">response</span>": <span class="hljs-value"><span class="hljs-string">"Successfully removed"</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="move-move-collection" class="resource"><h3 class="resource-heading">Move Collection <a href="#move-move-collection" class="permalink">&nbsp;&para;</a></h3><div id="move-move-collection-get" class="action get"><h4 class="action-heading"><div class="name">List of all Move Requests</div><a href="#move-move-collection-get" class="method get">GET</a><code class="uri">/move/requests/{?statusId,statusCode}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/move/requests/{?statusId,statusCode}</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the Move Collection resource.</p>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="move-move-collection" class="resource"><h3 class="resource-heading">Move Collection <a href="#move-move-collection" class="permalink">&nbsp;&para;</a></h3><div id="move-move-collection-get" class="action get"><h4 class="action-heading"><div class="name">List of all Move Requests</div><a href="#move-move-collection-get" class="method get">GET</a><code class="uri">/move/requests/{?statusId,statusCode}}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/move/requests/{?statusId,statusCode}}</span></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the Move Collection resource.</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>[
              {
                "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-number">1504112404863</span></span>,
@@ -1230,10 +1230,10 @@ All requests are over <strong>HTTPS</strong>.</p>
                "<span class="hljs-attribute">approvedBy</span>": <span class="hljs-value">{
                  "<span class="hljs-attribute">floorWarden</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
                  "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
-                 "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+                 "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
                  "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
                  "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#89ffa1"</span></span>,
-                 "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+                 "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
                  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
                  "<span class="hljs-attribute">userType</span>": <span class="hljs-value">{
                    "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1430925570820</span></span>,
@@ -1297,9 +1297,9 @@ All requests are over <strong>HTTPS</strong>.</p>
                      </span>}
                    ]
                  </span>}</span>,
-                 "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+                 "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
                  "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-                 "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jpoland@iofficecorp.com"</span></span>,
+                 "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span></span>,
                  "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span>
                </span>}</span>,
                "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">16</span></span>,
@@ -1355,7 +1355,7 @@ All requests are over <strong>HTTPS</strong>.</p>
                      "<span class="hljs-attribute">capacity</span>": <span class="hljs-value"><span class="hljs-number">1</span>
                    </span>}</span>,
                    "<span class="hljs-attribute">toRoomAvailable</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
-                   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+                   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
                    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">31201</span></span>,
                    "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
                      "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1067272496850</span></span>,
@@ -1406,13 +1406,13 @@ All requests are over <strong>HTTPS</strong>.</p>
                      "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
                      "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#8cf7a4"</span></span>,
                      "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-                     "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+                     "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
                      "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
                      "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span></span>,
-                     "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+                     "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
                      "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
                      "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-                     "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+                     "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
                      "<span class="hljs-attribute">mailStop</span>": <span class="hljs-value">{
                        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Stop 1"</span></span>,
                        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">140</span>
@@ -1479,7 +1479,7 @@ All requests are over <strong>HTTPS</strong>.</p>
                          </span>}
                        ]
                      </span>}</span>,
-                     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
+                     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
                    </span>}</span>,
                    "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
                  </span>}
@@ -1494,46 +1494,47 @@ All requests are over <strong>HTTPS</strong>.</p>
 
              ...
 ]</code></pre><div style="height: 1px;"></div></div></div></div><div id="move-move-collection-post" class="action post"><h4 class="action-heading"><div class="name">Create a Move Request</div><a href="#move-move-collection-post" class="method post">POST</a><code class="uri">/move/requests</code></h4><ul>
-<li>The following attributes are required to create a Move Request: status <code>id</code> and type <code>id</code>.</li>
+<li>The following attributes are required to create a Move Request: status <code>id</code> and <code>description</code>.</li>
 </ul>
 <h4>Example URI</h4><div class="definition"><span class="method post">POST</span>&nbsp;<span class="uri"><span class="hostname"></span>/move/requests</span></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-number">1504112404863</span></span>,
-  "<span class="hljs-attribute">approved</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
-  "<span class="hljs-attribute">comments</span>": <span class="hljs-value">[
-    {
-      "<span class="hljs-attribute">content</span>": <span class="hljs-value"><span class="hljs-string">"your comment here!"</span>
-    </span>}
-  ]</span>,
-  "<span class="hljs-attribute">approvedBy</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span>
-  </span>}</span>,
-  "<span class="hljs-attribute">items</span>": <span class="hljs-value">[
-    {
-      "<span class="hljs-attribute">toRoom</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">2</span>
-      </span>}</span>,
-      "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">2</span>
-      </span>}</span>,
-      "<span class="hljs-attribute">user</span>": <span class="hljs-value">{
-        "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
-        "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
-        "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
-        "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
-        "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
-        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
-      </span>}</span>,
-      "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
-    </span>}
-  ]</span>,
-  "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
-    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">10</span>
-  </span>}
-</span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Body</h5><pre><code>{
+     "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-number">1504112404863</span></span>,
+     "<span class="hljs-attribute">approved</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
+     "<span class="hljs-attribute">comments</span>": <span class="hljs-value">[
+       {
+         "<span class="hljs-attribute">content</span>": <span class="hljs-value"><span class="hljs-string">"your comment here!"</span>
+       </span>}
+     ]</span>,
+     "<span class="hljs-attribute">description</span>": <span class="hljs-value"><span class="hljs-string">"your description here!"</span>
+     <span class="hljs-string">"approvedBy"</span>: {
+       "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span>
+     </span>}</span>,
+     "<span class="hljs-attribute">items</span>": <span class="hljs-value">[
+       {
+         "<span class="hljs-attribute">toRoom</span>": <span class="hljs-value">{
+             "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">2</span>
+          </span>}</span>,
+         "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
+           "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">2</span>
+         </span>}</span>,
+         "<span class="hljs-attribute">user</span>": <span class="hljs-value">{
+           "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
+           "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
+           "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
+           "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
+           "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
+           "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
+           "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
+           "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
+           "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
+           "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
+         </span>}</span>,
+         "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
+       </span>}
+     ]</span>,
+     "<span class="hljs-attribute">status</span>": <span class="hljs-value">{
+       "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">10</span>
+     </span>}
+   </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>201</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-number">1504112404863</span></span>,
   "<span class="hljs-attribute">approved</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
   "<span class="hljs-attribute">comments</span>": <span class="hljs-value">[
@@ -1546,10 +1547,10 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">approvedBy</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">floorWarden</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
     "<span class="hljs-attribute">lastName</span>": <span class="hljs-value"><span class="hljs-string">"Admin"</span></span>,
-    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+    "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
     "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
     "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#89ffa1"</span></span>,
-    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+    "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">9</span></span>,
     "<span class="hljs-attribute">userType</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1430925570820</span></span>,
@@ -1613,9 +1614,9 @@ All requests are over <strong>HTTPS</strong>.</p>
         </span>}
       ]
     </span>}</span>,
-    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+    "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
     "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
-    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jpoland@iofficecorp.com"</span></span>,
+    "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span></span>,
     "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span>
   </span>}</span>,
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">34</span></span>,
@@ -1682,7 +1683,7 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1468875790390</span>
       </span>}</span>,
       "<span class="hljs-attribute">toRoomAvailable</span>": <span class="hljs-value"><span class="hljs-literal">true</span></span>,
-      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+      "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
       "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">31209</span></span>,
       "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1067272496850</span></span>,
@@ -1733,13 +1734,13 @@ All requests are over <strong>HTTPS</strong>.</p>
         "<span class="hljs-attribute">extension</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
         "<span class="hljs-attribute">color</span>": <span class="hljs-value"><span class="hljs-string">"#ffbcc6"</span></span>,
         "<span class="hljs-attribute">employeeId</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"jasonadmin"</span></span>,
+        "<span class="hljs-attribute">userName</span>": <span class="hljs-value"><span class="hljs-string">"hansolo"</span></span>,
         "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
         "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1488566587390</span></span>,
-        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Jason"</span></span>,
+        "<span class="hljs-attribute">firstName</span>": <span class="hljs-value"><span class="hljs-string">"Han"</span></span>,
         "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1464727067663</span></span>,
         "<span class="hljs-attribute">phone</span>": <span class="hljs-value"><span class="hljs-string">""</span></span>,
-        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Jason Admin"</span></span>,
+        "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Han Solo"</span></span>,
         "<span class="hljs-attribute">userType</span>": <span class="hljs-value">{
           "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1430925570820</span></span>,
           "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Employee"</span></span>,
@@ -1802,7 +1803,7 @@ All requests are over <strong>HTTPS</strong>.</p>
             </span>}
           ]
         </span>}</span>,
-        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"jasongpoland@gmail.com"</span>
+        "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"hansolo@iofficecorp.com"</span>
       </span>}</span>,
       "<span class="hljs-attribute">tasksValueMap</span>": <span class="hljs-value">{}
     </span>}
@@ -3025,10 +3026,15 @@ then the json object will have an <code>owner</code> property and not a <code>ro
   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"Urgent"</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div></div><div id="maintenance-get-earliest-required-date" class="resource"><h3 class="resource-heading">Get Earliest Required Date <a href="#maintenance-get-earliest-required-date" class="permalink">&nbsp;&para;</a></h3><p>Get the earliest available date that a Request can be required to be completed by.</p>
 <p>The time is calculated based on the following:</p>
-<pre><code>+ Request <span class="hljs-keyword">Type</span>
-+ Request Priority
-+ Service Level Agreement (<span class="hljs-keyword">SLA</span>) <span class="hljs-keyword">for</span> the Request <span class="hljs-keyword">type</span>
-+ Center hours <span class="hljs-keyword">of</span> operation</code></pre>
+<ul>
+<li>Request Type
+<ul>
+<li>Request Priority</li>
+<li>Service Level Agreement (SLA) for the Request type</li>
+<li>Center hours of operation</li>
+</ul>
+</li>
+</ul>
 <div id="maintenance-get-earliest-required-date-get" class="action get"><h4 class="action-heading"><div class="name">Get Date</div><a href="#maintenance-get-earliest-required-date-get" class="method get">GET</a><code class="uri">/maintenance/priorities/{id}/earliestRequiredDate/{?typeId,centerId}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/maintenance/priorities/<span class="hljs-attribute" title="id">id</span>/earliestRequiredDate/?<span class="hljs-attribute">typeId=</span><span class="hljs-literal"></span>&<span class="hljs-attribute">centerId=</span><span class="hljs-literal"></span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Request.</p>
 </dd><dt>typeId</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Request Type Id</p>
 </dd><dt>centerId</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>Request’s Center Id</p>
@@ -3681,7 +3687,7 @@ The field <code>type</code> is required in order to create a new agreement.</p>
   "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">143567975913</span></span>,
   "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1434561059383</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-depth-depth-delete" class="action delete"><h4 class="action-heading"><div class="name">Remove a Depth</div><a href="#category-depth-depth-delete" class="method delete">DELETE</a><code class="uri">/categories/depth/{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname"></span>/categories/depth/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Category</p>
-</dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 03 Mar 2017</p><script>/* eslint-env browser */
+</dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 20 Jul 2017</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 
