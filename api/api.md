@@ -9,9 +9,6 @@ The base URL will be https://`siteaddress`/external/api/rest/v2/
 
 All endpoints in the document are relative to this url.
 
-Note: on development servers this will be http over port 8080 so there will be a need to specify protocol, but default to https (if not specified)
-
-
 ## Authentication
 In order to authenticate your request, in each request include the following in the request headers.
 All requests are over **HTTPS**.

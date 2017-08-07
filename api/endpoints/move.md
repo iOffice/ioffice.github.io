@@ -13,6 +13,7 @@ A single move reservation object.
 
     + Body
 
+         {  
            {
              "date": 1504112404863,
              "approved": true,
@@ -286,7 +287,8 @@ A single move reservation object.
                "name": "In Progress",
                "id": 10
              }
-           }
+         }
+          
 
 ## Retrieve a Single Move Request [GET]
 + Response 200
@@ -301,7 +303,7 @@ To update a Move Request send JSON with updated values for one or more of the at
 
 + Request (application/json)
 
-
+         {
            {
              "date": 1504112404863,
              "approved": true,
@@ -341,7 +343,7 @@ To update a Move Request send JSON with updated values for one or more of the at
                "id": 10
              }
            }
-
+         }
 
 + Response 200
 
@@ -626,7 +628,9 @@ To update a Move Request send JSON with updated values for one or more of the at
 + Response 200
 
            {
+             {
                 "response": "Successfully removed"
+             }
            }
 
 

@@ -5,8 +5,8 @@ Item related resources of *iOffice API*
 Collection of all Items.
 
 + Parameters
-    + category = (optional, integer, , `1`) ... If present, query will filter by category
-    + parent = (optional, integer, , `2`) ... If present, query will filter by parent
+    + category (optional, integer, , `1`) ... If present, query will filter by category
+    + parent (optional, integer, , `2`) ... If present, query will filter by parent
     + root = `false` (optional, boolean, , `true`) ... If present, query will only return Items without a parent
 
 + Model (application/json)

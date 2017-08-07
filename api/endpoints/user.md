@@ -136,7 +136,7 @@ Attach an Avatar to a User
     [User][]
 
 
-## User Collection [/users{?search,centerId,role,siteAdmin,hasRoom}]
+## User Collection [/users{?search,centerId,userTypeId,role,siteAdmin,hasRoom}]
 Collection of all Users.
 
 + Model (application/json)
