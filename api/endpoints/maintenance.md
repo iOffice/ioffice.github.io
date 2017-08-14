@@ -66,8 +66,36 @@ To update a Request send JSON with updated value for one or more of the attribut
     + id (string) ... ID of the Request
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue}]
 Collection of all Requests.
+
++ Model (application/json)
+    JSON representation of the Resource Collection Resource.
+
+    + Body
+
+            [
+                {
+                    "id":49
+                    ...
+                },
+                {
+                    "id":50
+                    ...
+                },
+                {
+                    "id":51
+                    ...
+                }
+            ]
+
+#### List of all Requests [GET]
 
 + Parameters
 
@@ -92,27 +120,6 @@ Collection of all Requests.
 
     + pastDue (optional, boolean)
 
-+ Model (application/json)
-    JSON representation of the Resource Collection Resource.
-
-    + Body
-
-            [
-                {
-                    "id":49
-                    ...
-                },
-                {
-                    "id":50
-                    ...
-                },
-                {
-                    "id":51
-                    ...
-                }
-            ]
-
-#### List of all Requests [GET]
 + Response 200
     
     [Requests Collection][]
@@ -174,7 +181,7 @@ The Stats resource has the following attributes:
     [Requests Collection Stats][]
 
 
-### Add Comment [/maintenance/requests/{id}/addComment]
+### Add Comment [/maintenance/requests///{id}/addComment]
 
 Add a comment to a request
 
@@ -205,7 +212,7 @@ Add a comment to a request
     [Add Comment][]
 
 
-### Attach Request Image [/maintenance/requests/{id}/attachImage]
+### Attach Request Image [/maintenance/requests///{id}/attachImage]
 Attach an image to a request
 
 + Parameters
@@ -243,7 +250,7 @@ Attach an image to a request
     [Attach Request Image][]
 
 
-### Accept Request [/maintenance/requests/{id}/accept]
+### Accept Request [/maintenance/requests///{id}/accept]
 ** User must be a valid operator**
 
 Set operator's status for a request as accepted.
@@ -257,7 +264,7 @@ Set operator's status for a request as accepted.
     [Request][]
 
 
-### Reject Request [/maintenance/requests/{id}/reject]
+### Reject Request [/maintenance/requests///{id}/reject]
 ** User must be a valid operator**
 
 Set operator's status for a request as rejected.
@@ -271,7 +278,7 @@ Set operator's status for a request as rejected.
     [Request][]
 
 
-### Start Request [/maintenance/requests/{id}/start]
+### Start Request [/maintenance/requests///{id}/start]
 ** User must be a valid operator**
 
 Set operator's status for a request as started.
@@ -284,7 +291,7 @@ Set operator's status for a request as started.
 + Response 200
     [Request][]
 
-### Hold Request [/maintenance/requests/{id}/hold]
+### Hold Request [/maintenance/requests///{id}/hold]
 ** User must be a valid operator**
 
 Set operator's status for a request as on hold.
@@ -298,7 +305,7 @@ Set operator's status for a request as on hold.
     [Request][]
 
 
-### Resume Request [/maintenance/requests/{id}/resume]
+### Resume Request [/maintenance/requests///{id}/resume]
 ** User must be a valid operator**
 
 Set operator's status for a request as resumed.
@@ -312,7 +319,7 @@ Set operator's status for a request as resumed.
     [Request][]
 
 
-### Complete Request [/maintenance/requests/{id}/complete]
+### Complete Request [/maintenance/requests///{id}/complete]
 ** User must be a valid operator**
 
 Set operator's status for a request as complete.
@@ -635,7 +642,7 @@ The following attributes are required to create a Priority: `name` and `sortOrde
 
 
 
-### Get Earliest Required Date [/maintenance/priorities/{id}/earliestRequiredDate///{?typeId,centerId}]
+### Get Earliest Required Date [/maintenance/priorities///{id}/earliestRequiredDate///{?typeId,centerId}]
 
 Get the earliest available date that a Request can be required to be completed by.
 

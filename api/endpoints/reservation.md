@@ -49,18 +49,14 @@ To update a Reservation send JSON with updated value for one or more of the attr
     + id (string) ... ID of the Reservation
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations,startDate,endDate,buildingId,roomId}]
 Collection of all Reservations.
-
-+ Parameters
-    + includeCancelled = `false` (optional, boolean, , `true`) ... If true, query will include cancelled reservations
-    + includeNonCancelled = `true` (optional, boolean, , `false`) ... If true, query will include non-cancelled reservations
-    + includePastReservations = `false` (optional, boolean, `true`) ... If true, query will include past reservations
-    + showOnlyMyReservations = `true` (optional, boolean, `false`) ... If true, query will only include logged in user's reservations
-    + startDate (optional, number, `1404410211910`) ... Epoch time of reservation start date
-    + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
-    + buildingId (optional, number, `44`) ... Id of the building to query from
-    + roomId (optional, number, `16`) ... Id of the room to query from
 
 + Model (application/json)
     JSON representation of the Reservation Collection resource.
@@ -83,6 +79,17 @@ Collection of all Reservations.
             ]
 
 ### List of all Reservations [GET]
+
++ Parameters
+    + includeCancelled = `false` (optional, boolean, , `true`) ... If true, query will include cancelled reservations
+    + includeNonCancelled = `true` (optional, boolean, , `false`) ... If true, query will include non-cancelled reservations
+    + includePastReservations = `false` (optional, boolean, `true`) ... If true, query will include past reservations
+    + showOnlyMyReservations = `true` (optional, boolean, `false`) ... If true, query will only include logged in user's reservations
+    + startDate (optional, number, `1404410211910`) ... Epoch time of reservation start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
+    + buildingId (optional, number, `44`) ... Id of the building to query from
+    + roomId (optional, number, `16`) ... Id of the room to query from
+
 + Response 200
     
     [Reservation Collection][]
@@ -94,8 +101,7 @@ The following attributes are required to create a Reservation: `startDate`, `end
 + Request (application/json)
 
             {
-                "id": ID,
-                startDate: EPOCH_TIME,
+                "startDate": EPOCH_TIME,
                 "endDate": EPOCH_TIME
                 "numberOfPeople": INT,
                 "allDay": "BOOLEAN",
@@ -110,7 +116,7 @@ The following attributes are required to create a Reservation: `startDate`, `end
 
     [Reservation][]
 
-## Cancel [/reservations/{id}/cancel]
+## Cancel [/reservations///{id}/cancel]
 Cancel Reservation
 
 + Parameters
@@ -122,7 +128,7 @@ Cancel Reservation
     [Reservation][]
 
 
-## Check In [/reservations/{id}/checkIn]
+## Check In [/reservations///{id}/checkIn]
 Reservation Check In
 
 + Parameters
@@ -134,7 +140,7 @@ Reservation Check In
     [Reservation][]
 
 
-## Check Out [/reservations/{id}/checkOut]
+## Check Out [/reservations///{id}/checkOut]
 Reservation Check Out
 
 *Not available through the desktop app*

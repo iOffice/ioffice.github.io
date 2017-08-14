@@ -110,10 +110,13 @@ To update a User send JSON with updated value for one or more of the attributes.
     + id (string) ... ID of the User
     
 + Response 200
-    [User][]
 
-
-
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+           
 ## Attach an Avatar to a User [/users///{id}/attachAvatar]
 Attach an Avatar to a User
 
@@ -134,7 +137,7 @@ The following attributes are required to attach an avatar: `image`, `fileName`.
     [User][]
 
 
-## User Collection [/users{?search,centerId,userTypeId,role,siteAdmin,hasRoom,hasDefaultVisitorCenter}]
+## User Collection [/users///{?search,centerId,userTypeId,role,siteAdmin,hasRoom,hasDefaultVisitorCenter}]
 Collection of all Users.
 
 + Model (application/json)

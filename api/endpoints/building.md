@@ -45,6 +45,11 @@ To update a Building send JSON with updated value for one or more of the attribu
     + id (string) ... ID of the Building
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
 
 ## Building Collection [/buildings///{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude}]
 Collection of all Buildings.

@@ -628,14 +628,13 @@ To update a Move Request send JSON with updated values for one or more of the at
     + id (string) ... ID of the User
 + Response 200
 
-           {
-             {
+        {
+            {
                 "response": "Successfully removed"
-             }
-           }
+            }
+        }
 
-
-## Move Collection [/move/requests/{?statusId,statusCode}]
+## Move Collection [/move/requests///{?statusId,statusCode}]
 
 + Model (application/json)
     JSON representation of the Move Collection resource.

@@ -42,6 +42,12 @@ To update a Agreement send JSON with the id and updated value for one or more of
     + id (string) ... ID of the Agreement
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Agreement Collection [/agreements]
 Collection of all Agreements.
 

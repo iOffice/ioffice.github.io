@@ -45,6 +45,12 @@ To update a Room send JSON with updated value for one or more of the attributes.
     + id (string) ... ID of the Reservation
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Room Collection [/rooms///{?includeReservable,includeNonReservable,locationSearch,includeOccupiable,includeNonOccupiable,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,includeParking,search,buildingId,floorId,type}]
 Collection of all Rooms.
 
