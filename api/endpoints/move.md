@@ -13,207 +13,25 @@ A single move reservation object.
 
     + Body
 
-         {  
-           {
-             "date": 1504112404863,
-             "approved": true,
-             "comments": [
+             {  
                {
-                 "id": 92,
-                 "content": "your comment here!"
-               }
-             ],
-             "dateCreated": 1469818235210,
-             "approvedBy": {
-               "floorWarden": false,
-               "lastName": "Admin",
-               "firstName": "Han",
-               "dateCreated": 1464727067663,
-               "color": "#89ffa1",
-               "name": "Han Solo",
-               "id": 9,
-               "userType": {
-                 "dateCreated": 1430925570820,
-                 "name": "Employee",
-                 "id": 1,
-                 "fields": [
+                 "date": 1504112404863,
+                 "approved": true,
+                 "comments": [
                    {
-                     "code": "company",
-                     "name": "Company",
-                     "id": 1
-                   },
-                   {
-                     "code": "jobTitle",
-                     "name": "Job Title",
-                     "id": 2
-                   },
-                   {
-                     "code": "phone",
-                     "name": "Phone",
-                     "id": 3
-                   },
-                   {
-                     "code": "extension",
-                     "name": "Extension",
-                     "id": 4
-                   },
-                   {
-                     "code": "mobile",
-                     "name": "Mobile Phone Number",
-                     "id": 6
-                   },
-                   {
-                     "code": "employeeId",
-                     "name": "Employee ID",
-                     "id": 8
-                   },
-                   {
-                     "code": "floorWarden",
-                     "name": "Floor Warden",
-                     "id": 12
-                   },
-                   {
-                     "code": "specialNeeds",
-                     "name": "Special Needs",
-                     "id": 13
-                   },
-                   {
-                     "code": "comments",
-                     "name": "Comments",
-                     "id": 14
-                   },
-                   {
-                     "code": "alternateDelivery",
-                     "name": "Alternate Delivery",
-                     "id": 16
-                   },
-                   {
-                     "code": "knownAs",
-                     "name": "Known As",
-                     "id": 17
+                     "id": 92,
+                     "content": "your comment here!"
                    }
-                 ]
-               },
-               "userName": "hansolo",
-               "specialNeeds": false,
-               "email": "hansolo@iofficecorp.com",
-               "dateUpdated": 1488566587390
-             },
-             "id": 16,
-             "items": [
-               {
-                 "toRoom": {
-                   "dateCreated": 1465572191247,
-                   "reservable": false,
-                   "name": "49.0",
-                   "description": "",
-                   "id": 416,
-                   "floor": {
-                     "area": 23600.0167,
-                     "dateCreated": 1465572160000,
-                     "drawingAvailable": true,
-                     "name": "1",
-                     "id": 2,
-                     "building": {
-                       "address": {
-                         "country": {
-                           "defaultSelected": true,
-                           "subdivisionCategoryName": "state",
-                           "alpha2Code": "US",
-                           "isoCode": "US",
-                           "name": "United States of America (the)",
-                           "id": 223
-                         },
-                         "city": "Houston",
-                         "postalCode": "",
-                         "state": {
-                           "defaultSelected": false,
-                           "code": "",
-                           "name": "Other",
-                           "id": 70
-                         }
-                       },
-                       "dateCreated": 1465572158677,
-                       "metric": false,
-                       "name": "Built",
-                       "id": 44,
-                       "dateUpdated": 1465572159707
-                     },
-                     "dateUpdated": 1465572186757
-                   },
-                   "type": {
-                     "hexColor": "33cc99",
-                     "color": {},
-                     "name": "WKST",
-                     "occupiable": true,
-                     "id": 1,
-                     "parkingSpace": false
-                   },
-                   "capacity": 1
-                 },
-                 "toRoomAvailable": true,
-                 "name": "Han Solo",
-                 "id": 31201,
-                 "type": {
-                   "dateCreated": 1067272496850,
-                   "name": "Employee Move",
-                   "id": 2,
-                   "fields": [
-                     {
-                       "code": "firstName",
-                       "name": "First Name",
-                       "id": 17
-                     },
-                     {
-                       "code": "lastName",
-                       "name": "Last Name",
-                       "id": 18
-                     },
-                     {
-                       "code": "phone",
-                       "name": "Phone",
-                       "id": 19
-                     },
-                     {
-                       "code": "extension",
-                       "name": "Extension",
-                       "id": 20
-                     },
-                     {
-                       "code": "costCenter",
-                       "name": "Cost Center",
-                       "id": 21
-                     },
-                     {
-                       "code": "employeeId",
-                       "name": "Employee ID",
-                       "id": 22
-                     },
-                     {
-                       "code": "email",
-                       "name": "Email",
-                       "id": 23
-                     }
-                   ],
-                   "typeCode": "move"
-                 },
-                 "user": {
+                 ],
+                 "dateCreated": 1469818235210,
+                 "approvedBy": {
                    "floorWarden": false,
                    "lastName": "Admin",
-                   "extension": "",
-                   "color": "#8cf7a4",
-                   "employeeId": "",
-                   "userName": "hansolo",
-                   "specialNeeds": false,
-                   "dateUpdated": 1488566587390,
                    "firstName": "Han",
                    "dateCreated": 1464727067663,
-                   "phone": "",
+                   "color": "#89ffa1",
                    "name": "Han Solo",
-                   "mailStop": {
-                     "name": "Stop 1",
-                     "id": 140
-                   },
+                   "id": 9,
                    "userType": {
                      "dateCreated": 1430925570820,
                      "name": "Employee",
@@ -276,18 +94,200 @@ A single move reservation object.
                        }
                      ]
                    },
-                   "email": "hansolo@iofficecorp.com"
+                   "userName": "hansolo",
+                   "specialNeeds": false,
+                   "email": "hansolo@iofficecorp.com",
+                   "dateUpdated": 1488566587390
                  },
-                 "tasksValueMap": {}
-               }
-             ],
-             "status": {
-               "code": "sub",
-               "dateCreated": 1185984126540,
-               "name": "In Progress",
-               "id": 10
+                 "id": 16,
+                 "items": [
+                   {
+                     "toRoom": {
+                       "dateCreated": 1465572191247,
+                       "reservable": false,
+                       "name": "49.0",
+                       "description": "",
+                       "id": 416,
+                       "floor": {
+                         "area": 23600.0167,
+                         "dateCreated": 1465572160000,
+                         "drawingAvailable": true,
+                         "name": "1",
+                         "id": 2,
+                         "building": {
+                           "address": {
+                             "country": {
+                               "defaultSelected": true,
+                               "subdivisionCategoryName": "state",
+                               "alpha2Code": "US",
+                               "isoCode": "US",
+                               "name": "United States of America (the)",
+                               "id": 223
+                             },
+                             "city": "Houston",
+                             "postalCode": "",
+                             "state": {
+                               "defaultSelected": false,
+                               "code": "",
+                               "name": "Other",
+                               "id": 70
+                             }
+                           },
+                           "dateCreated": 1465572158677,
+                           "metric": false,
+                           "name": "Built",
+                           "id": 44,
+                           "dateUpdated": 1465572159707
+                         },
+                         "dateUpdated": 1465572186757
+                       },
+                       "type": {
+                         "hexColor": "33cc99",
+                         "color": {},
+                         "name": "WKST",
+                         "occupiable": true,
+                         "id": 1,
+                         "parkingSpace": false
+                       },
+                       "capacity": 1
+                     },
+                     "toRoomAvailable": true,
+                     "name": "Han Solo",
+                     "id": 31201,
+                     "type": {
+                       "dateCreated": 1067272496850,
+                       "name": "Employee Move",
+                       "id": 2,
+                       "fields": [
+                         {
+                           "code": "firstName",
+                           "name": "First Name",
+                           "id": 17
+                         },
+                         {
+                           "code": "lastName",
+                           "name": "Last Name",
+                           "id": 18
+                         },
+                         {
+                           "code": "phone",
+                           "name": "Phone",
+                           "id": 19
+                         },
+                         {
+                           "code": "extension",
+                           "name": "Extension",
+                           "id": 20
+                         },
+                         {
+                           "code": "costCenter",
+                           "name": "Cost Center",
+                           "id": 21
+                         },
+                         {
+                           "code": "employeeId",
+                           "name": "Employee ID",
+                           "id": 22
+                         },
+                         {
+                           "code": "email",
+                           "name": "Email",
+                           "id": 23
+                         }
+                       ],
+                       "typeCode": "move"
+                     },
+                     "user": {
+                       "floorWarden": false,
+                       "lastName": "Admin",
+                       "extension": "",
+                       "color": "#8cf7a4",
+                       "employeeId": "",
+                       "userName": "hansolo",
+                       "specialNeeds": false,
+                       "dateUpdated": 1488566587390,
+                       "firstName": "Han",
+                       "dateCreated": 1464727067663,
+                       "phone": "",
+                       "name": "Han Solo",
+                       "mailStop": {
+                         "name": "Stop 1",
+                         "id": 140
+                       },
+                       "userType": {
+                         "dateCreated": 1430925570820,
+                         "name": "Employee",
+                         "id": 1,
+                         "fields": [
+                           {
+                             "code": "company",
+                             "name": "Company",
+                             "id": 1
+                           },
+                           {
+                             "code": "jobTitle",
+                             "name": "Job Title",
+                             "id": 2
+                           },
+                           {
+                             "code": "phone",
+                             "name": "Phone",
+                             "id": 3
+                           },
+                           {
+                             "code": "extension",
+                             "name": "Extension",
+                             "id": 4
+                           },
+                           {
+                             "code": "mobile",
+                             "name": "Mobile Phone Number",
+                             "id": 6
+                           },
+                           {
+                             "code": "employeeId",
+                             "name": "Employee ID",
+                             "id": 8
+                           },
+                           {
+                             "code": "floorWarden",
+                             "name": "Floor Warden",
+                             "id": 12
+                           },
+                           {
+                             "code": "specialNeeds",
+                             "name": "Special Needs",
+                             "id": 13
+                           },
+                           {
+                             "code": "comments",
+                             "name": "Comments",
+                             "id": 14
+                           },
+                           {
+                             "code": "alternateDelivery",
+                             "name": "Alternate Delivery",
+                             "id": 16
+                           },
+                           {
+                             "code": "knownAs",
+                             "name": "Known As",
+                             "id": 17
+                           }
+                         ]
+                       },
+                       "email": "hansolo@iofficecorp.com"
+                     },
+                     "tasksValueMap": {}
+                   }
+                 ],
+                 "status": {
+                   "code": "sub",
+                   "dateCreated": 1185984126540,
+                   "name": "In Progress",
+                   "id": 10
+                 }
              }
-         }
           
 
 ## Retrieve a Single Move Request [GET]
@@ -296,10 +296,12 @@ A single move reservation object.
     [Move][]
 
 
-## Edit a Move Request [PUT /move/requests/]
+## Edit a Move Request [PUT /move/requests///{id}]
 
 To update a Move Request send JSON with updated values for one or more of the attributes.
-+ The following attribute is required to update a Move Request: `id`.
+
++ Parameters
+    + id (string) ... ID of the Move Request
 
 + Request (application/json)
 
@@ -315,7 +317,6 @@ To update a Move Request send JSON with updated values for one or more of the at
              "approvedBy": {
                "id": 9
              },
-             "id": 18,
              "items": [
                {
                  "toRoom": {
@@ -634,7 +635,7 @@ To update a Move Request send JSON with updated values for one or more of the at
            }
 
 
-## Move Collection [/move/requests///{{?statusId,statusCode}}]
+## Move Collection [/move/requests/{?statusId,statusCode}]
 
 + Model (application/json)
     JSON representation of the Move Collection resource.

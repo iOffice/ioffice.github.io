@@ -1,5 +1,5 @@
 # Group Category
-Category related resources of iOffice API*
+Category related resources of *iOffice API*
 
 ## Category Collection [/categories]
 Collection of all Categories.
