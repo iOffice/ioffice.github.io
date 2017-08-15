@@ -34,6 +34,12 @@ Countries cannot be modified.
     + id (string) ... ID of the Country
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Country Collection [/countries]
 Collection of all Countries.
 

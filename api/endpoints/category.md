@@ -1,5 +1,5 @@
 # Group Category
-Category related resources of iOffice API*
+Category related resources of *iOffice API*
 
 ## Category Collection [/categories]
 Collection of all Categories.
@@ -37,7 +37,7 @@ Collection of all Categories.
 + Response 200
     [Category Collection][]
 
-## Cost Center Category [/categories/{id}]
+## Cost Center Category [/categories///{id}]
 A Single Depth object.
 
 + Model (application/json)
@@ -108,4 +108,10 @@ The following attributes are required to create a Category
 + Parameters
     + id (string) ... ID of the Category
 + Response 200
+
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
 

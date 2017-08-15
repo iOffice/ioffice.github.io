@@ -1,7 +1,7 @@
 # Group User
 User-related resources of *iOffice API*
 
-## User [/users{id}]
+## User [/users///{id}]
 A single user object.
 
 + Parameters
@@ -100,9 +100,7 @@ To update a User send JSON with updated value for one or more of the attributes.
 + Request (application/json)
 
         {
-            "room": {
-                "id": 4
-            }
+            "jobTitle": "Developer",
         }
 
 + Response 200
@@ -110,20 +108,23 @@ To update a User send JSON with updated value for one or more of the attributes.
 ### Remove a User [DELETE]
 + Parameters
     + id (string) ... ID of the User
+    
 + Response 200
 
-
-## Attach an Avatar to a User [/users/{id}/attachAvatar]
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+           
+## Attach an Avatar to a User [/users///{id}/attachAvatar]
 Attach an Avatar to a User
 
 + Parameters
-    + image (string) ... Base64 binary encoded string of an image file.
-    + fileName (string) ... Name of the image file.
-
-
-    JSON representation of an attachment object
+    + id (string) ... ID of the User
 
 ### Attach an Avatar to a User [PUT]
+The following attributes are required to attach an avatar: `image`, `fileName`.
 
 + Request (application/json)
 
@@ -136,7 +137,7 @@ Attach an Avatar to a User
     [User][]
 
 
-## User Collection [/users{?search,centerId,role,siteAdmin,hasRoom}]
+## User Collection [/users///{?search,centerId,userTypeId,role,siteAdmin,hasRoom,hasDefaultVisitorCenter}]
 Collection of all Users.
 
 + Model (application/json)
@@ -196,11 +197,14 @@ Get data for currently logged in user
 
 ### Retrieve Current User [GET]
 + Response 200
+
     [User][]
 
-## Get availability of a username [/users/username/{username}]
-
+## Get availability of a username [/users/username///{username}]
 Get boolean value if {username} already exists
+
++ Parameters
+    + username (string) ... 
 
 
 ### Check if Username Exists [GET]
@@ -239,20 +243,23 @@ Get current user report auth data
                 "authToken:" "imp_46436454_3452345345dgdg3q5345dsgdgsdg_=dev_fmccloud_420"
             }
 
-## Reset User Password [/users/{id}/resetPassword]
-
+## Reset User Password [/users///{id}/resetPassword]
 Sends password reset email to user
 
 ### Reset User Password [PUT]
++ Parameters
+    + id (string) ... ID of the User
+    
 + Response 200
     [User][]
 
-## Get User Permission Data [/users/{id}/permissions]
+## User Permission Data [/users///{id}/permissions]
 
-Get user permission data
+User permission data for a single user 
 
 ### Retrieve User Permissions [GET]
-
++ Parameters
+    + id (string) ... ID of the User  
 + Response 200 (application/json)
 
             [
@@ -281,47 +288,45 @@ Get user permission data
                 "role":"CUSTOMER",
                 "center":{
                   "name":"Inventory Center",
-                  "id":73
+                  "id":22
                 }
             ]
 
-## Edit User Permission Data [/users/{id}/permissions]
-
-Edit user permission data
-
 ### Edit User Permissions [PUT]
++ Parameters
+    + id (string) ... ID of the User 
 
-+ Request (application/json)
-
++ Request (application/json)  
+    
             [
               {
-                "role":"CUSTOMER",
+                "role":"ADMINISTRATOR",
                 "center":{
                   "name":"Asset Center",
                   "id":69
                 }
               },
               {
-                "role":"CUSTOMER",
+                "role":"MANAGER",
                 "center":{
                   "name":"Copy Center",
                   "id":67
                 }
               },
               {
-                "role":"CUSTOMER",
+                "role":"OPERATOR",
                 "center":{
                   "name":"File Room",
                   "id":77
                 }
               },
               {
-                "role":"MANAGER",
+                "role":"CUSTOMER",
                 "center":{
                   "name":"Inventory Center",
-                  "id":73
+                  "id":22
                 }
             ]
-
+            
 + Response 200
     [User][]

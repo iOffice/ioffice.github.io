@@ -54,6 +54,12 @@ To update a Asset send JSON with updated value for one or more of the attributes
     + id (string) ... ID of the Asset
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Asset Collection [/assets///{?search,searchSerialNumber,typeId,buildingId,floorId,roomId,owner}]
 Collection of all Assets.
 
@@ -112,7 +118,7 @@ The following attributes are required to create a Asset: `model`, `serialNumber`
 
     [Asset][]
 
-## Verify an asset [/assets/{id}/verify]
+## Verify an asset [/assets///{id}/verify]
 
 Create a record of the time and user that audited an asset.
 
@@ -123,7 +129,7 @@ Create a record of the time and user that audited an asset.
 ### Verify Asset [PUT]
 + Response 204
 
-## Attach Asset Image [/assets/{id}/attachImage]
+## Attach Asset Image [/assets///{id}/attachImage]
 Attach an image to a asset
 
 + Parameters

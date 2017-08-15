@@ -5,8 +5,8 @@ Item related resources of *iOffice API*
 Collection of all Items.
 
 + Parameters
-    + category = (optional, integer, , `1`) ... If present, query will filter by category
-    + parent = (optional, integer, , `2`) ... If present, query will filter by parent
+    + category (optional, integer, , `1`) ... If present, query will filter by category
+    + parent (optional, integer, , `2`) ... If present, query will filter by parent
     + root = `false` (optional, boolean, , `true`) ... If present, query will only return Items without a parent
 
 + Model (application/json)
@@ -43,7 +43,7 @@ Collection of all Items.
 + Response 200
     [Item Collection][]
 
-## Item [/categories/items/{id}]
+## Item [/categories/items///{id}]
 A single Item object.
 
 + Model (application/json)
@@ -81,7 +81,7 @@ A single Item object.
 + Response 200 
     [Item][]
 
-### Create a Item [POST /categories/items]
+### Create a Item [POST]
 The following attributes are required to create an Item: 
 
 + Request (application/json)
@@ -119,7 +119,7 @@ The following attributes are required to create an Item:
             "dateCreated": 1434561059383,
             "dateUpdated": 1435679209637 
         }
-### Edit a Item [PUT /categories/items/{id}]
+### Edit a Item [PUT]
 To update a Item send JSON with updated value for one or more of the attributes.
 + Parameters
     + id (string) ... ID of the Item
@@ -159,12 +159,19 @@ To update a Item send JSON with updated value for one or more of the attributes.
             }
 
 ### Remove an Item [DELETE]
-
++ Parameters
+    + id (string) ... ID of the User
 + Response 200
+
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
 
 ## Item Helpers [/categories/items] 
 
-### Get an Item's children [GET /categories/items/{id}/children]
+### Get an Item's children [GET /categories/items///{id}/children]
 + Parameters
     + id (string) ... ID of the Item
 
@@ -207,7 +214,7 @@ To update a Item send JSON with updated value for one or more of the attributes.
           }
         ]
 
-### Get the users assigned to a specific Item [GET /categories/items/{id}/users]
+### Get the users assigned to a specific Item [GET /categories/items///{id}/users]
 + Parameters
     + id (string) ... ID of the Item
 
@@ -309,8 +316,7 @@ To update a Item send JSON with updated value for one or more of the attributes.
 
 ### Get the users assigned to any Item [GET /categories/items/users]
 + Response 200
-
-       
+     
         [ 
           {
             "floorWarden": false,
@@ -405,8 +411,7 @@ To update a Item send JSON with updated value for one or more of the attributes.
               }
             ]
  
-
-### Get the rooms assigned to a specific Item [GET /categories/items/{id}/rooms]
+### Get the rooms assigned to a specific Item [GET /categories/items///{id}/rooms]
 + Parameters
     + id (string) ... ID of the Item
 

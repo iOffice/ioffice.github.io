@@ -42,6 +42,12 @@ To update a Contact send JSON with the id and updated value for one or more of t
     + id (string) ... ID of the Contact
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Contact Collection [/contacts]
 Collection of all Contacts.
 

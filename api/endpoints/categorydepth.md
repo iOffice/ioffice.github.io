@@ -55,7 +55,7 @@ Collection of all Depths.
 + Response 200
     [Depth Collection][]
 
-## Depth [/categories/depth/{id}]
+## Depth [/categories/depth///{id}]
 A Single Depth object.
 
 + Model (application/json)
@@ -113,7 +113,7 @@ The following attributes are required to create a Depth:
                 "dateCreated": 1434561059383
             }
 
-### Edit a Depth [PUT /categories/depths/{id}]
+### Edit a Depth [PUT /categories/depths///{id}]
 To update a Depth send JSON with updated value for one of more of the attributes.
 + Parameters
     + id (string) ... ID of the Depth
@@ -146,3 +146,9 @@ To update a Depth send JSON with updated value for one of more of the attributes
 + Parameters
     + id (string) ... ID of the Category
 + Response 200
+
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }

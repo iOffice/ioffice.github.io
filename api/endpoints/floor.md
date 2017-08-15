@@ -43,6 +43,12 @@ To update a Floor send JSON with updated value for one or more of the attributes
     + id (string) ... ID of the Floor
 + Response 200
 
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
 ## Floor Collection [/floors///{?buildingId}]
 Collection of all Floors.
 
