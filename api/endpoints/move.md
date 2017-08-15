@@ -636,6 +636,10 @@ To update a Move Request send JSON with updated values for one or more of the at
 
 ## Move Collection [/move/requests///{?statusId,statusCode}]
 
++ Parameters
+    + statusId (optional, number, `66`) ... ID of the Move status to query from
+    + statusCode (optional, string, `sub`) ... Code of the Move status to query from
+
 + Model (application/json)
     JSON representation of the Move Collection resource.
 
