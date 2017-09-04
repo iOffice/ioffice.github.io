@@ -35,6 +35,10 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 | orderBy | Property to order results by (default: 'id')  |
 | orderByType | Choose to order results in either ascending(`asc`) or descending(`desc`)order (default: 'asc')  |
 
+Example usage to search users by employeeID:
+
+https://`siteaddress`/external/api/rest/v2/users?search={employeeID}
+
 ## Resource Requests
 NOTE: When creating/updating an object, all that is needed is the ID of new object
         

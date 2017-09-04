@@ -100,6 +100,7 @@ To update a User send JSON with updated value for one or more of the attributes.
 + Request (application/json)
 
         {
+            "id": 420,
             "jobTitle": "Developer",
         }
 
