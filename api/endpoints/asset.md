@@ -100,15 +100,14 @@ Collection of all Assets.
 
 
 ### Create a Asset [POST]
-The following attributes are required to create a Asset: `model`, `serialNumber`, and (`room` or `owner`).
+The following attributes are required to create a Asset: `model` and (`room` or `owner`).
 
 + Request (application/json)
 
             {
                 "model": {
                     "id": 454
-                },
-                "serialNumber": "49867233"
+                },         
                 "room": {
                     "id": "57"
                 }
