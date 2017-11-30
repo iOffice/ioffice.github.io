@@ -124,7 +124,7 @@ Attach an Avatar to a User
 + Parameters
     + id (string) ... ID of the User
 
-### Attach an Avatar to a User [PUT]
+### Attach an Avatar to a User [POST]
 The following attributes are required to attach an avatar: `image`, `fileName`.
 
 + Request (application/json)
