@@ -96,11 +96,11 @@ A single user object.
 
 ### Edit a User [PUT]
 To update a User send JSON with updated value for one or more of the attributes.
-   <br><br>
+   <br/><br/>
   **Updating a User's Cost Center(s)**
 
 * To update a User's default Cost Center (Category ID equals 1) send JSON with updated value for the `costCenter` attribute.  
-	<br>
+	<br/>
 * To update a User's non-default Cost Center(s) (Category ID is greater than 1) send JSON with updated value for the `costCenters` attribute.    
 + Request (application/json)
 
@@ -113,7 +113,7 @@ To update a User send JSON with updated value for one or more of the attributes.
                         		"id": 1234
                         	},
                         	{
-                        		"id":5678
+                        		"id": 5678
                         	}
             ]
         }
