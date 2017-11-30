@@ -106,6 +106,22 @@ To update a User send JSON with updated value for one or more of the attributes.
 
 + Response 200
 
+### Edit a User's Cost Center [PUT]
+To update a User's Cost Center (when that `costCenterCategoryID` is greater than 1) send JSON with updated value for the `costCenters` attribute.
+    
++ Request (application/json)
+
+        {
+            "id": 420,
+            "costCenters": [
+            	{
+            		"id": 1234
+            	}
+            ]
+        }
+
++ Response 200
+
 ### Remove a User [DELETE]
 + Parameters
     + id (string) ... ID of the User
