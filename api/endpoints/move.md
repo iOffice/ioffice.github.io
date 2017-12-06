@@ -278,7 +278,15 @@ A single move reservation object.
                        },
                        "email": "hansolo@iofficecorp.com"
                      },
-                     "tasksValueMap": {}
+                     "tasksValueMap":{  
+                        "10":{  
+                           "other":"Need a Bigger TV",
+                           "notes":"Samsung or Sony",
+                           "whiteBoard":"Yes",
+                           "deskChair":"Yes",
+                           "sideChair":"Yes"
+                        }
+                     }
                    }
                  ],
                  "status": {
@@ -337,7 +345,15 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "name": "Han Solo",
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap": {}
+                 "tasksValueMap":{  
+                    "10":{  
+                       "other":"Need a Bigger TV",
+                       "notes":"Samsung or Sony",
+                       "whiteBoard":"Yes",
+                       "deskChair":"Yes",
+                       "sideChair":"Yes"
+                    }
+                 }
                }
              ],
              "status": {
@@ -612,7 +628,15 @@ To update a Move Request send JSON with updated values for one or more of the at
                    },
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap": {}
+                 "tasksValueMap":{  
+                    "10":{  
+                       "other":"Need a Bigger TV",
+                       "notes":"Samsung or Sony",
+                       "whiteBoard":"Yes",
+                       "deskChair":"Yes",
+                       "sideChair":"Yes"
+                    }
+                 }
                }
              ],
              "status": {
@@ -910,7 +934,15 @@ To update a Move Request send JSON with updated values for one or more of the at
                                  },
                                  "email": "hansolo@iofficecorp.com"
                                },
-                               "tasksValueMap": {}
+                               "tasksValueMap":{  
+                                  "10":{  
+                                     "other":"Need a Bigger TV",
+                                     "notes":"Samsung or Sony",
+                                     "whiteBoard":"Yes",
+                                     "deskChair":"Yes",
+                                     "sideChair":"Yes"
+                                  }
+                               }
                              }
                            ],
                            "status": {
@@ -969,7 +1001,15 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "name": "Han Solo",
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap": {}
+                 "tasksValueMap":{  
+                    "10":{  
+                       "other":"Need a Bigger TV",
+                       "notes":"Samsung or Sony",
+                       "whiteBoard":"Yes",
+                       "deskChair":"Yes",
+                       "sideChair":"Yes"
+                    }
+                 }
                }
              ],
              "status": {
@@ -1251,7 +1291,15 @@ To update a Move Request send JSON with updated values for one or more of the at
                    },
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap": {}
+                 "tasksValueMap":{  
+                    "10":{  
+                       "other":"Need a Bigger TV",
+                       "notes":"Samsung or Sony",
+                       "whiteBoard":"Yes",
+                       "deskChair":"Yes",
+                       "sideChair":"Yes"
+                    }
+                 }
                }
              ],
              "dateUpdated": 1488576779926,
@@ -1297,6 +1345,75 @@ Get move status ids
                 id: 16
              }
            ]
+           
+Get move tasks
+
+## Retrieve Move Tasks [GET]
+
++ Response 200 (application/json)
+
+            [
+              {
+                "dateCreated": 1224355565670,
+                "name": "Network Services",
+                "id": 1,
+                "fields": [
+                  {
+                    "code": "pcType",
+                    "name": "PC Type",
+                    "id": 4
+                  },
+                  {
+                    "code": "notes",
+                    "name": "Notes",
+                    "id": 5
+                  },
+                  {
+                    "code": "printer",
+                    "name": "Printer?",
+                    "id": 12
+                  },
+                  {
+                    "code": "localQueue",
+                    "name": "Local Queue",
+                    "id": 26
+                  }
+                ]
+              },
+              ...
+              {
+                "dateCreated": 1224355565670,
+                "name": "Furniture",
+                "id": 10,
+                "fields": [
+                  {
+                    "code": "deskChair",
+                    "name": "Desk Chair?",
+                    "id": 42
+                  },
+                  {
+                    "code": "sideChair",
+                    "name": "Side Chair?",
+                    "id": 43
+                  },
+                  {
+                    "code": "whiteBoard",
+                    "name": "White Board?",
+                    "id": 44
+                  },
+                  {
+                    "code": "other",
+                    "name": "Other?",
+                    "id": 45
+                  },
+                  {
+                    "code": "notes",
+                    "name": "Notes",
+                    "id": 46
+                  }
+                ]
+              }
+            ]          
 
 ## Get Move Request Type Ids [/move/requestTypes]
 
