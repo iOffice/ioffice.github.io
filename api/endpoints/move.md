@@ -278,8 +278,8 @@ A single move reservation object.
                        },
                        "email": "hansolo@iofficecorp.com"
                      },
-                     "tasksValueMap":{  
-                        "10":{  
+                     "tasksValueMap": {  
+                        "10": {  
                            "other":"Need a Bigger TV",
                            "notes":"Samsung or Sony",
                            "whiteBoard":"Yes",
@@ -345,8 +345,8 @@ To update a Move Request send JSON with updated values for one or more of the at
                    "name": "Han Solo",
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap":{  
-                    "10":{  
+                 "tasksValueMap": {  
+                    "10": {  
                        "other":"Need a Bigger TV",
                        "notes":"Samsung or Sony",
                        "whiteBoard":"Yes",
@@ -1291,8 +1291,8 @@ To update a Move Request send JSON with updated values for one or more of the at
                    },
                    "email": "hansolo@iofficecorp.com"
                  },
-                 "tasksValueMap":{  
-                    "10":{  
+                 "tasksValueMap": {  
+                    "10": {  
                        "other":"Need a Bigger TV",
                        "notes":"Samsung or Sony",
                        "whiteBoard":"Yes",
@@ -1346,6 +1346,8 @@ Get move status ids
              }
            ]
            
+## Get Move Tasks [/move/tasks]
+
 Get move tasks
 
 ## Retrieve Move Tasks [GET]
