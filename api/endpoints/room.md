@@ -90,7 +90,7 @@ Collection of all Rooms.
     + includeParking (optional, boolean, `true`) ... If true, query will include rooms with parking spaces
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
-    + type (optional, number, `65 or 65, 32, 79`) ... Id of room type to search for (can accept a comma delimited series of Id's)
+    + type (optional, number, `65 or 65,32,79`) ... Id of room type to search for (can accept a comma delimited series of Id's)
 
 + Response 200
     
