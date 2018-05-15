@@ -50,6 +50,25 @@ To update a Room send JSON with updated value for one or more of the attributes.
                 "response": "Successfully removed"
             }
         }
+        
+### Create a Room [POST]
+The following attributes are required to create a Room: `name`, `floor`, and `type`.
+
++ Request (application/json)
+
+			{
+				"name": "room 101",
+				"floor": {
+					"id": 16
+				},
+				"type": {
+					"id": 44
+				}
+			}
+
++ Response 201
+
+	[Room][]
 
 ## Room Collection [/rooms///{?includeReservable,includeNonReservable,locationSearch,includeOccupiable,includeNonOccupiable,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,includeParking,search,buildingId,floorId,type}]
 Collection of all Rooms.
@@ -96,22 +115,28 @@ Collection of all Rooms.
     
     [Room Collection][]
 
+## RoomTypes [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable}]
+Collection of all RoomTypes.
 
-### Create a Room [POST]
-The following attributes are required to create a Room: `name`, `floor`, and `type`.
++ Model (application/json)
+    JSON representation of the Room Types resource.
 
-+ Request (application/json)
+    + Body
 
-            {
-                "name": "room 101",
-                "floor": {
-                    "id": 16
-                },
-                "type": {
-                    "id": 44
+            [
+                {
+                    "id":21
+                    "name":"Office",
+                    "sortOrder":5
                 }
-            }
+            ]
 
-+ Response 201
-
-    [Room][]
+### List of all RoomTypes [GET]
++ Parameters
+    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable rooms
+    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable rooms
+    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable rooms
+    
++ Response 200
+	[RoomTypes][]
