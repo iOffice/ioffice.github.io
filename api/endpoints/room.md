@@ -116,7 +116,7 @@ The following attributes are required to create a Room: `name`, `floor`, and `ty
 	[Room][]
 
 ## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking}]
-Collection of all RoomTypes.
+Collection of all Room Types.
 
 + Model (application/json)
     JSON representation of the Room Types resource.
