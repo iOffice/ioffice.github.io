@@ -663,9 +663,7 @@ To update a Move Request send JSON with updated values for one or more of the at
     + id (string) ... ID of the move request
 + Response 200
 
-        {
-            { }
-        }
+		{ }
 
 
 ## Move Collection [/move/requests///{?statusId,statusCode}]

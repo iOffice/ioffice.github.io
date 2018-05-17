@@ -50,25 +50,6 @@ To update a Room send JSON with updated value for one or more of the attributes.
                 "response": "Successfully removed"
             }
         }
-        
-### Create a Room [POST]
-The following attributes are required to create a Room: `name`, `floor`, and `type`.
-
-+ Request (application/json)
-
-			{
-				"name": "room 101",
-				"floor": {
-					"id": 16
-				},
-				"type": {
-					"id": 44
-				}
-			}
-
-+ Response 201
-
-	[Room][]
 
 ## Room Collection [/rooms///{?includeReservable,includeNonReservable,locationSearch,includeOccupiable,includeNonOccupiable,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,includeParking,search,buildingId,floorId,type}]
 Collection of all Rooms.
@@ -115,7 +96,26 @@ Collection of all Rooms.
     
     [Room Collection][]
 
-## RoomTypes [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable}]
+### Create a Room [POST]
+The following attributes are required to create a Room: `name`, `floor`, and `type`.
+
++ Request (application/json)
+
+			{
+				"name": "room 101",
+				"floor": {
+					"id": 16
+				},
+				"type": {
+					"id": 44
+				}
+			}
+
++ Response 201
+
+	[Room][]
+
+## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking}]
 Collection of all RoomTypes.
 
 + Model (application/json)
@@ -131,12 +131,13 @@ Collection of all RoomTypes.
                 }
             ]
 
-### List of all RoomTypes [GET]
+### List of all Room Types [GET]
 + Parameters
-    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
-    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable rooms
-    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable rooms
-    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable rooms
+    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable room types
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable room types
+    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
+    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
+    + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
     
 + Response 200
-	[RoomTypes][]
+	[Room Types][]
