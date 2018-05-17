@@ -96,22 +96,48 @@ Collection of all Rooms.
     
     [Room Collection][]
 
-
 ### Create a Room [POST]
 The following attributes are required to create a Room: `name`, `floor`, and `type`.
 
 + Request (application/json)
 
-            {
-                "name": "room 101",
-                "floor": {
-                    "id": 16
-                },
-                "type": {
-                    "id": 44
-                }
-            }
+			{
+				"name": "room 101",
+				"floor": {
+					"id": 16
+				},
+				"type": {
+					"id": 44
+				}
+			}
 
 + Response 201
 
-    [Room][]
+	[Room][]
+
+## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking}]
+Collection of all Room Types.
+
++ Model (application/json)
+    JSON representation of the Room Types resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    "name":"Office",
+                    "sortOrder":5
+                }
+            ]
+
+### List of all Room Types [GET]
++ Parameters
+    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable room types
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable room types
+    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
+    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
+    + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
+    
++ Response 200
+	[Room Types][]

@@ -657,6 +657,14 @@ To update a Move Request send JSON with updated values for one or more of the at
                 "response": "Successfully removed"
             }
         }
+        
+## Archive a Move Request [POST /move/requests///{id}/archive]
++ Parameters
+    + id (string) ... ID of the move request
++ Response 200
+
+		{ }
+
 
 ## Move Collection [/move/requests///{?statusId,statusCode}]
 
@@ -1501,64 +1509,64 @@ Get move tasks
 
 + Response 200 (application/json)
 
-[  
-   {  
-      "dateCreated":1224355565670,
-      "name":"Network Services",
-      "id":1,
-      "fields":[  
-         {  
-            "code":"pcType",
-            "name":"PC Type",
-            "id":4
-         },
-         {  
-            "code":"notes",
-            "name":"Notes",
-            "id":5
-         },
-         {  
-            "code":"printer",
-            "name":"Printer?",
-            "id":12
-         },
-         {  
-            "code":"localQueue",
-            "name":"Local Queue",
-            "id":26
-         }
-      ]
-   },
-   ...   {  
-      "dateCreated":1224355565670,
-      "name":"Furniture",
-      "id":10,
-      "fields":[  
-         {  
-            "code":"deskChair",
-            "name":"Desk Chair?",
-            "id":42
-         },
-         {  
-            "code":"sideChair",
-            "name":"Side Chair?",
-            "id":43
-         },
-         {  
-            "code":"whiteBoard",
-            "name":"White Board?",
-            "id":44
-         },
-         {  
-            "code":"other",
-            "name":"Other?",
-            "id":45
-         },
-         {  
-            "code":"notes",
-            "name":"Notes",
-            "id":46
-         }
-      ]
-   }
-]
+		[  
+		   {  
+			  "dateCreated":1224355565670,
+			  "name":"Network Services",
+			  "id":1,
+			  "fields":[  
+				 {  
+					"code":"pcType",
+					"name":"PC Type",
+					"id":4
+				 },
+				 {  
+					"code":"notes",
+					"name":"Notes",
+					"id":5
+				 },
+				 {  
+					"code":"printer",
+					"name":"Printer?",
+					"id":12
+				 },
+				 {  
+					"code":"localQueue",
+					"name":"Local Queue",
+					"id":26
+				 }
+			  ]
+		   },
+		   ...   {  
+			  "dateCreated":1224355565670,
+			  "name":"Furniture",
+			  "id":10,
+			  "fields":[  
+				 {  
+					"code":"deskChair",
+					"name":"Desk Chair?",
+					"id":42
+				 },
+				 {  
+					"code":"sideChair",
+					"name":"Side Chair?",
+					"id":43
+				 },
+				 {  
+					"code":"whiteBoard",
+					"name":"White Board?",
+					"id":44
+				 },
+				 {  
+					"code":"other",
+					"name":"Other?",
+					"id":45
+				 },
+				 {  
+					"code":"notes",
+					"name":"Notes",
+					"id":46
+				 }
+			  ]
+		   }
+		]
