@@ -90,28 +90,54 @@ Collection of all Rooms.
     + includeParking (optional, boolean, `true`) ... If true, query will include rooms with parking spaces
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
-    + type (optional, number, `65`) ... Id of room type to search for
+    + type (optional, number, `65 or 65,32,79`) ... Id of room type to search for (can accept a comma delimited series of Id's)
 
 + Response 200
     
     [Room Collection][]
-
 
 ### Create a Room [POST]
 The following attributes are required to create a Room: `name`, `floor`, and `type`.
 
 + Request (application/json)
 
-            {
-                "name": "room 101",
-                "floor": {
-                    "id": 16
-                },
-                "type": {
-                    "id": 44
-                }
-            }
+			{
+				"name": "room 101",
+				"floor": {
+					"id": 16
+				},
+				"type": {
+					"id": 44
+				}
+			}
 
 + Response 201
 
-    [Room][]
+	[Room][]
+
+## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking}]
+Collection of all Room Types.
+
++ Model (application/json)
+    JSON representation of the Room Types resource.
+
+    + Body
+
+            [
+                {
+                    "id":21
+                    "name":"Office",
+                    "sortOrder":5
+                }
+            ]
+
+### List of all Room Types [GET]
++ Parameters
+    + includeReservable (optional, boolean, `true`) ... If true, query will include reservable room types
+    + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable room types
+    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
+    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
+    + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
+    
++ Response 200
+	[Room Types][]
