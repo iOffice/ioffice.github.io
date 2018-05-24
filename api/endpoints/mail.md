@@ -184,7 +184,7 @@ To update a Mail Item send JSON with the id and updated value for one or more of
 + Response 200
     
     [Mail][]
-
+      
 ### Remove a Mail Item [DELETE]
 + Parameters
     + id (string) ... ID of the Mail Item
@@ -194,7 +194,103 @@ To update a Mail Item send JSON with the id and updated value for one or more of
             {
                 "response": "Successfully removed"
             }
-        }    
+        } 
+        
+## Deliver a Mail Item [/mail/items///{id}///deliver]
+To deliver a Mail Item send JSON with the required attributes.
+
+### Deliver a Mail Item [PUT]
++ Parameters
+    + id (string) ... ID of the Mail Item
+    + trackingNumber (number) ... trackingNumber of the Mail Item
+    + itemType (string, `OUTBOUND`) ... type of the Mail Item 
+    + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
+    + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
+ + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
+  
++ Request (application/json)
+
+            {
+              "itemType": "INTEROFFICE",
+              "fromUser": {
+                "id": 13
+              },
+              "deliverTo": {
+                "id": 126
+              },
+              "toUser": {
+                "id": 126
+              },
+              "id": 1906,
+              "trackingNumber": "351987984"
+            }
+
++ Response 200  
+    [Mail][] 
+    
+## Checkout a Mail Item [/mail/items///{id}///checkout]
+To checkout a Mail Item send JSON with the required attributes.
+
+### Checkout a Mail Item [PUT]
++ Parameters
+    + id (string) ... ID of the Mail Item
+    + trackingNumber (number) ... trackingNumber of the Mail Item
+    + itemType (string, `OUTBOUND`) ... type of the Mail Item 
+    + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
+    + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
+ + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
+  
++ Request (application/json)
+
+            {
+              "itemType": "INTEROFFICE",
+              "fromUser": {
+                "id": 13
+              },
+              "deliverTo": {
+                "id": 126
+              },
+              "toUser": {
+                "id": 126
+              },
+              "id": 1906,
+              "trackingNumber": "351987984"
+            }
+
++ Response 200
+    [Mail][]
+    
+## Pend a Mail Item [/mail/items///{id}///pending]
+To pend a Mail Item send JSON with the required attributes.
+
+### Pend a Mail Item [PUT]
++ Parameters
+    + id (string) ... ID of the Mail Item
+    + trackingNumber (number) ... trackingNumber of the Mail Item
+    + itemType (string, `OUTBOUND`) ... type of the Mail Item 
+    + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
+    + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
+ + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
+  
++ Request (application/json)
+
+            {
+              "itemType": "INTEROFFICE",
+              "fromUser": {
+                "id": 13
+              },
+              "deliverTo": {
+                "id": 126
+              },
+              "toUser": {
+                "id": 126
+              },
+              "id": 1906,
+              "trackingNumber": "351987984"
+            }
+
++ Response 200
+    [Mail][]                 
         
 ## Mail Items Collection [/mail/items]
 Collection of all Mail Items.
