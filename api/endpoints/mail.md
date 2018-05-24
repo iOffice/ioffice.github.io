@@ -183,18 +183,20 @@ To update a Mail Item send JSON with the id and updated value for one or more of
 
 + Response 200
     
-    [Mail][]
+    [Mail][]    
       
 ### Remove a Mail Item [DELETE]
 + Parameters
     + id (string) ... ID of the Mail Item
-+ Response 200
 
         {
             {
                 "response": "Successfully removed"
             }
         } 
+        
++ Response 200     
+   [Mail][]        
         
 ## Deliver a Mail Item [/mail/items///{id}///deliver]
 To deliver a Mail Item send JSON with the required attributes.
@@ -206,7 +208,6 @@ To deliver a Mail Item send JSON with the required attributes.
     + itemType (string, `OUTBOUND`) ... type of the Mail Item 
     + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
     + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
- + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
   
 + Request (application/json)
 
@@ -214,9 +215,6 @@ To deliver a Mail Item send JSON with the required attributes.
               "itemType": "INTEROFFICE",
               "fromUser": {
                 "id": 13
-              },
-              "deliverTo": {
-                "id": 126
               },
               "toUser": {
                 "id": 126
@@ -238,7 +236,6 @@ To checkout a Mail Item send JSON with the required attributes.
     + itemType (string, `OUTBOUND`) ... type of the Mail Item 
     + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
     + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
- + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
   
 + Request (application/json)
 
@@ -246,9 +243,6 @@ To checkout a Mail Item send JSON with the required attributes.
               "itemType": "INTEROFFICE",
               "fromUser": {
                 "id": 13
-              },
-              "deliverTo": {
-                "id": 126
               },
               "toUser": {
                 "id": 126
@@ -270,7 +264,6 @@ To pend a Mail Item send JSON with the required attributes.
     + itemType (string, `OUTBOUND`) ... type of the Mail Item 
     + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
     + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
- + deliverTo (user object, `{ 'id:' 99 }`) ... user object containing the deliverTo userID
   
 + Request (application/json)
 
@@ -278,9 +271,6 @@ To pend a Mail Item send JSON with the required attributes.
               "itemType": "INTEROFFICE",
               "fromUser": {
                 "id": 13
-              },
-              "deliverTo": {
-                "id": 126
               },
               "toUser": {
                 "id": 126
@@ -290,7 +280,53 @@ To pend a Mail Item send JSON with the required attributes.
             }
 
 + Response 200
-    [Mail][]                 
+    [Mail][]   
+    
+## Transfer a Mail Item [/mail/items///{id}///transfer]
+To transfer a Mail Item send JSON with the required attributes.
+
+### Transfer a Mail Item [PUT]
++ Parameters
+    + id (string) ... ID of the Mail Item
+    + trackingNumber (number) ... trackingNumber of the Mail Item
+    + itemType (string, `OUTBOUND`) ... type of the Mail Item 
+    + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
+    + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
+  
++ Request (application/json)
+
+            {
+              "itemType": "INTEROFFICE",
+              "fromUser": {
+                "id": 13
+              },
+              "toUser": {
+                "id": 126
+              },
+              "id": 1906,
+              "trackingNumber": "351987984"
+            }
+
++ Response 200
+    [Mail][]    
+    
+## Add a Comment to a Mail Item [/mail/items///{id}///addComment]
+To add a Comment to a Mail Item send JSON with the required attributes.
+
+### Add a Comment to a Mail Item [PUT]
++ Parameters
+    + comment (string, `This is a comment!`) ... new comment for the Mail Item 
+    + commentBy (string, `Hank`) ... author noteg to accompany new comment for the Mail Item
+  
++ Request (application/json)
+
+            {
+              "comment: "This is a comment!",
+              "commentBy: "Bobby"
+            }
+
++ Response 200
+    [Mail][]                        
         
 ## Mail Items Collection [/mail/items]
 Collection of all Mail Items.
@@ -320,6 +356,40 @@ Collection of all Mail Items.
 + Response 200
     
     [Mail Items Collection][]
+    
+## Check In a Mail Item [/mail/items///{id}///checkin]
+To check in (create) a Mail Item send JSON with the required attributes.
+
+### Check In a Mail Item [POST]
++ Parameters
+    + trackingNumber (number) ... trackingNumber of the Mail Item
+    + itemType (string, `OUTBOUND`) ... type of the Mail Item 
+    + mailCenter (mailCenter object, `{ 'id:' 62 }` ) mail center object containing the mailCenter ID
+    + packageType (packageType object, `{ 'id:' 1 }` ) package type object containing the packageType ID
+    + fromUser (user object, `{ 'id:' 13 }`) ... user object containing the fromUser userID
+    + toUser (user object, `{ 'id:' 42 }`) ... user object containing the toUser userID
+  
++ Request (application/json)
+
+            {
+              "itemType": "OUTBOUND",
+              "packageType": {
+                "id": 1
+              },
+              "center": {
+                 "id": 62
+                },
+              "fromUser": {
+                "id": 13
+              },
+              "toUser": {
+                "id": 126
+              },
+              "trackingNumber": "351987984"
+            }
+
++ Response 200  
+    [Mail][]     
     
 ## Mail Item IDs [/mail/items/ids]
 Retrieve all Mail Item IDs.
