@@ -198,10 +198,10 @@ To update a Mail Item send JSON with the id and updated value for one or more of
 + Response 200     
    [Mail][]        
         
-## Deliver a Mail Item [/mail/items///{id}///deliver]
-To deliver a Mail Item send JSON with the required attributes.
+## Deliver one or more Mail Items [/mail/items///{id}///deliver]
+To deliver one or more Mail Items send JSON with the required attributes.
 
-### Deliver a Mail Item [PUT]
+### Deliver one or more Mail Items [PUT]
 + Parameters
     + id (string) ... ID of the Mail Item
     + trackingNumber (number) ... trackingNumber of the Mail Item
@@ -211,6 +211,7 @@ To deliver a Mail Item send JSON with the required attributes.
   
 + Request (application/json)
 
+			[
             {
               "itemType": "INTEROFFICE",
               "fromUser": {
@@ -222,9 +223,11 @@ To deliver a Mail Item send JSON with the required attributes.
               "id": 1906,
               "trackingNumber": "351987984"
             }
+            ...
+            ]
 
-+ Response 200  
-    [Mail][] 
++ Response 200   
+    [Mail][]
     
 ## Checkout a Mail Item [/mail/items///{id}///checkout]
 To checkout a Mail Item send JSON with the required attributes.
@@ -316,19 +319,17 @@ To add a Comment to a Mail Item send JSON with the required attributes.
 ### Add a Comment to a Mail Item [PUT]
 + Parameters
     + comment (string, `This is a comment!`) ... new comment for the Mail Item 
-    + commentBy (string, `Hank`) ... author noteg to accompany new comment for the Mail Item
   
 + Request (application/json)
 
             {
               "comment: "This is a comment!",
-              "commentBy: "Bobby"
             }
 
 + Response 200
     [Mail][]                        
         
-## Mail Items Collection [/mail/items]
+## Mail Items Collection [/mail/items///{?search}]
 Collection of all Mail Items.
 
 + Model (application/json)
@@ -353,14 +354,17 @@ Collection of all Mail Items.
 
 ### List of all Mail Items [GET]
 
++ Parameters
+    + search (optional, number, `351987984`) ... Number to search for mail item by id, trackingNumber, or originalTrackingNumber
+
 + Response 200
     
     [Mail Items Collection][]
-    
-## Check In a Mail Item [/mail/items///{id}///checkin]
-To check in (create) a Mail Item send JSON with the required attributes.
+     
+## Check In one or more Mail Items [/mail/items///{id}///checkin]
+To check in one or more Mail Items send JSON with the required attributes.
 
-### Check In a Mail Item [POST]
+### Check In one or more Mail Items [POST]
 + Parameters
     + trackingNumber (number) ... trackingNumber of the Mail Item
     + itemType (string, `OUTBOUND`) ... type of the Mail Item 
@@ -371,25 +375,28 @@ To check in (create) a Mail Item send JSON with the required attributes.
   
 + Request (application/json)
 
-            {
-              "itemType": "OUTBOUND",
-              "packageType": {
-                "id": 1
-              },
-              "center": {
-                 "id": 62
-                },
-              "fromUser": {
-                "id": 13
-              },
-              "toUser": {
-                "id": 126
-              },
-              "trackingNumber": "351987984"
-            }
+            [
+				{
+				  "itemType": "OUTBOUND",
+				  "packageType": {
+					"id": 1
+				  },
+				  "center": {
+					 "id": 62
+					},
+				  "fromUser": {
+					"id": 13
+				  },
+				  "toUser": {
+					"id": 126
+				  },
+				  "trackingNumber": "351987984"
+				},
+				...
+			]
 
 + Response 200  
-    [Mail][]     
+    [Mail][]       
     
 ## Mail Item IDs [/mail/items/ids]
 Retrieve all Mail Item IDs.
@@ -592,7 +599,7 @@ Collection of all Mail Routes.
     [Mail Routes][] 
     
 ## Mail Locations [/mail/locations]
-Collection of all Mail Routes.
+Collection of all Mail Locations.
 
 + Model (application/json)
     JSON representation of the Mail Locations resource.
