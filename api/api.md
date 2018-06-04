@@ -55,6 +55,8 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 
 <!-- include(endpoints/move.md) -->
 
+<!-- include(endpoints/mail.md) -->
+
 <!-- include(endpoints/contact.md) -->
 
 <!-- include(endpoints/building.md) -->
@@ -78,3 +80,4 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
 <!-- include(endpoints/category.md) -->
 
 <!-- include(endpoints/categorydepth.md) -->
+
