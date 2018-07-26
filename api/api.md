@@ -50,6 +50,14 @@ NOTE: When creating/updating an object, all that is needed is the ID of new obje
             }
         }
 
+Note: Many of the `List of all XXXX` endpoints that return a collection have a `/count` variation that will return the number of available records. Filtering is not supported by the `/count` endpoint.  
+
+
++ e.g. To retrieve the total number of users available: `/users/count`
+	
++ e.g. To retrieve the total number of category items available: `/categories/items/count`
+	
+
 
 <!-- include(endpoints/user.md) -->
 
