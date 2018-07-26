@@ -54,13 +54,16 @@ contact: {
 id: 5
 }
 }</p>
-<p>Note: Many of the <code>List of all XXXX</code> endpoints that return a collection have a <code>/count</code> variation that will return the number of available records. Filtering is not supported by the <code>/count</code> endpoint.</p>
+<p>Note: Many of the <code>List of all XXXX</code> endpoints that return a collection have a <code>/count</code> variation that will return the number of available records. All parameters supported by the main endpoint are supported by the <code>/count</code> endpoint.</p>
 <ul>
 <li>
 <p>e.g. To retrieve the total number of users available: <code>/users/count</code></p>
 </li>
 <li>
 <p>e.g. To retrieve the total number of category items available: <code>/categories/items/count</code></p>
+</li>
+<li>
+<p>e.g. To retrieve the total number of buildings in a city: <code>/buildings/count?locationSearch={city,state}</code></p>
 </li>
 </ul>
 </section><section id="user" class="resource-group"><h2 class="group-heading">User <a href="#user" class="permalink">&para;</a></h2><p>User-related resources of <em>iOffice API</em></p>
