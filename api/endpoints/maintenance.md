@@ -72,7 +72,7 @@ To update a Request send JSON with updated value for one or more of the attribut
             }
         }
 
-### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue}]
+### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId}]
 Collection of all Requests.
 
 + Model (application/json)
@@ -119,6 +119,12 @@ Collection of all Requests.
             + `me`
 
     + pastDue (optional, boolean)
+    
+    	If true, query will return past due items
+    
+    + requestTypeId (optional, number)
+    
+    	number of request type id
 
 + Response 200
     
