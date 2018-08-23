@@ -124,7 +124,7 @@ Collection of all Requests.
     
     + requestTypeId (optional, number)
     
-    	number of request type id
+    	number of request type Id
 
 + Response 200
     
