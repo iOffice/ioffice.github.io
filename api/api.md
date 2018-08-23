@@ -30,7 +30,7 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 | Paramater  | Value |
 | ------------- | ------------- |
 | search | String to search for asset  |
-| limit | maximum results to show (default: 50)  |
+| limit | maximum results to show (default: 50, maximum: 500). Obtain results beyond max with pagination: `startAt={nextResult}&limit={limit}`  |
 | startAt | for pagination, the offset of where to start (default: 0)  |
 | orderBy | Property to order results by (default: 'id')  |
 | orderByType | Choose to order results in either ascending(`asc`) or descending(`desc`)order (default: 'asc')  |
