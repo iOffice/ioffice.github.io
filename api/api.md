@@ -2,7 +2,7 @@ FORMAT: X-1A
 # iOffice API
 
 # Group iOffice API
-The iOffice API provides access to many iOffice modules for CRUD operations
+The iOffice API provides access to many iOffice modules for CRUD operations.
 
 ## Endpoints
 The base URL will be https://`siteaddress`/external/api/rest/v2/
