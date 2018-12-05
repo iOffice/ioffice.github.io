@@ -9,7 +9,7 @@ The base URL will be https://`siteaddress`/external/api/rest/v2/
 
 All endpoints in the document are relative to this url.
 
-Note: The term "rooms" has been amended to "spaces" any references to a room or rooms will now be referred to as space or spaces. This change does not affect the current endpoints.  
+Note: The term "room" has been amended to "space"; all references to a "room" or "rooms" will now be referred to as a "space" or "spaces". This change does not affect current endpoints.  
 
 ## Authentication
 In order to authenticate your request, in each request include the following in the request headers.

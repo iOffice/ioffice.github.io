@@ -1,7 +1,7 @@
 # Group Room
 Room-related resources of *iOffice API* 
 
-Note: The term "rooms" has been amended to "spaces" any references to a room or rooms will now be referred to as space or spaces. This change does not affect the current endpoints.  
+Note: The term "room" has been amended to "space"; all references to a "room" or "rooms" will now be referred to as a "space" or "spaces". This change does not affect current endpoints.  
 
 ## Room [/rooms///{id}]
 A single room object.
