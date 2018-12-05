@@ -2,7 +2,7 @@
 <h2 id="header-endpoints">Endpoints <a class="permalink" href="#header-endpoints" aria-hidden="true">¶</a></h2>
 <p>The base URL will be https://<code>siteaddress</code>/external/api/rest/v2/</p>
 <p>All endpoints in the document are relative to this url.</p>
-<p>Note: The term “rooms” has been amended to “spaces” any references to a room or rooms will now be referred to as space or spaces. This change does not affect the current endpoints.</p>
+<p>Note: The term “room” has been amended to “space”; all references to a “room” or “rooms” will now be referred to as a “space” or “spaces”. This change does not affect current endpoints.</p>
 <h2 id="header-authentication">Authentication <a class="permalink" href="#header-authentication" aria-hidden="true">¶</a></h2>
 <p>In order to authenticate your request, in each request include the following in the request headers.
 All requests are over <strong>HTTPS</strong>.</p>
@@ -4180,7 +4180,7 @@ id: 5
     <span class="hljs-string">"area"</span>: <span class="hljs-number">2000</span>,
     <span class="hljs-string">"name"</span>: <span class="hljs-string">"1st Floor"</span>
 }</code></pre><div style="height: 1px;"></div></div></div></div></div></section><section id="room" class="resource-group"><h2 class="group-heading">Room <a href="#room" class="permalink">&para;</a></h2><p>Room-related resources of <em>iOffice API</em></p>
-<p>Note: The term “rooms” has been amended to “spaces” any references to a room or rooms will now be referred to as space or spaces. This change does not affect the current endpoints.</p>
+<p>Note: The term “room” has been amended to “space”; all references to a “room” or “rooms” will now be referred to as a “space” or “spaces”. This change does not affect current endpoints.</p>
 <div id="room-room" class="resource"><h3 class="resource-heading">Room <a href="#room-room" class="permalink">&nbsp;&para;</a></h3><p>A single room object.</p>
 <div id="room-room-get" class="action get"><h4 class="action-heading"><div class="name">Retrieve a Single Room</div><a href="#room-room-get" class="method get">GET</a><code class="uri">/rooms/{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname"></span>/rooms/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Room</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the Room Resource</p>
