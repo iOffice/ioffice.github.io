@@ -365,7 +365,7 @@ To Check In a Mail Item send JSON with the required attributes.
 				{
 				  "itemType": "OUTBOUND",
 				  "packageType": {
-					"id": 1git st
+					"id": 1
 				  },
 				  "center": {
 					 "id": 62
