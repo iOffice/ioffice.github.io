@@ -359,16 +359,13 @@ Collection of all Mail Items.
      
 ## Check In a Mail Item [POST /mail/items///{id}///checkin]
 To Check In a Mail Item send JSON with the required attributes.
-
-+ Parameters
-    + id (string) ... ID of the Mail Item
   
 + Request (application/json)
 
 				{
 				  "itemType": "OUTBOUND",
 				  "packageType": {
-					"id": 1
+					"id": 1git st
 				  },
 				  "center": {
 					 "id": 62
