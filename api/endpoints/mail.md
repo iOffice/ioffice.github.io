@@ -357,7 +357,7 @@ Collection of all Mail Items.
     
     [Mail Items Collection][]
      
-## Check In a Mail Item [POST /mail/items///{id}///checkin]
+## Check In a Mail Item [POST /mail/items/checkin]
 To Check In a Mail Item send JSON with the required attributes.
   
 + Request (application/json)
