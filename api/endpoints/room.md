@@ -78,6 +78,8 @@ Collection of all Rooms.
 
 ### List of all Rooms [GET]
 
+Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always take preference (i.e. a mismatched buildingId/floorId will not result in an error).
+
 + Parameters
     + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
     + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable rooms
