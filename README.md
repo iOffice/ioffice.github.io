@@ -3,7 +3,7 @@
 To make edits to the API documentation you will need to install
 [aglio].
 
-	sudo npm install -g aglio
+	npm install -g aglio
 
 To see the changes made to the API call the make file by running
 the `make` command. This will execute the following:

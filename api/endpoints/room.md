@@ -1,5 +1,7 @@
 # Group Room
-Room-related resources of *iOffice API*
+Room-related resources of *iOffice API* 
+
+Note: The term "room" has been amended to "space"; all references to a "room" or "rooms" will now be referred to as a "space" or "spaces". This change does not affect current endpoints.  
 
 ## Room [/rooms///{id}]
 A single room object.
@@ -75,6 +77,8 @@ Collection of all Rooms.
             ]
 
 ### List of all Rooms [GET]
+
+Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always take preference (i.e. a mismatched buildingId/floorId will not result in an error).
 
 + Parameters
     + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
