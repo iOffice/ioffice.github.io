@@ -47,6 +47,18 @@ All requests are over <strong>HTTPS</strong>.</p>
 <p>Example usage to search users by employeeID:</p>
 <p>https://<code>siteaddress</code>/external/api/rest/v2/users?search={employeeID}</p>
 <h2 id="header-resource-requests">Resource Requests <a class="permalink" href="#header-resource-requests" aria-hidden="true">¶</a></h2>
+<p>NOTE: When updating a resource (with a <code>PUT</code> request), all that is needed is the ID of the object, and the value(s) you wish to update.</p>
+<ul>
+<li>e.g. Updating a resource’s <code>printerName</code> to another, when that resource’s <code>id</code> is <code>5</code>.</li>
+</ul>
+<p>Headers</p>
+<p><code>Content-Type: application/json</code></p>
+<p>Body</p>
+<pre><code>{
+    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+    "<span class="hljs-attribute">printerName</span>": <span class="hljs-value"><span class="hljs-string">"NEW PRINTER TEST NAME"</span>
+</span>}</code></pre>
+<p>Response <code>200</code></p>
 <p>Note: Many of the <code>List of all XXXX</code> endpoints that return a collection have a <code>/count</code> variation that will return the number of available records. All parameters supported by the main endpoint are supported by the <code>/count</code> endpoint.</p>
 <ul>
 <li>
