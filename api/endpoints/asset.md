@@ -39,11 +39,10 @@ To update a Asset send JSON with updated value for one or more of the attributes
     
 + Request (application/json)
 
-            {
-                "model": {
-                    "id": 78
-                }
-            }
+			{
+				"id": 1,
+				"printerName": "NEW PRINTER TEST NAME"
+			}
 
 + Response 200
     
