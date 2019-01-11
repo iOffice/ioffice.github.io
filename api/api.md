@@ -42,17 +42,6 @@ Example usage to search users by employeeID:
 https://`siteaddress`/external/api/rest/v2/users?search={employeeID}
 
 ## Resource Requests
-NOTE: When updating an object, all that is needed is the ID of the object, and the value you wish to update
-        
-+ e.g. Updating a resource's contact to another with an ID of 5
-
-+ Request (application/json)
-{
-	"id": 5,
-	"printerName": "NEW PRINTER TEST NAME"
-}
-
-+Response 200
 
 Note: Many of the `List of all XXXX` endpoints that return a collection have a `/count` variation that will return the number of available records. All parameters supported by the main endpoint are supported by the `/count` endpoint. 
 

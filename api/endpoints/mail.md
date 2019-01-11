@@ -355,35 +355,10 @@ Collection of all Mail Items.
 
 + Response 200
     
-    [Mail Items Collection][]
-     
-## Check In a Mail Item [POST /mail/items/checkin]
-To Check In a Mail Item send JSON with the required attributes.
-  
-+ Request (application/json)
-
-				{
-				  "itemType": "OUTBOUND",
-				  "packageType": {
-					"id": 1
-				  },
-				  "center": {
-					 "id": 62
-					},
-				  "fromUser": {
-					"id": 13
-				  },
-				  "toUser": {
-					"id": 126
-				  },
-				  "trackingNumber": "351987984"
-				}
-
-+ Response 200  
-    [Mail][]   
+    [Mail Items Collection][]  
     
-## Check In many Mail Items [POST /mail/items/checkin]
-To Check In many Mail Items send JSON with the required attributes.
+## Check In one or many Mail Items [POST /mail/items/checkin]
+To Check In one or many Mail Items send JSON with the required attributes.
 
 + Request (application/json)
 
