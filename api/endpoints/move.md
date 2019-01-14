@@ -306,7 +306,7 @@ A single move reservation object.
 
 ## Edit a Move Request [PUT /move/requests///{id}]
 
-To update a Move Request send JSON with updated values for one or more of the attributes.
+To update a Move Request send JSON with the Move Request's `ID` and updated value for one or more of the attributes.
 
 + Parameters
     + id (string) ... ID of the Move Request
@@ -315,50 +315,8 @@ To update a Move Request send JSON with updated values for one or more of the at
 
          {
            {
-             "date": 1504112404863,
+             "id": 23,
              "approved": true,
-             "comments": [
-               {
-                 "content": "your comment here!"
-               }
-             ],
-             "approvedBy": {
-               "id": 9
-             },
-             "items": [
-               {
-                 "toRoom": {
-                   "id": 2
-                 },
-                 "type": {
-                   "id": 2
-                 },
-                 "user": {
-                   "id": 9,
-                   "lastName": "Admin",
-                   "extension": "",
-                   "employeeId": "",
-                   "userName": "hansolo",
-                   "specialNeeds": false,
-                   "firstName": "Han",
-                   "phone": "",
-                   "name": "Han Solo",
-                   "email": "hansolo@iofficecorp.com"
-                 },
-                 "tasksValueMap": {  
-                    "10": {  
-                       "other":"Need a Bigger TV",
-                       "notes":"Samsung or Sony",
-                       "whiteBoard":"Yes",
-                       "deskChair":"Yes",
-                       "sideChair":"Yes"
-                    }
-                 }
-               }
-             ],
-             "status": {
-               "id": 10
-             }
            }
          }
 

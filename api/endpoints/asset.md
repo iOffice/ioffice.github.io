@@ -35,12 +35,15 @@ A single asset object.
     [Asset][]
 
 ### Edit a Asset [PUT]
-To update a Asset send JSON with updated value for one or more of the attributes.
+To update a Asset send JSON with the Asset's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Asset
     
 + Request (application/json)
 
 			{
-				"id": 1,
+				"id": 11,
 				"printerName": "NEW PRINTER TEST NAME"
 			}
 
@@ -140,7 +143,7 @@ Attach an image to a asset
     + Body
 
             {
-                "id": "ID"
+                "id": "11"
                 "storedFile": {
                     "id": "INTERNAL_STORAGEID"
                 }

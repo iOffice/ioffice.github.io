@@ -95,17 +95,21 @@ A single user object.
     [User][]
 
 ### Edit a User [PUT]
-To update a User send JSON with updated value for one or more of the attributes.
+To update a User send JSON with the User's `ID` and updated value for one or more of the attributes.
    <br/><br/>
   **Updating a User's Cost Center(s)**
 
-* To update a User's default Cost Center (Category ID equals 1) send JSON with updated value for the `costCenter` attribute.  
+* To update a User's default Cost Center (Category ID equals 1) send JSON with the User's `ID` and updated value for the `costCenter` attribute.  
 	<br/>
-* To update a User's non-default Cost Center(s) (Category ID is greater than 1) send JSON with updated value for the `costCenters` attribute.    
+* To update a User's non-default Cost Center(s) (Category ID is greater than 1) send JSON with the User's `ID` and updated value for the `costCenters` attribute.  
+
++ Parameters
+    + id (string) ... ID of the User
+ 
 + Request (application/json)
 
         {
-            "id": 420,
+            "id": 23,
             "jobTitle": "Developer",
             "costCenter": { "id": 88 },
             "costCenters": [

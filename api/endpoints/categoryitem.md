@@ -120,9 +120,11 @@ The following attributes are required to create an Item:
             "dateUpdated": 1435679209637 
         }
 ### Edit a Item [PUT]
-To update a Item send JSON with updated value for one or more of the attributes.
+To update an Item send JSON with the Item's `ID` and updated value for one or more of the attributes.
+
 + Parameters
     + id (string) ... ID of the Item
+    
 + Request (application/json)
 
         {

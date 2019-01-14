@@ -149,21 +149,21 @@ All requests are over <strong>HTTPS</strong>.</p>
   "<span class="hljs-attribute">specialNeeds</span>": <span class="hljs-value"><span class="hljs-literal">false</span></span>,
   "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"fmccloud@iofficecorp.com"</span></span>,
   "<span class="hljs-attribute">dateUpdated</span>": <span class="hljs-value"><span class="hljs-number">1479077061110</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="user-user-put" class="action put"><h4 class="action-heading"><div class="name">Edit a User</div><a href="#user-user-put" class="method put">PUT</a><code class="uri">/users/{id}</code></h4><p>To update a User send JSON with updated value for one or more of the attributes.
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="user-user-put" class="action put"><h4 class="action-heading"><div class="name">Edit a User</div><a href="#user-user-put" class="method put">PUT</a><code class="uri">/users/{id}</code></h4><p>To update a User send JSON with the User’s <code>ID</code> and updated value for one or more of the attributes.
 <br/><br/>
 <strong>Updating a User’s Cost Center(s)</strong></p>
 <ul>
 <li>
-<p>To update a User’s default Cost Center (Category ID equals 1) send JSON with updated value for the <code>costCenter</code> attribute.<br>
+<p>To update a User’s default Cost Center (Category ID equals 1) send JSON with the User’s <code>ID</code> and updated value for the <code>costCenter</code> attribute.<br>
 <br/></p>
 </li>
 <li>
-<p>To update a User’s non-default Cost Center(s) (Category ID is greater than 1) send JSON with updated value for the <code>costCenters</code> attribute.</p>
+<p>To update a User’s non-default Cost Center(s) (Category ID is greater than 1) send JSON with the User’s <code>ID</code> and updated value for the <code>costCenters</code> attribute.</p>
 </li>
 </ul>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/users/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the User</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">420</span></span>,
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
   "<span class="hljs-attribute">jobTitle</span>": <span class="hljs-value"><span class="hljs-string">"Developer"</span></span>,
   "<span class="hljs-attribute">costCenter</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">88</span>
@@ -951,54 +951,12 @@ All requests are over <strong>HTTPS</strong>.</p>
        <span class="hljs-string">"name"</span>: <span class="hljs-string">"In Progress"</span>,
        <span class="hljs-string">"id"</span>: <span class="hljs-number">10</span>
      }
- }</code></pre><div style="height: 1px;"></div></div></div></div><div id="move-move-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Move Request</div><a href="#move-move-put" class="method put">PUT</a><code class="uri">/move/requests/{id}</code></h4><p>To update a Move Request send JSON with updated values for one or more of the attributes.</p>
+ }</code></pre><div style="height: 1px;"></div></div></div></div><div id="move-move-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Move Request</div><a href="#move-move-put" class="method put">PUT</a><code class="uri">/move/requests/{id}</code></h4><p>To update a Move Request send JSON with the Move Request’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/move/requests/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Move Request</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
    {
-     <span class="hljs-string">"date"</span>: <span class="hljs-number">1504112404863</span>,
+     <span class="hljs-string">"id"</span>: <span class="hljs-number">23</span>,
      <span class="hljs-string">"approved"</span>: <span class="hljs-literal">true</span>,
-     <span class="hljs-string">"comments"</span>: [
-       {
-         <span class="hljs-string">"content"</span>: <span class="hljs-string">"your comment here!"</span>
-       }
-     ],
-     <span class="hljs-string">"approvedBy"</span>: {
-       <span class="hljs-string">"id"</span>: <span class="hljs-number">9</span>
-     },
-     <span class="hljs-string">"items"</span>: [
-       {
-         <span class="hljs-string">"toRoom"</span>: {
-           <span class="hljs-string">"id"</span>: <span class="hljs-number">2</span>
-         },
-         <span class="hljs-string">"type"</span>: {
-           <span class="hljs-string">"id"</span>: <span class="hljs-number">2</span>
-         },
-         <span class="hljs-string">"user"</span>: {
-           <span class="hljs-string">"id"</span>: <span class="hljs-number">9</span>,
-           <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Admin"</span>,
-           <span class="hljs-string">"extension"</span>: <span class="hljs-string">""</span>,
-           <span class="hljs-string">"employeeId"</span>: <span class="hljs-string">""</span>,
-           <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hansolo"</span>,
-           <span class="hljs-string">"specialNeeds"</span>: <span class="hljs-literal">false</span>,
-           <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Han"</span>,
-           <span class="hljs-string">"phone"</span>: <span class="hljs-string">""</span>,
-           <span class="hljs-string">"name"</span>: <span class="hljs-string">"Han Solo"</span>,
-           <span class="hljs-string">"email"</span>: <span class="hljs-string">"hansolo@iofficecorp.com"</span>
-         },
-         <span class="hljs-string">"tasksValueMap"</span>: {  
-            <span class="hljs-string">"10"</span>: {  
-               <span class="hljs-string">"other"</span>:<span class="hljs-string">"Need a Bigger TV"</span>,
-               <span class="hljs-string">"notes"</span>:<span class="hljs-string">"Samsung or Sony"</span>,
-               <span class="hljs-string">"whiteBoard"</span>:<span class="hljs-string">"Yes"</span>,
-               <span class="hljs-string">"deskChair"</span>:<span class="hljs-string">"Yes"</span>,
-               <span class="hljs-string">"sideChair"</span>:<span class="hljs-string">"Yes"</span>
-            }
-         }
-       }
-     ],
-     <span class="hljs-string">"status"</span>: {
-       <span class="hljs-string">"id"</span>: <span class="hljs-number">10</span>
-     }
    }
  }</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">date</span>": <span class="hljs-value"><span class="hljs-number">1504112404863</span></span>,
@@ -2146,7 +2104,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -2275,7 +2233,7 @@ All requests are over <strong>HTTPS</strong>.</p>
       ...
     }
   }
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="mail-mail-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Mail Item</div><a href="#mail-mail-put" class="method put">PUT</a><code class="uri">/mail/items/{id}</code></h4><p>To update a Mail Item send JSON with the id and updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="mail-mail-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Mail Item</div><a href="#mail-mail-put" class="method put">PUT</a><code class="uri">/mail/items/{id}</code></h4><p>To update a Mail Item send JSON with the Mail Item’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/mail/items/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Mail Item</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
 <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
@@ -2303,7 +2261,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -2454,7 +2412,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -2602,7 +2560,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -2748,7 +2706,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -2894,7 +2852,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -3040,7 +2998,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -3178,7 +3136,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -3347,7 +3305,7 @@ All requests are over <strong>HTTPS</strong>.</p>
   <span class="hljs-string">"currentQueue"</span>: <span class="hljs-string">"OUT"</span>,
   <span class="hljs-string">"toUser"</span>: {
     <span class="hljs-string">"lastName"</span>: <span class="hljs-string">"Hill"</span>,
-    <span class="hljs-string">"id"</span>: <span class="hljs-number">420</span>,
+    <span class="hljs-string">"id"</span>: <span class="hljs-number">1773</span>,
     <span class="hljs-string">"email"</span>: <span class="hljs-string">"hankhill@iofficecorp.com"</span>,
     <span class="hljs-string">"userName"</span>: <span class="hljs-string">"hankhill"</span>,
     <span class="hljs-string">"firstName"</span>: <span class="hljs-string">"Hank"</span>,
@@ -3854,7 +3812,7 @@ All requests are over <strong>HTTPS</strong>.</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
     <span class="hljs-string">"id"</span>: <span class="hljs-number">23</span>,
     ...
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="contact-contact-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Contact</div><a href="#contact-contact-put" class="method put">PUT</a><code class="uri">/contacts/{id}</code></h4><p>To update a Contact send JSON with the id and updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="contact-contact-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Contact</div><a href="#contact-contact-put" class="method put">PUT</a><code class="uri">/contacts/{id}</code></h4><p>To update a Contact send JSON with the Contact’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/contacts/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Contact</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
@@ -3897,9 +3855,10 @@ All requests are over <strong>HTTPS</strong>.</p>
     <span class="hljs-string">"address"</span>: {...},
     <span class="hljs-string">"name"</span>: <span class="hljs-string">"Mystery Inc."</span>,
     <span class="hljs-string">"code"</span>: <span class="hljs-string">"mystery"</span>
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="building-building-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Building</div><a href="#building-building-put" class="method put">PUT</a><code class="uri">/buildings/{id}</code></h4><p>To update a Building send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="building-building-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Building</div><a href="#building-building-put" class="method put">PUT</a><code class="uri">/buildings/{id}</code></h4><p>To update a Building send JSON with the Building’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/buildings/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Building</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">43</span></span>,
   "<span class="hljs-attribute">address</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">postalCode</span>": <span class="hljs-value"><span class="hljs-string">"77019"</span>
   </span>}
@@ -3988,9 +3947,10 @@ All requests are over <strong>HTTPS</strong>.</p>
     <span class="hljs-string">"building"</span>: {...},
     <span class="hljs-string">"area"</span>: <span class="hljs-number">2000</span>,
     <span class="hljs-string">"name"</span>: <span class="hljs-string">"1st Floor"</span>
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="floor-floor-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Floor</div><a href="#floor-floor-put" class="method put">PUT</a><code class="uri">/floors/{id}</code></h4><p>To update a Floor send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="floor-floor-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Floor</div><a href="#floor-floor-put" class="method put">PUT</a><code class="uri">/floors/{id}</code></h4><p>To update a Floor send JSON with the Floor’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/floors/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Floor</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"2nd Floor"</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the Floor Resource</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
@@ -4042,9 +4002,10 @@ All requests are over <strong>HTTPS</strong>.</p>
     <span class="hljs-string">"floor"</span>: {...},
     <span class="hljs-string">"reservable"</span>: <span class="hljs-literal">true</span>,
     <span class="hljs-string">"name"</span>: <span class="hljs-string">"010211"</span>
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="room-room-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Room</div><a href="#room-room-put" class="method put">PUT</a><code class="uri">/rooms/{id}</code></h4><p>To update a Room send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="room-room-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Room</div><a href="#room-room-put" class="method put">PUT</a><code class="uri">/rooms/{id}</code></h4><p>To update a Room send JSON with the Room’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/rooms/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Room</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
   "<span class="hljs-attribute">type</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">55</span>
   </span>}
@@ -4135,10 +4096,10 @@ then the json object will have an <code>owner</code> property and not a <code>ro
     <span class="hljs-string">"room"</span>: {...},
     <span class="hljs-string">"owner"</span>: {...}
     <span class="hljs-string">"dateUpdated"</span>: <span class="hljs-number">1382994855640</span>
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="asset-asset-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Asset</div><a href="#asset-asset-put" class="method put">PUT</a><code class="uri">/assets/{id}</code></h4><p>To update a Asset send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="asset-asset-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Asset</div><a href="#asset-asset-put" class="method put">PUT</a><code class="uri">/assets/{id}</code></h4><p>To update a Asset send JSON with the Asset’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/assets/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Asset</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">11</span></span>,
   "<span class="hljs-attribute">printerName</span>": <span class="hljs-value"><span class="hljs-string">"NEW PRINTER TEST NAME"</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of the Asset Resource
 Note: An asset can be assigned to either a room or an owner. If assigned to an owner
@@ -4213,7 +4174,7 @@ then the json object will have an <code>owner</code> property and not a <code>ro
   "<span class="hljs-attribute">image</span>": <span class="hljs-value"><span class="hljs-string">"BASE-64-IMAGE-STRING"</span>
 </span>}</code></pre><div style="height: 1px;"></div></div></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><div class="description"><p>JSON representation of an attachment object</p>
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
-    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"ID"</span>
+    "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"11"</span>
     <span class="hljs-string">"storedFile"</span>: {
         "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"INTERNAL_STORAGEID"</span>
     </span>}
@@ -4275,9 +4236,10 @@ then the json object will have an <code>owner</code> property and not a <code>ro
     <span class="hljs-string">"user"</span>: {...},
     <span class="hljs-string">"dateUpdated"</span>: EPOCH_TIME,
     <span class="hljs-string">"room"</span>: {...}
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="reservation-reservation-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Reservation</div><a href="#reservation-reservation-put" class="method put">PUT</a><code class="uri">/reservations/{id}</code></h4><p>To update a Reservation send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="reservation-reservation-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Reservation</div><a href="#reservation-reservation-put" class="method put">PUT</a><code class="uri">/reservations/{id}</code></h4><p>To update a Reservation send JSON with the Reservation’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/reservations/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Reservation</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
   "<span class="hljs-attribute">user</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">56</span>
   </span>}
@@ -4406,9 +4368,10 @@ then the json object will have an <code>owner</code> property and not a <code>ro
     <span class="hljs-string">"completed"</span>: <span class="hljs-string">"BOOLEAN"</span>,
     <span class="hljs-string">"supplies"</span>: [...],
     <span class="hljs-string">"valueFields"</span>: [...]
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="maintenance-request-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Request</div><a href="#maintenance-request-put" class="method put">PUT</a><code class="uri">/maintenance/requests/{id}</code></h4><p>To update a Request send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="maintenance-request-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Request</div><a href="#maintenance-request-put" class="method put">PUT</a><code class="uri">/maintenance/requests/{id}</code></h4><p>To update a Request send JSON with the Request’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/maintenance/requests/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Request</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
+  "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
   "<span class="hljs-attribute">room</span>": <span class="hljs-value">{
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">5</span>
   </span>}
@@ -4949,7 +4912,7 @@ then the json object will have an <code>owner</code> property and not a <code>ro
 </div><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
     <span class="hljs-string">"id"</span>: <span class="hljs-number">23</span>,
     ...
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="agreement-agreement-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Agreement</div><a href="#agreement-agreement-put" class="method put">PUT</a><code class="uri">/agreements/{id}</code></h4><p>To update a Agreement send JSON with the id and updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="agreement-agreement-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Agreement</div><a href="#agreement-agreement-put" class="method put">PUT</a><code class="uri">/agreements/{id}</code></h4><p>To update a Agreement send JSON with the Agreement’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/agreements/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Agreement</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
@@ -5068,7 +5031,7 @@ The field <code>type</code> is required in order to create a new agreement.</p>
     costCenterParent: {},
     <span class="hljs-string">"dateCreated"</span>: <span class="hljs-number">1434561059383</span>,
     <span class="hljs-string">"dateUpdated"</span>: <span class="hljs-number">1435679209637</span> 
-}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-item-item-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Item</div><a href="#category-item-item-put" class="method put">PUT</a><code class="uri">/categories/items/{id}</code></h4><p>To update a Item send JSON with updated value for one or more of the attributes.</p>
+}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-item-item-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Item</div><a href="#category-item-item-put" class="method put">PUT</a><code class="uri">/categories/items/{id}</code></h4><p>To update an Item send JSON with the Item’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/categories/items/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Item</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
@@ -5489,7 +5452,8 @@ The field <code>type</code> is required in order to create a new agreement.</p>
   "<span class="hljs-attribute">color</span>": <span class="hljs-value">{}</span>,
   "<span class="hljs-attribute">code</span>": <span class="hljs-value"><span class="hljs-string">"new category code"</span></span>,
   "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1434561059383</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-cost-center-category-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Category</div><a href="#category-cost-center-category-put" class="method put">PUT</a><code class="uri">/categories/{id}</code></h4><h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/categories/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Category</p>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-cost-center-category-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Category</div><a href="#category-cost-center-category-put" class="method put">PUT</a><code class="uri">/categories/{id}</code></h4><p>To update a Category send JSON with the Category’s <code>ID</code> and updated value for one or more of the attributes.</p>
+<h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/categories/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Category</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">28</span></span>,
   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"a new name"</span></span>,
@@ -5583,7 +5547,7 @@ The field <code>type</code> is required in order to create a new agreement.</p>
     "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"65"</span>
   </span>}</span>,
   "<span class="hljs-attribute">dateCreated</span>": <span class="hljs-value"><span class="hljs-number">1434561059383</span>
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-depth-depth-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Depth</div><a href="#category-depth-depth-put" class="method put">PUT</a><code class="uri">/categories/depths/{id}</code></h4><p>To update a Depth send JSON with updated value for one of more of the attributes.</p>
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div><div id="category-depth-depth-put" class="action put"><h4 class="action-heading"><div class="name">Edit a Depth</div><a href="#category-depth-depth-put" class="method put">PUT</a><code class="uri">/categories/depths/{id}</code></h4><p>To update a Depth send JSON with the Depth’s <code>ID</code> and updated value for one or more of the attributes.</p>
 <h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname"></span>/categories/depths/<span class="hljs-attribute" title="id">id</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>string</code>&nbsp;<span class="required">(required)</span>&nbsp;<p>ID of the Depth</p>
 </dd></dl></div><div class="title"><strong>Request</strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-number">23</span></span>,
@@ -5606,7 +5570,7 @@ The field <code>type</code> is required in order to create a new agreement.</p>
     {
         <span class="hljs-string">"response"</span>: <span class="hljs-string">"Successfully removed"</span>
     }
-}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 11 Jan 2019</p><script>/* eslint-env browser */
+}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 14 Jan 2019</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 

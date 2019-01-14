@@ -24,7 +24,10 @@ A single agreement object.
     [Agreement][]
 
 ### Edit a Agreement [PUT]
-To update a Agreement send JSON with the id and updated value for one or more of the attributes.
+To update a Agreement send JSON with the Agreement's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Agreement
     
 + Request (application/json)
 

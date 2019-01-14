@@ -24,7 +24,10 @@ A single contact object.
     [Contact][]
 
 ### Edit a Contact [PUT]
-To update a Contact send JSON with the id and updated value for one or more of the attributes.
+To update a Contact send JSON with the Contact's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Contact
     
 + Request (application/json)
 

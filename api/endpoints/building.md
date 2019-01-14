@@ -26,11 +26,15 @@ A single building object.
     [Building][]
 
 ### Edit a Building [PUT]
-To update a Building send JSON with updated value for one or more of the attributes.
+To update a Building send JSON with the Building's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Building
     
 + Request (application/json)
 
         {
+        	"id": 43,
             "address": {
                 "postalCode": "77019"
             }
