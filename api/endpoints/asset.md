@@ -102,16 +102,13 @@ Collection of all Assets.
 
 
 ### Create a Asset [POST]
-The following attributes are required to create a Asset: `model` and (`room` or `owner`).
+NOTE: An Asset Model `id` is required for creating an Asset.
 
 + Request (application/json)
 
             {
                 "model": {
                     "id": 454
-                },         
-                "room": {
-                    "id": "57"
                 }
             }
 
