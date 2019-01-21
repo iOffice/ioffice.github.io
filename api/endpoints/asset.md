@@ -35,7 +35,7 @@ A single asset object.
     [Asset][]
 
 ### Edit a Asset [PUT]
-To update a Asset send JSON with the Asset's `ID` and updated value for one or more of the attributes.
+To update an Asset send JSON with the Asset's `ID` and updated value for one or more of the attributes.
 
 + Parameters
     + id (string) ... ID of the Asset
