@@ -81,6 +81,8 @@ The following attributes are required to create a Category
             }
 
 ### Edit a Category [PUT]
+To update a Category send JSON with the Category's `ID` and updated value for one or more of the attributes.
+
 + Parameters
     + id (string) ... ID of the Category
 

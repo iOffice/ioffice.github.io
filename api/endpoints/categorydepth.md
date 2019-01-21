@@ -114,9 +114,11 @@ The following attributes are required to create a Depth:
             }
 
 ### Edit a Depth [PUT /categories/depths///{id}]
-To update a Depth send JSON with updated value for one of more of the attributes.
+To update a Depth send JSON with the Depth's `ID` and updated value for one or more of the attributes.
+
 + Parameters
     + id (string) ... ID of the Depth
+    
 + Request (application/json)
     
         {

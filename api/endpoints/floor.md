@@ -26,11 +26,15 @@ A single floor object.
     [Floor][]
 
 ### Edit a Floor [PUT]
-To update a Floor send JSON with updated value for one or more of the attributes.
+To update a Floor send JSON with the Floor's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Floor
     
 + Request (application/json)
 
         {
+        	"id": 5,
             "name": "2nd Floor"
         }
 

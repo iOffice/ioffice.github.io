@@ -30,11 +30,15 @@ A single reservation object.
     [Reservation][]
 
 ### Edit a Reservation [PUT]
-To update a Reservation send JSON with updated value for one or more of the attributes.
+To update a Reservation send JSON with the Reservation's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Reservation
     
 + Request (application/json)
 
         {
+        	"id": 23,
             "user": {
                 "id": 56
             }

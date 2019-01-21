@@ -48,15 +48,20 @@ A single request object.  The Request resource is the main component of the serv
     [Request][]
 
 #### Edit a Request [PUT]
-To update a Request send JSON with updated value for one or more of the attributes.
+To update a Request send JSON with the Request's `ID` and updated value for one or more of the attributes.
 
++ Parameters
+    + id (string) ... ID of the Request
+    
 + Request (application/json)
 
         {
+        	"id": 23,
             "room": {
                 "id": 5
             }
         }
+
 + Response 200
     
     [Request][]

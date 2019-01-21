@@ -28,11 +28,15 @@ A single room object.
     [Room][]
 
 ### Edit a Room [PUT]
-To update a Room send JSON with updated value for one or more of the attributes.
+To update a Room send JSON with the Room's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Room
     
 + Request (application/json)
 
         {
+        	"id": 23,
             "type": {
                 "id": 55
             }

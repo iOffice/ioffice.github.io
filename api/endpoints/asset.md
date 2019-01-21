@@ -35,15 +35,17 @@ A single asset object.
     [Asset][]
 
 ### Edit a Asset [PUT]
-To update a Asset send JSON with updated value for one or more of the attributes.
+To update an Asset send JSON with the Asset's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Asset
     
 + Request (application/json)
 
-            {
-                "model": {
-                    "id": 78
-                }
-            }
+			{
+				"id": 11,
+				"printerName": "NEW PRINTER TEST NAME"
+			}
 
 + Response 200
     
@@ -100,16 +102,13 @@ Collection of all Assets.
 
 
 ### Create a Asset [POST]
-The following attributes are required to create a Asset: `model` and (`room` or `owner`).
+NOTE: An Asset Model `id` is required for creating an Asset.
 
 + Request (application/json)
 
             {
                 "model": {
                     "id": 454
-                },         
-                "room": {
-                    "id": "57"
                 }
             }
 
@@ -141,7 +140,7 @@ Attach an image to a asset
     + Body
 
             {
-                "id": "ID"
+                "id": "11"
                 "storedFile": {
                     "id": "INTERNAL_STORAGEID"
                 }

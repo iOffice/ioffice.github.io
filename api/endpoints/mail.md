@@ -17,7 +17,7 @@ A single mail item object.
               "currentQueue": "OUT",
               "toUser": {
                 "lastName": "Hill",
-                "id": 420,
+                "id": 1773,
                 "email": "hankhill@iofficecorp.com",
                 "userName": "hankhill",
                 "firstName": "Hank",
@@ -154,8 +154,11 @@ A single mail item object.
     [Mail][]
     
 ### Edit a Mail Item [PUT]
-To update a Mail Item send JSON with the id and updated value for one or more of the attributes.
-    
+To update a Mail Item send JSON with the Mail Item's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+    + id (string) ... ID of the Mail Item
+  
 + Request (application/json)
 
         {
