@@ -59,7 +59,7 @@ To update a Reservation send JSON with the Reservation's `ID` and updated value 
             }
         }
 
-## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations,startDate,endDate,buildingId,roomId}]
+## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations,startDate,endDate,buildingId,roomId,modifiedOrCreatedAfter}]
 Collection of all Reservations.
 
 + Model (application/json)
@@ -93,6 +93,7 @@ Collection of all Reservations.
     + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
     + buildingId (optional, number, `44`) ... Id of the building to query from
     + roomId (optional, number, `16`) ... Id of the room to query from
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
