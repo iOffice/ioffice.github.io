@@ -99,7 +99,7 @@ Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
     + type (optional, number, `65 or 65,32,79`) ... Id of room type to search for (can accept a comma delimited series of Ids)
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

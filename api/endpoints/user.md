@@ -188,7 +188,7 @@ Collection of all Users.
     + siteAdmin (optional, boolean, `true`) ... If true, query will include users with Admin permissions
     + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
     + hasDefaultVisitorCenter (optional, boolean, `true`) ... If true, query will include users with a default visitor center
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

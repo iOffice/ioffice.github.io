@@ -93,7 +93,7 @@ Collection of all Reservations.
     + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
     + buildingId (optional, number, `44`) ... Id of the building to query from
     + roomId (optional, number, `16`) ... Id of the room to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

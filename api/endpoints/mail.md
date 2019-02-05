@@ -355,7 +355,7 @@ Collection of all Mail Items.
 
 + Parameters
     + search (optional, number, `351987984`) ... Number to search for mail item by id, trackingNumber, or originalTrackingNumber
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -408,7 +408,7 @@ Retrieve all Mail Item IDs.
 ### Retrieve Mail Item IDs [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -441,7 +441,7 @@ Collection of all Delivered Mail Items.
 ### Retrieve Delivered Mail Items [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -485,7 +485,7 @@ Collection of all Mail Package Types.
 ### Retrieve Package Types [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -525,7 +525,7 @@ Collection of all Mail Stops.
 ### Retrieve Mail Stops [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -560,13 +560,13 @@ Collection of all Mail Status Types.
 ### Retrieve Mail Status Types [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
     [Mail Routes][]     
     
-## Mail Routes [/mail/routes{?modifiedOrCreatedAfter]
+## Mail Routes [/mail/routes{?modifiedOrCreatedAfter}]
 Collection of all Mail Routes.
 
 + Model (application/json)
@@ -601,7 +601,7 @@ Collection of all Mail Routes.
 ### Retrieve Mail Routes [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -642,7 +642,7 @@ Collection of all Mail Locations.
 ### Retrieve Mail Locations [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -735,7 +735,7 @@ Collection of all Mail Alerts.
 ### Retrieve Mail Alerts [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -827,7 +827,7 @@ Collection of Leaderboards for Mail Deliveries.
 ### Retrieve Leaderboards for Mail Deliveries  [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -919,7 +919,7 @@ Collection of Leaderboards for Check-Ins.
 ### Retrieve Leaderboards for Mail Check-Ins  [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
