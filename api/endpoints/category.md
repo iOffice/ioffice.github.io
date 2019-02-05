@@ -1,7 +1,7 @@
 # Group Category
 Category related resources of *iOffice API*
 
-## Category Collection [/categories{?modifiedOrCreatedAfter]
+## Category Collection [/categories{?modifiedOrCreatedAfter}]
 Collection of all Categories.
 
 + Model (application/json)
