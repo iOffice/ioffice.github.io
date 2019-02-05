@@ -8,7 +8,7 @@ Collection of all Items.
     + category (optional, integer, , `1`) ... If present, query will filter by category
     + parent (optional, integer, , `2`) ... If present, query will filter by parent
     + root = `false` (optional, boolean, , `true`) ... If present, query will only return Items without a parent
-    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
 
 + Model (application/json)
     JSON represenation of the Item Collection Resource
