@@ -1,7 +1,7 @@
 # Group Category  Depth
 Category Depth related resources of *iOffice API*
 
-## Depth Collection [/categories/depths{?modifiedOrCreatedAfter]
+## Depth Collection [/categories/depths{?modifiedOrCreatedAfter}]
 Collection of all Depths.
 
 + Model (application/json)
