@@ -1,7 +1,7 @@
 # Group Category  Depth
 Category Depth related resources of *iOffice API*
 
-## Depth Collection [/categories/depths]
+## Depth Collection [/categories/depths{?modifiedOrCreatedAfter]
 Collection of all Depths.
 
 + Model (application/json)
@@ -52,6 +52,10 @@ Collection of all Depths.
             ]
 
 ### List of all Depths [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     [Depth Collection][]
 

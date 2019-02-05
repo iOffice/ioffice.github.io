@@ -1,7 +1,7 @@
 # Group Category
 Category related resources of *iOffice API*
 
-## Category Collection [/categories]
+## Category Collection [/categories{?modifiedOrCreatedAfter]
 Collection of all Categories.
 
 + Model (application/json)
@@ -34,6 +34,10 @@ Collection of all Categories.
             ]
 
 ### List of all Categories [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
+    
 + Response 200
     [Category Collection][]
 

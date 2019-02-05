@@ -77,7 +77,7 @@ To update a Request send JSON with the Request's `ID` and updated value for one 
             }
         }
 
-### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId}]
+### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId,modifiedOrCreatedAfter}]
 Collection of all Requests.
 
 + Model (application/json)
@@ -130,6 +130,10 @@ Collection of all Requests.
     + requestTypeId (optional, number)
     
     	number of request type Id
+    	
+    + modifiedOrCreatedAfter (optional, number, '1549319834')
+    
+        Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

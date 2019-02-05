@@ -53,11 +53,12 @@ To update a Floor send JSON with the Floor's `ID` and updated value for one or m
             }
         }
 
-## Floor Collection [/floors///{?buildingId}]
+## Floor Collection [/floors///{?buildingId,modifiedOrCreatedAfter}]
 Collection of all Floors.
 
 + Parameters
     + buildingId (optional,string) ... Id building to query from
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
 
 + Model (application/json)
     JSON representation of the Floor Collection resource.

@@ -51,7 +51,7 @@ To update an Agreement send JSON with the Agreement's `ID` and updated value for
             }
         }
 
-## Agreement Collection [/agreements]
+## Agreement Collection [/agreements{?modifiedOrCreatedAfter]
 Collection of all Agreements.
 
 + Model (application/json)
@@ -75,6 +75,9 @@ Collection of all Agreements.
             ]
 
 ### List of all Agreements [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
