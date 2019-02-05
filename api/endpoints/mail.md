@@ -329,7 +329,7 @@ To add a Comment to a Mail Item send JSON with the required attributes.
 + Response 200
     [Mail][]                        
         
-## Mail Items Collection [/mail/items///{?search}]
+## Mail Items Collection [/mail/items///{?search,modifiedOrCreatedAfter}]
 Collection of all Mail Items.
 
 + Model (application/json)
@@ -355,6 +355,7 @@ Collection of all Mail Items.
 
 + Parameters
     + search (optional, number, `351987984`) ... Number to search for mail item by id, trackingNumber, or originalTrackingNumber
+    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
