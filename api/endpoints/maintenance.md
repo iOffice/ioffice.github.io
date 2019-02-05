@@ -131,8 +131,8 @@ Collection of all Requests.
     
     	number of request type Id
     	
-    + modifiedOrCreatedAfter (optional, number, '1549319834')
-    
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)
+  
         Epoch time to poll recently modified items in the collection.
 
 + Response 200

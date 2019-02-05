@@ -147,7 +147,7 @@ Collection of all Room Types.
     + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
     + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
     + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
-    + modifiedOrCreatedAfter (optional, number, '1549319834')... Epoch time to poll recently modified items in the collection
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection
     
 + Response 200
 	[Room Types][]
