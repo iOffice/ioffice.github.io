@@ -51,7 +51,7 @@ To update an Agreement send JSON with the Agreement's `ID` and updated value for
             }
         }
 
-## Agreement Collection [/agreements{?modifiedOrCreatedAfter]
+## Agreement Collection [/agreements{?modifiedOrCreatedAfter}]
 Collection of all Agreements.
 
 + Model (application/json)
