@@ -51,7 +51,7 @@ To update a Contact send JSON with the Contact's `ID` and updated value for one 
             }
         }
 
-## Contact Collection [/contacts]
+## Contact Collection [/contacts{?modifiedOrCreatedAfter}]
 Collection of all Contacts.
 
 + Model (application/json)
@@ -75,6 +75,9 @@ Collection of all Contacts.
             ]
 
 ### List of all Contacts [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

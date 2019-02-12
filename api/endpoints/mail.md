@@ -329,7 +329,7 @@ To add a Comment to a Mail Item send JSON with the required attributes.
 + Response 200
     [Mail][]                        
         
-## Mail Items Collection [/mail/items///{?search}]
+## Mail Items Collection [/mail/items///{?search,modifiedOrCreatedAfter}]
 Collection of all Mail Items.
 
 + Model (application/json)
@@ -355,6 +355,7 @@ Collection of all Mail Items.
 
 + Parameters
     + search (optional, number, `351987984`) ... Number to search for mail item by id, trackingNumber, or originalTrackingNumber
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -388,7 +389,7 @@ To Check In one or many Mail Items send JSON with the required attributes.
 + Response 200  
     [Mail][]         
     
-## Mail Item IDs [/mail/items/ids]
+## Mail Item IDs [/mail/items/ids{?modifiedOrCreatedAfter}]
 Retrieve all Mail Item IDs.
 
 + Model (application/json)
@@ -406,12 +407,15 @@ Retrieve all Mail Item IDs.
 
 ### Retrieve Mail Item IDs [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Item IDs][]
     
     
-## Delivered Mail Items [/mail/items/delivered]
+## Delivered Mail Items [/mail/items/delivered{?modifiedOrCreatedAfter}]
 Collection of all Delivered Mail Items.
 
 + Model (application/json)
@@ -436,11 +440,14 @@ Collection of all Delivered Mail Items.
 
 ### Retrieve Delivered Mail Items [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Delivered Mail Items][]    
     
-## Package Types [/mail/packageTypes]
+## Package Types [/mail/packageTypes{?modifiedOrCreatedAfter}]
 Collection of all Mail Package Types.
 
 + Model (application/json)
@@ -477,11 +484,14 @@ Collection of all Mail Package Types.
 
 ### Retrieve Package Types [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Package Types][]   
     
-## Mail Stops [/mail/mailstops]
+## Mail Stops [/mail/mailstops{?modifiedOrCreatedAfter}]
 Collection of all Mail Stops.
 
 + Model (application/json)
@@ -514,11 +524,14 @@ Collection of all Mail Stops.
 
 ### Retrieve Mail Stops [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Stops][]      
     
-## Mail Status Types [/mail/types]
+## Mail Status Types [/mail/types{?modifiedOrCreatedAfter}]
 Collection of all Mail Status Types.
 
 + Model (application/json)
@@ -546,11 +559,14 @@ Collection of all Mail Status Types.
 
 ### Retrieve Mail Status Types [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Routes][]     
     
-## Mail Routes [/mail/routes]
+## Mail Routes [/mail/routes{?modifiedOrCreatedAfter}]
 Collection of all Mail Routes.
 
 + Model (application/json)
@@ -584,11 +600,14 @@ Collection of all Mail Routes.
 
 ### Retrieve Mail Routes [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Routes][] 
     
-## Mail Locations [/mail/locations]
+## Mail Locations [/mail/locations{?modifiedOrCreatedAfter}]
 Collection of all Mail Locations.
 
 + Model (application/json)
@@ -622,11 +641,14 @@ Collection of all Mail Locations.
 
 ### Retrieve Mail Locations [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Locations][]     
 
-## Mail Alerts [/mail/alerts]
+## Mail Alerts [/mail/alerts{?modifiedOrCreatedAfter}]
 Collection of all Mail Alerts.
 
 + Model (application/json)
@@ -712,11 +734,14 @@ Collection of all Mail Alerts.
               
 ### Retrieve Mail Alerts [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Alerts][]    
     
-## Mail Leaderboards for Deliveries [/stats/leaderboards/deliveries]
+## Mail Leaderboards for Deliveries [/stats/leaderboards/deliveries{?modifiedOrCreatedAfter}]
 Collection of Leaderboards for Mail Deliveries.
 
 + Model (application/json)
@@ -801,11 +826,14 @@ Collection of Leaderboards for Mail Deliveries.
 
 ### Retrieve Leaderboards for Mail Deliveries  [GET]
 
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
 + Response 200
     
     [Mail Leaderboards for Deliveries][]      
     
-## Mail Leaderboards for Check-Ins [/stats/leaderboards/check-ins]
+## Mail Leaderboards for Check-Ins [/stats/leaderboards/check-ins{?modifiedOrCreatedAfter}]
 Collection of Leaderboards for Check-Ins.
 
 + Model (application/json)
@@ -889,6 +917,9 @@ Collection of Leaderboards for Check-Ins.
             ]           
 
 ### Retrieve Leaderboards for Mail Check-Ins  [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     

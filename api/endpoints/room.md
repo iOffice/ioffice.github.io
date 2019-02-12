@@ -57,7 +57,7 @@ To update a Room send JSON with the Room's `ID` and updated value for one or mor
             }
         }
 
-## Room Collection [/rooms///{?includeReservable,includeNonReservable,locationSearch,includeOccupiable,includeNonOccupiable,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,includeParking,search,buildingId,floorId,type}]
+## Room Collection [/rooms///{?includeReservable,includeNonReservable,locationSearch,includeOccupiable,includeNonOccupiable,nearLatitude,nearLongitude,startDate,endDate,numberOfPeople,includeParking,search,buildingId,floorId,type,modifiedOrCreatedAfter}]
 Collection of all Rooms.
 
 + Model (application/json)
@@ -99,6 +99,7 @@ Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
     + type (optional, number, `65 or 65,32,79`) ... Id of room type to search for (can accept a comma delimited series of Ids)
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -123,7 +124,7 @@ The following attributes are required to create a Room: `name`, `floor`, and `ty
 
 	[Room][]
 
-## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking}]
+## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking,modifiedOrCreatedAfter}]
 Collection of all Room Types.
 
 + Model (application/json)
@@ -146,6 +147,7 @@ Collection of all Room Types.
     + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
     + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
     + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection
     
 + Response 200
 	[Room Types][]

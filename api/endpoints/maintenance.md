@@ -77,7 +77,7 @@ To update a Request send JSON with the Request's `ID` and updated value for one 
             }
         }
 
-### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId}]
+### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId,modifiedOrCreatedAfter}]
 Collection of all Requests.
 
 + Model (application/json)
@@ -130,6 +130,10 @@ Collection of all Requests.
     + requestTypeId (optional, number)
     
     	number of request type Id
+    	
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)
+  
+        Epoch time to poll recently modified items in the collection.
 
 + Response 200
     
@@ -390,7 +394,7 @@ A single request type object.
 
     [Request Type][]
 
-### Request Types Collection [/maintenance/types]
+### Request Types Collection [/maintenance/types{?modifiedOrCreatedAfter}]
 Collection of all Request Types.
 
 + Model (application/json)
@@ -414,6 +418,9 @@ Collection of all Request Types.
             ]
 
 #### List of all Request Types [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
 + Response 200
     
     [Request Types Collection][]
@@ -463,7 +470,7 @@ A single category object.
 
     [Category][]
 
-### Categories Collection [/maintenance/categories]
+### Categories Collection [/maintenance/categories{?modifiedOrCreatedAfter}]
 Collection of all Categories.
 
 + Model (application/json)
@@ -487,6 +494,10 @@ Collection of all Categories.
             ]
 
 #### List of all Categories [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    
 + Response 200
     
     [Categories Collection][]
@@ -533,7 +544,7 @@ A single product object.
 
     [Product][]
 
-### Products Collection [/maintenance/products]
+### Products Collection [/maintenance/products{?modifiedOrCreatedAfter}]
 Collection of all Products.
 
 + Model (application/json)
@@ -559,6 +570,10 @@ Collection of all Products.
             ]
 
 #### List of all Products [GET]
+
++ Parameters 
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    
 + Response 200
     
     [Products Collection][]
@@ -608,7 +623,7 @@ A single priority object.
 
     [Priority][]
 
-### Priorities Collection [/maintenance/priorities]
+### Priorities Collection [/maintenance/priorities{?modifiedOrCreatedAfter}]
 Collection of all Priorities.
 
 + Model (application/json)
@@ -632,6 +647,10 @@ Collection of all Priorities.
             ]
 
 #### List of all Priorities [GET]
+
++ Parameters
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    
 + Response 200
     
     [Priorities Collection][]
