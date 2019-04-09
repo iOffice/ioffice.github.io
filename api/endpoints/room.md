@@ -46,9 +46,9 @@ To update a Room send JSON with the Room's `ID` and updated value for one or mor
     
     [Room][]
 
-### Remove a Reservation [DELETE]
+### Remove a Room [DELETE]
 + Parameters
-    + id (string) ... ID of the Reservation
+    + id (string) ... ID of the Room
 + Response 200
 
         {
