@@ -165,11 +165,120 @@ Attach an image to a asset
 + Response 200
     [Attach Asset Image][]
 
-## Asset Type Collection [/assets/types]
-Asset Type
+## Asset Types [/assets/types///{id}]
+
++ Parameters
+    + id (string) ... ID of the Asset Type
 
 + Model (application/json)
-    JSON representation of an attachment type object
+    JSON representation of the Asset Type Resource
+
+    + Body
+
+            {
+				"dateCreated": 1572645873930,
+				"unitPriceEnabled": true,
+				"name": "Computers",
+				"active": true,
+				"meteringEnabled": true,
+				"id": 46,
+				"dateUpdated": 1572645873930
+            }
+
+### Retrieve a Single Asset Type[GET]
++ Response 200
+
+    [Asset Types][]
+    
+### Edit an Asset Type [PUT]
+To update an Asset Type send JSON with the Asset Type's `ID` and updated value for one or more of the attributes.
+
++ Parameters
+	+ id (string) ... ID of the Asset Type
+	
++ Request (application/json)
+
+			{
+				"id": 14,
+				"name": "Copy/Print/Fax",
+				"code": "Copy/Print/Fax",
+				"description": "copy print fax description",
+				"meteringEnabled": true,
+				"unitPriceEnabled": true,
+				"sortOrder": 9,
+				"centerLinks": 
+				[
+					{
+						"center": 
+							{
+								"name": "Test Asset",
+								"id": 78
+							}
+					},
+					{
+						"center":
+						{
+							"name": "copy asset center",
+							"id": 79
+						}
+					}
+				],
+				"fields": 
+				[
+					{
+						"baseField": 
+						{
+							"name": "Building",
+							"id": 129
+						},
+						"required": false,
+						"sortOrder": 1
+					}
+				],
+				"meterTypes": 
+				[
+					{
+						"code": "P-COL",
+						"name": "Print Color",
+						"id": 2
+					}
+				],
+				"queueColumns":
+				[
+					{
+						"name": "Manufacturer",
+						"field": 
+						{
+							"name": "Manufacturer",
+							"id": 126,
+							"sortOrder": 0
+						},
+						"sortOrder": 1
+					}
+				]
+			}
+
++ Response 200
+	
+	[Asset Types][]
+    
+### Remove an Asset Type [DELETE]
+
++ Parameters
+    + id (string) ... ID of the Asset Type
+
++ Response 200
+
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
+## Asset Type Collection [/assets/types///{?savedSearchId}]
+
++ Model (application/json)
+    JSON representation of the Asset Type Collection resource.
 
     + Body
 
@@ -196,11 +305,292 @@ Asset Type
                 }
             ]
 
-### List of all Asset Types [GET]
+## List of all Asset Types [GET]
+
++ Parameters
+    + savedSearchId (optional, string) ... Saved Search Id used to filter Asset Types list.
 
 + Response 200
     
     [Asset Type Collection][]
+    
+### Create an Asset Type [POST]
+The following attributes are required to create an Asset Type: name, meteringEnabled, unitPriceEnabled, centerLinks with at least one Center.
+    
++ Request (application/json)
+
+			{
+				"name": "Computers",
+				"meteringEnabled": true,
+				"unitPriceEnabled": true,
+				"centerLinks": 
+				[
+					{
+						"center": 
+							{
+								"name": "Test Asset",
+								"id": 78
+							}
+					}
+				]
+			}
+
++ Response 201
+
+	[Asset Types][]
+	
+## Quick Search [/assets/types/quicksearch]
+
++ Model (application/json)
+    JSON representation of the Asset Type Collection resource.
+
+    + Body
+
+            [
+                {
+                    "id": 11,
+                    "meteringEnabled": true,
+                    "description": "Desktop Computers",
+                    "sortOrder": 0,
+                    "name": "Computer",
+                    "active": true,
+                    "dateCreated": 1262626862660,
+                    "code": "COMP",
+                    "unitPriceEnabled": true,
+                    "dateUpdated": 1262626862660
+                },
+                {
+                    "id":12
+                    ...
+                },
+                {
+                    "id":13
+                    ...
+                }
+            ]
+
+
+## Asset Types Quick Search [POST]
+
+Gets a collection of Asset Types filtered by the search object posted.
+
+Note:
+
+- matchingType = true -> Match all filters.
+- matchingType = false -> Match any filter.
+    
++ Request (application/json)
+
+			{
+            	"availability": "EVERYONE",
+            	"filters": 
+            	[
+            		{
+            			"qualifier": "CONTAINS",
+            			"valueString": "Computer",
+            			"isEditMode": true,
+            			"propertyPath": "name",
+            			"name": ""
+            		}
+            	],
+            	"itemClassName": "com.iofficeconnect.asset.AssetType",
+            	"matchingType": false,
+            	"name": ""
+            }
+
++ Response 200
+    
+    [Asset Type Collection][]
+    
+
+## Asset Types Saved Searches [/assets/types/savedsearches///{id}]
+
++ Parameters
+    + id (string) ... ID of the Saved Search
+
++ Model (application/json)
+    JSON representation of the Saved Search Resource
+
+    + Body
+
+         {
+             "itemClass": {
+                 "name": "com.iofficeconnect.asset.AssetType"
+             },
+             "sortOrder": 0,
+             "name": "Computers",
+             "availability": "EVERYONE",
+             "filters": [
+                 {
+                     "valueString": "Comp",
+                     "qualifier": "CONTAINS",
+                     "property": {
+                         "path": [
+                             {
+                                 "name": "Name",
+                                 "collection": false
+                             }
+                         ],
+                         "entryPointClass": {
+                             "name": "com.iofficeconnect.asset.AssetType"
+                         },
+                         "name": "Name",
+                         "pathString": "name",
+                         "propertyClass": {
+                             "name": "java.lang.String"
+                         }
+                     },
+                     "id": 86,
+                     "propertyPath": "name",
+                     "value": {}
+                 }
+             ],
+             "id": 79,
+             "matchingType": "ANY",
+             "dateUpdated": 1572969944120
+         }
+
+### Retrieve a Single Saved Search [GET]
++ Response 200
+
+    [Asset Types Saved Searches][]
+    
+### Edit a Saved Search [PUT]
+To update a Saved Search send JSON with the Saved Search's `ID` and updated value for one or more of the attributes.
+
+Note:
+
+- matchingType = true -> Match all filters.
+- matchingType = false -> Match any filter.
+
++ Parameters
+	+ id (string) ... ID of the Saved Search
+	
++ Request (application/json)
+
+			{
+            	"id": 79,
+            	"availability": "EVERYONE",
+            	"filters": 
+            	[
+            		{
+            			"id": 86,
+            			"qualifier": "CONTAINS",
+            			"valueString": "Comp",
+            			"propertyPath": "name",
+            		}
+            	],
+            	"itemClassName": "com.iofficeconnect.asset.AssetType",
+            	"matchingType": false,
+            	"name": "Computers"
+            }
+
++ Response 200
+	
+	[Asset Types Saved Searches][]
+	
+### Remove a Saved Search [DELETE]
+
++ Parameters
+    + id (string) ... ID of the Saved Search
+
++ Response 200
+
+        {
+            {
+                "response": "Successfully removed"
+            }
+        }
+
+## Asset Type Saved Searches Collection [/assets/types/savedsearches]
+
++ Model (application/json)
+    JSON representation of the Saved Search Collection resource.
+
+    + Body
+
+            [
+                {
+                	 "id": 79,
+					 "itemClass": {
+						 "name": "com.iofficeconnect.asset.AssetType"
+					 },
+					 "sortOrder": 0,
+					 "name": "Computers",
+					 "availability": "EVERYONE",
+					 "filters": [
+						 {
+							 "valueString": "Comp",
+							 "qualifier": "CONTAINS",
+							 "property": {
+								 "path": [
+									 {
+										 "name": "Name",
+										 "collection": false
+									 }
+								 ],
+								 "entryPointClass": {
+									 "name": "com.iofficeconnect.asset.AssetType"
+								 },
+								 "name": "Name",
+								 "pathString": "name",
+								 "propertyClass": {
+									 "name": "java.lang.String"
+								 }
+							 },
+							 "id": 86,
+							 "propertyPath": "name",
+							 "value": {}
+						 }
+					 ],
+					 "matchingType": "ANY",
+					 "dateUpdated": 1572969944120
+				 },
+                {
+                    "id": 80
+                    ...
+                },
+                {
+                    "id": 81
+                    ...
+                }
+            ]
+
+## List of all Asset Type Saved Searches [GET]
+
++ Response 200
+    
+    [Asset Type Saved Searches Collection][]
+    
+### Create a Saved Search [POST]
+The following attributes are required to create an Asset Type Saved Search: name, availability, matchingType and itemClassName (com.iofficeconnect.asset.AssetType).
+
+Note:
+
+- matchingType = true -> Match all filters.
+- matchingType = false -> Match any filter.
+
+
++ Request (application/json)
+
+			{
+				"name": "Computers",
+				"availability": "EVERYONE",
+				"matchingType": false,
+				"itemClassName": "com.iofficeconnect.asset.AssetType",
+				"filters": [
+					{
+						"propertyPath": "name",
+						"qualifier": "CONTAINS",
+						"valueString": "comp"
+					}
+				]
+			}
+
++ Response 201
+
+	[Asset Types Saved Searches][]
+	
 
 ## Asset Model Collection [/assets/models]
 Asset Model
@@ -230,3 +620,36 @@ Asset Model
 + Response 200
     
     [Asset Model Collection][]
+
+## Meter Types [/assets/types/metertypes]
+
++ Model (application/json)
+    JSON representation of the Asset Meter Type Collection resource.
+
+    + Body
+
+            [
+                {
+					"code": "P-BW",
+					"dateCreated": 1132265366990,
+					"sortOrder": 1,
+					"name": "Print BW",
+					"active": true,
+					"meterCode": "P-BW",
+					"dateUpdated": 1132265366990
+                },
+                {
+                    "code": "P-COL",
+                    ...
+                },
+                {
+                    "code": "C-BW",
+                    ...
+                }
+            ]
+
+## List of all Meter Types [GET]
+
++ Response 200
+    
+    [Meter Types][]
