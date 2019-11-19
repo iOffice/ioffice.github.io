@@ -103,3 +103,4 @@ Note: Many of the `List of all XXXX` endpoints that return a collection have a `
 
 <!-- include(endpoints/categorydepth.md) -->
 
+<!-- include(endpoints/savedsearch.md) -->
