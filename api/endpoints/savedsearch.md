@@ -193,3 +193,59 @@ Note:
 + Response 201
 
 	[Saved Search][]
+
+## Property Collection [/savedsearches/properties/]
+
++ Model (application/json)
+	JSON representation of Properties Collection resource.
+
+	+ Body
+
+			[
+				{
+					"name": "Center links > Asset type center link : Center",
+					"path": [
+						{
+							"name": "Center links",
+							"collection": true
+						},
+						{
+							"name": "Asset type center link",
+							"collection": false,
+							"collectionElementClass": {
+								"name": "com.iofficeconnect.asset.AssetTypeCenterLink"
+							}
+						},
+						{
+							"name": "Center",
+							"collection": false
+						}
+					],
+					"entryPointClass": {
+						"name": "com.iofficeconnect.asset.AssetType"
+					},
+					"pathString": "centerLinks[com.iofficeconnect.asset.AssetTypeCenterLink].center",
+					"propertyClass": {
+						"name": "com.iofficeconnect.asset.AssetCenter"
+					}
+                },
+				{
+					"name":  "Code",
+					...
+				},
+				{
+					"name": "Metering enabled",
+					...
+				}
+			]
+
+## List of Properties [GET]
+
+This are the properties used in a Search Filter.
+
++ Parameters
+    + searchType (optional, string, `user, asset, move`) ... String to return list of properties by saved search type. If no searchType is sent, searchType defaults to `asset`.
+
++ Response 200
+	
+	[Property Collection][]
