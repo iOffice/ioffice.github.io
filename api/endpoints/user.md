@@ -156,7 +156,7 @@ The following attributes are required to attach an avatar: `image`, `fileName`.
     [User][]
 
 
-## User Collection [/users///{?search,centerId,userTypeId,role,siteAdmin,hasRoom,hasDefaultVisitorCenter,modifiedOrCreatedAfter}]
+## User Collection [/users///{?search,centerId,userTypeId,role,siteAdmin,hasRoom,hasDefaultVisitorCenter,modifiedOrCreatedAfter,savedSearchId}]
 Collection of all Users.
 
 + Model (application/json)
@@ -189,6 +189,7 @@ Collection of all Users.
     + hasRoom (optional, boolean, `true`) ... If true, query will include users with rooms
     + hasDefaultVisitorCenter (optional, boolean, `true`) ... If true, query will include users with a default visitor center
     + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + savedSearchId (optional, string) ... Saved Search Id used to filter the Users list.
 
 + Response 200
     
@@ -209,6 +210,42 @@ The following attributes are required to create a User: `firstName`, `lastName`,
 + Response 201
 
     [User][]
+
+## User Quick Search Collection [/users/quicksearch]
+
++ Model (application/json)
+    JSON representation of the User Collection resource.
+
+## User Quick Search [POST]
+
+Gets a collection of Users filtered by the search object posted.
+
+Note:
+
+- matchingType = true -> Match all filters.
+- matchingType = false -> Match any filter.
+    
++ Request (application/json)
+
+			{
+            	"availability": "EVERYONE",
+            	"filters": 
+            	[
+            		{
+            			"qualifier": "CONTAINS",
+                        "valueString": "fox.mccloud",
+                        "propertyPath": "email",
+                        "name": ""
+            		}
+            	],
+            	"itemClassName": "com.iofficeconnect.user.User",
+            	"matchingType": false,
+            	"name": ""
+            }
+
++ Response 200
+    
+    [User Collection][]
 
 ### Get current logged in user [/users/me]
 
