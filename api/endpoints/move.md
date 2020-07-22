@@ -100,195 +100,6 @@ A single move object.
                    "dateUpdated": 1488566587390
                  },
                  "id": 16,
-                 "items": [
-                   {
-                     "toRoom": {
-                       "dateCreated": 1465572191247,
-                       "reservable": false,
-                       "name": "49.0",
-                       "description": "",
-                       "id": 416,
-                       "floor": {
-                         "area": 23600.0167,
-                         "dateCreated": 1465572160000,
-                         "drawingAvailable": true,
-                         "name": "1",
-                         "id": 2,
-                         "building": {
-                           "address": {
-                             "country": {
-                               "defaultSelected": true,
-                               "subdivisionCategoryName": "state",
-                               "alpha2Code": "US",
-                               "isoCode": "US",
-                               "name": "United States of America (the)",
-                               "id": 223
-                             },
-                             "city": "Houston",
-                             "postalCode": "",
-                             "state": {
-                               "defaultSelected": false,
-                               "code": "",
-                               "name": "Other",
-                               "id": 70
-                             }
-                           },
-                           "dateCreated": 1465572158677,
-                           "metric": false,
-                           "name": "Built",
-                           "id": 44,
-                           "dateUpdated": 1465572159707
-                         },
-                         "dateUpdated": 1465572186757
-                       },
-                       "type": {
-                         "hexColor": "33cc99",
-                         "color": {},
-                         "name": "WKST",
-                         "occupiable": true,
-                         "id": 1,
-                         "parkingSpace": false
-                       },
-                       "capacity": 1
-                     },
-                     "toRoomAvailable": true,
-                     "name": "Han Solo",
-                     "id": 31201,
-                     "type": {
-                       "dateCreated": 1067272496850,
-                       "name": "Employee Move",
-                       "id": 2,
-                       "fields": [
-                         {
-                           "code": "firstName",
-                           "name": "First Name",
-                           "id": 17
-                         },
-                         {
-                           "code": "lastName",
-                           "name": "Last Name",
-                           "id": 18
-                         },
-                         {
-                           "code": "phone",
-                           "name": "Phone",
-                           "id": 19
-                         },
-                         {
-                           "code": "extension",
-                           "name": "Extension",
-                           "id": 20
-                         },
-                         {
-                           "code": "costCenter",
-                           "name": "Cost Center",
-                           "id": 21
-                         },
-                         {
-                           "code": "employeeId",
-                           "name": "Employee ID",
-                           "id": 22
-                         },
-                         {
-                           "code": "email",
-                           "name": "Email",
-                           "id": 23
-                         }
-                       ],
-                       "typeCode": "move"
-                     },
-                     "user": {
-                       "floorWarden": false,
-                       "lastName": "Admin",
-                       "extension": "",
-                       "color": "#8cf7a4",
-                       "employeeId": "",
-                       "userName": "hansolo",
-                       "specialNeeds": false,
-                       "dateUpdated": 1488566587390,
-                       "firstName": "Han",
-                       "dateCreated": 1464727067663,
-                       "phone": "",
-                       "name": "Han Solo",
-                       "mailStop": {
-                         "name": "Stop 1",
-                         "id": 140
-                       },
-                       "userType": {
-                         "dateCreated": 1430925570820,
-                         "name": "Employee",
-                         "id": 1,
-                         "fields": [
-                           {
-                             "code": "company",
-                             "name": "Company",
-                             "id": 1
-                           },
-                           {
-                             "code": "jobTitle",
-                             "name": "Job Title",
-                             "id": 2
-                           },
-                           {
-                             "code": "phone",
-                             "name": "Phone",
-                             "id": 3
-                           },
-                           {
-                             "code": "extension",
-                             "name": "Extension",
-                             "id": 4
-                           },
-                           {
-                             "code": "mobile",
-                             "name": "Mobile Phone Number",
-                             "id": 6
-                           },
-                           {
-                             "code": "employeeId",
-                             "name": "Employee ID",
-                             "id": 8
-                           },
-                           {
-                             "code": "floorWarden",
-                             "name": "Floor Warden",
-                             "id": 12
-                           },
-                           {
-                             "code": "specialNeeds",
-                             "name": "Special Needs",
-                             "id": 13
-                           },
-                           {
-                             "code": "comments",
-                             "name": "Comments",
-                             "id": 14
-                           },
-                           {
-                             "code": "alternateDelivery",
-                             "name": "Alternate Delivery",
-                             "id": 16
-                           },
-                           {
-                             "code": "knownAs",
-                             "name": "Known As",
-                             "id": 17
-                           }
-                         ]
-                       },
-                       "email": "hansolo@iofficecorp.com"
-                     },
-                     "tasksValueMap": {  
-                        "10": {  
-                           "other":"Need a Bigger TV",
-                           "notes":"Samsung or Sony",
-                           "whiteBoard":"Yes",
-                           "deskChair":"Yes",
-                           "sideChair":"Yes"
-                        }
-                     }
-                   }
-                 ],
                  "status": {
                    "code": "sub",
                    "dateCreated": 1185984126540,
@@ -1564,6 +1375,1853 @@ One or more of the following attributes may also be required depending on the re
            "email": "hansolo@iofficecorp.com"
          },
        }
+       
+       
+       
+## Archived Move Requests [/move/requests/archived///{id}]
+A single archived move request
+
++ Parameters
+	+ id (String) ... ID of the archived move request
++ Model (application/json)
+	JSON representation of the Archived Move Resource
+	
+	+ Body
+		
+		{
+            "date": 1593748206540,
+            "requester": {
+                "costCenter1": "",
+                "assistantName": "",
+                "jobTitle": "",
+                "postalCode": "",
+                "custom02": "",
+                "custom01": "",
+                "custom04": "",
+                "custom03": "",
+                "custom06": "",
+                "knownAs": "",
+                "custom05": "",
+                "custom08": "",
+                "custom07": "",
+                "custom09": "",
+                "id": 1,
+                "state": "",
+                "fax": "",
+                "costCenter2": "",
+                "floorWarden": false,
+                "custom30": "",
+                "firstName": "Customer",
+                "phone": "",
+                "name": "Customer Service",
+                "mailStop": {
+                    "name": "Stop 1",
+                    "id": 139
+                },
+                "userType": {
+                    "name": "New Type",
+                    "id": 2,
+                    "dateUpdated": 1576816332180
+                },
+                "lastName": "Service",
+                "extension": "",
+                "color": "#694A9F",
+                "city": "",
+                "specialNeeds": false,
+                "custom20": "",
+                "custom22": "",
+                "custom21": "",
+                "custom24": "",
+                "custom23": "",
+                "dateCreated": 1099859525000,
+                "custom26": "",
+                "custom25": "",
+                "custom28": "",
+                "custom27": "",
+                "custom29": "",
+                "company": "",
+                "department": "",
+                "address": "",
+                "comments": "",
+                "mobile": "",
+                "employeeId": "",
+                "userName": "ioffice",
+                "room": {
+                    "area": 0.0,
+                    "longDescription": "",
+                    "reservable": true,
+                    "description": "testing 1234",
+                    "type": {
+                        "hexColor": "03fff7",
+                        "contentFlag": 1,
+                        "cost": 0.0,
+                        "color": {},
+                        "name": "OFFICE",
+                        "occupiable": false,
+                        "id": 100,
+                        "parkingSpace": false,
+                        "dateUpdated": 1585874142457,
+                        "typeCode": ""
+                    },
+                    "capacity": 5,
+                    "dateUpdated": 1595325880387,
+                    "dateCreated": 1580232955383,
+                    "googleData": {
+                        "googleCalResourceId": "MQUeSi6xcKSkkCvlbn65_aOFBjs",
+                        "googleCalAddress": "testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+                    },
+                    "name": "NotNewRoomr",
+                    "remoteInfo": "",
+                    "id": 13,
+                    "floor": {
+                        "area": 3808.0,
+                        "dateCreated": 1563467606570,
+                        "drawingAvailable": false,
+                        "name": "Conference Room",
+                        "id": 2,
+                        "building": {
+                            "address": {
+                                "country": {
+                                    "defaultSelected": true,
+                                    "subdivisionCategoryName": "state",
+                                    "alpha2Code": "US",
+                                    "isoCode": "US",
+                                    "name": "United States of America (the)",
+                                    "id": 223
+                                },
+                                "city": "Houston",
+                                "street": "1210 W Clay St",
+                                "postalCode": "",
+                                "state": {
+                                    "country": {
+                                        "defaultSelected": true,
+                                        "subdivisionCategoryName": "state",
+                                        "alpha2Code": "US",
+                                        "isoCode": "US",
+                                        "name": "United States of America (the)",
+                                        "id": 223
+                                    },
+                                    "defaultSelected": false,
+                                    "code": "TX",
+                                    "name": "Texas",
+                                    "id": 61,
+                                    "categoryName": "state"
+                                }
+                            },
+                            "dateCreated": 1563380090677,
+                            "metric": true,
+                            "name": "Building 1",
+                            "location": {},
+                            "id": 44,
+                            "revitLink": "",
+                            "costCenters": [],
+                            "dateUpdated": 1591819645633
+                        },
+                        "dateUpdated": 1591989677357
+                    }
+                },
+                "dateUpdated": 1563379891283,
+                "custom11": "",
+                "custom10": "",
+                "custom13": "",
+                "custom12": "",
+                "custom15": "",
+                "custom14": "",
+                "custom17": "",
+                "custom16": "",
+                "custom19": "",
+                "custom18": "",
+                "middleName": ""
+            },
+            "lastUpdatedBy": {
+                "costCenter1": "",
+                "assistantName": "",
+                "jobTitle": "",
+                "postalCode": "",
+                "custom02": "",
+                "custom01": "",
+                "custom04": "",
+                "custom03": "",
+                "custom06": "",
+                "knownAs": "",
+                "custom05": "",
+                "custom08": "",
+                "custom07": "",
+                "custom09": "",
+                "id": 1,
+                "state": "",
+                "fax": "",
+                "costCenter2": "",
+                "floorWarden": false,
+                "custom30": "",
+                "firstName": "Customer",
+                "phone": "",
+                "name": "Customer Service",
+                "mailStop": {
+                    "name": "Stop 1",
+                    "id": 139
+                },
+                "userType": {
+                    "name": "New Type",
+                    "id": 2,
+                    "dateUpdated": 1576816332180
+                },
+                "lastName": "Service",
+                "extension": "",
+                "color": "#694A9F",
+                "city": "",
+                "specialNeeds": false,
+                "custom20": "",
+                "custom22": "",
+                "custom21": "",
+                "custom24": "",
+                "custom23": "",
+                "dateCreated": 1099859525000,
+                "custom26": "",
+                "custom25": "",
+                "custom28": "",
+                "custom27": "",
+                "custom29": "",
+                "company": "",
+                "department": "",
+                "address": "",
+                "comments": "",
+                "mobile": "",
+                "employeeId": "",
+                "userName": "ioffice",
+                "room": {
+                    "area": 0.0,
+                    "longDescription": "",
+                    "reservable": true,
+                    "description": "testing 1234",
+                    "type": {
+                        "hexColor": "03fff7",
+                        "contentFlag": 1,
+                        "cost": 0.0,
+                        "color": {},
+                        "name": "OFFICE",
+                        "occupiable": false,
+                        "id": 100,
+                        "parkingSpace": false,
+                        "dateUpdated": 1585874142457,
+                        "typeCode": ""
+                    },
+                    "capacity": 5,
+                    "dateUpdated": 1595325880387,
+                    "dateCreated": 1580232955383,
+                    "googleData": {
+                        "googleCalResourceId": "MQUeSi6xcKSkkCvlbn65_aOFBjs",
+                        "googleCalAddress": "testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+                    },
+                    "name": "NotNewRoomr",
+                    "remoteInfo": "",
+                    "id": 13,
+                    "floor": {
+                        "area": 3808.0,
+                        "dateCreated": 1563467606570,
+                        "drawingAvailable": false,
+                        "name": "Conference Room",
+                        "id": 2,
+                        "building": {
+                            "address": {
+                                "country": {
+                                    "defaultSelected": true,
+                                    "subdivisionCategoryName": "state",
+                                    "alpha2Code": "US",
+                                    "isoCode": "US",
+                                    "name": "United States of America (the)",
+                                    "id": 223
+                                },
+                                "city": "Houston",
+                                "street": "1210 W Clay St",
+                                "postalCode": "",
+                                "state": {
+                                    "country": {
+                                        "defaultSelected": true,
+                                        "subdivisionCategoryName": "state",
+                                        "alpha2Code": "US",
+                                        "isoCode": "US",
+                                        "name": "United States of America (the)",
+                                        "id": 223
+                                    },
+                                    "defaultSelected": false,
+                                    "code": "TX",
+                                    "name": "Texas",
+                                    "id": 61,
+                                    "categoryName": "state"
+                                }
+                            },
+                            "dateCreated": 1563380090677,
+                            "metric": true,
+                            "name": "Building 1",
+                            "location": {},
+                            "id": 44,
+                            "revitLink": "",
+                            "costCenters": [],
+                            "dateUpdated": 1591819645633
+                        },
+                        "dateUpdated": 1591989677357
+                    }
+                },
+                "dateUpdated": 1563379891283,
+                "custom11": "",
+                "custom10": "",
+                "custom13": "",
+                "custom12": "",
+                "custom15": "",
+                "custom14": "",
+                "custom17": "",
+                "custom16": "",
+                "custom19": "",
+                "custom18": "",
+                "middleName": ""
+            },
+            "comments": [],
+            "center": {
+                "name": "Move Center",
+                "id": 75
+            },
+            "description": "Customer Service's Move Request (7/02)",
+            "completed": false,
+            "enteredBy": {
+                "costCenter1": "",
+                "assistantName": "",
+                "jobTitle": "",
+                "postalCode": "",
+                "custom02": "",
+                "custom01": "",
+                "custom04": "",
+                "custom03": "",
+                "custom06": "",
+                "knownAs": "",
+                "custom05": "",
+                "custom08": "",
+                "custom07": "",
+                "custom09": "",
+                "id": 1,
+                "state": "",
+                "fax": "",
+                "costCenter2": "",
+                "floorWarden": false,
+                "custom30": "",
+                "firstName": "Customer",
+                "phone": "",
+                "name": "Customer Service",
+                "mailStop": {
+                    "name": "Stop 1",
+                    "id": 139
+                },
+                "userType": {
+                    "name": "New Type",
+                    "id": 2,
+                    "dateUpdated": 1576816332180
+                },
+                "lastName": "Service",
+                "extension": "",
+                "color": "#694A9F",
+                "city": "",
+                "specialNeeds": false,
+                "custom20": "",
+                "custom22": "",
+                "custom21": "",
+                "custom24": "",
+                "custom23": "",
+                "dateCreated": 1099859525000,
+                "custom26": "",
+                "custom25": "",
+                "custom28": "",
+                "custom27": "",
+                "custom29": "",
+                "company": "",
+                "department": "",
+                "address": "",
+                "comments": "",
+                "mobile": "",
+                "employeeId": "",
+                "userName": "ioffice",
+                "room": {
+                    "area": 0.0,
+                    "longDescription": "",
+                    "reservable": true,
+                    "description": "testing 1234",
+                    "type": {
+                        "hexColor": "03fff7",
+                        "contentFlag": 1,
+                        "cost": 0.0,
+                        "color": {},
+                        "name": "OFFICE",
+                        "occupiable": false,
+                        "id": 100,
+                        "parkingSpace": false,
+                        "dateUpdated": 1585874142457,
+                        "typeCode": ""
+                    },
+                    "capacity": 5,
+                    "dateUpdated": 1595325880387,
+                    "dateCreated": 1580232955383,
+                    "googleData": {
+                        "googleCalResourceId": "MQUeSi6xcKSkkCvlbn65_aOFBjs",
+                        "googleCalAddress": "testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+                    },
+                    "name": "NotNewRoomr",
+                    "remoteInfo": "",
+                    "id": 13,
+                    "floor": {
+                        "area": 3808.0,
+                        "dateCreated": 1563467606570,
+                        "drawingAvailable": false,
+                        "name": "Conference Room",
+                        "id": 2,
+                        "building": {
+                            "address": {
+                                "country": {
+                                    "defaultSelected": true,
+                                    "subdivisionCategoryName": "state",
+                                    "alpha2Code": "US",
+                                    "isoCode": "US",
+                                    "name": "United States of America (the)",
+                                    "id": 223
+                                },
+                                "city": "Houston",
+                                "street": "1210 W Clay St",
+                                "postalCode": "",
+                                "state": {
+                                    "country": {
+                                        "defaultSelected": true,
+                                        "subdivisionCategoryName": "state",
+                                        "alpha2Code": "US",
+                                        "isoCode": "US",
+                                        "name": "United States of America (the)",
+                                        "id": 223
+                                    },
+                                    "defaultSelected": false,
+                                    "code": "TX",
+                                    "name": "Texas",
+                                    "id": 61,
+                                    "categoryName": "state"
+                                }
+                            },
+                            "dateCreated": 1563380090677,
+                            "metric": true,
+                            "name": "Building 1",
+                            "location": {},
+                            "id": 44,
+                            "revitLink": "",
+                            "costCenters": [],
+                            "dateUpdated": 1591819645633
+                        },
+                        "dateUpdated": 1591989677357
+                    }
+                },
+                "dateUpdated": 1563379891283,
+                "custom11": "",
+                "custom10": "",
+                "custom13": "",
+                "custom12": "",
+                "custom15": "",
+                "custom14": "",
+                "custom17": "",
+                "custom16": "",
+                "custom19": "",
+                "custom18": "",
+                "middleName": ""
+            },
+            "dateUpdated": 1593748316627,
+            "approved": false,
+            "dateCreated": 1593748206540,
+            "id": 209,
+            "status": {
+                "code": "sub",
+                "dateCreated": 1185984126540,
+                "name": "In Progress",
+                "id": 10,
+                "locked": true
+            }
+        }
+	
+
+## Retrieve a single Archived Request [GET]
+
++ Response 200
+
+	[Archived Move Requests][]
+	
+
+## Archived Move Collection [/move/requests/archived///{?modifiedOrCreatedAfter}]
+
++ Parameters
+	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+
++ Model (application/json)
+	
+	JSON representation of the archived move collection resource
+	
+	+ Body
+		
+		[
+				   {
+					  "date":1593748206540,
+					  "requester":{
+						 "costCenter1":"",
+						 "assistantName":"",
+						 "jobTitle":"",
+						 "postalCode":"",
+						 "custom02":"",
+						 "custom01":"",
+						 "custom04":"",
+						 "custom03":"",
+						 "custom06":"",
+						 "knownAs":"",
+						 "custom05":"",
+						 "custom08":"",
+						 "custom07":"",
+						 "custom09":"",
+						 "id":1,
+						 "state":"",
+						 "fax":"",
+						 "costCenter2":"",
+						 "floorWarden":false,
+						 "custom30":"",
+						 "firstName":"Customer",
+						 "phone":"",
+						 "name":"Customer Service",
+						 "mailStop":{
+							"name":"Stop 1",
+							"id":139
+						 },
+						 "userType":{
+							"name":"New Type",
+							"id":2,
+							"dateUpdated":1576816332180
+						 },
+						 "lastName":"Service",
+						 "extension":"",
+						 "color":"#694A9F",
+						 "city":"",
+						 "specialNeeds":false,
+						 "custom20":"",
+						 "custom22":"",
+						 "custom21":"",
+						 "custom24":"",
+						 "custom23":"",
+						 "dateCreated":1099859525000,
+						 "custom26":"",
+						 "custom25":"",
+						 "custom28":"",
+						 "custom27":"",
+						 "custom29":"",
+						 "company":"",
+						 "department":"",
+						 "address":"",
+						 "comments":"",
+						 "mobile":"",
+						 "employeeId":"",
+						 "userName":"ioffice",
+						 "room":{
+							"area":0.0,
+							"longDescription":"",
+							"reservable":true,
+							"description":"testing 1234",
+							"type":{
+							   "hexColor":"03fff7",
+							   "contentFlag":1,
+							   "cost":0.0,
+							   "color":{
+				
+							   },
+							   "name":"OFFICE",
+							   "occupiable":false,
+							   "id":100,
+							   "parkingSpace":false,
+							   "dateUpdated":1585874142457,
+							   "typeCode":""
+							},
+							"capacity":5,
+							"dateUpdated":1595325880387,
+							"dateCreated":1580232955383,
+							"googleData":{
+							   "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+							   "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+							},
+							"name":"NotNewRoomr",
+							"remoteInfo":"",
+							"id":13,
+							"floor":{
+							   "area":3808.0,
+							   "dateCreated":1563467606570,
+							   "drawingAvailable":false,
+							   "name":"Conference Room",
+							   "id":2,
+							   "building":{
+								  "address":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "city":"Houston",
+									 "street":"1210 W Clay St",
+									 "postalCode":"",
+									 "state":{
+										"country":{
+										   "defaultSelected":true,
+										   "subdivisionCategoryName":"state",
+										   "alpha2Code":"US",
+										   "isoCode":"US",
+										   "name":"United States of America (the)",
+										   "id":223
+										},
+										"defaultSelected":false,
+										"code":"TX",
+										"name":"Texas",
+										"id":61,
+										"categoryName":"state"
+									 }
+								  },
+								  "dateCreated":1563380090677,
+								  "metric":true,
+								  "name":"Building 1",
+								  "location":{
+				
+								  },
+								  "id":44,
+								  "revitLink":"",
+								  "costCenters":[
+				
+								  ],
+								  "dateUpdated":1591819645633
+							   },
+							   "dateUpdated":1591989677357
+							}
+						 },
+						 "dateUpdated":1563379891283,
+						 "custom11":"",
+						 "custom10":"",
+						 "custom13":"",
+						 "custom12":"",
+						 "custom15":"",
+						 "custom14":"",
+						 "custom17":"",
+						 "custom16":"",
+						 "custom19":"",
+						 "custom18":"",
+						 "middleName":""
+					  },
+					  "lastUpdatedBy":{
+						 "costCenter1":"",
+						 "assistantName":"",
+						 "jobTitle":"",
+						 "postalCode":"",
+						 "custom02":"",
+						 "custom01":"",
+						 "custom04":"",
+						 "custom03":"",
+						 "custom06":"",
+						 "knownAs":"",
+						 "custom05":"",
+						 "custom08":"",
+						 "custom07":"",
+						 "custom09":"",
+						 "id":1,
+						 "state":"",
+						 "fax":"",
+						 "costCenter2":"",
+						 "floorWarden":false,
+						 "custom30":"",
+						 "firstName":"Customer",
+						 "phone":"",
+						 "name":"Customer Service",
+						 "mailStop":{
+							"name":"Stop 1",
+							"id":139
+						 },
+						 "userType":{
+							"name":"New Type",
+							"id":2,
+							"dateUpdated":1576816332180
+						 },
+						 "lastName":"Service",
+						 "extension":"",
+						 "color":"#694A9F",
+						 "city":"",
+						 "specialNeeds":false,
+						 "custom20":"",
+						 "custom22":"",
+						 "custom21":"",
+						 "custom24":"",
+						 "custom23":"",
+						 "dateCreated":1099859525000,
+						 "custom26":"",
+						 "custom25":"",
+						 "custom28":"",
+						 "custom27":"",
+						 "custom29":"",
+						 "company":"",
+						 "department":"",
+						 "address":"",
+						 "comments":"",
+						 "mobile":"",
+						 "employeeId":"",
+						 "userName":"ioffice",
+						 "room":{
+							"area":0.0,
+							"longDescription":"",
+							"reservable":true,
+							"description":"testing 1234",
+							"type":{
+							   "hexColor":"03fff7",
+							   "contentFlag":1,
+							   "cost":0.0,
+							   "color":{
+				
+							   },
+							   "name":"OFFICE",
+							   "occupiable":false,
+							   "id":100,
+							   "parkingSpace":false,
+							   "dateUpdated":1585874142457,
+							   "typeCode":""
+							},
+							"capacity":5,
+							"dateUpdated":1595325880387,
+							"dateCreated":1580232955383,
+							"googleData":{
+							   "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+							   "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+							},
+							"name":"NotNewRoomr",
+							"remoteInfo":"",
+							"id":13,
+							"floor":{
+							   "area":3808.0,
+							   "dateCreated":1563467606570,
+							   "drawingAvailable":false,
+							   "name":"Conference Room",
+							   "id":2,
+							   "building":{
+								  "address":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "city":"Houston",
+									 "street":"1210 W Clay St",
+									 "postalCode":"",
+									 "state":{
+										"country":{
+										   "defaultSelected":true,
+										   "subdivisionCategoryName":"state",
+										   "alpha2Code":"US",
+										   "isoCode":"US",
+										   "name":"United States of America (the)",
+										   "id":223
+										},
+										"defaultSelected":false,
+										"code":"TX",
+										"name":"Texas",
+										"id":61,
+										"categoryName":"state"
+									 }
+								  },
+								  "dateCreated":1563380090677,
+								  "metric":true,
+								  "name":"Building 1",
+								  "location":{
+				
+								  },
+								  "id":44,
+								  "revitLink":"",
+								  "costCenters":[
+				
+								  ],
+								  "dateUpdated":1591819645633
+							   },
+							   "dateUpdated":1591989677357
+							}
+						 },
+						 "dateUpdated":1563379891283,
+						 "custom11":"",
+						 "custom10":"",
+						 "custom13":"",
+						 "custom12":"",
+						 "custom15":"",
+						 "custom14":"",
+						 "custom17":"",
+						 "custom16":"",
+						 "custom19":"",
+						 "custom18":"",
+						 "middleName":""
+					  },
+					  "comments":[
+				
+					  ],
+					  "center":{
+						 "name":"Move Center",
+						 "id":75
+					  },
+					  "description":"Customer Service's Move Request (7/02)",
+					  "completed":false,
+					  "enteredBy":{
+						 "costCenter1":"",
+						 "assistantName":"",
+						 "jobTitle":"",
+						 "postalCode":"",
+						 "custom02":"",
+						 "custom01":"",
+						 "custom04":"",
+						 "custom03":"",
+						 "custom06":"",
+						 "knownAs":"",
+						 "custom05":"",
+						 "custom08":"",
+						 "custom07":"",
+						 "custom09":"",
+						 "id":1,
+						 "state":"",
+						 "fax":"",
+						 "costCenter2":"",
+						 "floorWarden":false,
+						 "custom30":"",
+						 "firstName":"Customer",
+						 "phone":"",
+						 "name":"Customer Service",
+						 "mailStop":{
+							"name":"Stop 1",
+							"id":139
+						 },
+						 "userType":{
+							"name":"New Type",
+							"id":2,
+							"dateUpdated":1576816332180
+						 },
+						 "lastName":"Service",
+						 "extension":"",
+						 "color":"#694A9F",
+						 "city":"",
+						 "specialNeeds":false,
+						 "custom20":"",
+						 "custom22":"",
+						 "custom21":"",
+						 "custom24":"",
+						 "custom23":"",
+						 "dateCreated":1099859525000,
+						 "custom26":"",
+						 "custom25":"",
+						 "custom28":"",
+						 "custom27":"",
+						 "custom29":"",
+						 "company":"",
+						 "department":"",
+						 "address":"",
+						 "comments":"",
+						 "mobile":"",
+						 "employeeId":"",
+						 "userName":"ioffice",
+						 "room":{
+							"area":0.0,
+							"longDescription":"",
+							"reservable":true,
+							"description":"testing 1234",
+							"type":{
+							   "hexColor":"03fff7",
+							   "contentFlag":1,
+							   "cost":0.0,
+							   "color":{
+				
+							   },
+							   "name":"OFFICE",
+							   "occupiable":false,
+							   "id":100,
+							   "parkingSpace":false,
+							   "dateUpdated":1585874142457,
+							   "typeCode":""
+							},
+							"capacity":5,
+							"dateUpdated":1595325880387,
+							"dateCreated":1580232955383,
+							"googleData":{
+							   "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+							   "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+							},
+							"name":"NotNewRoomr",
+							"remoteInfo":"",
+							"id":13,
+							"floor":{
+							   "area":3808.0,
+							   "dateCreated":1563467606570,
+							   "drawingAvailable":false,
+							   "name":"Conference Room",
+							   "id":2,
+							   "building":{
+								  "address":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "city":"Houston",
+									 "street":"1210 W Clay St",
+									 "postalCode":"",
+									 "state":{
+										"country":{
+										   "defaultSelected":true,
+										   "subdivisionCategoryName":"state",
+										   "alpha2Code":"US",
+										   "isoCode":"US",
+										   "name":"United States of America (the)",
+										   "id":223
+										},
+										"defaultSelected":false,
+										"code":"TX",
+										"name":"Texas",
+										"id":61,
+										"categoryName":"state"
+									 }
+								  },
+								  "dateCreated":1563380090677,
+								  "metric":true,
+								  "name":"Building 1",
+								  "location":{
+				
+								  },
+								  "id":44,
+								  "revitLink":"",
+								  "costCenters":[
+				
+								  ],
+								  "dateUpdated":1591819645633
+							   },
+							   "dateUpdated":1591989677357
+							}
+						 },
+						 "dateUpdated":1563379891283,
+						 "custom11":"",
+						 "custom10":"",
+						 "custom13":"",
+						 "custom12":"",
+						 "custom15":"",
+						 "custom14":"",
+						 "custom17":"",
+						 "custom16":"",
+						 "custom19":"",
+						 "custom18":"",
+						 "middleName":""
+					  },
+					  "dateUpdated":1593748316627,
+					  "approved":false,
+					  "dateCreated":1593748206540,
+					  "id":209,
+					  "status":{
+						 "code":"sub",
+						 "dateCreated":1185984126540,
+						 "name":"In Progress",
+						 "id":10,
+						 "locked":true
+					  }
+				   },
+				   
+				   ...
+        ]
+        
+## List of all Archived Move Requests [GET]
+
++ Response 200
+
+	[Archived Move Collection][]
+	
+
+## Archived Move Request Items [/move/requests/items/archived///{id}]
+A single move request item object.
+
++ Parameters
+	+ id (string) ... ID of the Archived Move Request Item
+	
++ Model (application/json)
+	JSON representation of the Archived Move Item Resource
+	
+	+ Body 
+		
+		{
+           "itemType":"USER",
+           "toRoom":{
+              "area":400.0,
+              "longDescription":"",
+              "dateCreated":1563381159400,
+              "reservable":false,
+              "name":"test room",
+              "description":"",
+              "id":1,
+              "type":{
+                 "hexColor":"ff3366",
+                 "contentFlag":3,
+                 "cost":0.0,
+                 "color":{
+        
+                 },
+                 "name":"MAIL RM",
+                 "occupiable":true,
+                 "id":105,
+                 "parkingSpace":false,
+                 "dateUpdated":1583291717220,
+                 "typeCode":""
+              },
+              "floor":{
+                 "area":5000.0,
+                 "dateCreated":1563381159233,
+                 "drawingAvailable":false,
+                 "name":"Floor 1",
+                 "id":1,
+                 "building":{
+                    "address":{
+                       "country":{
+                          "defaultSelected":true,
+                          "subdivisionCategoryName":"state",
+                          "alpha2Code":"US",
+                          "isoCode":"US",
+                          "name":"United States of America (the)",
+                          "id":223
+                       },
+                       "city":"Houston",
+                       "street":"1210 W Clay St",
+                       "postalCode":"",
+                       "state":{
+                          "country":{
+                             "defaultSelected":true,
+                             "subdivisionCategoryName":"state",
+                             "alpha2Code":"US",
+                             "isoCode":"US",
+                             "name":"United States of America (the)",
+                             "id":223
+                          },
+                          "defaultSelected":false,
+                          "code":"TX",
+                          "name":"Texas",
+                          "id":61,
+                          "categoryName":"state"
+                       }
+                    },
+                    "dateCreated":1563380090677,
+                    "metric":true,
+                    "name":"Building 1",
+                    "location":{
+        
+                    },
+                    "id":44,
+                    "revitLink":"",
+                    "costCenters":[
+        
+                    ],
+                    "dateUpdated":1591819645633
+                 },
+                 "dateUpdated":1584634081437
+              },
+              "capacity":10,
+              "dateUpdated":1584634081683
+           },
+           "name":"Juan Delgado2",
+           "fromRoom":{
+              "area":0.0,
+              "longDescription":"",
+              "reservable":true,
+              "description":"testing 1234",
+              "type":{
+                 "hexColor":"03fff7",
+                 "contentFlag":1,
+                 "cost":0.0,
+                 "color":{
+        
+                 },
+                 "name":"OFFICE",
+                 "occupiable":false,
+                 "id":100,
+                 "parkingSpace":false,
+                 "dateUpdated":1585874142457,
+                 "typeCode":""
+              },
+              "capacity":5,
+              "dateUpdated":1595325880387,
+              "dateCreated":1580232955383,
+              "googleData":{
+                 "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+                 "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+              },
+              "name":"NotNewRoomr",
+              "remoteInfo":"",
+              "id":13,
+              "floor":{
+                 "area":3808.0,
+                 "dateCreated":1563467606570,
+                 "drawingAvailable":false,
+                 "name":"Conference Room",
+                 "id":2,
+                 "building":{
+                    "address":{
+                       "country":{
+                          "defaultSelected":true,
+                          "subdivisionCategoryName":"state",
+                          "alpha2Code":"US",
+                          "isoCode":"US",
+                          "name":"United States of America (the)",
+                          "id":223
+                       },
+                       "city":"Houston",
+                       "street":"1210 W Clay St",
+                       "postalCode":"",
+                       "state":{
+                          "country":{
+                             "defaultSelected":true,
+                             "subdivisionCategoryName":"state",
+                             "alpha2Code":"US",
+                             "isoCode":"US",
+                             "name":"United States of America (the)",
+                             "id":223
+                          },
+                          "defaultSelected":false,
+                          "code":"TX",
+                          "name":"Texas",
+                          "id":61,
+                          "categoryName":"state"
+                       }
+                    },
+                    "dateCreated":1563380090677,
+                    "metric":true,
+                    "name":"Building 1",
+                    "location":{
+        
+                    },
+                    "id":44,
+                    "revitLink":"",
+                    "costCenters":[
+        
+                    ],
+                    "dateUpdated":1591819645633
+                 },
+                 "dateUpdated":1591989677357
+              }
+           },
+           "id":90783,
+           "type":{
+              "dateCreated":1067272496850,
+              "name":"Employee Move",
+              "id":2,
+              "fields":[
+                 {
+                    "code":"firstName",
+                    "name":"First Name",
+                    "id":17
+                 },
+                 {
+                    "code":"lastName",
+                    "name":"Last Name",
+                    "id":18
+                 },
+                 {
+                    "code":"phone",
+                    "name":"Phone",
+                    "id":19
+                 },
+                 {
+                    "code":"extension",
+                    "name":"Extension",
+                    "id":20
+                 },
+                 {
+                    "code":"costCenter",
+                    "name":"Cost Center",
+                    "id":21
+                 },
+                 {
+                    "code":"employeeId",
+                    "name":"Employee ID",
+                    "id":22
+                 },
+                 {
+                    "code":"email",
+                    "name":"Email",
+                    "id":23
+                 },
+                 {
+                    "code":"userName",
+                    "name":"Username",
+                    "id":34
+                 }
+              ],
+              "dateUpdated":1593107218917,
+              "typeCode":"move"
+           },
+           "user":{
+              "floorWarden":false,
+              "costCenter1":"Category1",
+              "lastName":"Delgado2",
+              "color":"#F9ECEA",
+              "costCenter":{
+                 "hexColor":"6987f5",
+                 "code":"DEP1",
+                 "dateCreated":1564801237447,
+                 "depth":{
+                    "code":"dp",
+                    "dateCreated":1181403915183,
+                    "level":1,
+                    "name":"Department",
+                    "id":2,
+                    "category":{
+                       "categoryType":[
+                          {
+                             "name":"user",
+                             "id":1
+                          },
+                          {
+                             "name":"room",
+                             "id":2
+                          }
+                       ],
+                       "code":"cost-center",
+                       "dateCreated":1448999609433,
+                       "color":{
+        
+                       },
+                       "name":"Cost Center",
+                       "id":1
+                    }
+                 },
+                 "color":{
+        
+                 },
+                 "name":"Department 1",
+                 "id":5,
+                 "category":{
+                    "categoryType":[
+                       {
+                          "name":"user",
+                          "id":1
+                       },
+                       {
+                          "name":"room",
+                          "id":2
+                       }
+                    ],
+                    "code":"cost-center",
+                    "dateCreated":1448999609433,
+                    "color":{
+        
+                    },
+                    "name":"Cost Center",
+                    "id":1
+                 },
+                 "costCenterParent":{
+                    "hexColor":"403ddb",
+                    "code":"CAT1",
+                    "dateCreated":1564800251707,
+                    "depth":{
+                       "code":"co",
+                       "dateCreated":1181403908747,
+                       "level":0,
+                       "name":"Company",
+                       "id":1,
+                       "category":{
+                          "categoryType":[
+                             {
+                                "name":"user",
+                                "id":1
+                             },
+                             {
+                                "name":"room",
+                                "id":2
+                             }
+                          ],
+                          "code":"cost-center",
+                          "dateCreated":1448999609433,
+                          "color":{
+        
+                          },
+                          "name":"Cost Center",
+                          "id":1
+                       }
+                    },
+                    "color":{
+        
+                    },
+                    "name":"Category1",
+                    "id":1,
+                    "category":{
+                       "categoryType":[
+                          {
+                             "name":"user",
+                             "id":1
+                          },
+                          {
+                             "name":"room",
+                             "id":2
+                          }
+                       ],
+                       "code":"cost-center",
+                       "dateCreated":1448999609433,
+                       "color":{
+        
+                       },
+                       "name":"Cost Center",
+                       "id":1
+                    },
+                    "dateUpdated":1564782304360
+                 }
+              },
+              "userName":"jrdelgado",
+              "specialNeeds":false,
+              "room":{
+                 "area":0.0,
+                 "longDescription":"",
+                 "reservable":true,
+                 "description":"testing 1234",
+                 "type":{
+                    "hexColor":"03fff7",
+                    "contentFlag":1,
+                    "cost":0.0,
+                    "color":{
+        
+                    },
+                    "name":"OFFICE",
+                    "occupiable":false,
+                    "id":100,
+                    "parkingSpace":false,
+                    "dateUpdated":1585874142457,
+                    "typeCode":""
+                 },
+                 "capacity":5,
+                 "dateUpdated":1595325880387,
+                 "dateCreated":1580232955383,
+                 "googleData":{
+                    "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+                    "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+                 },
+                 "name":"NotNewRoomr",
+                 "remoteInfo":"",
+                 "id":13,
+                 "floor":{
+                    "area":3808.0,
+                    "dateCreated":1563467606570,
+                    "drawingAvailable":false,
+                    "name":"Conference Room",
+                    "id":2,
+                    "building":{
+                       "address":{
+                          "country":{
+                             "defaultSelected":true,
+                             "subdivisionCategoryName":"state",
+                             "alpha2Code":"US",
+                             "isoCode":"US",
+                             "name":"United States of America (the)",
+                             "id":223
+                          },
+                          "city":"Houston",
+                          "street":"1210 W Clay St",
+                          "postalCode":"",
+                          "state":{
+                             "country":{
+                                "defaultSelected":true,
+                                "subdivisionCategoryName":"state",
+                                "alpha2Code":"US",
+                                "isoCode":"US",
+                                "name":"United States of America (the)",
+                                "id":223
+                             },
+                             "defaultSelected":false,
+                             "code":"TX",
+                             "name":"Texas",
+                             "id":61,
+                             "categoryName":"state"
+                          }
+                       },
+                       "dateCreated":1563380090677,
+                       "metric":true,
+                       "name":"Building 1",
+                       "location":{
+        
+                       },
+                       "id":44,
+                       "revitLink":"",
+                       "costCenters":[
+        
+                       ],
+                       "dateUpdated":1591819645633
+                    },
+                    "dateUpdated":1591989677357
+                 }
+              },
+              "dateUpdated":1592584651853,
+              "firstName":"Juan",
+              "dateCreated":1570723843567,
+              "name":"Juan Delgado2",
+              "id":55,
+              "mailStop":{
+                 "name":"Stop 1",
+                 "id":139
+              },
+              "userType":{
+                 "name":"New Type 2",
+                 "id":3
+              },
+              "costCenter2":"Department 1",
+              "email":"jdelgado@iofficecorp.com"
+           }
+        }
+        
+
+## Retrieve a single Archived Move Request Item [GET]
++ Response 200
+	
+	[Archived Move Request Items][]
+	
+## Archived Move Request Item Collection [/move/requests/items/archived///{?requestId}]
++ Parameters
+	+ requestId(optional) ... Retrieves all archived move request items associated with the archived move request specified by the parameter.
+	
++ Model (application/json)
+	JSON representation of the Archived Move Request Item resource.
+	
+	+ Body
+		
+		[
+				   {
+					  "itemType":"USER",
+					  "toRoom":{
+						 "area":400.0,
+						 "longDescription":"",
+						 "dateCreated":1563381159400,
+						 "reservable":false,
+						 "name":"test room",
+						 "description":"",
+						 "id":1,
+						 "type":{
+							"hexColor":"ff3366",
+							"contentFlag":3,
+							"cost":0.0,
+							"color":{
+				
+							},
+							"name":"MAIL RM",
+							"occupiable":true,
+							"id":105,
+							"parkingSpace":false,
+							"dateUpdated":1583291717220,
+							"typeCode":""
+						 },
+						 "floor":{
+							"area":5000.0,
+							"dateCreated":1563381159233,
+							"drawingAvailable":false,
+							"name":"Floor 1",
+							"id":1,
+							"building":{
+							   "address":{
+								  "country":{
+									 "defaultSelected":true,
+									 "subdivisionCategoryName":"state",
+									 "alpha2Code":"US",
+									 "isoCode":"US",
+									 "name":"United States of America (the)",
+									 "id":223
+								  },
+								  "city":"Houston",
+								  "street":"1210 W Clay St",
+								  "postalCode":"",
+								  "state":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "defaultSelected":false,
+									 "code":"TX",
+									 "name":"Texas",
+									 "id":61,
+									 "categoryName":"state"
+								  }
+							   },
+							   "dateCreated":1563380090677,
+							   "metric":true,
+							   "name":"Building 1",
+							   "location":{
+				
+							   },
+							   "id":44,
+							   "revitLink":"",
+							   "costCenters":[
+				
+							   ],
+							   "dateUpdated":1591819645633
+							},
+							"dateUpdated":1584634081437
+						 },
+						 "capacity":10,
+						 "dateUpdated":1584634081683
+					  },
+					  "name":"Juan Delgado2",
+					  "fromRoom":{
+						 "area":0.0,
+						 "longDescription":"",
+						 "reservable":true,
+						 "description":"testing 1234",
+						 "type":{
+							"hexColor":"03fff7",
+							"contentFlag":1,
+							"cost":0.0,
+							"color":{
+				
+							},
+							"name":"OFFICE",
+							"occupiable":false,
+							"id":100,
+							"parkingSpace":false,
+							"dateUpdated":1585874142457,
+							"typeCode":""
+						 },
+						 "capacity":5,
+						 "dateUpdated":1595325880387,
+						 "dateCreated":1580232955383,
+						 "googleData":{
+							"googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+							"googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+						 },
+						 "name":"NotNewRoomr",
+						 "remoteInfo":"",
+						 "id":13,
+						 "floor":{
+							"area":3808.0,
+							"dateCreated":1563467606570,
+							"drawingAvailable":false,
+							"name":"Conference Room",
+							"id":2,
+							"building":{
+							   "address":{
+								  "country":{
+									 "defaultSelected":true,
+									 "subdivisionCategoryName":"state",
+									 "alpha2Code":"US",
+									 "isoCode":"US",
+									 "name":"United States of America (the)",
+									 "id":223
+								  },
+								  "city":"Houston",
+								  "street":"1210 W Clay St",
+								  "postalCode":"",
+								  "state":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "defaultSelected":false,
+									 "code":"TX",
+									 "name":"Texas",
+									 "id":61,
+									 "categoryName":"state"
+								  }
+							   },
+							   "dateCreated":1563380090677,
+							   "metric":true,
+							   "name":"Building 1",
+							   "location":{
+				
+							   },
+							   "id":44,
+							   "revitLink":"",
+							   "costCenters":[
+				
+							   ],
+							   "dateUpdated":1591819645633
+							},
+							"dateUpdated":1591989677357
+						 }
+					  },
+					  "id":90783,
+					  "type":{
+						 "dateCreated":1067272496850,
+						 "name":"Employee Move",
+						 "id":2,
+						 "fields":[
+							{
+							   "code":"firstName",
+							   "name":"First Name",
+							   "id":17
+							},
+							{
+							   "code":"lastName",
+							   "name":"Last Name",
+							   "id":18
+							},
+							{
+							   "code":"phone",
+							   "name":"Phone",
+							   "id":19
+							},
+							{
+							   "code":"extension",
+							   "name":"Extension",
+							   "id":20
+							},
+							{
+							   "code":"costCenter",
+							   "name":"Cost Center",
+							   "id":21
+							},
+							{
+							   "code":"employeeId",
+							   "name":"Employee ID",
+							   "id":22
+							},
+							{
+							   "code":"email",
+							   "name":"Email",
+							   "id":23
+							},
+							{
+							   "code":"userName",
+							   "name":"Username",
+							   "id":34
+							}
+						 ],
+						 "dateUpdated":1593107218917,
+						 "typeCode":"move"
+					  },
+					  "user":{
+						 "floorWarden":false,
+						 "costCenter1":"Category1",
+						 "lastName":"Delgado2",
+						 "color":"#F9ECEA",
+						 "costCenter":{
+							"hexColor":"6987f5",
+							"code":"DEP1",
+							"dateCreated":1564801237447,
+							"depth":{
+							   "code":"dp",
+							   "dateCreated":1181403915183,
+							   "level":1,
+							   "name":"Department",
+							   "id":2,
+							   "category":{
+								  "categoryType":[
+									 {
+										"name":"user",
+										"id":1
+									 },
+									 {
+										"name":"room",
+										"id":2
+									 }
+								  ],
+								  "code":"cost-center",
+								  "dateCreated":1448999609433,
+								  "color":{
+				
+								  },
+								  "name":"Cost Center",
+								  "id":1
+							   }
+							},
+							"color":{
+				
+							},
+							"name":"Department 1",
+							"id":5,
+							"category":{
+							   "categoryType":[
+								  {
+									 "name":"user",
+									 "id":1
+								  },
+								  {
+									 "name":"room",
+									 "id":2
+								  }
+							   ],
+							   "code":"cost-center",
+							   "dateCreated":1448999609433,
+							   "color":{
+				
+							   },
+							   "name":"Cost Center",
+							   "id":1
+							},
+							"costCenterParent":{
+							   "hexColor":"403ddb",
+							   "code":"CAT1",
+							   "dateCreated":1564800251707,
+							   "depth":{
+								  "code":"co",
+								  "dateCreated":1181403908747,
+								  "level":0,
+								  "name":"Company",
+								  "id":1,
+								  "category":{
+									 "categoryType":[
+										{
+										   "name":"user",
+										   "id":1
+										},
+										{
+										   "name":"room",
+										   "id":2
+										}
+									 ],
+									 "code":"cost-center",
+									 "dateCreated":1448999609433,
+									 "color":{
+				
+									 },
+									 "name":"Cost Center",
+									 "id":1
+								  }
+							   },
+							   "color":{
+				
+							   },
+							   "name":"Category1",
+							   "id":1,
+							   "category":{
+								  "categoryType":[
+									 {
+										"name":"user",
+										"id":1
+									 },
+									 {
+										"name":"room",
+										"id":2
+									 }
+								  ],
+								  "code":"cost-center",
+								  "dateCreated":1448999609433,
+								  "color":{
+				
+								  },
+								  "name":"Cost Center",
+								  "id":1
+							   },
+							   "dateUpdated":1564782304360
+							}
+						 },
+						 "userName":"jrdelgado",
+						 "specialNeeds":false,
+						 "room":{
+							"area":0.0,
+							"longDescription":"",
+							"reservable":true,
+							"description":"testing 1234",
+							"type":{
+							   "hexColor":"03fff7",
+							   "contentFlag":1,
+							   "cost":0.0,
+							   "color":{
+				
+							   },
+							   "name":"OFFICE",
+							   "occupiable":false,
+							   "id":100,
+							   "parkingSpace":false,
+							   "dateUpdated":1585874142457,
+							   "typeCode":""
+							},
+							"capacity":5,
+							"dateUpdated":1595325880387,
+							"dateCreated":1580232955383,
+							"googleData":{
+							   "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
+							   "googleCalAddress":"testcalendar.net_1887u0ufemsraieomea5r8p2bdf3m@resource.calendar.google.com"
+							},
+							"name":"NotNewRoomr",
+							"remoteInfo":"",
+							"id":13,
+							"floor":{
+							   "area":3808.0,
+							   "dateCreated":1563467606570,
+							   "drawingAvailable":false,
+							   "name":"Conference Room",
+							   "id":2,
+							   "building":{
+								  "address":{
+									 "country":{
+										"defaultSelected":true,
+										"subdivisionCategoryName":"state",
+										"alpha2Code":"US",
+										"isoCode":"US",
+										"name":"United States of America (the)",
+										"id":223
+									 },
+									 "city":"Houston",
+									 "street":"1210 W Clay St",
+									 "postalCode":"",
+									 "state":{
+										"country":{
+										   "defaultSelected":true,
+										   "subdivisionCategoryName":"state",
+										   "alpha2Code":"US",
+										   "isoCode":"US",
+										   "name":"United States of America (the)",
+										   "id":223
+										},
+										"defaultSelected":false,
+										"code":"TX",
+										"name":"Texas",
+										"id":61,
+										"categoryName":"state"
+									 }
+								  },
+								  "dateCreated":1563380090677,
+								  "metric":true,
+								  "name":"Building 1",
+								  "location":{
+				
+								  },
+								  "id":44,
+								  "revitLink":"",
+								  "costCenters":[
+				
+								  ],
+								  "dateUpdated":1591819645633
+							   },
+							   "dateUpdated":1591989677357
+							}
+						 },
+						 "dateUpdated":1592584651853,
+						 "firstName":"Juan",
+						 "dateCreated":1570723843567,
+						 "name":"Juan Delgado2",
+						 "id":55,
+						 "mailStop":{
+							"name":"Stop 1",
+							"id":139
+						 },
+						 "userType":{
+							"name":"New Type 2",
+							"id":3
+						 },
+						 "costCenter2":"Department 1",
+						 "email":"jdelgado@iofficecorp.com"
+					  }
+				   },
+				   
+				   ...
+        ]
+        
+## List of all Archived Move Request Items [GET]
++ Response 200
+	
+	[Archived Move Request Item Collection][] 
 
 ## Get Move Status Ids [/move/statuses]
 
