@@ -1850,7 +1850,7 @@ A single archived move request
 ## Archived Move Collection [/move/requests/archived///{?modifiedOrCreatedAfter}]
 
 + Parameters
-	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified/created items in the collection.
 
 + Model (application/json)
 	
@@ -2783,7 +2783,7 @@ A single move request item object.
 	
 ## Archived Move Request Item Collection [/move/requests/items/archived///{?requestId}]
 + Parameters
-	+ requestId(optional) ... Retrieves all archived move request items associated with the archived move request specified by the parameter.
+	+ requestId(optional, number, `209`) ... Retrieves all archived move request items associated with the archived move request specified by the parameter.
 	
 + Model (application/json)
 	JSON representation of the Archived Move Request Item resource.
