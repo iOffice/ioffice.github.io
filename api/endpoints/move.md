@@ -1318,7 +1318,7 @@ To update a Move Request Item send JSON with the Move Request Item's `ID` and up
                 "response": "Successfully removed"
             }
         }
-        
+        	
 ## Create a Move Request Item [POST /move/requests/items/]
 The following attributes are required to create a Move Request Item: request `id`, type `id`, 
 
@@ -1376,7 +1376,216 @@ One or more of the following attributes may also be required depending on the re
          },
        }
        
-       
+      
+## Move Item Collection [/move/requests/items///{?requestId}]
+
++ Parameters
+    + requestId(optional, number, `210`) ... Retrieves all move request items associated with the move request specified by the parameter.
+    
++ Model (application/json)
+    JSON representation of the Move Item Resource
+    
+    + Body
+        	[
+               {
+                  "toRoom":{
+                     "dateCreated":1465572191247,
+                     "reservable":false,
+                     "name":"49.0",
+                     "description":"",
+                     "id":416,
+                     "floor":{
+                        "area":23600.0167,
+                        "dateCreated":1465572160000,
+                        "drawingAvailable":true,
+                        "name":"1",
+                        "id":2,
+                        "building":{
+                           "address":{
+                              "country":{
+                                 "defaultSelected":true,
+                                 "subdivisionCategoryName":"state",
+                                 "alpha2Code":"US",
+                                 "isoCode":"US",
+                                 "name":"United States of America (the)",
+                                 "id":223
+                              },
+                              "city":"Houston",
+                              "postalCode":"",
+                              "state":{
+                                 "defaultSelected":false,
+                                 "code":"",
+                                 "name":"Other",
+                                 "id":70
+                              }
+                           },
+                           "dateCreated":1465572158677,
+                           "metric":false,
+                           "name":"Built",
+                           "id":44,
+                           "dateUpdated":1465572159707
+                        },
+                        "dateUpdated":1465572186757
+                     },
+                     "type":{
+                        "hexColor":"33cc99",
+                        "color":{
+                           
+                        },
+                        "name":"WKST",
+                        "occupiable":true,
+                        "id":1,
+                        "parkingSpace":false
+                     },
+                     "capacity":1
+                  },
+                  "toRoomAvailable":true,
+                  "name":"Han Solo",
+                  "id":31201,
+                  "type":{
+                     "dateCreated":1067272496850,
+                     "name":"Employee Move",
+                     "id":2,
+                     "fields":[
+                        {
+                           "code":"firstName",
+                           "name":"First Name",
+                           "id":17
+                        },
+                        {
+                           "code":"lastName",
+                           "name":"Last Name",
+                           "id":18
+                        },
+                        {
+                           "code":"phone",
+                           "name":"Phone",
+                           "id":19
+                        },
+                        {
+                           "code":"extension",
+                           "name":"Extension",
+                           "id":20
+                        },
+                        {
+                           "code":"costCenter",
+                           "name":"Cost Center",
+                           "id":21
+                        },
+                        {
+                           "code":"employeeId",
+                           "name":"Employee ID",
+                           "id":22
+                        },
+                        {
+                           "code":"email",
+                           "name":"Email",
+                           "id":23
+                        }
+                     ],
+                     "typeCode":"move"
+                  },
+                  "user":{
+                     "floorWarden":false,
+                     "lastName":"Admin",
+                     "extension":"",
+                     "color":"#8cf7a4",
+                     "employeeId":"",
+                     "userName":"hansolo",
+                     "specialNeeds":false,
+                     "dateUpdated":1488566587390,
+                     "firstName":"Han",
+                     "dateCreated":1464727067663,
+                     "phone":"",
+                     "name":"Han Solo",
+                     "mailStop":{
+                        "name":"Stop 1",
+                        "id":140
+                     },
+                     "userType":{
+                        "dateCreated":1430925570820,
+                        "name":"Employee",
+                        "id":1,
+                        "fields":[
+                           {
+                              "code":"company",
+                              "name":"Company",
+                              "id":1
+                           },
+                           {
+                              "code":"jobTitle",
+                              "name":"Job Title",
+                              "id":2
+                           },
+                           {
+                              "code":"phone",
+                              "name":"Phone",
+                              "id":3
+                           },
+                           {
+                              "code":"extension",
+                              "name":"Extension",
+                              "id":4
+                           },
+                           {
+                              "code":"mobile",
+                              "name":"Mobile Phone Number",
+                              "id":6
+                           },
+                           {
+                              "code":"employeeId",
+                              "name":"Employee ID",
+                              "id":8
+                           },
+                           {
+                              "code":"floorWarden",
+                              "name":"Floor Warden",
+                              "id":12
+                           },
+                           {
+                              "code":"specialNeeds",
+                              "name":"Special Needs",
+                              "id":13
+                           },
+                           {
+                              "code":"comments",
+                              "name":"Comments",
+                              "id":14
+                           },
+                           {
+                              "code":"alternateDelivery",
+                              "name":"Alternate Delivery",
+                              "id":16
+                           },
+                           {
+                              "code":"knownAs",
+                              "name":"Known As",
+                              "id":17
+                           }
+                        ]
+                     },
+                     "email":"hansolo@iofficecorp.com"
+                  },
+                  "tasksValueMap":{
+                     "10":{
+                        "other":"Need a Bigger TV",
+                        "notes":"Samsung or Sony",
+                        "whiteBoard":"Yes",
+                        "deskChair":"Yes",
+                        "sideChair":"Yes"
+                     }
+                  }
+               },
+               ...
+            ]
+
+## List of all Move Request Items [GET]
+
++ Response 200
+
+	[Move Item Collection][]
+	
+
        
 ## Archived Move Requests [/move/requests/archived///{id}]
 A single archived move request
