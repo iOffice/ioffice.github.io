@@ -87,8 +87,8 @@ Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always
 + Parameters
     + includeReservable (optional, boolean, `true`) ... If true, query will include reservable rooms
     + includeNonReservable (optional, boolean, `false`) ... If true, query will include non-reservable rooms
-    + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable rooms (requires type parameter to be set)
-    + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable rooms (requires type parameter to be set)
+    + includeOccupiable = `true` (optional, boolean, `true`) ... If true, query will include occupiable rooms (requires type parameter to be set)
+    + includeNonOccupiable = `true` (optional, boolean, `false`) ... If true, query will include non-occupiable rooms (requires type parameter to be set)
     + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
