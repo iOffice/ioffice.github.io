@@ -250,6 +250,7 @@ A single move object.
                    "email": "hansolo@iofficecorp.com",
                    "dateUpdated": 1488566587390
                  },
+                 "description": "Customer Service's Move Request (7/09)",
                  "id": 16,
                  "status": {
                    "code": "sub",
@@ -707,6 +708,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                  }
                }
              ],
+             "description": "Customer Service's Move Request (7/09)",
              "status": {
                "code": "sub",
                "dateCreated": 1185984126540,
@@ -1173,6 +1175,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                                }
                              }
                            ],
+                           "description": "Customer Service's Move Request (7/09)",
                            "status": {
                              "code": "sub",
                              "dateCreated": 1185984126540,
@@ -1484,6 +1487,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                "email": "hansolo@iofficecorp.com",
                "dateUpdated": 1488566587390
              },
+             "description": "Customer Service's Move Request (7/09)",
              "id": 34,
              "items": [
                {
