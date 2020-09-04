@@ -16,6 +16,81 @@ A single move object.
              {  
                {
                  "date": 1504112404863,
+                 "requester":{
+                       "floorWarden":false,
+                       "lastName":"Vader",
+                       "firstName":"Darth",
+                       "dateCreated":1464727067663,
+                       "color":"#89ffa1",
+                       "name":"Darth Vader",
+                       "id":9,
+                       "userType":{
+                          "dateCreated":1430925570820,
+                          "name":"Employee",
+                          "id":1,
+                          "fields":[
+                             {
+                                "code":"company",
+                                "name":"Company",
+                                "id":1
+                             },
+                             {
+                                "code":"jobTitle",
+                                "name":"Job Title",
+                                "id":2
+                             },
+                             {
+                                "code":"phone",
+                                "name":"Phone",
+                                "id":3
+                             },
+                             {
+                                "code":"extension",
+                                "name":"Extension",
+                                "id":4
+                             },
+                             {
+                                "code":"mobile",
+                                "name":"Mobile Phone Number",
+                                "id":6
+                             },
+                             {
+                                "code":"employeeId",
+                                "name":"Employee ID",
+                                "id":8
+                             },
+                             {
+                                "code":"floorWarden",
+                                "name":"Floor Warden",
+                                "id":12
+                             },
+                             {
+                                "code":"specialNeeds",
+                                "name":"Special Needs",
+                                "id":13
+                             },
+                             {
+                                "code":"comments",
+                                "name":"Comments",
+                                "id":14
+                             },
+                             {
+                                "code":"alternateDelivery",
+                                "name":"Alternate Delivery",
+                                "id":16
+                             },
+                             {
+                                "code":"knownAs",
+                                "name":"Known As",
+                                "id":17
+                             }
+                          ]
+                       },
+                       "userName":"lordvader",
+                       "specialNeeds":false,
+                       "email":"lordvader@deathstar.com",
+                       "dateUpdated":1488566587390
+                    },
                  "approved": true,
                  "comments": [
                    {
@@ -99,6 +174,7 @@ A single move object.
                    "email": "hansolo@iofficecorp.com",
                    "dateUpdated": 1488566587390
                  },
+                 "description": "Customer Service's Move Request (7/09)",
                  "id": 16,
                  "status": {
                    "code": "sub",
@@ -132,6 +208,81 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
 
           {
              "date": 1504112404863,
+             "requester":{
+                   "floorWarden":false,
+                   "lastName":"Vader",
+                   "firstName":"Darth",
+                   "dateCreated":1464727067663,
+                   "color":"#89ffa1",
+                   "name":"Darth Vader",
+                   "id":9,
+                   "userType":{
+                      "dateCreated":1430925570820,
+                      "name":"Employee",
+                      "id":1,
+                      "fields":[
+                         {
+                            "code":"company",
+                            "name":"Company",
+                            "id":1
+                         },
+                         {
+                            "code":"jobTitle",
+                            "name":"Job Title",
+                            "id":2
+                         },
+                         {
+                            "code":"phone",
+                            "name":"Phone",
+                            "id":3
+                         },
+                         {
+                            "code":"extension",
+                            "name":"Extension",
+                            "id":4
+                         },
+                         {
+                            "code":"mobile",
+                            "name":"Mobile Phone Number",
+                            "id":6
+                         },
+                         {
+                            "code":"employeeId",
+                            "name":"Employee ID",
+                            "id":8
+                         },
+                         {
+                            "code":"floorWarden",
+                            "name":"Floor Warden",
+                            "id":12
+                         },
+                         {
+                            "code":"specialNeeds",
+                            "name":"Special Needs",
+                            "id":13
+                         },
+                         {
+                            "code":"comments",
+                            "name":"Comments",
+                            "id":14
+                         },
+                         {
+                            "code":"alternateDelivery",
+                            "name":"Alternate Delivery",
+                            "id":16
+                         },
+                         {
+                            "code":"knownAs",
+                            "name":"Known As",
+                            "id":17
+                         }
+                      ]
+                   },
+                   "userName":"lordvader",
+                   "specialNeeds":false,
+                   "email":"lordvader@deathstar.com",
+                   "dateUpdated":1488566587390
+                },
              "approved": true,
              "comments": [
                {
@@ -405,6 +556,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                  }
                }
              ],
+             "description": "Customer Service's Move Request (7/09)",
              "status": {
                "code": "sub",
                "dateCreated": 1185984126540,
@@ -447,6 +599,81 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
             [
                          {
                            "date": 1504112404863,
+                           "requester":{
+                                 "floorWarden":false,
+                                 "lastName":"Vader",
+                                 "firstName":"Darth",
+                                 "dateCreated":1464727067663,
+                                 "color":"#89ffa1",
+                                 "name":"Darth Vader",
+                                 "id":9,
+                                 "userType":{
+                                    "dateCreated":1430925570820,
+                                    "name":"Employee",
+                                    "id":1,
+                                    "fields":[
+                                       {
+                                          "code":"company",
+                                          "name":"Company",
+                                          "id":1
+                                       },
+                                       {
+                                          "code":"jobTitle",
+                                          "name":"Job Title",
+                                          "id":2
+                                       },
+                                       {
+                                          "code":"phone",
+                                          "name":"Phone",
+                                          "id":3
+                                       },
+                                       {
+                                          "code":"extension",
+                                          "name":"Extension",
+                                          "id":4
+                                       },
+                                       {
+                                          "code":"mobile",
+                                          "name":"Mobile Phone Number",
+                                          "id":6
+                                       },
+                                       {
+                                          "code":"employeeId",
+                                          "name":"Employee ID",
+                                          "id":8
+                                       },
+                                       {
+                                          "code":"floorWarden",
+                                          "name":"Floor Warden",
+                                          "id":12
+                                       },
+                                       {
+                                          "code":"specialNeeds",
+                                          "name":"Special Needs",
+                                          "id":13
+                                       },
+                                       {
+                                          "code":"comments",
+                                          "name":"Comments",
+                                          "id":14
+                                       },
+                                       {
+                                          "code":"alternateDelivery",
+                                          "name":"Alternate Delivery",
+                                          "id":16
+                                       },
+                                       {
+                                          "code":"knownAs",
+                                          "name":"Known As",
+                                          "id":17
+                                       }
+                                    ]
+                                 },
+                                 "userName":"lordvader",
+                                 "specialNeeds":false,
+                                 "email":"lordvader@deathstar.com",
+                                 "dateUpdated":1488566587390
+                              },
                            "approved": true,
                            "comments": [
                              {
@@ -720,6 +947,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                                }
                              }
                            ],
+                           "description": "Customer Service's Move Request (7/09)",
                            "status": {
                              "code": "sub",
                              "dateCreated": 1185984126540,
@@ -797,6 +1025,81 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
 
            {
              "date": 1504112404863,
+             "requester":{
+                   "floorWarden":false,
+                   "lastName":"Vader",
+                   "firstName":"Darth",
+                   "dateCreated":1464727067663,
+                   "color":"#89ffa1",
+                   "name":"Darth Vader",
+                   "id":9,
+                   "userType":{
+                      "dateCreated":1430925570820,
+                      "name":"Employee",
+                      "id":1,
+                      "fields":[
+                         {
+                            "code":"company",
+                            "name":"Company",
+                            "id":1
+                         },
+                         {
+                            "code":"jobTitle",
+                            "name":"Job Title",
+                            "id":2
+                         },
+                         {
+                            "code":"phone",
+                            "name":"Phone",
+                            "id":3
+                         },
+                         {
+                            "code":"extension",
+                            "name":"Extension",
+                            "id":4
+                         },
+                         {
+                            "code":"mobile",
+                            "name":"Mobile Phone Number",
+                            "id":6
+                         },
+                         {
+                            "code":"employeeId",
+                            "name":"Employee ID",
+                            "id":8
+                         },
+                         {
+                            "code":"floorWarden",
+                            "name":"Floor Warden",
+                            "id":12
+                         },
+                         {
+                            "code":"specialNeeds",
+                            "name":"Special Needs",
+                            "id":13
+                         },
+                         {
+                            "code":"comments",
+                            "name":"Comments",
+                            "id":14
+                         },
+                         {
+                            "code":"alternateDelivery",
+                            "name":"Alternate Delivery",
+                            "id":16
+                         },
+                         {
+                            "code":"knownAs",
+                            "name":"Known As",
+                            "id":17
+                         }
+                      ]
+                   },
+                   "userName":"lordvader",
+                   "specialNeeds":false,
+                   "email":"lordvader@deathstar.com",
+                   "dateUpdated":1488566587390
+                },
              "approved": true,
              "comments": [
                {
@@ -880,6 +1183,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                "email": "hansolo@iofficecorp.com",
                "dateUpdated": 1488566587390
              },
+             "description": "Customer Service's Move Request (7/09)",
              "id": 34,
              "items": [
                {
