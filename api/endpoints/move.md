@@ -17,155 +17,79 @@ A single move object.
                {
                  "date": 1504112404863,
                  "requester":{
-                       "costCenter1":"",
-                       "assistantName":"",
-                       "jobTitle":"",
-                       "postalCode":"",
-                       "custom02":"",
-                       "custom01":"",
-                       "custom04":"",
-                       "custom03":"",
-                       "custom06":"",
-                       "knownAs":"",
-                       "custom05":"",
-                       "custom08":"",
-                       "custom07":"",
-                       "custom09":"",
-                       "id":1,
-                       "state":"",
-                       "fax":"",
-                       "costCenter2":"",
                        "floorWarden":false,
-                       "custom30":"",
-                       "firstName":"Customer",
-                       "phone":"",
-                       "name":"Customer Service",
-                       "mailStop":{
-                          "name":"Stop 1",
-                          "id":139
-                       },
+                       "lastName":"Vader",
+                       "firstName":"Darth",
+                       "dateCreated":1464727067663,
+                       "color":"#89ffa1",
+                       "name":"Darth Vader",
+                       "id":9,
                        "userType":{
-                          "name":"New Type",
-                          "id":2,
-                          "dateUpdated":1576816332180
+                          "dateCreated":1430925570820,
+                          "name":"Employee",
+                          "id":1,
+                          "fields":[
+                             {
+                                "code":"company",
+                                "name":"Company",
+                                "id":1
+                             },
+                             {
+                                "code":"jobTitle",
+                                "name":"Job Title",
+                                "id":2
+                             },
+                             {
+                                "code":"phone",
+                                "name":"Phone",
+                                "id":3
+                             },
+                             {
+                                "code":"extension",
+                                "name":"Extension",
+                                "id":4
+                             },
+                             {
+                                "code":"mobile",
+                                "name":"Mobile Phone Number",
+                                "id":6
+                             },
+                             {
+                                "code":"employeeId",
+                                "name":"Employee ID",
+                                "id":8
+                             },
+                             {
+                                "code":"floorWarden",
+                                "name":"Floor Warden",
+                                "id":12
+                             },
+                             {
+                                "code":"specialNeeds",
+                                "name":"Special Needs",
+                                "id":13
+                             },
+                             {
+                                "code":"comments",
+                                "name":"Comments",
+                                "id":14
+                             },
+                             {
+                                "code":"alternateDelivery",
+                                "name":"Alternate Delivery",
+                                "id":16
+                             },
+                             {
+                                "code":"knownAs",
+                                "name":"Known As",
+                                "id":17
+                             }
+                          ]
                        },
-                       "lastName":"Service",
-                       "extension":"",
-                       "color":"#694A9F",
-                       "city":"",
+                       "userName":"lordvader",
                        "specialNeeds":false,
-                       "custom20":"",
-                       "custom22":"",
-                       "custom21":"",
-                       "custom24":"",
-                       "custom23":"",
-                       "dateCreated":1099859525000,
-                       "custom26":"",
-                       "custom25":"",
-                       "custom28":"",
-                       "custom27":"",
-                       "custom29":"",
-                       "company":"",
-                       "department":"",
-                       "address":"",
-                       "comments":"",
-                       "mobile":"",
-                       "employeeId":"",
-                       "userName":"ioffice",
-                       "room":{
-                          "area":0.0,
-                          "longDescription":"",
-                          "reservable":true,
-                          "description":"testing 1234",
-                          "type":{
-                             "hexColor":"03fff7",
-                             "contentFlag":1,
-                             "cost":0.0,
-                             "color":{
-                                
-                             },
-                             "name":"OFFICE",
-                             "occupiable":false,
-                             "id":100,
-                             "parkingSpace":false,
-                             "dateUpdated":1585874142457,
-                             "typeCode":""
-                          },
-                          "capacity":5,
-                          "dateUpdated":1599146075487,
-                          "dateCreated":1580232955383,
-                          "googleData":{
-                             "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
-                             "googleCalAddress":""
-                          },
-                          "name":"NotNewRoomr",
-                          "remoteInfo":"",
-                          "id":13,
-                          "floor":{
-                             "area":3808.0,
-                             "dateCreated":1563467606570,
-                             "drawingAvailable":false,
-                             "interiorGross":0.0,
-                             "name":"Conference Room",
-                             "leaseArea":0.0,
-                             "id":2,
-                             "building":{
-                                "address":{
-                                   "country":{
-                                      "defaultSelected":true,
-                                      "subdivisionCategoryName":"state",
-                                      "alpha2Code":"US",
-                                      "isoCode":"US",
-                                      "name":"United States of America (the)",
-                                      "id":223
-                                   },
-                                   "city":"Houston",
-                                   "street":"1210 W Clay St",
-                                   "postalCode":"",
-                                   "state":{
-                                      "country":{
-                                         "defaultSelected":true,
-                                         "subdivisionCategoryName":"state",
-                                         "alpha2Code":"US",
-                                         "isoCode":"US",
-                                         "name":"United States of America (the)",
-                                         "id":223
-                                      },
-                                      "defaultSelected":false,
-                                      "code":"TX",
-                                      "name":"Texas",
-                                      "id":61,
-                                      "categoryName":"state"
-                                   }
-                                },
-                                "dateCreated":1563380090677,
-                                "metric":false,
-                                "name":"Building 1",
-                                "location":{
-                                   
-                                },
-                                "id":44,
-                                "revitLink":"",
-                                "costCenters":[
-                                   
-                                ],
-                                "dateUpdated":1591819645633
-                             },
-                             "dateUpdated":1591989677357
-                          }
-                       },
-                       "dateUpdated":1563379891283,
-                       "custom11":"",
-                       "custom10":"",
-                       "custom13":"",
-                       "custom12":"",
-                       "custom15":"",
-                       "custom14":"",
-                       "custom17":"",
-                       "custom16":"",
-                       "custom19":"",
-                       "custom18":"",
-                       "middleName":""
+                       "email":"lordvader@deathstar.com",
+                       "dateUpdated":1488566587390
                     },
                  "approved": true,
                  "comments": [
@@ -285,155 +209,79 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
           {
              "date": 1504112404863,
              "requester":{
-                   "costCenter1":"",
-                   "assistantName":"",
-                   "jobTitle":"",
-                   "postalCode":"",
-                   "custom02":"",
-                   "custom01":"",
-                   "custom04":"",
-                   "custom03":"",
-                   "custom06":"",
-                   "knownAs":"",
-                   "custom05":"",
-                   "custom08":"",
-                   "custom07":"",
-                   "custom09":"",
-                   "id":1,
-                   "state":"",
-                   "fax":"",
-                   "costCenter2":"",
                    "floorWarden":false,
-                   "custom30":"",
-                   "firstName":"Customer",
-                   "phone":"",
-                   "name":"Customer Service",
-                   "mailStop":{
-                      "name":"Stop 1",
-                      "id":139
-                   },
+                   "lastName":"Vader",
+                   "firstName":"Darth",
+                   "dateCreated":1464727067663,
+                   "color":"#89ffa1",
+                   "name":"Darth Vader",
+                   "id":9,
                    "userType":{
-                      "name":"New Type",
-                      "id":2,
-                      "dateUpdated":1576816332180
+                      "dateCreated":1430925570820,
+                      "name":"Employee",
+                      "id":1,
+                      "fields":[
+                         {
+                            "code":"company",
+                            "name":"Company",
+                            "id":1
+                         },
+                         {
+                            "code":"jobTitle",
+                            "name":"Job Title",
+                            "id":2
+                         },
+                         {
+                            "code":"phone",
+                            "name":"Phone",
+                            "id":3
+                         },
+                         {
+                            "code":"extension",
+                            "name":"Extension",
+                            "id":4
+                         },
+                         {
+                            "code":"mobile",
+                            "name":"Mobile Phone Number",
+                            "id":6
+                         },
+                         {
+                            "code":"employeeId",
+                            "name":"Employee ID",
+                            "id":8
+                         },
+                         {
+                            "code":"floorWarden",
+                            "name":"Floor Warden",
+                            "id":12
+                         },
+                         {
+                            "code":"specialNeeds",
+                            "name":"Special Needs",
+                            "id":13
+                         },
+                         {
+                            "code":"comments",
+                            "name":"Comments",
+                            "id":14
+                         },
+                         {
+                            "code":"alternateDelivery",
+                            "name":"Alternate Delivery",
+                            "id":16
+                         },
+                         {
+                            "code":"knownAs",
+                            "name":"Known As",
+                            "id":17
+                         }
+                      ]
                    },
-                   "lastName":"Service",
-                   "extension":"",
-                   "color":"#694A9F",
-                   "city":"",
+                   "userName":"lordvader",
                    "specialNeeds":false,
-                   "custom20":"",
-                   "custom22":"",
-                   "custom21":"",
-                   "custom24":"",
-                   "custom23":"",
-                   "dateCreated":1099859525000,
-                   "custom26":"",
-                   "custom25":"",
-                   "custom28":"",
-                   "custom27":"",
-                   "custom29":"",
-                   "company":"",
-                   "department":"",
-                   "address":"",
-                   "comments":"",
-                   "mobile":"",
-                   "employeeId":"",
-                   "userName":"ioffice",
-                   "room":{
-                      "area":0.0,
-                      "longDescription":"",
-                      "reservable":true,
-                      "description":"testing 1234",
-                      "type":{
-                         "hexColor":"03fff7",
-                         "contentFlag":1,
-                         "cost":0.0,
-                         "color":{
-                            
-                         },
-                         "name":"OFFICE",
-                         "occupiable":false,
-                         "id":100,
-                         "parkingSpace":false,
-                         "dateUpdated":1585874142457,
-                         "typeCode":""
-                      },
-                      "capacity":5,
-                      "dateUpdated":1599146075487,
-                      "dateCreated":1580232955383,
-                      "googleData":{
-                         "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
-                         "googleCalAddress":""
-                      },
-                      "name":"NotNewRoomr",
-                      "remoteInfo":"",
-                      "id":13,
-                      "floor":{
-                         "area":3808.0,
-                         "dateCreated":1563467606570,
-                         "drawingAvailable":false,
-                         "interiorGross":0.0,
-                         "name":"Conference Room",
-                         "leaseArea":0.0,
-                         "id":2,
-                         "building":{
-                            "address":{
-                               "country":{
-                                  "defaultSelected":true,
-                                  "subdivisionCategoryName":"state",
-                                  "alpha2Code":"US",
-                                  "isoCode":"US",
-                                  "name":"United States of America (the)",
-                                  "id":223
-                               },
-                               "city":"Houston",
-                               "street":"1210 W Clay St",
-                               "postalCode":"",
-                               "state":{
-                                  "country":{
-                                     "defaultSelected":true,
-                                     "subdivisionCategoryName":"state",
-                                     "alpha2Code":"US",
-                                     "isoCode":"US",
-                                     "name":"United States of America (the)",
-                                     "id":223
-                                  },
-                                  "defaultSelected":false,
-                                  "code":"TX",
-                                  "name":"Texas",
-                                  "id":61,
-                                  "categoryName":"state"
-                               }
-                            },
-                            "dateCreated":1563380090677,
-                            "metric":false,
-                            "name":"Building 1",
-                            "location":{
-                               
-                            },
-                            "id":44,
-                            "revitLink":"",
-                            "costCenters":[
-                               
-                            ],
-                            "dateUpdated":1591819645633
-                         },
-                         "dateUpdated":1591989677357
-                      }
-                   },
-                   "dateUpdated":1563379891283,
-                   "custom11":"",
-                   "custom10":"",
-                   "custom13":"",
-                   "custom12":"",
-                   "custom15":"",
-                   "custom14":"",
-                   "custom17":"",
-                   "custom16":"",
-                   "custom19":"",
-                   "custom18":"",
-                   "middleName":""
+                   "email":"lordvader@deathstar.com",
+                   "dateUpdated":1488566587390
                 },
              "approved": true,
              "comments": [
@@ -752,155 +600,79 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
                          {
                            "date": 1504112404863,
                            "requester":{
-                                 "costCenter1":"",
-                                 "assistantName":"",
-                                 "jobTitle":"",
-                                 "postalCode":"",
-                                 "custom02":"",
-                                 "custom01":"",
-                                 "custom04":"",
-                                 "custom03":"",
-                                 "custom06":"",
-                                 "knownAs":"",
-                                 "custom05":"",
-                                 "custom08":"",
-                                 "custom07":"",
-                                 "custom09":"",
-                                 "id":1,
-                                 "state":"",
-                                 "fax":"",
-                                 "costCenter2":"",
                                  "floorWarden":false,
-                                 "custom30":"",
-                                 "firstName":"Customer",
-                                 "phone":"",
-                                 "name":"Customer Service",
-                                 "mailStop":{
-                                    "name":"Stop 1",
-                                    "id":139
-                                 },
+                                 "lastName":"Vader",
+                                 "firstName":"Darth",
+                                 "dateCreated":1464727067663,
+                                 "color":"#89ffa1",
+                                 "name":"Darth Vader",
+                                 "id":9,
                                  "userType":{
-                                    "name":"New Type",
-                                    "id":2,
-                                    "dateUpdated":1576816332180
+                                    "dateCreated":1430925570820,
+                                    "name":"Employee",
+                                    "id":1,
+                                    "fields":[
+                                       {
+                                          "code":"company",
+                                          "name":"Company",
+                                          "id":1
+                                       },
+                                       {
+                                          "code":"jobTitle",
+                                          "name":"Job Title",
+                                          "id":2
+                                       },
+                                       {
+                                          "code":"phone",
+                                          "name":"Phone",
+                                          "id":3
+                                       },
+                                       {
+                                          "code":"extension",
+                                          "name":"Extension",
+                                          "id":4
+                                       },
+                                       {
+                                          "code":"mobile",
+                                          "name":"Mobile Phone Number",
+                                          "id":6
+                                       },
+                                       {
+                                          "code":"employeeId",
+                                          "name":"Employee ID",
+                                          "id":8
+                                       },
+                                       {
+                                          "code":"floorWarden",
+                                          "name":"Floor Warden",
+                                          "id":12
+                                       },
+                                       {
+                                          "code":"specialNeeds",
+                                          "name":"Special Needs",
+                                          "id":13
+                                       },
+                                       {
+                                          "code":"comments",
+                                          "name":"Comments",
+                                          "id":14
+                                       },
+                                       {
+                                          "code":"alternateDelivery",
+                                          "name":"Alternate Delivery",
+                                          "id":16
+                                       },
+                                       {
+                                          "code":"knownAs",
+                                          "name":"Known As",
+                                          "id":17
+                                       }
+                                    ]
                                  },
-                                 "lastName":"Service",
-                                 "extension":"",
-                                 "color":"#694A9F",
-                                 "city":"",
+                                 "userName":"lordvader",
                                  "specialNeeds":false,
-                                 "custom20":"",
-                                 "custom22":"",
-                                 "custom21":"",
-                                 "custom24":"",
-                                 "custom23":"",
-                                 "dateCreated":1099859525000,
-                                 "custom26":"",
-                                 "custom25":"",
-                                 "custom28":"",
-                                 "custom27":"",
-                                 "custom29":"",
-                                 "company":"",
-                                 "department":"",
-                                 "address":"",
-                                 "comments":"",
-                                 "mobile":"",
-                                 "employeeId":"",
-                                 "userName":"ioffice",
-                                 "room":{
-                                    "area":0.0,
-                                    "longDescription":"",
-                                    "reservable":true,
-                                    "description":"testing 1234",
-                                    "type":{
-                                       "hexColor":"03fff7",
-                                       "contentFlag":1,
-                                       "cost":0.0,
-                                       "color":{
-                                          
-                                       },
-                                       "name":"OFFICE",
-                                       "occupiable":false,
-                                       "id":100,
-                                       "parkingSpace":false,
-                                       "dateUpdated":1585874142457,
-                                       "typeCode":""
-                                    },
-                                    "capacity":5,
-                                    "dateUpdated":1599146075487,
-                                    "dateCreated":1580232955383,
-                                    "googleData":{
-                                       "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
-                                       "googleCalAddress":""
-                                    },
-                                    "name":"NotNewRoomr",
-                                    "remoteInfo":"",
-                                    "id":13,
-                                    "floor":{
-                                       "area":3808.0,
-                                       "dateCreated":1563467606570,
-                                       "drawingAvailable":false,
-                                       "interiorGross":0.0,
-                                       "name":"Conference Room",
-                                       "leaseArea":0.0,
-                                       "id":2,
-                                       "building":{
-                                          "address":{
-                                             "country":{
-                                                "defaultSelected":true,
-                                                "subdivisionCategoryName":"state",
-                                                "alpha2Code":"US",
-                                                "isoCode":"US",
-                                                "name":"United States of America (the)",
-                                                "id":223
-                                             },
-                                             "city":"Houston",
-                                             "street":"1210 W Clay St",
-                                             "postalCode":"",
-                                             "state":{
-                                                "country":{
-                                                   "defaultSelected":true,
-                                                   "subdivisionCategoryName":"state",
-                                                   "alpha2Code":"US",
-                                                   "isoCode":"US",
-                                                   "name":"United States of America (the)",
-                                                   "id":223
-                                                },
-                                                "defaultSelected":false,
-                                                "code":"TX",
-                                                "name":"Texas",
-                                                "id":61,
-                                                "categoryName":"state"
-                                             }
-                                          },
-                                          "dateCreated":1563380090677,
-                                          "metric":false,
-                                          "name":"Building 1",
-                                          "location":{
-                                             
-                                          },
-                                          "id":44,
-                                          "revitLink":"",
-                                          "costCenters":[
-                                             
-                                          ],
-                                          "dateUpdated":1591819645633
-                                       },
-                                       "dateUpdated":1591989677357
-                                    }
-                                 },
-                                 "dateUpdated":1563379891283,
-                                 "custom11":"",
-                                 "custom10":"",
-                                 "custom13":"",
-                                 "custom12":"",
-                                 "custom15":"",
-                                 "custom14":"",
-                                 "custom17":"",
-                                 "custom16":"",
-                                 "custom19":"",
-                                 "custom18":"",
-                                 "middleName":""
+                                 "email":"lordvader@deathstar.com",
+                                 "dateUpdated":1488566587390
                               },
                            "approved": true,
                            "comments": [
@@ -1254,155 +1026,79 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
            {
              "date": 1504112404863,
              "requester":{
-                   "costCenter1":"",
-                   "assistantName":"",
-                   "jobTitle":"",
-                   "postalCode":"",
-                   "custom02":"",
-                   "custom01":"",
-                   "custom04":"",
-                   "custom03":"",
-                   "custom06":"",
-                   "knownAs":"",
-                   "custom05":"",
-                   "custom08":"",
-                   "custom07":"",
-                   "custom09":"",
-                   "id":1,
-                   "state":"",
-                   "fax":"",
-                   "costCenter2":"",
                    "floorWarden":false,
-                   "custom30":"",
-                   "firstName":"Customer",
-                   "phone":"",
-                   "name":"Customer Service",
-                   "mailStop":{
-                      "name":"Stop 1",
-                      "id":139
-                   },
+                   "lastName":"Vader",
+                   "firstName":"Darth",
+                   "dateCreated":1464727067663,
+                   "color":"#89ffa1",
+                   "name":"Darth Vader",
+                   "id":9,
                    "userType":{
-                      "name":"New Type",
-                      "id":2,
-                      "dateUpdated":1576816332180
+                      "dateCreated":1430925570820,
+                      "name":"Employee",
+                      "id":1,
+                      "fields":[
+                         {
+                            "code":"company",
+                            "name":"Company",
+                            "id":1
+                         },
+                         {
+                            "code":"jobTitle",
+                            "name":"Job Title",
+                            "id":2
+                         },
+                         {
+                            "code":"phone",
+                            "name":"Phone",
+                            "id":3
+                         },
+                         {
+                            "code":"extension",
+                            "name":"Extension",
+                            "id":4
+                         },
+                         {
+                            "code":"mobile",
+                            "name":"Mobile Phone Number",
+                            "id":6
+                         },
+                         {
+                            "code":"employeeId",
+                            "name":"Employee ID",
+                            "id":8
+                         },
+                         {
+                            "code":"floorWarden",
+                            "name":"Floor Warden",
+                            "id":12
+                         },
+                         {
+                            "code":"specialNeeds",
+                            "name":"Special Needs",
+                            "id":13
+                         },
+                         {
+                            "code":"comments",
+                            "name":"Comments",
+                            "id":14
+                         },
+                         {
+                            "code":"alternateDelivery",
+                            "name":"Alternate Delivery",
+                            "id":16
+                         },
+                         {
+                            "code":"knownAs",
+                            "name":"Known As",
+                            "id":17
+                         }
+                      ]
                    },
-                   "lastName":"Service",
-                   "extension":"",
-                   "color":"#694A9F",
-                   "city":"",
+                   "userName":"lordvader",
                    "specialNeeds":false,
-                   "custom20":"",
-                   "custom22":"",
-                   "custom21":"",
-                   "custom24":"",
-                   "custom23":"",
-                   "dateCreated":1099859525000,
-                   "custom26":"",
-                   "custom25":"",
-                   "custom28":"",
-                   "custom27":"",
-                   "custom29":"",
-                   "company":"",
-                   "department":"",
-                   "address":"",
-                   "comments":"",
-                   "mobile":"",
-                   "employeeId":"",
-                   "userName":"ioffice",
-                   "room":{
-                      "area":0.0,
-                      "longDescription":"",
-                      "reservable":true,
-                      "description":"testing 1234",
-                      "type":{
-                         "hexColor":"03fff7",
-                         "contentFlag":1,
-                         "cost":0.0,
-                         "color":{
-                            
-                         },
-                         "name":"OFFICE",
-                         "occupiable":false,
-                         "id":100,
-                         "parkingSpace":false,
-                         "dateUpdated":1585874142457,
-                         "typeCode":""
-                      },
-                      "capacity":5,
-                      "dateUpdated":1599146075487,
-                      "dateCreated":1580232955383,
-                      "googleData":{
-                         "googleCalResourceId":"MQUeSi6xcKSkkCvlbn65_aOFBjs",
-                         "googleCalAddress":""
-                      },
-                      "name":"NotNewRoomr",
-                      "remoteInfo":"",
-                      "id":13,
-                      "floor":{
-                         "area":3808.0,
-                         "dateCreated":1563467606570,
-                         "drawingAvailable":false,
-                         "interiorGross":0.0,
-                         "name":"Conference Room",
-                         "leaseArea":0.0,
-                         "id":2,
-                         "building":{
-                            "address":{
-                               "country":{
-                                  "defaultSelected":true,
-                                  "subdivisionCategoryName":"state",
-                                  "alpha2Code":"US",
-                                  "isoCode":"US",
-                                  "name":"United States of America (the)",
-                                  "id":223
-                               },
-                               "city":"Houston",
-                               "street":"1210 W Clay St",
-                               "postalCode":"",
-                               "state":{
-                                  "country":{
-                                     "defaultSelected":true,
-                                     "subdivisionCategoryName":"state",
-                                     "alpha2Code":"US",
-                                     "isoCode":"US",
-                                     "name":"United States of America (the)",
-                                     "id":223
-                                  },
-                                  "defaultSelected":false,
-                                  "code":"TX",
-                                  "name":"Texas",
-                                  "id":61,
-                                  "categoryName":"state"
-                               }
-                            },
-                            "dateCreated":1563380090677,
-                            "metric":false,
-                            "name":"Building 1",
-                            "location":{
-                               
-                            },
-                            "id":44,
-                            "revitLink":"",
-                            "costCenters":[
-                               
-                            ],
-                            "dateUpdated":1591819645633
-                         },
-                         "dateUpdated":1591989677357
-                      }
-                   },
-                   "dateUpdated":1563379891283,
-                   "custom11":"",
-                   "custom10":"",
-                   "custom13":"",
-                   "custom12":"",
-                   "custom15":"",
-                   "custom14":"",
-                   "custom17":"",
-                   "custom16":"",
-                   "custom19":"",
-                   "custom18":"",
-                   "middleName":""
+                   "email":"lordvader@deathstar.com",
+                   "dateUpdated":1488566587390
                 },
              "approved": true,
              "comments": [
