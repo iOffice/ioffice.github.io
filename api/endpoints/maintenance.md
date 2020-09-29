@@ -76,6 +76,13 @@ To update a Request send JSON with the Request's `ID` and updated value for one 
                 "response": "Successfully removed"
             }
         }
+                      
+## Archive a Request [POST /maintenance/requests///{id}/archive]
++ Parameters
+    + id (string) ... ID of the Request
++ Response 200
+
+		{ }
 
 ### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId,modifiedOrCreatedAfter}]
 Collection of all Requests.
