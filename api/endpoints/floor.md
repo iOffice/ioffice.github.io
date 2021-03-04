@@ -58,7 +58,7 @@ Collection of all Floors.
 
 + Parameters
     + buildingId (optional,string) ... Id building to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Model (application/json)
     JSON representation of the Floor Collection resource.
@@ -84,7 +84,7 @@ Collection of all Floors.
 
 + Parameters
     + buildingId (optional, number, `3`) ... Id of building to base query
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Response 200
     

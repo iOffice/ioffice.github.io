@@ -95,7 +95,7 @@ Collection of all Assets.
     + floorId (optional, number) ... Id of the floor to query from
     + roomId (optional, number) ... Id of the room to query from
     + owner (optional, number) ... Id of the owner to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection
 
 + Response 200
     

@@ -77,7 +77,7 @@ Collection of all Contacts.
 ### List of all Contacts [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Response 200
     
