@@ -92,14 +92,14 @@ Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always
     + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
-    + startDate (optional, number, `1404410211910`) ... Epoch time of room availability start date
-    + endDate (optional, number, `1404421051661`) ... Epoch time of room availability end date
+    + startDate (optional, number, `1404410211910`) ... Epoch time (milliseconds) of room availability start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time (milliseconds) of room availability end date
     + numberOfPeople (optional, number, `6`) ... Number to search for room by maximum occupancy
     + includeParking (optional, boolean, `true`) ... If true, query will include rooms with parking spaces
     + buildingId (optional, number, `44`) ... Id of building to search in
     + floorId (optional, number, `3443`) ... Id of floor to search on
     + type (optional, number, `65 or 65,32,79`) ... Id of room type to search for (can accept a comma delimited series of Ids)
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Response 200
     
@@ -147,7 +147,7 @@ Collection of all Room Types.
     + includeOccupiable (optional, boolean, `true`) ... If true, query will include occupiable room types
     + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
     + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection
     
 + Response 200
 	[Room Types][]

@@ -83,6 +83,601 @@ To update a Request send JSON with the Request's `ID` and updated value for one 
 + Response 200
 
 		{ }
+		
+## Archived Requests [/maintenance/requests/archived///{id}]
+A single archived maintenance request
+
++ Parameters
+	+ id (String) ... ID of the archived maintenance request
++ Model (application/json)
+	JSON representation of the Archived Maintenance Resource
+	
+	+ Body
+		
+		{
+          "requester": {
+            "costCenter1": "",
+            "assistantName": "",
+            "jobTitle": "",
+            "postalCode": "",
+            "custom02": "",
+            "custom01": "",
+            "custom04": "",
+            "custom03": "",
+            "custom06": "",
+            "knownAs": "",
+            "custom05": "",
+            "custom08": "",
+            "custom07": "",
+            "custom09": "",
+            "id": 1,
+            "state": "",
+            "fax": "",
+            "costCenter2": "",
+            "floorWarden": false,
+            "custom30": "",
+            "firstName": "Customer",
+            "phone": "",
+            "name": "Customer Service",
+            "userType": {
+              "dateCreated": 1430925560737,
+              "name": "Employee",
+              "id": 1
+            },
+            "lastName": "Service",
+            "extension": "",
+            "color": "#694A9F",
+            "city": "",
+            "specialNeeds": false,
+            "custom20": "",
+            "custom22": "",
+            "custom21": "",
+            "custom24": "",
+            "custom23": "",
+            "dateCreated": 1099859525000,
+            "custom26": "",
+            "custom25": "",
+            "custom28": "",
+            "custom27": "",
+            "custom29": "",
+            "company": "",
+            "department": "",
+            "email": "",
+            "address": "",
+            "comments": "",
+            "mobile": "",
+            "employeeId": "",
+            "userName": "ioffice",
+            "dateUpdated": 1611635287623,
+            "custom11": "",
+            "custom10": "",
+            "custom13": "",
+            "custom12": "",
+            "custom15": "",
+            "custom14": "",
+            "custom17": "",
+            "custom16": "",
+            "custom19": "",
+            "custom18": "",
+            "middleName": ""
+          },
+          "center": {
+            "allowRequestCancel": false,
+            "allowInvoicing": false,
+            "allowReferenceNumber": true,
+            "name": "Service Request",
+            "id": 70,
+            "autoArchiveEnabled": true,
+            "requestResolutionRequired": false
+          },
+          "completed": false,
+          "priority": {
+            "color": {},
+            "sortOrder": 3,
+            "name": "Normal",
+            "id": 3,
+            "colorHex": "ffffff",
+            "noticeTime": 60
+          },
+          "type": {
+            "estimatedTime": 0,
+            "priorityEnableForCustomer": true,
+            "product": {
+              "dateCreated": 1119905163000,
+              "sortOrder": 1,
+              "name": "Copier/Printer/Fax Service Request",
+              "id": 22,
+              "dateUpdated": 1119905163000
+            },
+            "code": "HW02",
+            "defaultPriority": {
+              "color": {},
+              "sortOrder": 3,
+              "name": "Normal",
+              "id": 3,
+              "colorHex": "ffffff",
+              "noticeTime": 60
+            },
+            "center": {
+              "allowRequestCancel": false,
+              "allowInvoicing": false,
+              "allowReferenceNumber": true,
+              "name": "Service Request",
+              "id": 70,
+              "autoArchiveEnabled": true,
+              "requestResolutionRequired": false
+            },
+            "SLAMinutes": 480,
+            "type": "maint",
+            "dateUpdated": 1237323109463,
+            "dateCreated": 1237323109463,
+            "dateRequiredEnabledForCustomer": true,
+            "supplies": [],
+            "name": "Jamming",
+            "assetRequired": true,
+            "defaultText": "Inhibited paper movement",
+            "edgeDispatch": true,
+            "id": 123,
+            "fields": [],
+            "totalOperatorsRequired": 1
+          },
+          "room": {
+            "area": 0.0,
+            "dateCreated": 1562710595393,
+            "reservable": false,
+            "name": "18",
+            "description": "",
+            "id": 1,
+            "type": {
+              "hexColor": "03ff68",
+              "contentFlag": 3,
+              "cost": 0.0,
+              "color": {},
+              "name": "WKST",
+              "occupiable": true,
+              "id": 99,
+              "parkingSpace": false,
+              "dateUpdated": 1597239189720,
+              "typeCode": ""
+            },
+            "floor": {
+              "area": 16978.2167,
+              "dateCreated": 1562710593540,
+              "drawingAvailable": true,
+              "interiorGross": 0.0,
+              "name": "1",
+              "leaseArea": 0.0,
+              "id": 1,
+              "building": {
+                "address": {
+                  "country": {
+                    "defaultSelected": true,
+                    "subdivisionCategoryName": "state",
+                    "alpha2Code": "US",
+                    "isoCode": "US",
+                    "name": "United States of America (the)",
+                    "id": 223
+                  },
+                  "city": "Houston",
+                  "street": "5300 Memorial Drive",
+                  "postalCode": "",
+                  "state": {
+                    "country": {
+                      "defaultSelected": true,
+                      "subdivisionCategoryName": "state",
+                      "alpha2Code": "US",
+                      "isoCode": "US",
+                      "name": "United States of America (the)",
+                      "id": 223
+                    },
+                    "defaultSelected": false,
+                    "code": "TX",
+                    "name": "Texas",
+                    "id": 61,
+                    "categoryName": "state"
+                  }
+                },
+                "code": "HQ",
+                "dateCreated": 1107466065320,
+                "metric": false,
+                "name": "Headquarters",
+                "location": {},
+                "revitLink": "",
+                "id": 43,
+                "dateUpdated": 1600451429900,
+                "costCenters": []
+              },
+              "dateUpdated": 1588684856300
+            },
+            "capacity": 1,
+            "dateUpdated": 1586888194553
+          },
+          "dateArchived": 1582920182000,
+          "dateCreated": 1582916446000,
+          "dateRequired": 1582920046000,
+          "requestId": 383,
+          "supplies": [],
+          "contact": {
+            "costCenter1": "",
+            "assistantName": "",
+            "jobTitle": "",
+            "postalCode": "",
+            "custom02": "",
+            "custom01": "",
+            "custom04": "",
+            "custom03": "",
+            "custom06": "",
+            "knownAs": "",
+            "custom05": "",
+            "custom08": "",
+            "custom07": "",
+            "custom09": "",
+            "id": 1,
+            "state": "",
+            "fax": "",
+            "costCenter2": "",
+            "floorWarden": false,
+            "custom30": "",
+            "firstName": "Customer",
+            "phone": "",
+            "name": "Customer Service",
+            "userType": {
+              "dateCreated": 1430925560737,
+              "name": "Employee",
+              "id": 1
+            },
+            "lastName": "Service",
+            "extension": "",
+            "color": "#694A9F",
+            "city": "",
+            "specialNeeds": false,
+            "custom20": "",
+            "custom22": "",
+            "custom21": "",
+            "custom24": "",
+            "custom23": "",
+            "dateCreated": 1099859525000,
+            "custom26": "",
+            "custom25": "",
+            "custom28": "",
+            "custom27": "",
+            "custom29": "",
+            "company": "",
+            "department": "",
+            "email": "",
+            "address": "",
+            "comments": "",
+            "mobile": "",
+            "employeeId": "",
+            "userName": "ioffice",
+            "dateUpdated": 1611635287623,
+            "custom11": "",
+            "custom10": "",
+            "custom13": "",
+            "custom12": "",
+            "custom15": "",
+            "custom14": "",
+            "custom17": "",
+            "custom16": "",
+            "custom19": "",
+            "custom18": "",
+            "middleName": ""
+          },
+          "id": 1,
+          "requestStatus": {
+            "code": "rejc",
+            "dateCreated": 1127156190817,
+            "name": "Rejected",
+            "id": 7,
+            "dateUpdated": 1127156190817
+          }
+        }
+	
+
+## Retrieve a single Archived Request [GET]
+
++ Response 200
+
+	[Archived Requests][]
+	
+## Archived Collection [/maintenance/requests/archived///{?modifiedOrCreatedAfter}]
+
++ Parameters
+	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified/created items in the collection.
+
++ Model (application/json)
+	
+	JSON representation of the archived maintenance collection resource
+	
+	+ Body
+		
+		[
+		   {
+             "requester": {
+               "costCenter1": "",
+               "assistantName": "",
+               "jobTitle": "",
+               "postalCode": "",
+               "custom02": "",
+               "custom01": "",
+               "custom04": "",
+               "custom03": "",
+               "custom06": "",
+               "knownAs": "",
+               "custom05": "",
+               "custom08": "",
+               "custom07": "",
+               "custom09": "",
+               "id": 1,
+               "state": "",
+               "fax": "",
+               "costCenter2": "",
+               "floorWarden": false,
+               "custom30": "",
+               "firstName": "Customer",
+               "phone": "",
+               "name": "Customer Service",
+               "userType": {
+                 "dateCreated": 1430925560737,
+                 "name": "Employee",
+                 "id": 1
+               },
+               "lastName": "Service",
+               "extension": "",
+               "color": "#694A9F",
+               "city": "",
+               "specialNeeds": false,
+               "custom20": "",
+               "custom22": "",
+               "custom21": "",
+               "custom24": "",
+               "custom23": "",
+               "dateCreated": 1099859525000,
+               "custom26": "",
+               "custom25": "",
+               "custom28": "",
+               "custom27": "",
+               "custom29": "",
+               "company": "",
+               "department": "",
+               "email": "",
+               "address": "",
+               "comments": "",
+               "mobile": "",
+               "employeeId": "",
+               "userName": "ioffice",
+               "dateUpdated": 1611635287623,
+               "custom11": "",
+               "custom10": "",
+               "custom13": "",
+               "custom12": "",
+               "custom15": "",
+               "custom14": "",
+               "custom17": "",
+               "custom16": "",
+               "custom19": "",
+               "custom18": "",
+               "middleName": ""
+             },
+             "center": {
+               "allowRequestCancel": false,
+               "allowInvoicing": false,
+               "allowReferenceNumber": true,
+               "name": "Service Request",
+               "id": 70,
+               "autoArchiveEnabled": true,
+               "requestResolutionRequired": false
+             },
+             "completed": false,
+             "priority": {
+               "color": {},
+               "sortOrder": 3,
+               "name": "Normal",
+               "id": 3,
+               "colorHex": "ffffff",
+               "noticeTime": 60
+             },
+             "type": {
+               "estimatedTime": 0,
+               "priorityEnableForCustomer": true,
+               "product": {
+                 "dateCreated": 1119905163000,
+                 "sortOrder": 1,
+                 "name": "Copier/Printer/Fax Service Request",
+                 "id": 22,
+                 "dateUpdated": 1119905163000
+               },
+               "code": "HW02",
+               "defaultPriority": {
+                 "color": {},
+                 "sortOrder": 3,
+                 "name": "Normal",
+                 "id": 3,
+                 "colorHex": "ffffff",
+                 "noticeTime": 60
+               },
+               "center": {
+                 "allowRequestCancel": false,
+                 "allowInvoicing": false,
+                 "allowReferenceNumber": true,
+                 "name": "Service Request",
+                 "id": 70,
+                 "autoArchiveEnabled": true,
+                 "requestResolutionRequired": false
+               },
+               "SLAMinutes": 480,
+               "type": "maint",
+               "dateUpdated": 1237323109463,
+               "dateCreated": 1237323109463,
+               "dateRequiredEnabledForCustomer": true,
+               "supplies": [],
+               "name": "Jamming",
+               "assetRequired": true,
+               "defaultText": "Inhibited paper movement",
+               "edgeDispatch": true,
+               "id": 123,
+               "fields": [],
+               "totalOperatorsRequired": 1
+             },
+             "room": {
+               "area": 0.0,
+               "dateCreated": 1562710595393,
+               "reservable": false,
+               "name": "18",
+               "description": "",
+               "id": 1,
+               "type": {
+                 "hexColor": "03ff68",
+                 "contentFlag": 3,
+                 "cost": 0.0,
+                 "color": {},
+                 "name": "WKST",
+                 "occupiable": true,
+                 "id": 99,
+                 "parkingSpace": false,
+                 "dateUpdated": 1597239189720,
+                 "typeCode": ""
+               },
+               "floor": {
+                 "area": 16978.2167,
+                 "dateCreated": 1562710593540,
+                 "drawingAvailable": true,
+                 "interiorGross": 0.0,
+                 "name": "1",
+                 "leaseArea": 0.0,
+                 "id": 1,
+                 "building": {
+                   "address": {
+                     "country": {
+                       "defaultSelected": true,
+                       "subdivisionCategoryName": "state",
+                       "alpha2Code": "US",
+                       "isoCode": "US",
+                       "name": "United States of America (the)",
+                       "id": 223
+                     },
+                     "city": "Houston",
+                     "street": "5300 Memorial Drive",
+                     "postalCode": "",
+                     "state": {
+                       "country": {
+                         "defaultSelected": true,
+                         "subdivisionCategoryName": "state",
+                         "alpha2Code": "US",
+                         "isoCode": "US",
+                         "name": "United States of America (the)",
+                         "id": 223
+                       },
+                       "defaultSelected": false,
+                       "code": "TX",
+                       "name": "Texas",
+                       "id": 61,
+                       "categoryName": "state"
+                     }
+                   },
+                   "code": "HQ",
+                   "dateCreated": 1107466065320,
+                   "metric": false,
+                   "name": "Headquarters",
+                   "location": {},
+                   "revitLink": "",
+                   "id": 43,
+                   "dateUpdated": 1600451429900,
+                   "costCenters": []
+                 },
+                 "dateUpdated": 1588684856300
+               },
+               "capacity": 1,
+               "dateUpdated": 1586888194553
+             },
+             "dateArchived": 1582920182000,
+             "dateCreated": 1582916446000,
+             "dateRequired": 1582920046000,
+             "requestId": 383,
+             "supplies": [],
+             "contact": {
+               "costCenter1": "",
+               "assistantName": "",
+               "jobTitle": "",
+               "postalCode": "",
+               "custom02": "",
+               "custom01": "",
+               "custom04": "",
+               "custom03": "",
+               "custom06": "",
+               "knownAs": "",
+               "custom05": "",
+               "custom08": "",
+               "custom07": "",
+               "custom09": "",
+               "id": 1,
+               "state": "",
+               "fax": "",
+               "costCenter2": "",
+               "floorWarden": false,
+               "custom30": "",
+               "firstName": "Customer",
+               "phone": "",
+               "name": "Customer Service",
+               "userType": {
+                 "dateCreated": 1430925560737,
+                 "name": "Employee",
+                 "id": 1
+               },
+               "lastName": "Service",
+               "extension": "",
+               "color": "#694A9F",
+               "city": "",
+               "specialNeeds": false,
+               "custom20": "",
+               "custom22": "",
+               "custom21": "",
+               "custom24": "",
+               "custom23": "",
+               "dateCreated": 1099859525000,
+               "custom26": "",
+               "custom25": "",
+               "custom28": "",
+               "custom27": "",
+               "custom29": "",
+               "company": "",
+               "department": "",
+               "email": "",
+               "address": "",
+               "comments": "",
+               "mobile": "",
+               "employeeId": "",
+               "userName": "ioffice",
+               "dateUpdated": 1611635287623,
+               "custom11": "",
+               "custom10": "",
+               "custom13": "",
+               "custom12": "",
+               "custom15": "",
+               "custom14": "",
+               "custom17": "",
+               "custom16": "",
+               "custom19": "",
+               "custom18": "",
+               "middleName": ""
+             },
+             "id": 1,
+             "requestStatus": {
+               "code": "rejc",
+               "dateCreated": 1127156190817,
+               "name": "Rejected",
+               "id": 7,
+               "dateUpdated": 1127156190817
+             }
+           },
+			...
+        ]
+        
+## List of all Archived Requests [GET]
+
++ Response 200
+
+	[Archived Collection][]	
 
 ### Requests Collection [/maintenance/requests///{?priority,assigned,pastDue,requestTypeId,modifiedOrCreatedAfter}]
 Collection of all Requests.
@@ -140,7 +735,7 @@ Collection of all Requests.
     	
     + modifiedOrCreatedAfter (optional, number, `1549319834`)
   
-        Epoch time to poll recently modified items in the collection.
+        Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Response 200
     
@@ -427,7 +1022,7 @@ Collection of all Request Types.
 #### List of all Request Types [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time (milliseconds) to poll recently modified items in the collection.
 + Response 200
     
     [Request Types Collection][]
@@ -503,7 +1098,7 @@ Collection of all Categories.
 #### List of all Categories [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time (milliseconds) to poll recently modified items in the collection.
     
 + Response 200
     
@@ -579,7 +1174,7 @@ Collection of all Products.
 #### List of all Products [GET]
 
 + Parameters 
-    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time (milliseconds) to poll recently modified items in the collection.
     
 + Response 200
     
@@ -656,7 +1251,7 @@ Collection of all Priorities.
 #### List of all Priorities [GET]
 
 + Parameters
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
     
 + Response 200
     

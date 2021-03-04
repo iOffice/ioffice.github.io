@@ -589,7 +589,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
 + Parameters
     + statusId (optional, number, `66`) ... ID of the Move status to query from
     + statusCode (optional, string, `sub`) ... Code of the Move status to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Model (application/json)
     JSON representation of the Move Collection resource.
@@ -1017,7 +1017,11 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
              ],
              "status": {
                "id": 10
-             }
+             },
+		  	 "cost": {
+				"id": 1
+			  },
+			  "additionalMoveCost": 1000
            }
 
 
@@ -2363,7 +2367,7 @@ A single archived move request
 ## Archived Move Collection [/move/requests/archived///{?modifiedOrCreatedAfter}]
 
 + Parameters
-	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified/created items in the collection.
+	+ modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified/created items in the collection.
 
 + Model (application/json)
 	

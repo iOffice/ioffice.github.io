@@ -86,7 +86,7 @@ Collection of all Buildings.
     + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
     
 + Response 200
     

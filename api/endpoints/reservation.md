@@ -89,11 +89,11 @@ Collection of all Reservations.
     + includeNonCancelled = `true` (optional, boolean, , `false`) ... If true, query will include non-cancelled reservations
     + includePastReservations = `false` (optional, boolean, `true`) ... If true, query will include past reservations
     + showOnlyMyReservations = `true` (optional, boolean, `false`) ... If true, query will only include logged in user's reservations
-    + startDate (optional, number, `1404410211910`) ... Epoch time of reservation start date
-    + endDate (optional, number, `1404421051661`) ... Epoch time of reservation end date
+    + startDate (optional, number, `1404410211910`) ... Epoch time (milliseconds) of reservation start date
+    + endDate (optional, number, `1404421051661`) ... Epoch time (milliseconds) of reservation end date
     + buildingId (optional, number, `44`) ... Id of the building to query from
     + roomId (optional, number, `16`) ... Id of the room to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
 + Response 200
     
