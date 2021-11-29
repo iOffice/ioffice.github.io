@@ -90,6 +90,7 @@ Note: `floorId` and `buildingId` may be used in tandem but `floorId` will always
     + includeOccupiable = `true` (optional, boolean, `true`) ... If true, query will include occupiable rooms (requires type parameter to be set)
     + includeNonOccupiable = `true` (optional, boolean, `false`) ... If true, query will include non-occupiable rooms (requires type parameter to be set)
     + locationSearch (optional, string, `houston tx`) ... Will do a location lookup based on the search string.
+    + room (optional, string, `workstation`) ... Will do a filter based on room name, room description, room type, reservation description
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
     + startDate (optional, number, `1404410211910`) ... Epoch time (milliseconds) of room availability start date
