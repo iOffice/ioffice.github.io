@@ -32,7 +32,7 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 | Paramater  | Value |
 | ------------- | ------------- |
 | search | String to search for asset  |
-| limit | maximum results to show (default: 50, maximum: 500). Obtain results beyond max with pagination: `startAt={nextResult}&limit={limit}`  |
+| limit | maximum results to show (default: 50, maximum: 100).  |
 | startAt | for pagination, the offset of where to start (default: 0)  |
 | orderBy | Property to order results by (default: 'id')  |
 | orderByType | Choose to order results in either ascending(`asc`) or descending(`desc`)order (default: 'asc')  |
@@ -40,6 +40,17 @@ The common [HTTP Response Status Codes](https://github.com/for-GET/know-your-htt
 Example usage to search users by employeeID:
 
 https://`siteaddress`/external/api/rest/v2/users?search={employeeID}
+
+## Pagination
+Obtain results beyond max with pagination using the `limit` and `startAt` query parameters: `startAt={nextResult}&limit={limit}`
+
+It is recommended to implement pagination on all requests, and to limit page sizes to ensure the best possible performance.
+
+An example using rooms:
+* `/external/api/rest/v2/rooms/?limit=10&startAt=0`
+* `/external/api/rest/v2/rooms/?limit=10&startAt=10`
+
+You can implement a stop to pagination by checking the result set. If the `limit` is 10, and the response contains 10 records, you can request the next page by increasing your `startAt` by 10. If your `limit` is 10, but your response contains less than 10 records, it is not necessary to request the next page.
 
 ## Resource Requests
 
