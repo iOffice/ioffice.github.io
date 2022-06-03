@@ -56,7 +56,7 @@ You can implement a stop to pagination by checking the result set. If the `limit
 
 
 NOTE: When updating a resource (with a `PUT` request), all that is needed is the ID of the object, and the value(s) you wish to update.
-        
+
 * e.g. Updating a resource's `printerName` to another, when that resource's `id` is `5`.
 
 Headers
@@ -77,11 +77,37 @@ Note: Many of the `List of all XXXX` endpoints that return a collection have a `
 
 
 + e.g. To retrieve the total number of users available: `/users/count`
-	
+
 + e.g. To retrieve the total number of category items available: `/categories/items/count`
 
 + e.g. To retrieve the total number of buildings in a city: `/buildings/count?locationSearch={city,state}`
-	
+
+## API Usage Best Practices
+This API is fantastic tool to create customizations that enhance and extend the
+iOFFICE product. In order to have the best integration experience, we recommend
+following these industry best practices.
+
+1. *Restrict requests to needed data.* Where possible, use of tools that limit
+   the response body to just what is needed will provide a faster response.
+2. *Implement retry logic and backoff policies.* Any service may experience an
+   intermittent error. Retrying a request on a 500 (or similar) response status
+   code, with backoff, will provide a more robust integration experience.
+3. *Leverage the use of pagination.* Limiting page sizes, even to smaller that
+   the default page size, can overcome a variety of issues. In addition,
+   smaller pages will provide a faster response.
+4. *Make sequential, as opposed to parrallel, page requests.* Queueing up a set of
+   requests to get multiple pages of data at once, will result in getting 429
+   response status code. This also leads to other poor API integration
+   experiences. Making calls sequentially allows you to get fast incremental
+   responses. UI's can be updated to display results as they come, enabling a
+   better user experienc.
+5. *Request data at each collection level.* In cases of heirarchy or nesteddata, making
+   multiple requests, one to ecah data level, is best practice. This allows you
+   to cache common elements, reduce payload size, and number of overall
+   requsets.
+6. *Implement local logging.* Local logging will allow you to log interactions with
+   the api that contain the specific context of your application. This facilitates
+   faster troubleshooting and resolution should there be a persistent issue.
 
 
 <!-- include(endpoints/user.md) -->
