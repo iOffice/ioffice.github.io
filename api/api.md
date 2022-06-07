@@ -100,13 +100,13 @@ following these industry best practices.
    response status code. This also leads to other poor API integration
    experiences. Making calls sequentially allows you to get fast incremental
    responses. UI's can be updated to display results as they come, enabling a
-   better user experienc.
-5. *Request data at each collection level.* In cases of heirarchy or nesteddata, making
+   better user experience.
+5. *Request data at each collection level.* In cases of heirarchy or nested data, making
    multiple requests, one to ecah data level, is best practice. This allows you
    to cache common elements, reduce payload size, and number of overall
    requsets.
 6. *Implement local logging.* Local logging will allow you to log interactions with
-   the api that contain the specific context of your application. This facilitates
+   the API that contain the specific context of your application. This facilitates
    faster troubleshooting and resolution should there be a persistent issue.
 
 
