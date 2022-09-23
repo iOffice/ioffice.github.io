@@ -52,13 +52,12 @@ A single visitor object.
 
 ## Check-in registered visitor [/visitors///registrations///{id}///checkin]
 
+### Check-in Registered Visitor [POST]
+
 + Parameters
     + id (string) ... Registration ID
 
-
-+ Model (application/json)
-  JSON representation of visitor registration resource
-
++ Response 200
     + Body
 
             {
@@ -85,10 +84,6 @@ A single visitor object.
                 }
             }
 
-### Check-in Registered Visitor [POST]
-+ Response 200
-
-  [Visitor][]
 
 ## Batch checkin [/visitors///registrations///batch///checkin]
 
@@ -176,3 +171,4 @@ A single visitor object.
                 "createdBy": 3517,
                 "deviceName": "Desktop"
             }
+
