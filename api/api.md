@@ -112,6 +112,8 @@ following these industry best practices.
 
 <!-- include(endpoints/user.md) -->
 
+<!-- include(endpoints/visitor.md) -->
+
 <!-- include(endpoints/move.md) -->
 
 <!-- include(endpoints/mail.md) -->
