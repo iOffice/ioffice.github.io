@@ -18,6 +18,10 @@ A single reservation object.
                 "center": {...},
                 "numberOfPeople": INT,
                 "allDay": "BOOLEAN",
+                "checkedIn": "BOOLEAN",
+                "checkedOut": "BOOLEAN",
+                "notes": "STRING"
+                "madeInIoffice": "BOOLEAN",
                 "name": "STRING",
                 "user": {...},
                 "dateUpdated": EPOCH_TIME,
@@ -92,6 +96,7 @@ Collection of all Reservations.
     + startDate (optional, number, `1404410211910`) ... Epoch time (milliseconds) of reservation start date
     + endDate (optional, number, `1404421051661`) ... Epoch time (milliseconds) of reservation end date
     + buildingId (optional, number, `44`) ... Id of the building to query from
+    + limit (optional, number, `500`) ... Reservations List limit to query from
     + roomId (optional, number, `16`) ... Id of the room to query from
     + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
 
@@ -101,7 +106,7 @@ Collection of all Reservations.
 
 
 ### Create a Reservation [POST]
-The following attributes are required to create a Reservation: `startDate`, `endDate`, `user`, `room`, and `allDay`.
+The following attributes are required to create a Reservation: `startDate`, `endDate`, `user`, `room`, `center`, and `allDay`.
 
 + Request (application/json)
 
@@ -111,6 +116,7 @@ The following attributes are required to create a Reservation: `startDate`, `end
                 "numberOfPeople": INT,
                 "allDay": "BOOLEAN",
                 "name": "STRING",
+                "center": {...},
                 "user": {...},
                 "guests": [..],
                 "room": {...},
@@ -130,7 +136,24 @@ Cancel Reservation
 
 ### Cancel Reservation [PUT]
 + Response 200
-    [Reservation][]
+
+          {
+              "id": ID,
+              "cancellationReason": "STRING"
+              "cancelled": "BOOLEAN"
+              "startDate": EPOCH_TIME,
+              "endDate": EPOCH_TIME
+              "numberOfPeople": INT,
+              "checkedIn": "BOOLEAN",
+              "checkedOut": "BOOLEAN",
+              "name": "STRING",
+              "dateCreated": EPOCH_TIME,
+              "dateUpdated": EPOCH_TIME,
+              "user": {...},
+              "center": {...},
+              "room": {...},
+              "notes": "STRING"
+          }
 
 
 ## Check In [/reservations///{id}/checkIn]
