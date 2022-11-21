@@ -143,3 +143,5 @@ following these industry best practices.
 <!-- include(endpoints/categorydepth.md) -->
 
 <!-- include(endpoints/savedsearch.md) -->
+
+<!-- include(endpoints/space.md) -->
