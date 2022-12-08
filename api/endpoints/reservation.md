@@ -225,7 +225,7 @@ The following attributes are required to get Promo Content details: `module`, `s
 
         {
            "centerId":82,
-           "promoContent":
+           "promoContent": 
            [
               "<p><a href=\"https://www.iofficecorp.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://www.iofficecorp.com/hubfs/2017/Marketplace/ioffice-wheel-2.png?t=1519997685552\"></a></p>",
               "<p><a href=\"https://www.yahoo.com\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://i.ibb.co/94HpJFj/Screenshot-1.jpg\"></a></p>",
