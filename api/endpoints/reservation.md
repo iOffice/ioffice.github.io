@@ -180,3 +180,373 @@ Reservation Check Out
 ### Reservation Check Out [PUT]
 + Response 200
     [Reservation][]
+
+## Reservation Rules [/rooms/types/count]
+Reservation Rules related resources of *iOffice API*
+
+### Room Types Count [GET /rooms/types/count]
+This API returns count of room types
+
++ Response 200
+
+      {
+          "count": 206
+      }
+
+### Retrieve All Centers [GET /centers{?module}]
+This API returns list of all centers in particular module
+
+The following attributes are required to get list of centers: `module`.
+
++ Parameters
+    + module (string, `reservation`) ... Module name
+
++ Response 200
+
+      [
+         {
+            "name": "Reservation Center",
+            "id": 82
+         },
+         {
+            "name": "London Reservation Center",
+            "id": 95
+         },
+         {
+            "name": "Maine Reservation Center",
+            "id": 106
+         }
+         ...
+      ]
+
+### All Room Details [GET /rooms/types{?includes,limit,orderBy}]
+
+This API returns list of all rooms and their specific details
+
++ Parameters
+  + includes (optional, string, `reservable`) ... Type of rooms
+  + limit (optional, number, `206`) ... Reservations List limit to query from
+  + orderBy (optional, string, `sortOrder`) ... Sort order for records
+
++ Response 200
+
+          [
+              {
+                 "hexColor": "ffffff",
+                 "contentFlag": 1,
+                 "dateCreated": 1612384416513,
+                 "cost": 0.0,
+                 "color": {},
+                 "name": "5SW3.04",
+                 "occupiable": false,
+                 "id": 195,
+                 "parkingSpace": false,
+                 "dateUpdated": 1667608296090,
+                 "typeCode": "ff"
+              },
+              {
+                 "hexColor": "ffffff",
+                 "contentFlag": 3,
+                 "dateCreated": 1643385124050,
+                 "cost": 0.0,
+                 "color": {},
+                 "name": "Acc. WC",
+                 "occupiable": true,
+                 "id": 216,
+                 "parkingSpace": false,
+                 "dateUpdated": 1667608296600,
+                 "typeCode": ""
+              },
+              ...
+          ]
+
+### All Rooms Type and Rules [GET /rooms/types{?limit,selector}]
+
+This API returns list of all rooms and their rules
+
++ Parameters
+  + limit (optional, number, `206`) ... Reservations List limit to query from
+  + selector (string, `rules`) ... Selector ID
+
++ Response 200
+
+          [
+              {
+                 "name": "WKST",
+                 "rules": "{\"roomTypeId\":1,\"ruleList\":[]}",
+                 "id": 1
+              },
+              {
+                 "name": "OFFICE",
+                 "rules": "{\"roomTypeId\":2,\"ruleList\":[]}",
+                 "id": 2
+              },
+              {
+                 "name": "Acc. WC",
+                 "rules": "{\"roomTypeId\":216,\"ruleList\":[{\"$type$\":\"OnlyDuringWorkHours\"}]}",
+                 "id": 216
+              }
+              ...
+         ]
+
+### Particular Center Rules With All Building [GET /centers/{centerId}{?selector}]
+
+This API returns rules of a particular center and list of all buildings it has
+
++ Parameters
+  + centerId (number, `145`) ... Reservations Center ID
+  + selector (string, `buildings(centers(module))%2Crules`) ... Selector ID (returns exact response with 'buildings(centers(module))%2Crules')
+
++ Response 200
+
+        {
+           "buildings": [
+              {
+                 "code": "",
+                 "centers": [
+                    {
+                       "module": "reservation",
+                       "name": "Houston Reservation Center - 24 hour",
+                       "id": 145
+                    }
+                 ],
+                 "name": "ATest1951",
+                 "id": 1332
+              },
+              {
+                 "code": "",
+                 "centers": [
+                    {
+                       "module": "reservation",
+                       "name": "Houston Reservation Center - 24 hour",
+                       "id": 145
+                    }
+                 ],
+                 "name": "ATest1853",
+                 "id": 1223
+              },
+              ...
+           ],
+           "name": "Houston Reservation Center - 24 hour",
+           "rules": "{\"centerId\":145,\"ruleList\":[{\"roomTypeId\":2,\"$type$\":\"OnlyDuringWorkHours\"}]}",
+           "id": 145
+        }
+
+### Category Details While Adding Rule [GET /categories/type/1{?limit,selector}]
+
+This API returns category details while adding new rule (after clicking on 'Add Rule' button)
+
++ Parameters
+  + limit (optional, number, `79`) ... Reservations List limit to query from
+  + selector (string, `itemCount%2Cdepths`) ... Selector ID (returns exact response with 'itemCount%2Cdepths')
+
++ Response 200
+
+      [
+          {
+              "depths": [
+                  {
+                      "name": "Region",
+                      "id": 44
+                  },
+                  {
+                      "name": "Division",
+                      "id": 90
+                  },
+                  {
+                      "name": "Country",
+                      "id": 46
+                  },
+                  {
+                      "name": "Sub-Region",
+                      "id": 45
+                  }
+              ],
+              "name": "_",
+              "id": 17,
+              "itemCount": 15
+          },
+          {
+              "depths": [
+                  {
+                      "name": "Day",
+                      "id": 646
+                  },
+                  {
+                      "name": "Month",
+                      "id": 644
+                  },
+                  {
+                      "name": "Week",
+                      "id": 645
+                  }
+              ],
+              "name": "April_20",
+              "id": 445,
+              "itemCount": 2
+          },        
+          ...
+      ]
+
+### Create Rule (Center - Only During Working Hours) [PUT /centers/reservations/rules{?selector}]
+
+This API creates new rule for Center - Only During Working Hours
+
+*If particular rule is already present, the API still passes*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "ruleList":[
+              {
+                 "$type$":"OnlyDuringWorkHours"
+              },
+              {
+                 "$type$":"OnlyDuringWorkHours",
+                 "value":"true",
+                 "roomTypeId":179
+              }
+           ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"$type$\":\"OnlyDuringWorkHours\"},{\"roomTypeId\":179,\"$type$\":\"OnlyDuringWorkHours\"}]}",
+         "id": 82
+      }
+
+### Delete Rule (Center - Only During Working Hours/Max Duration/Min Duration/Max Lead Time) [PUT /centers/reservations/rules{?selector}]
+
+This API deletes rule for Center - Only During Working Hours, Max Duration, Min Duration and Max Lead Time. 
+
+*These all APIs are treated as 'Only During Working Hours', so these all rules get deleted using single API with same payload*
+
+*If particular rule is already deleted, the API still passes*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "ruleList":[
+              {
+                 "roomTypeId":179,
+                 "$type$":"OnlyDuringWorkHours"
+              }
+          ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"roomTypeId\":179,\"$type$\":\"OnlyDuringWorkHours\"}]}",
+         "id": 82
+      }
+
+### Create Rule (Center - Max Duration) [PUT /centers/reservations/rules{?selector}]
+
+This API creates rule for Center - Max Duration
+
+*If particular rule is already present, the API still passes*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "ruleList":[
+              {
+                 "roomTypeId":179,
+                 "$type$":"OnlyDuringWorkHours"
+              },
+              {
+                 "$type$":"MaxDuration",
+                 "value":"1530m"
+              }
+          ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"roomTypeId\":179,\"$type$\":\"OnlyDuringWorkHours\"},{\"value\":\"1530m\",\"$type$\":\"MaxDuration\"}]}",
+         "id": 82
+      }
+
+### Create Rule (Center - Min Duration) [PUT /centers/reservations/rules{?selector}]
+
+This API creates rule for Center - Min Duration
+
+*If particular rule is already present, the API still passes*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "ruleList":[
+              {
+                 "roomTypeId":179,
+                 "$type$":"OnlyDuringWorkHours"
+              },
+              {
+                 "$type$":"MinimumDuration",
+                 "value":"1450m"
+              }
+           ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"roomTypeId\":179,\"$type$\":\"OnlyDuringWorkHours\"},{\"value\":\"1450m\",\"$type$\":\"MinimumDuration\"}]}",
+         "id": 82
+      }
+
+### Create Rule (Center - Max Lead Time) [PUT /centers/reservations/rules{?selector}]
+
+This API creates rule for Center - Max Lead Time
+
+*If particular rule is already present, the API still passes*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "ruleList":[
+              {
+                 "roomTypeId":179,
+                 "$type$":"OnlyDuringWorkHours"
+              },
+              {
+                 "$type$":"MaxLeadTime",
+                 "value":"1505m"
+              }
+           ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"roomTypeId\":179,\"$type$\":\"OnlyDuringWorkHours\"},{\"value\":\"1505m\",\"$type$\":\"MaxLeadTime\"}]}",
+         "id": 82
+      }
