@@ -125,7 +125,7 @@ The following attributes are required to create a Room: `name`, `floor`, and `ty
 
 	[Room][]
 
-## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking,modifiedOrCreatedAfter}]
+## Room Types [/rooms/types///{?includeReservable,includeNonReservable,includeOccupiable,includeNonOccupiable,includeParking,modifiedOrCreatedAfter,limit,orderBy,selector}]
 Collection of all Room Types.
 
 + Model (application/json)
@@ -149,6 +149,18 @@ Collection of all Room Types.
     + includeNonOccupiable (optional, boolean, `false`) ... If true, query will include non-occupiable room types
     + includeParking (optional, boolean, `false`) ... If true, query will include parking room types
     + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection
+    + limit (optional, number, `206`) ... Reservations List limit to query from
+    + orderBy (optional, string, `sortOrder`) ... Sort order for records
+    + selector (string, `rules`) ... Selector ID
     
 + Response 200
-	[Room Types][]
+    [Room Types][]
+
+### Room Types Count [GET /rooms/types/count]
+This API returns count of room types
+
++ Response 200
+
+      {
+          "count": 206
+      }

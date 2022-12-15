@@ -391,8 +391,8 @@ User permission data for a single user
 ## Logged In User Details [/users/me]
 Details of Logged-In User
 
-### User Specific Info [GET /users/me/{?selector}]
-*'selector' expects email/permissions value in parameter*
+### Logged In User Info [GET /users/me/{?selector}]
+*'selector' expects email/permissions value in parameter if required*
 
 + Parameters
     + selector (optional, string, `email%2CfirstName%2CuserName, permissions(center(module)%2Crole)%2CsiteAdmin`) ... Selector ID
