@@ -180,3 +180,51 @@ Reservation Check Out
 ### Reservation Check Out [PUT]
 + Response 200
     [Reservation][]
+
+## Reservation Rules [/rooms/types/count]
+Reservation Rules related resources of *iOffice API*
+
+### Create/Update/Delete Rule [PUT /centers/reservations/rules{?selector}]
+
+This API creates/updates/deletes particular rule for Space Type, Center, Space and Neighbourhood for selected center
+
+*Rules mentioned in the payload will get created/updated. The rules not mentioned in the payload will get deleted*
+
+*Here, API is simply updating the list of rules available*
+
++ Parameters
+  + selector (string, `rules`) ... Selector ID (returns exact response with 'rules')
+
++ Request (application/json)
+
+        {
+           "centerId": 82,
+           "ruleList": [
+              {
+                 "value": "1510m",
+                 "$type$": "MaxDuration"
+              },
+              {
+                 "roomTypeId": 52,
+                 "$type$": "OnlyDuringWorkHours"
+              },
+              {
+                 "$type$": "MaxLeadTime",
+                 "value": "1580m",
+                 "roomId": 41932
+              },
+              {
+                 "$type$": "IncludeAllMembers",
+                 "value": "true",
+                 "neighborhoodId": 41
+             }
+           ]
+        }
+
++ Response 200
+
+      {
+         "name": "Reservation Center",
+         "rules": "{\"centerId\":82,\"ruleList\":[{\"value\":\"1510m\",\"$type$\":\"MaxDuration\"},{\"roomTypeId\":52,\"$type$\":\"OnlyDuringWorkHours\"},{\"roomId\":41932,\"value\":\"1580m\",\"$type$\":\"MaxLeadTime\"},{\"neighborhoodId\":41,\"$type$\":\"IncludeAllMembers\"}]}",
+         "id": 82
+      }
