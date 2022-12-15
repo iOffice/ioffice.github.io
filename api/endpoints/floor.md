@@ -140,12 +140,19 @@ The following attributes are required to create a Floor: `name` and `building`.
 			  }
 			]
 
-### Create Shape [POST]
+### Create Annotation [POST]
+Creates different types of annotations i.e Shape, Polygon and Text.
+This categorization is done using "type" parameter in the request body where: 
+- type = "Shape" -> To Create Shape Annotation
+- type = null -> To Create Polygon Annotation
+- type = "RichText" -> To Create Text Annotation
+
+Also, fxg parameter in request body will be different based on the type of annotation (i.e Shape, Polygon or Text) being created.
 
 + Request (application/json)
 	{
 	  "name": "",
-	  "type": "Shape",
+	  "type":{type},
 	  "layer": {
 		"id": 38
 	  },
@@ -162,116 +169,34 @@ The following attributes are required to create a Floor: `name` and `building`.
 			  "id": 1197
 			}
 	
-### Update Shape [POST]
+### Update Annotation [POST]
+Note: 
+Here, same request type(POST) along with same Endpoint of "Create Annotation" are being used for "Update Annotation", with below minor differences:
+- "id" parameter is being added in the request main body which must have value as: {id of the annotation which is being updated}.
+- "fxg" parameter in request body will be different, based on the type of annotation (i.e Shape, Polygon or Text) being edited.
+- The response code of this POST call is 200, howevere in "Create Annotation" it is 201.
 
 + Request (application/json)
 	{
-	  "name": "",
-	  "type": "Shape",
+	  "id": 1194,
+	  "fxg": "<s:Group height=\"100\" width=\"100\" x=\"1196.6703241181406\" y=\"60.38390554125603\">\n        <s:Shape iconId=\"external-regular-kawalan-studio:external-square-shape-regular-kawalan-studio\" alpha=\"1\" height=\"100\" width=\"100\" x=\"0\" y=\"0\"></s:Shape>\n      </s:Group>",
 	  "layer": {
 		"id": 38
 	  },
-	  "fxg": "<s:Group height=\"100\" width=\"100\" x=\"1965.5087425933582\" y=\"-363.596060628774\">\n        <s:Shape iconId=\"m_rounded:rounded-square\" alpha=\"1\" height=\"100\" width=\"100\" x=\"0\" y=\"0\"></s:Shape>\n      </s:Group>",
 	  "model": {
-		"name": "SquareShapes"
+		"name": "NewShapess",
+		"width": 100,
+		"height": 100,
+		"x": 0,
+		"y": 0
 	  }
 	}
 
 + Response 200
 			{
-			  "name": "SquareShapes",
-			  "id": 1197,
-			  "dateCreated": 1671017859347
-			}
-	
-### Create Polygon [POST]
-
-+ Request (application/json)	
-	{
-	  "name": "",
-	  "layer": {
-		"id": 38
-	  },
-	  "type": null,
-	  "fxg": "<s:Group height=\"8.960486322208283\" width=\"8.960486322208283\" x=\"1626.328267477039\" y=\"-341.7218844987719\">\n        <s:Path data=\"M0,0 L22.401215805351285,8.960486322208283 L0,0\" height=\"8.960486322208283\" width=\"22.401215805351285\" x=\"0\" y=\"0\">\n          <s:fill>\n            <s:SolidColor alpha=\"0\" color=\"#FFFFFF\"/>\n          </s:fill>\n          <s:stroke>\n            <s:SolidColorStroke alpha=\"1\" caps=\"round\" color=\"#000000\" joints=\"round\" weight=\"2\"/>\n          </s:stroke>\n        </s:Path>\n      </s:Group>",
-	  "model": {
-		"name": "NewPolygon"
-	  }
-	}
-	
-+ Response 201
-			{
-			  "dateCreated": 1671009601126,
-			  "name": "NewPolygon",
-			  "id": 1195
-			}
-			
-### Update Polygon [POST]
-
-+ Request (application/json)	
-	{
-	  "name": "",
-	  "layer": {
-		"id": 38
-	  },
-	  "type": null,
-	  "fxg": "<s:Group height=\"8.960486322208283\" width=\"8.960486322208283\" x=\"1626.328267477039\" y=\"-341.7218844987719\">\n        <s:Path data=\"M0,0 L22.401215805351285,8.960486322208283 L0,0\" height=\"8.960486322208283\" width=\"22.401215805351285\" x=\"0\" y=\"0\">\n          <s:fill>\n            <s:SolidColor alpha=\"0\" color=\"#FFFFFF\"/>\n          </s:fill>\n          <s:stroke>\n            <s:SolidColorStroke alpha=\"1\" caps=\"round\" color=\"#000000\" joints=\"round\" weight=\"2\"/>\n          </s:stroke>\n        </s:Path>\n      </s:Group>",
-	  "model": {
-		"name": "NewPolygons"
-	  }
-	}
-	
-+ Response 200
-			{
-			  "name": "NewPolygons",
-			  "id": 1195,
-			  "dateCreated": 1671009601126
-			}
-
-### Create Text [POST]
-
-+ Request (application/json)
-	{
-	  "name": "",
-	  "layer": {
-		"id": 38
-	  },
-	  "type": "RichText",
-	  "text": "",
-	  "fxg": "<s:Group height=\"100\" width=\"200\" x=\"1662.1702127649708\" y=\"-341.7218844978395\">\n        <s:RichText height=\"100\" width=\"200\" fontFamily=\"Helvetica\" fontSize=\"18\"\n          fontStyle=\"normal\" fontWeight=\"normal\" textAlign=\"left\" textDecoration=\"none\"\n          color=\"0x000000\" backgroundAlpha=\"1.00\" backgroundColor=\"0xFFFFFF\" borderAlpha=\"1.00\"\n          borderColor=\"0x000000\" paddingLeft=\"0\">\n        </s:RichText>\n      </s:Group>",
-	  "model": {
-		"name": "TextExample"
-	  }
-	}
-	
-+ Response 201	
-			{
-			  "dateCreated": 1671012604393,
-			  "name": "TextExample",
-			  "id": 1196
-			}
-
-### Update Text [POST]
-
-+ Request (application/json)
-	{
-	  "name": "",
-	  "layer": {
-		"id": 38
-	  },
-	  "type": "RichText",
-	  "text": "",
-	  "fxg": "<s:Group height=\"100\" width=\"200\" x=\"1662.1702127649708\" y=\"-341.7218844978395\">\n        <s:RichText height=\"100\" width=\"200\" fontFamily=\"Helvetica\" fontSize=\"18\"\n          fontStyle=\"normal\" fontWeight=\"normal\" textAlign=\"left\" textDecoration=\"none\"\n          color=\"0x000000\" backgroundAlpha=\"1.00\" backgroundColor=\"0xFFFFFF\" borderAlpha=\"1.00\"\n          borderColor=\"0x000000\" paddingLeft=\"0\">\n        </s:RichText>\n      </s:Group>",
-	  "model": {
-		"name": "TextExamples"
-	  }
-	}
-	
-+ Response 200	
-			{
-			  "name": "TextExamples",
-			  "id": 1196,
-			  "dateCreated": 1671012604393
+			  "name": "NewShapess",
+			  "id": 1194,
+			  "dateUpdated": 1671094453187
 			}
 			
 ### Delete Annotation [DELETE /floors/annotation/{id}]
@@ -320,23 +245,45 @@ The following attributes are required to create a Floor: `name` and `building`.
 			  }
 			]
 			
-### Create\Update Layer [POST]
+### Create Layer [POST]
 
 + Request (application/json)
 	{
-	  "id": 59,
-	  "name": "New Layer2",
+	  "name": "NewLayer",
+	  "availability": "EVERYONE",
+	  "drawing": {
+		"id": 39
+	  }
+	}
+	
++ Response 201
+			{
+			  "dateCreated": 1671095761328,
+			  "name": "NewLayer",
+			  "id": 62
+			}
+			
+### Update Layer [POST]
+Note: 
+Here, same request type(POST) along with same Endpoint of "Create Layer" are being used for "Update Layer" with below minor differences:
+- In the request body "id" parameter is being added which must have value as: {id of the layer which is being updated}.
+- The response code of this POST call is 200, howevere in "Create Layer" it is 201.
+
++ Request (application/json)
+	{
+	  "id": 62,
+	  "name": "NewLayerss",
 	  "availability": "EVERYONE"
 	}
 	
 + Response 200
 			{
-			  "name": "New Layer2",
-			  "id": 59,
-			  "dateUpdated": 1671008178390
+			  "name": "NewLayerss",
+			  "id": 62,
+			  "dateUpdated": 1671095766360
 			}
 			
-### Delete Layer [DELETE /annotation/layers/{id}]
+### Delete Layer [DELETE /floors/annotation/layers/{id}]
 
 + Parameters
     + id (number, `58`) ... Id of the Layer
@@ -370,6 +317,12 @@ The following attributes are required to create a Floor: `name` and `building`.
 			}
 			
 ### Update Marker Group [POST]
+Note: 
+Here, Same request type(POST) along with same Endpoint of "Create Marker Group" are being used for "Update Marker Group" with below minor difference:
+- "id" parameter is being added in the request body which must have values as:{id of the Marker Group which is being updated}.
+- "code" parameter is being added in the request body which must have values as:{code of the Marker Group which is being updated}.
+- The response code of this POST call is 200, howevere in "Create Marker Group" it is 201.
+
 + Parameters 
     + selector (`availability%2Ccode%2Cdescription%2CvisibleByDefault`)
 	
