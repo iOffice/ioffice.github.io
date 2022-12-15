@@ -1,5 +1,13489 @@
 # Group Space
 
+## Hierarchy [/categories]
+Hierarchy related resources of *iOffice API*
+
++ Model (application/json)
+    JSON representation of the Category	Resource
+
+## Add New Hierarchy [POST]
++ Request (application/json)
+			{
+				"name":"AddOn1",
+				"categoryType":[{"id":3}]
+			}
+				
++ Response 201
+			{
+				"dateCreated": 1669805101765,
+				"color": {},
+				"name": "AddOn1",
+				"id": 486
+			}
+			
+## Update Hierarchy [PUT]
++ Request (application/json)
+			{
+				"id":493,
+				"name":"NEWHIERARCHIMAINLEVEL"
+			}
+			
++ Response 200
+			{
+				"dateCreated": 1669836751583,
+				"color": {},
+				"name": "NEWHIERARCHIMAINLEVEL",
+				"id": 493,
+				"dateUpdated": 1669815993488
+			}
+
+## Delete Hierarchy [DELETE /categories/{id}]
++ Parameters
+    + id (string) ... ID of the Category
+
++ Response 200
+			{"response":"Successfully removed"}
+			
+## Retrieve Hierarchy Types [GET /categories/type/{id}]
++ Parameters
+    + id (int, `3`) ... ID of the Category Type
+	
++ Response 200
+			[
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Country",
+					"id": 46,
+					"category": {
+					  "name": "_",
+					  "id": 17
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Region",
+					"id": 44,
+					"category": {
+					  "name": "_",
+					  "id": 17
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Division",
+					"id": 90,
+					"category": {
+					  "name": "_",
+					  "id": 17
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Sub-Region",
+					"id": 45,
+					"category": {
+					  "name": "_",
+					  "id": 17
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "_",
+				"id": 17
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Hierarchy Level",
+					"id": 529,
+					"category": {
+					  "name": "0001 super",
+					  "id": 355
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 321,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 322,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom06",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom06",
+						"id": 323,
+						"type": "input",
+						"baseField": {
+						  "code": "custom06",
+						  "name": "Custom06",
+						  "id": 406
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom07",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom07",
+						"id": 324,
+						"type": "input",
+						"baseField": {
+						  "code": "custom07",
+						  "name": "Custom07",
+						  "id": 407
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 325,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "SUP-01",
+					"level": 2,
+					"name": "super-duper",
+					"id": 642,
+					"category": {
+					  "name": "0001 super",
+					  "id": 355
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "DUP",
+					"level": 0,
+					"name": "0001-01-super",
+					"id": 440,
+					"category": {
+					  "name": "0001 super",
+					  "id": 355
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 327,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 328,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 329,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 330,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom06",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom06",
+						"id": 331,
+						"type": "input",
+						"baseField": {
+						  "code": "custom06",
+						  "name": "Custom06",
+						  "id": 406
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom07",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom07",
+						"id": 332,
+						"type": "input",
+						"baseField": {
+						  "code": "custom07",
+						  "name": "Custom07",
+						  "id": 407
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom10",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom10",
+						"id": 333,
+						"type": "input",
+						"baseField": {
+						  "code": "custom10",
+						  "name": "Custom10",
+						  "id": 410
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 334,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 326,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  }
+				],
+				"name": "0001 super",
+				"id": 355
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Level 1",
+					"id": 694,
+					"category": {
+					  "name": "a1",
+					  "id": 472
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level 2",
+					"id": 695,
+					"category": {
+					  "name": "a1",
+					  "id": 472
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "a1",
+				"id": 472
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 696,
+					"category": {
+					  "name": "a2",
+					  "id": 473
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "a2",
+				"id": 473
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Hierarchy 1",
+					"id": 697,
+					"category": {
+					  "name": "A3",
+					  "id": 474
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Hierarchy 2",
+					"id": 698,
+					"category": {
+					  "name": "A3",
+					  "id": 474
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "A3",
+				"id": 474
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 663,
+					"category": {
+					  "name": "Ahead2",
+					  "id": 454
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Ahead2",
+				"id": 454
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 664,
+					"category": {
+					  "name": "Ahead3",
+					  "id": 455
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Ahead3",
+				"id": 455
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 665,
+					"category": {
+					  "name": "Ahead3",
+					  "id": 456
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Ahead3",
+				"id": 456
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 450,
+					"category": {
+					  "name": "Alan H Tesitng",
+					  "id": 359
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 458,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 459,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 455,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom09",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom09",
+						"id": 456,
+						"type": "input",
+						"baseField": {
+						  "code": "custom09",
+						  "name": "Custom09",
+						  "id": 409
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 457,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Unnamed Hierarchy Level 1",
+					"id": 451,
+					"category": {
+					  "name": "Alan H Tesitng",
+					  "id": 359
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 478,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 479,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 476,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 477,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Hierarchy Level.2",
+					"id": 452,
+					"category": {
+					  "name": "Alan H Tesitng",
+					  "id": 359
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 475,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 472,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom08",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom08",
+						"id": 473,
+						"type": "input",
+						"baseField": {
+						  "code": "custom08",
+						  "name": "Custom08",
+						  "id": 408
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 474,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  }
+				],
+				"name": "Alan H Tesitng",
+				"id": 359
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Day",
+					"id": 646,
+					"category": {
+					  "name": "April_20",
+					  "id": 445
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Week",
+					"id": 645,
+					"category": {
+					  "name": "April_20",
+					  "id": 445
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Month",
+					"id": 644,
+					"category": {
+					  "name": "April_20",
+					  "id": 445
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "April_20",
+				"id": 445
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Level 1",
+					"id": 649,
+					"category": {
+					  "name": "April21",
+					  "id": 447
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level 2",
+					"id": 650,
+					"category": {
+					  "name": "April21",
+					  "id": 447
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "April21",
+				"id": 447
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "space.Unnamed_Hierarchy_Level",
+					"id": 408,
+					"category": {
+					  "name": "c_updatess",
+					  "id": 336
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "c_updatess",
+				"id": 336
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Level 3",
+					"id": 420,
+					"category": {
+					  "name": "Campus",
+					  "id": 331
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 497,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 498,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 499,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 500,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom06",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom06",
+						"id": 501,
+						"type": "input",
+						"baseField": {
+						  "code": "custom06",
+						  "name": "Custom06",
+						  "id": 406
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom07",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom07",
+						"id": 502,
+						"type": "input",
+						"baseField": {
+						  "code": "custom07",
+						  "name": "Custom07",
+						  "id": 407
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom08",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom08",
+						"id": 503,
+						"type": "input",
+						"baseField": {
+						  "code": "custom08",
+						  "name": "Custom08",
+						  "id": 408
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom09",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom09",
+						"id": 504,
+						"type": "input",
+						"baseField": {
+						  "code": "custom09",
+						  "name": "Custom09",
+						  "id": 409
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom10",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom10",
+						"id": 505,
+						"type": "input",
+						"baseField": {
+						  "code": "custom10",
+						  "name": "Custom10",
+						  "id": 410
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom11",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom11",
+						"id": 506,
+						"type": "input",
+						"baseField": {
+						  "code": "custom11",
+						  "name": "Custom11",
+						  "id": 411
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom12",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom12",
+						"id": 507,
+						"type": "input",
+						"baseField": {
+						  "code": "custom12",
+						  "name": "Custom12",
+						  "id": 412
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom13",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom13",
+						"id": 508,
+						"type": "input",
+						"baseField": {
+						  "code": "custom13",
+						  "name": "Custom13",
+						  "id": 413
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom14",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom14",
+						"id": 509,
+						"type": "input",
+						"baseField": {
+						  "code": "custom14",
+						  "name": "Custom14",
+						  "id": 414
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom15",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom15",
+						"id": 510,
+						"type": "input",
+						"baseField": {
+						  "code": "custom15",
+						  "name": "Custom15",
+						  "id": 415
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 511,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 512,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Level 2",
+					"id": 419,
+					"category": {
+					  "name": "Campus",
+					  "id": 331
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 495,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 496,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Campus",
+					"id": 403,
+					"category": {
+					  "name": "Campus",
+					  "id": 331
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 143,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 144,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 145,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 146,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom06",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom06",
+						"id": 147,
+						"type": "input",
+						"baseField": {
+						  "code": "custom06",
+						  "name": "Custom06",
+						  "id": 406
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom07",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom07",
+						"id": 148,
+						"type": "input",
+						"baseField": {
+						  "code": "custom07",
+						  "name": "Custom07",
+						  "id": 407
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom08",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom08",
+						"id": 149,
+						"type": "input",
+						"baseField": {
+						  "code": "custom08",
+						  "name": "Custom08",
+						  "id": 408
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom09",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom09",
+						"id": 150,
+						"type": "input",
+						"baseField": {
+						  "code": "custom09",
+						  "name": "Custom09",
+						  "id": 409
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom10",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom10",
+						"id": 151,
+						"type": "input",
+						"baseField": {
+						  "code": "custom10",
+						  "name": "Custom10",
+						  "id": 410
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom11",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom11",
+						"id": 152,
+						"type": "input",
+						"baseField": {
+						  "code": "custom11",
+						  "name": "Custom11",
+						  "id": 411
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom12",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom12",
+						"id": 153,
+						"type": "input",
+						"baseField": {
+						  "code": "custom12",
+						  "name": "Custom12",
+						  "id": 412
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom13",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom13",
+						"id": 154,
+						"type": "input",
+						"baseField": {
+						  "code": "custom13",
+						  "name": "Custom13",
+						  "id": 413
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom14",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom14",
+						"id": 155,
+						"type": "input",
+						"baseField": {
+						  "code": "custom14",
+						  "name": "Custom14",
+						  "id": 414
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom15",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom15",
+						"id": 156,
+						"type": "input",
+						"baseField": {
+						  "code": "custom15",
+						  "name": "Custom15",
+						  "id": 415
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 157,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 142,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level 1",
+					"id": 418,
+					"category": {
+					  "name": "Campus",
+					  "id": 331
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 493,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 494,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  }
+				],
+				"name": "Campus",
+				"id": 331
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Region",
+					"id": 92,
+					"category": {
+					  "name": "Company",
+					  "id": 58
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 23,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 22,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Parent Company",
+					"id": 91,
+					"category": {
+					  "name": "Company",
+					  "id": 58
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 35,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 34,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Campus",
+					"id": 421,
+					"category": {
+					  "name": "Company",
+					  "id": 58
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 25,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 24,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "DIV",
+					"level": 2,
+					"name": "Division",
+					"id": 105,
+					"category": {
+					  "name": "Company",
+					  "id": 58
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 21,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 20,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 4,
+					"name": "Faculty",
+					"id": 445,
+					"category": {
+					  "name": "Company",
+					  "id": 58
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Company",
+				"id": 58
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Hierarchy Level2",
+					"id": 654,
+					"category": {
+					  "name": "demo2",
+					  "id": 449
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level1",
+					"id": 653,
+					"category": {
+					  "name": "demo2",
+					  "id": 449
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Unnamed Hierarchy Level3",
+					"id": 655,
+					"category": {
+					  "name": "demo2",
+					  "id": 449
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "demo2",
+				"id": 449
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Parent Level Fri Dec 10",
+					"id": 598,
+					"category": {
+					  "name": "Fri Dec 10",
+					  "id": 432
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Fri Dec 10",
+				"id": 432
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Specialty",
+					"id": 402,
+					"category": {
+					  "name": "Function",
+					  "id": 330
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Function",
+					"id": 401,
+					"category": {
+					  "name": "Function",
+					  "id": 330
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Function",
+				"id": 330
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Child Level 1",
+					"id": 561,
+					"category": {
+					  "name": "IManage",
+					  "id": 409
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Parent Level1",
+					"id": 559,
+					"category": {
+					  "name": "IManage",
+					  "id": 409
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Grand child Level1",
+					"id": 562,
+					"category": {
+					  "name": "IManage",
+					  "id": 409
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "IManage",
+				"id": 409
+			  },
+			  {
+				"code": "007",
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "8877",
+					"level": 3,
+					"name": "Depth II",
+					"id": 632,
+					"category": {
+					  "code": "007",
+					  "name": "Jasper Join Test",
+					  "id": 442
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "12345",
+					"level": 1,
+					"name": "Depth I",
+					"id": 628,
+					"category": {
+					  "code": "007",
+					  "name": "Jasper Join Test",
+					  "id": 442
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "8765",
+					"level": 2,
+					"name": "Depth II",
+					"id": 631,
+					"category": {
+					  "code": "007",
+					  "name": "Jasper Join Test",
+					  "id": 442
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "990",
+					"level": 0,
+					"name": "Jasper Join Test",
+					"id": 627,
+					"category": {
+					  "code": "007",
+					  "name": "Jasper Join Test",
+					  "id": 442
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "004",
+					"level": 4,
+					"name": "Depth 4",
+					"id": 633,
+					"category": {
+					  "code": "007",
+					  "name": "Jasper Join Test",
+					  "id": 442
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Jasper Join Test",
+				"id": 442
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Purple Hierarchy Level",
+					"id": 439,
+					"category": {
+					  "name": "JBen",
+					  "id": 354
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 262,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 263,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 261,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Red Hierarchy Level",
+					"id": 503,
+					"category": {
+					  "name": "JBen",
+					  "id": 354
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 264,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom04",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom04",
+						"id": 265,
+						"type": "input",
+						"baseField": {
+						  "code": "custom04",
+						  "name": "Custom04",
+						  "id": 404
+						}
+					  }
+					]
+				  }
+				],
+				"name": "JBen",
+				"id": 354
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "State",
+					"id": 447,
+					"category": {
+					  "name": "Jessica 5/19 Testing",
+					  "id": 358
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 69,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Country",
+					"id": 446,
+					"category": {
+					  "name": "Jessica 5/19 Testing",
+					  "id": 358
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 68,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Subdivision",
+					"id": 616,
+					"category": {
+					  "name": "Jessica 5/19 Testing",
+					  "id": 358
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "City",
+					"id": 448,
+					"category": {
+					  "name": "Jessica 5/19 Testing",
+					  "id": 358
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Jessica 5/19 Testing",
+				"id": 358
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 4,
+					"name": "Unnamed Hierarchy Level",
+					"id": 458,
+					"category": {
+					  "name": "Jessica 5/26 Testing",
+					  "id": 360
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 205,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom07",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom07",
+						"id": 206,
+						"type": "input",
+						"baseField": {
+						  "code": "custom07",
+						  "name": "Custom07",
+						  "id": 407
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom08",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom08",
+						"id": 207,
+						"type": "input",
+						"baseField": {
+						  "code": "custom08",
+						  "name": "Custom08",
+						  "id": 408
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 204,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Country",
+					"id": 453,
+					"category": {
+					  "name": "Jessica 5/26 Testing",
+					  "id": 360
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 211,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom05",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom05",
+						"id": 212,
+						"type": "input",
+						"baseField": {
+						  "code": "custom05",
+						  "name": "Custom05",
+						  "id": 405
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom06",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom06",
+						"id": 213,
+						"type": "input",
+						"baseField": {
+						  "code": "custom06",
+						  "name": "Custom06",
+						  "id": 406
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "City",
+					"id": 455,
+					"category": {
+					  "name": "Jessica 5/26 Testing",
+					  "id": 360
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Unnamed Hierarchy Level",
+					"id": 457,
+					"category": {
+					  "name": "Jessica 5/26 Testing",
+					  "id": 360
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "State",
+					"id": 454,
+					"category": {
+					  "name": "Jessica 5/26 Testing",
+					  "id": 360
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 71,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  }
+				],
+				"name": "Jessica 5/26 Testing",
+				"id": 360
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 4,
+					"name": "Unnamed Hierarchy Test",
+					"id": 442,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Global Region",
+					"id": 438,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Test Level",
+					"id": 449,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 5,
+					"name": "City",
+					"id": 427,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Country-",
+					"id": 425,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "State",
+					"id": 426,
+					"category": {
+					  "name": "Jessica's New Hierarchy",
+					  "id": 348
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Jessica's New Hierarchy",
+				"id": 348
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level 2",
+					"id": 652,
+					"category": {
+					  "name": "May22",
+					  "id": 448
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Level 1",
+					"id": 651,
+					"category": {
+					  "name": "May22",
+					  "id": 448
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "May22",
+				"id": 448
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "State",
+					"id": 570,
+					"category": {
+					  "name": "My Portfolio",
+					  "id": 414
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Country",
+					"id": 569,
+					"category": {
+					  "name": "My Portfolio",
+					  "id": 414
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "City",
+					"id": 572,
+					"category": {
+					  "name": "My Portfolio",
+					  "id": 414
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 480,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "County",
+					"id": 571,
+					"category": {
+					  "name": "My Portfolio",
+					  "id": 414
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "My Portfolio",
+				"id": 414
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 661,
+					"category": {
+					  "name": "name1",
+					  "id": 452
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "name1",
+				"id": 452
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 662,
+					"category": {
+					  "name": "name2",
+					  "id": 453
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "name2",
+				"id": 453
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 674,
+					"category": {
+					  "name": "New one1",
+					  "id": 460
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "New one1",
+				"id": 460
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Hierarchy Level2",
+					"id": 703,
+					"category": {
+					  "name": "Nov23",
+					  "id": 477
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level 1",
+					"id": 702,
+					"category": {
+					  "name": "Nov23",
+					  "id": 477
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Nov23",
+				"id": 477
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 688,
+					"category": {
+					  "name": "OCt",
+					  "id": 467
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "OCt",
+				"id": 467
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "First",
+					"id": 681,
+					"category": {
+					  "name": "Oct21",
+					  "id": 463
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Thrid",
+					"id": 683,
+					"category": {
+					  "name": "Oct21",
+					  "id": 463
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Second",
+					"id": 682,
+					"category": {
+					  "name": "Oct21",
+					  "id": 463
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Oct21",
+				"id": 463
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Level 1",
+					"id": 684,
+					"category": {
+					  "name": "Oct25",
+					  "id": 464
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Oct25",
+				"id": 464
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 686,
+					"category": {
+					  "name": "OCt25-2",
+					  "id": 465
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "OCt25-2",
+				"id": 465
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 687,
+					"category": {
+					  "name": "Oct25-3",
+					  "id": 466
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Oct25-3",
+				"id": 466
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level 1",
+					"id": 689,
+					"category": {
+					  "name": "Oct25-4",
+					  "id": 468
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Oct25-4",
+				"id": 468
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 690,
+					"category": {
+					  "name": "OCT26",
+					  "id": 469
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "OCT26",
+				"id": 469
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Unnamed Hierarchy Level",
+					"id": 692,
+					"category": {
+					  "name": "oct26-2",
+					  "id": 470
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 691,
+					"category": {
+					  "name": "oct26-2",
+					  "id": 470
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "oct26-2",
+				"id": 470
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 564,
+					"category": {
+					  "name": "Presentation ",
+					  "id": 411
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Presentation ",
+				"id": 411
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "City_5555555",
+					"id": 705,
+					"category": {
+					  "name": "PT_1111111",
+					  "id": 478
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "State_5555555",
+					"id": 704,
+					"category": {
+					  "name": "PT_1111111",
+					  "id": 478
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "PT_1111111",
+				"id": 478
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy",
+					"id": 693,
+					"category": {
+					  "name": "Q",
+					  "id": 471
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Q",
+				"id": 471
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "QA Join Test",
+					"id": 622,
+					"category": {
+					  "name": "QA Join Test",
+					  "id": 440
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Depth III",
+					"id": 625,
+					"category": {
+					  "name": "QA Join Test",
+					  "id": 440
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Depth I",
+					"id": 623,
+					"category": {
+					  "name": "QA Join Test",
+					  "id": 440
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Depth II",
+					"id": 624,
+					"category": {
+					  "name": "QA Join Test",
+					  "id": 440
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "QA Join Test",
+				"id": 440
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "RB Hierarchy Level 1",
+					"id": 554,
+					"category": {
+					  "name": "Rainbow hierarchy",
+					  "id": 408
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 4,
+					"name": "RB Level 5",
+					"id": 558,
+					"category": {
+					  "name": "Rainbow hierarchy",
+					  "id": 408
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "RB Level 3",
+					"id": 556,
+					"category": {
+					  "name": "Rainbow hierarchy",
+					  "id": 408
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "RB Level 4",
+					"id": 557,
+					"category": {
+					  "name": "Rainbow hierarchy",
+					  "id": 408
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "RB Level 2",
+					"id": 555,
+					"category": {
+					  "name": "Rainbow hierarchy",
+					  "id": 408
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Rainbow hierarchy",
+				"id": 408
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Sab Level 3 new",
+					"id": 472,
+					"category": {
+					  "name": "Sabera's test Heirarchy",
+					  "id": 364
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 271,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Sab level 1 new",
+					"id": 468,
+					"category": {
+					  "name": "Sabera's test Heirarchy",
+					  "id": 364
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom01",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Hello",
+						"id": 266,
+						"type": "input",
+						"baseField": {
+						  "code": "custom01",
+						  "name": "Hello",
+						  "id": 401
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Sab Level 2 new",
+					"id": 469,
+					"category": {
+					  "name": "Sabera's test Heirarchy",
+					  "id": 364
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "custom02",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom02",
+						"id": 481,
+						"type": "input",
+						"baseField": {
+						  "code": "custom02",
+						  "name": "Custom02",
+						  "id": 402
+						}
+					  },
+					  {
+						"displayType": "Input",
+						"code": "custom03",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Custom03",
+						"id": 482,
+						"type": "input",
+						"baseField": {
+						  "code": "custom03",
+						  "name": "Custom03",
+						  "id": 403
+						}
+					  }
+					]
+				  }
+				],
+				"name": "Sabera's test Heirarchy",
+				"id": 364
+			  },
+			  {
+				"code": "STC",
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Floor",
+					"id": 637,
+					"category": {
+					  "code": "STC",
+					  "name": "Sergeo Test Category",
+					  "id": 443
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 3,
+					"name": "Space",
+					"id": 638,
+					"category": {
+					  "code": "STC",
+					  "name": "Sergeo Test Category",
+					  "id": 443
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level",
+					"id": 643,
+					"category": {
+					  "code": "STC",
+					  "name": "Sergeo Test Category",
+					  "id": 443
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"code": "STC",
+					"level": 0,
+					"name": "Sergeo Test Category",
+					"id": 634,
+					"category": {
+					  "code": "STC",
+					  "name": "Sergeo Test Category",
+					  "id": 443
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Sergeo Test Category",
+				"id": 443
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "State",
+					"id": 524,
+					"category": {
+					  "name": "Site Location",
+					  "id": 398
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Country",
+					"id": 523,
+					"category": {
+					  "name": "Site Location",
+					  "id": 398
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 273,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "City",
+					"id": 525,
+					"category": {
+					  "name": "Site Location",
+					  "id": 398
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Site Location",
+				"id": 398
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Unnamed Hierarchy Level",
+					"id": 592,
+					"category": {
+					  "name": "Snow White",
+					  "id": 429
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Snow White",
+				"id": 429
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Level 3",
+					"id": 614,
+					"category": {
+					  "name": "TEST",
+					  "id": 437
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 491,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Level 1",
+					"id": 612,
+					"category": {
+					  "name": "TEST",
+					  "id": 437
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 527,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Level 2",
+					"id": 613,
+					"category": {
+					  "name": "TEST",
+					  "id": 437
+					},
+					"fields": [
+					  {
+						"displayType": "Input",
+						"code": "description",
+						"dataType": "TEXT",
+						"options": "{\"password\":false,\"multiline\":false}",
+						"name": "Description",
+						"id": 492,
+						"type": "input",
+						"baseField": {
+						  "code": "description",
+						  "name": "Description",
+						  "id": 395
+						}
+					  }
+					]
+				  }
+				],
+				"name": "TEST",
+				"id": 437
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "Parent Level",
+					"id": 550,
+					"category": {
+					  "name": "Test",
+					  "id": 406
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "Grand Child Level",
+					"id": 563,
+					"category": {
+					  "name": "Test",
+					  "id": 406
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "Child Level",
+					"id": 551,
+					"category": {
+					  "name": "Test",
+					  "id": 406
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Test",
+				"id": 406
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "test desktop categories",
+					"id": 576,
+					"category": {
+					  "name": "test desktop categories",
+					  "id": 416
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "new depth",
+					"id": 577,
+					"category": {
+					  "name": "test desktop categories",
+					  "id": 416
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "test desktop categories",
+				"id": 416
+			  },
+			  {
+				"depths": [
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 0,
+					"name": "top",
+					"id": 706,
+					"category": {
+					  "name": "Test Tree",
+					  "id": 479
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 1,
+					"name": "middle",
+					"id": 707,
+					"category": {
+					  "name": "Test Tree",
+					  "id": 479
+					},
+					"fields": [
+
+					]
+				  },
+				  {
+					"availableFields": [
+					  {
+						"code": "custom02",
+						"name": "Custom02",
+						"id": 402
+					  },
+					  {
+						"code": "custom03",
+						"name": "Custom03",
+						"id": 403
+					  },
+					  {
+						"code": "custom04",
+						"name": "Custom04",
+						"id": 404
+					  },
+					  {
+						"code": "custom05",
+						"name": "Custom05",
+						"id": 405
+					  },
+					  {
+						"code": "custom06",
+						"name": "Custom06",
+						"id": 406
+					  },
+					  {
+						"code": "custom07",
+						"name": "Custom07",
+						"id": 407
+					  },
+					  {
+						"code": "custom08",
+						"name": "Custom08",
+						"id": 408
+					  },
+					  {
+						"code": "custom09",
+						"name": "Custom09",
+						"id": 409
+					  },
+					  {
+						"code": "custom10",
+						"name": "Custom10",
+						"id": 410
+					  },
+					  {
+						"code": "custom11",
+						"name": "Custom11",
+						"id": 411
+					  },
+					  {
+						"code": "custom12",
+						"name": "Custom12",
+						"id": 412
+					  },
+					  {
+						"code": "custom13",
+						"name": "Custom13",
+						"id": 413
+					  },
+					  {
+						"code": "custom14",
+						"name": "Custom14",
+						"id": 414
+					  },
+					  {
+						"code": "custom15",
+						"name": "Custom15",
+						"id": 415
+					  },
+					  {
+						"code": "description",
+						"name": "Description",
+						"id": 395
+					  },
+					  {
+						"code": "custom01",
+						"name": "Hello",
+						"id": 401
+					  }
+					],
+					"level": 2,
+					"name": "bottom",
+					"id": 708,
+					"category": {
+					  "name": "Test Tree",
+					  "id": 479
+					},
+					"fields": [
+
+					]
+				  }
+				],
+				"name": "Test Tree",
+				"id": 479
+			  }
+			]
+
+## Retrieve Spaces based on Hierarchy [GET /categories/items]
++ Parameters
+	+ category (int, `331`)
+    + root (boolean, `true`)
+	
++ Response 200
+			[
+			  {
+				"depth": {
+				  "level": 0,
+				  "name": "Campus",
+				  "id": 403
+				},
+				"name": "Houston Campus",
+				"childCount": 1,
+				"id": 1280,
+				"category": {
+				  "depths": [
+					{
+					  "level": 0,
+					  "name": "Campus",
+					  "id": 403
+					},
+					{
+					  "level": 2,
+					  "name": "Level 2",
+					  "id": 419
+					},
+					{
+					  "level": 3,
+					  "name": "Level 3",
+					  "id": 420
+					},
+					{
+					  "level": 1,
+					  "name": "Level 1",
+					  "id": 418
+					}
+				  ],
+				  "name": "Campus",
+				  "id": 331
+				},
+				"parents": [
+
+				]
+			  },
+			  {
+				"code": "AC1 - Code",
+				"depth": {
+				  "level": 0,
+				  "name": "Campus",
+				  "id": 403
+				},
+				"name": "Austin Campus - Name",
+				"childCount": 2,
+				"id": 1281,
+				"category": {
+				  "depths": [
+					{
+					  "level": 0,
+					  "name": "Campus",
+					  "id": 403
+					},
+					{
+					  "level": 2,
+					  "name": "Level 2",
+					  "id": 419
+					},
+					{
+					  "level": 3,
+					  "name": "Level 3",
+					  "id": 420
+					},
+					{
+					  "level": 1,
+					  "name": "Level 1",
+					  "id": 418
+					}
+				  ],
+				  "name": "Campus",
+				  "id": 331
+				},
+				"parents": [
+
+				]
+			  },
+			  {
+				"depth": {
+				  "level": 0,
+				  "name": "Campus",
+				  "id": 403
+				},
+				"name": "San Antonio Campus",
+				"childCount": 0,
+				"id": 1282,
+				"category": {
+				  "depths": [
+					{
+					  "level": 0,
+					  "name": "Campus",
+					  "id": 403
+					},
+					{
+					  "level": 2,
+					  "name": "Level 2",
+					  "id": 419
+					},
+					{
+					  "level": 3,
+					  "name": "Level 3",
+					  "id": 420
+					},
+					{
+					  "level": 1,
+					  "name": "Level 1",
+					  "id": 418
+					}
+				  ],
+				  "name": "Campus",
+				  "id": 331
+				},
+				"parents": [
+
+				]
+			  }
+			]
+			
+## Level In Hierarchy [/categories/depths]
+Level related resources of *iOffice API*
+
++ Model (application/json)
+    JSON representation of the Category	Resource
+	
+## Add New Level In Hierarchy [POST]
++ Request (application/json)
+			{ 	
+				"name":"Unnamed Hierarchy Level",
+				"category":{"id":492},
+				"level":1
+			}
+			
++ Response 201
+			{
+			  "dateCreated": 1669814609962,
+			  "level": 1,
+			  "name": "Unnamed Hierarchy Level",
+			  "id": 727,
+			  "category": {
+				"dateCreated": 1669834292027,
+				"color": {
+
+				},
+				"name": "TestAdd",
+				"id": 492,
+				"dateUpdated": 1669812693803
+			  }
+			}
+
+## Update Level In Hierarchy [PUT]
++ Parameters
+    + id (string) ... ID of the Level/Depth
+	
++ Request (application/json)
+			{
+				"id":{id},
+				"name":"Level1"
+			}
+				
++ Response 200
+			{
+				"dateCreated": 1669815214240,
+				"level": 1,
+				"name": "UpdatedFromPMAN",
+				"id": 730,
+				"category": {
+					"dateCreated": 1669836751583,
+					"color": {},
+					"name": "Newra",
+					"id": 493,
+					"dateUpdated": 1669815266397
+				},
+				"dateUpdated": 1669815401648
+			}
+
+## Delete Level In Hierarchy [DELETE /categories/depths/{id}]
++ Parameters
+    + id (string) ... ID of the Level/Depth
+
++ Response 200
+			{"response":"Successfully removed"}
+			
+
+## Fields [/fields]
+Fields related resources of *iOffice API*
+
++ Model (application/json)
+    JSON representation of the Category	Resource
+
+## Retrieve Fields [GET]
++ Parameters
+    + mappingCode (`categoryDepth or building` )
+	
++ Response 200
+			[
+			  {
+				"displayType": "Input",
+				"code": "description",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Description",
+				"dynamic": false,
+				"id": 395,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom01",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Hello",
+				"dynamic": false,
+				"id": 401,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom02",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom02",
+				"dynamic": false,
+				"id": 402,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom03",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom03",
+				"dynamic": false,
+				"id": 403,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom04",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom04",
+				"dynamic": false,
+				"id": 404,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom05",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom05",
+				"dynamic": false,
+				"id": 405,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom06",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom06",
+				"dynamic": false,
+				"id": 406,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom07",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom07",
+				"dynamic": false,
+				"id": 407,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom08",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom08",
+				"dynamic": false,
+				"id": 408,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom09",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom09",
+				"dynamic": false,
+				"id": 409,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom10",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom10",
+				"dynamic": false,
+				"id": 410,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom11",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom11",
+				"dynamic": false,
+				"id": 411,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom12",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom12",
+				"dynamic": false,
+				"id": 412,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom13",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom13",
+				"dynamic": false,
+				"id": 413,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom14",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom14",
+				"dynamic": false,
+				"id": 414,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  },
+			  {
+				"displayType": "Input",
+				"code": "custom15",
+				"validationAlert": "You must enter a valid value for this field.",
+				"dataType": "TEXT",
+				"options": "{\"password\":false,\"multiline\":false}",
+				"length": 500,
+				"name": "Custom15",
+				"dynamic": false,
+				"id": 415,
+				"mappingCode": "categoryDepth",
+				"required": false
+			  }
+			]
+			
+## Update Field [PUT]
++ Request (application/json)
+			 {
+				"id":385,
+				"name":"My test"
+			}
++ Response 200
+			{
+			  "displayType": "Input",
+			  "code": "custom06",
+			  "validationAlert": "You must enter a valid value for this field.",
+			  "dataType": "TEXT",
+			  "options": "{\"password\":false,\"multiline\":false}",
+			  "length": 500,
+			  "name": "My test ",
+			  "dynamic": false,
+			  "id": 385,
+			  "mappingCode": "building",
+			  "required": false
+			}
+
+
 ## Space Types [/rooms/types]
 Space Types related resources of *iOffice API*
 
