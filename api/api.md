@@ -145,3 +145,5 @@ following these industry best practices.
 <!-- include(endpoints/savedsearch.md) -->
 
 <!-- include(endpoints/space.md) -->
+
+<!-- include(endpoints/centers.md) -->

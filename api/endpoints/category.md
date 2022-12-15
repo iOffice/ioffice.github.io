@@ -41,6 +41,63 @@ Collection of all Categories.
 + Response 200
     [Category Collection][]
 
+### Category Details While Adding Rule [GET /categories/type///{categoryTypeId}/{?limit,selector}]
+
+This API returns category details while adding new rule (after clicking on 'Add Rule' button)
+
++ Parameters
+    + categoryTypeId (optional, number, `1`) ... Category Type Id
+    + limit (optional, number, `79`) ... Reservations List limit to query from
+    + selector (string, `itemCount%2Cdepths`) ... Selector ID (returns exact response with 'itemCount%2Cdepths')
+
++ Response 200
+
+      [
+          {
+              "depths": [
+                  {
+                      "name": "Region",
+                      "id": 44
+                  },
+                  {
+                      "name": "Division",
+                      "id": 90
+                  },
+                  {
+                      "name": "Country",
+                      "id": 46
+                  },
+                  {
+                      "name": "Sub-Region",
+                      "id": 45
+                  }
+              ],
+              "name": "_",
+              "id": 17,
+              "itemCount": 15
+          },
+          {
+              "depths": [
+                  {
+                      "name": "Day",
+                      "id": 646
+                  },
+                  {
+                      "name": "Month",
+                      "id": 644
+                  },
+                  {
+                      "name": "Week",
+                      "id": 645
+                  }
+              ],
+              "name": "April_20",
+              "id": 445,
+              "itemCount": 2
+          },        
+          ...
+      ]
+
 ## Cost Center Category [/categories///{id}]
 A Single Depth object.
 
