@@ -387,3 +387,38 @@ User permission data for a single user
             
 + Response 200
     [User][]
+
+## Logged In User Details [/users/me]
+Details of Logged-In User
+
+### User Specific Info [GET /users/me/{?selector}]
+*'selector' expects email/permissions value in parameter*
+
++ Parameters
+    + selector (optional, string, `email%2CfirstName%2CuserName, permissions(center(module)%2Crole)%2CsiteAdmin`) ... Selector ID
+
++ Response 200
+
+      {
+          "floorWarden": false,
+          "lastName": "Wagh",
+          "color": "#F29373",
+          "userName": "ashitosh.wagh",
+          "passwordResetAttemptsRemaining": 0,
+          "specialNeeds": false,
+          "dateUpdated": 1670333174840,
+          "firstName": "Ashitosh",
+          "dateCreated": 1652274992497,
+          "phone": "1246575001001",
+          "knownAs": "Admin",
+          "passwordResetEmailSentAt": 1667305525963,
+          "name": "Admin Wagh",
+          "id": 3951,
+          "userType": {
+              "dateCreated": 1428954498147,
+              "name": "Employee",
+              "id": 1,
+              "dateUpdated": 1669893659410
+          },
+          "email": "ashitosh.wagh@eptura.com"
+      }
