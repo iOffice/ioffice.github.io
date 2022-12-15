@@ -227,27 +227,3 @@ This API creates/updates/deletes particular rule for Space Type, Center, Space a
          "rules": "{\"centerId\":82,\"ruleList\":[{\"value\":\"1510m\",\"$type$\":\"MaxDuration\"},{\"roomTypeId\":52,\"$type$\":\"OnlyDuringWorkHours\"},{\"roomId\":41932,\"value\":\"1580m\",\"$type$\":\"MaxLeadTime\"},{\"neighborhoodId\":41,\"$type$\":\"IncludeAllMembers\"}]}",
          "id": 82
       }
-
-## Promo Content []
-Promo Content Collection
-
-*Most of the Promo Content related APIs are related to Center section*
-
-### Notification [GET /notifications/{?limit}]
-The following attribute is required to get a Notification: `limit`.
-
-+ Parameters
-    + limit (optional, number, `500`) ... Reservations List limit to query from
-
-+ Response 200
-    []
-
-### Services [GET /system/config/services]
-
-+ Response 200
-
-      {
-          "servicesLocation": "https://services-dev.api.iofficeconnect.com",
-          "websocketsLocation": "wss://ws-dev.api.iofficeconnect.com",
-          "tilesLocation": "https://drawing-tile-default.qa.iofficeconnect.dev/drawings"
-      }

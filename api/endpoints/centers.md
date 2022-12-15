@@ -74,12 +74,16 @@ This API returns the details of a particular center with list of all buildings
         }
 
 ## Center Promo Content [/center///{?module,selector}]
-Promo Content Collection
+Promo Content Collection          
 
-+ Model (application/json)
-  JSON representation of the Promo Content resource.
+### Retrieve Center Promo Content [GET /center///{?module,selector}]
+The following attributes are required to get Promo Content details: `module`, `selector`.
 
-  + Body
++ Parameters
+  + module (string, `reservation`) ... Module name
+  + selector (string, `id%2Cname%2CpromoContent`) ... Selector ID
+
++ Response 200
 
           [
               {
@@ -99,17 +103,6 @@ Promo Content Collection
               }
               ...
           ]
-
-### Retrieve Center Promo Content [GET]
-The following attributes are required to get Promo Content details: `module`, `selector`.
-
-+ Parameters
-  + module (string, `reservation`) ... Module name
-  + selector (string, `id%2Cname%2CpromoContent`) ... Selector ID
-
-+ Response 200
-
-  [Promo Content][]
 
 ### Retrieve Center Name With Promo Content [PUT /centers/promo]
 
