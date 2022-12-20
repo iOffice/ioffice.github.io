@@ -105,3 +105,4 @@ The following attribute is required to create a Building: `name`.
 + Response 201
 
     [Building][]
+
