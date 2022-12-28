@@ -63,7 +63,7 @@ To update a Reservation send JSON with the Reservation's `ID` and updated value 
             }
         }
 
-## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations,startDate,endDate,buildingId,roomId,modifiedOrCreatedAfter}]
+## Reservation Collection [/reservations///{?includeCancelled,includePastReservations,includeNonCancelled,showOnlyMyReservations,startDate,endDate,buildingId,roomId,modifiedOrCreatedAfter,selector,startAt}]
 Collection of all Reservations.
 
 + Model (application/json)
@@ -98,7 +98,9 @@ Collection of all Reservations.
     + buildingId (optional, number, `44`) ... Id of the building to query from
     + limit (optional, number, `500`) ... Reservations List limit to query from
     + roomId (optional, number, `16`) ... Id of the room to query from
-    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
+    + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection
+    + selector (optional, string, `allDay`) ... Selector ID
+    + startAt (optional, number, `0`) ... Start at
 
 + Response 200
     
@@ -127,12 +129,13 @@ The following attributes are required to create a Reservation: `startDate`, `end
 
     [Reservation][]
 
-## Cancel [/reservations///{id}/cancel]
+## Cancel [/reservations///{id}/cancel/{?page}]
 Cancel Reservation
 
 + Parameters
 
-    + id (string) ... ID of the Reservation
+    + id (string, `1111`) ... ID of the Reservation
+    + page (string, `ReservationDetailsPage`) ... Name of page that has reservation listed
 
 ### Cancel Reservation [PUT]
 + Response 200
@@ -184,7 +187,7 @@ Reservation Check Out
 ## Reservation Rules [/rooms/types/count]
 Reservation Rules related resources of *iOffice API*
 
-### Create/Update/Delete Rule [PUT /centers/reservations/rules{?selector}]
+### Create/Update/Delete Rule [PUT /centers/reservations/rules/{?selector}]
 
 This API creates/updates/deletes particular rule for Space Type, Center, Space and Neighbourhood for selected center
 
@@ -228,3 +231,41 @@ This API creates/updates/deletes particular rule for Space Type, Center, Space a
          "rules": "{\"centerId\":82,\"ruleList\":[{\"value\":\"1510m\",\"$type$\":\"MaxDuration\"},{\"roomTypeId\":52,\"$type$\":\"OnlyDuringWorkHours\"},{\"roomId\":41932,\"value\":\"1580m\",\"$type$\":\"MaxLeadTime\"},{\"neighborhoodId\":41,\"$type$\":\"IncludeAllMembers\"}]}",
          "id": 82
       }
+
+## Reservation Queue [/maintenance/priorities/earliestRequiredDate]
+Reservation Queue related resources of *iOffice API*
+
+### Create Ticket Details In Reservation Queue [GET /maintenance/priorities/earliestRequiredDate/{?centerId,typeId}]
+
+This API retrieves the details of ticket to create from Reservation Queue page
+
++ Parameters
+    + centerId (number, `70`) ... Center ID
+    + typeId (number, `215`) ... Type ID
+
++ Response 200
+
+        [
+           {
+              "default": false,
+              "priority": {
+                 "color": {},
+                 "name": "Really Really Slow",
+                 "id": 15,
+                 "colorHex": "ffffff",
+                 "noticeTime": 10000
+              },
+              "earliestRequiredDate": 1673401211549
+           },
+           {
+              "default": false,
+              "priority": {
+                 "color": {},
+                 "name": "Testing",
+                 "id": 16,
+                 "colorHex": "ffffff",
+                 "noticeTime": 0
+              },
+              "earliestRequiredDate": 1671570011557
+           }
++       ]
