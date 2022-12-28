@@ -99,7 +99,7 @@ The following attribute is required to create a Building: `name`.
 + Request (application/json)
 
             {
-                "name": "Headquarters",
+               "name": "Headquarters",
             }
 
 + Response 201

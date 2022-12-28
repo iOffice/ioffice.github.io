@@ -72,3 +72,57 @@ This API returns the details of a particular center with list of all buildings
            "rules": "{\"centerId\":145,\"ruleList\":[{\"roomTypeId\":2,\"$type$\":\"OnlyDuringWorkHours\"}]}",
            "id": 145
         }
+
+## Center Promo Content [/center///{?module,selector}]
+Promo Content Collection          
+
+### Retrieve Center Promo Content [GET /center///{?module,selector}]
+The following attributes are required to get Promo Content details: `module`, `selector`.
+
++ Parameters
+  + module (string, `reservation`) ... Module name
+  + selector (string, `id%2Cname%2CpromoContent`) ... Selector ID
+
++ Response 200
+
+          [
+              {
+                  "promoContent": [],
+                  "name": "Test",
+                  "id": 177
+              },
+              {
+                  "promoContent": [],
+                  "name": "SiteAdmin4388",
+                  "id": 178
+              },
+              {
+                  "promoContent": [],
+                  "name": "SiteAdmin4388",
+                  "id": 179
+              }
+              ...
+          ]
+
+### Retrieve Center Name With Promo Content [PUT /centers/promo]
+
++ Request (application/json)
+
+        {
+           "centerId":82,
+           "promoContent": 
+           [
+              "<p><a href=\"https://www.iofficecorp.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://www.iofficecorp.com/hubfs/2017/Marketplace/ioffice-wheel-2.png?t=1519997685552\"></a></p>",
+              "<p><a href=\"https://www.yahoo.com\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://i.ibb.co/94HpJFj/Screenshot-1.jpg\"></a></p>",
+              "<p><img src=\"https://i.ibb.co/7ktkjr6/Screen-Shot-2021-04-21-at-10-57-10-AM.png\"></p>",
+              "<p><a href=\"https://hq.iofficeconnect.com/home.i#/admin/users\" rel=\"noopener noreferrer\" target=\"_blank\">HQ SIte</a></p>",
+              "<p><img src=\"https://s3.eu-central-1.amazonaws.com/rainforest-random-images/004.jpeg\"></p>"
+          ]
+        }
+
++ Response 200
+
+      {
+          "name": "Reservation Center",
+          "id": 82
+      }

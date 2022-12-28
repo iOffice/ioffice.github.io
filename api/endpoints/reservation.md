@@ -225,8 +225,7 @@ This API creates/updates/deletes particular rule for Space Type, Center, Space a
         }
 
 + Response 200
-
-      {
+      {  
          "name": "Reservation Center",
          "rules": "{\"centerId\":82,\"ruleList\":[{\"value\":\"1510m\",\"$type$\":\"MaxDuration\"},{\"roomTypeId\":52,\"$type$\":\"OnlyDuringWorkHours\"},{\"roomId\":41932,\"value\":\"1580m\",\"$type$\":\"MaxLeadTime\"},{\"neighborhoodId\":41,\"$type$\":\"IncludeAllMembers\"}]}",
          "id": 82
