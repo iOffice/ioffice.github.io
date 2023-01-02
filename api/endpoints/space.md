@@ -37661,9 +37661,10 @@ Devices related resources of *iOffice API*
 ### Retrieve List Of Devices [GET]
 
 + Parameters
-    + deviceType (`WAYFINDING`)
-	+ selector (`deviceStatus(datePaired%2CdatePolled%2CdateUnpaired%2CdateUpdated%2CdeviceId%2CdeviceType%2ClastDiscoverableDate%2ClastPairedByUserId%2ClastUnpairedByUserId%2ClastUpdatedByUserId)%2CdeviceType%2CfloorMarker(floor(building))%2Csettings(campus%2ClegendMinimized%2CmapOrientation(bearing%2Ccenter(lat%2Clng)%2Cpitch%2Czoom)%2Cmodes%2CshowSensorData%2CsiteLogo`)
-
+    + deviceType (optinal, `WAYFINDING`) ... If included, query will return list of devices of given device type
+	+ floorId (optional, int, `1293`) ... If included, query will return list of devices in floor
+	+ selector (optional, `deviceStatus(datePaired%2CdatePolled%2CdateUnpaired%2CdateUpdated%2CdeviceId%2CdeviceType%2ClastDiscoverableDate%2ClastPairedByUserId%2ClastUnpairedByUserId%2ClastUpdatedByUserId)%2CdeviceType%2CfloorMarker(floor(building))%2Csettings(campus%2ClegendMinimized%2CmapOrientation(bearing%2Ccenter(lat%2Clng)%2Cpitch%2Czoom)%2Cmodes%2CshowSensorData%2CsiteLogo`)
+    		
 + Response 200
 			[
 			  {
@@ -39790,54 +39791,6 @@ Devices related resources of *iOffice API*
 			  }
 			]
 
-### List of Devices in Floor [GET]
-+ Parameters
-	+ floorId {int, `1293`}
-	+ selector (`deviceStatus(datePaired%2CdateUnpaired%2CdateUpdated%2CdeviceId%2ClastDiscoverableDate%2ClastPairedByUserId%2ClastUnpairedByUserId%2ClastUpdatedByUserId)%2CdeviceType%2Cenabled%2CfloorMarker(description%2Cposition(x%2Cy)%2Ctype(description%2ChexColor%2CiconUid%2CmarkerTypeGroup(visibleByDefault)))%2Csettings`)
-			
-+ Response 200
-			[
-			  {
-				"deviceType": "WAYFINDING",
-				"settings": {
-
-				},
-				"floorMarker": {
-				  "position": {
-					"x": 1414.88,
-					"y": 146.89
-				  },
-				  "id": 650,
-				  "type": {
-					"hexColor": "BEA5FA",
-					"name": "WAYFINDING",
-					"description": "",
-					"iconUid": "54614",
-					"markerTypeGroup": {
-					  "code": "$@IOFFICE_DEVICES@$",
-					  "visibleByDefault": true,
-					  "name": "iOFFICE Kiosk Devices",
-					  "id": 18
-					},
-					"id": 19
-				  }
-				},
-				"name": "WAYFINDING Device",
-				"id": 234,
-				"enabled": true,
-				"deviceStatus": {
-				  "lastDiscoverableDate": 1660639596326,
-				  "lastPairedByUserId": 3476,
-				  "lastUnpairedByUserId": 3476,
-				  "lastUpdatedByUserId": 3476,
-				  "dateUnpaired": 1660639595556,
-				  "deviceId": 234,
-				  "datePaired": 1660639579480,
-				  "dateUpdated": 1660639596326
-				}
-			  }
-			]		
-
 ### List of Device Types [GET /devices/types]
 
 + Response 200
@@ -39981,91 +39934,4 @@ Devices related resources of *iOffice API*
 			{
 			  "expiresIn": 60,
 			  "startDate": 1670867655990
-			}
-			
-### Place Markers [PUT /floors/markers]
-+ Request (application/json)
-	{
-	  "id": 429,
-	  "position": {
-		"x": 1232.6363636365732,
-		"y": 901.3686868689745
-	  }
-	}
-	
-+ Response 200
-			{
-			  "dateCreated": 1572466544443,
-			  "id": 429,
-			  "dateUpdated": 1670871013942
-			}
-
-### Edit Markers [PUT /floors/markers/types/{id}]
-+ Request (application/json)
-	{
-	  "hexColor": "BEA5FA",
-	  "dateCreated": 1559926966786,
-	  "name": "WAYFINDING",
-	  "description": "",
-	  "iconUid": "ios7:pioneer-wagon",
-	  "markerTypeGroup": {
-		"id": 18
-	  },
-	  "id": 19,
-	  "dateUpdated": 1582233086343
-	}
-	
-+ Response 200
-			{
-			  "hexColor": "BEA5FA",
-			  "dateCreated": 1559926966786,
-			  "name": "WAYFINDING",
-			  "description": "",
-			  "iconUid": "ios7:pioneer-wagon",
-			  "markerTypeGroup": {
-				"code": "$@IOFFICE_DEVICES@$",
-				"dateCreated": 1559926966740,
-				"name": "iOFFICE Kiosk Devices",
-				"id": 18
-			  },
-			  "id": 19,
-			  "dateUpdated": 1670871301387
-			}
-			
-## Building Position [/buildings]
-Configure Building Position On Map related resources of *iOffice API*
-
-+ Model (application/json)
-    JSON representation of the Space Types Resource
-	
-### Update Building Position - Latitude and Longitude [GET /buildings/{id}]
-+ Parameters
-	+ id (int, `128`) ... ID of the Building
-	+ selector (`latitude%2Clongitude%2Caddress(city%2Cstate%2Cstreet%2CpostalCode`)
-
-+ Request  (application/json)
-	{
-	  "id": 128,
-	  "latitude": 30.762166,
-	  "longitude": -95.415838,
-	  "customPosition": true
-	}
-
-+ Response 200
-			{
-			  "address": {
-				"city": "Houston",
-				"street": "5300 Memorial",
-				"postalCode": "77007",
-				"state": {
-				  "code": "TX",
-				  "name": "Texas",
-				  "id": 61
-				}
-			  },
-			  "code": "111",
-			  "latitude": 30.762166,
-			  "name": "iOFFICE HQ",
-			  "id": 128,
-			  "longitude": -95.415838
 			}
