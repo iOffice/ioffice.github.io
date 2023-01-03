@@ -290,7 +290,58 @@ Here, same request type(POST) along with same Endpoint of "Create Layer" are bei
     
 + Response 200
 	
-	{"response":"Successfully removed"}
+    {"response":"Successfully removed"}
+	
+## Markers [/floors/markers]
+
+### Place Markers [PUT]
++ Request (application/json)
+    {
+	  "id": 429,
+	  "position": {
+		  "x": 1232.6363636365732,
+		  "y": 901.3686868689745
+	  }
+	}
+
++ Response 200
+			{
+			  "dateCreated": 1572466544443,
+			  "id": 429,
+			  "dateUpdated": 1670871013942
+			}
+
+### Edit Markers [PUT /floors/markers/types/{id}]
++ Request (application/json)
+	{
+	  "hexColor": "BEA5FA",
+	  "dateCreated": 1559926966786,
+	  "name": "WAYFINDING",
+	  "description": "",
+	  "iconUid": "ios7:pioneer-wagon",
+	  "markerTypeGroup": {
+		"id": 18
+	  },
+	  "id": 19,
+	  "dateUpdated": 1582233086343
+	}
+
++ Response 200
+		    {
+			  "hexColor": "BEA5FA",
+			  "dateCreated": 1559926966786,
+			  "name": "WAYFINDING",
+			  "description": "",
+			  "iconUid": "ios7:pioneer-wagon",
+			  "markerTypeGroup": {
+				  "code": "$@IOFFICE_DEVICES@$",
+				  "dateCreated": 1559926966740,
+				  "name": "iOFFICE Kiosk Devices",
+				  "id": 18
+			  },
+			  "id": 19,
+			  "dateUpdated": 1670871301387
+		    }
 	
 ## Marker Groups [/floors/markers/groups]
 
