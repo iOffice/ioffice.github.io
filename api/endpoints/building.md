@@ -99,10 +99,50 @@ The following attribute is required to create a Building: `name`.
 + Request (application/json)
 
             {
-               "name": "Headquarters",
+                "name": "testbuilding1234",
+                "city": "testcity1",
+                "address": {
+                    "country": {
+                        "id": 223
+                        }
+                     },
+                "state": {
+                    "id": 14
+                }
             }
 
 + Response 201
 
-    [Building][]
-
+        {
+            "address": {
+                "country": {
+                    "defaultSelected": true,
+                    "subdivisionCategoryName": "state",
+                    "alpha2Code": "US",
+                    "isoCode": "US",
+                    "name": "United States of America (the)",
+                    "id": 223
+                },
+                "state": {  
+                    "country": {
+                        "defaultSelected": true,
+                        "subdivisionCategoryName": "state",
+                        "alpha2Code": "US",
+                        "isoCode": "US",
+                        "name": "United States of America (the)",
+                        "id": 223
+                    },
+                    "defaultSelected": false,
+                    "code": "AL",
+                    "name": "Alabama",
+                    "id": 14,
+                    "categoryName": "state"
+                }
+            },
+            "dateCreated": 1675853636984,
+            "metric": false,
+            "name": "testbuilding1234",
+            "location": {},
+            "id": 2121,
+            "costCenters": []
+        }
