@@ -3991,3 +3991,529 @@ Get move tasks
 			  ]
 		   }
 		]
+
+
+## Stacking Diagram [/move/plans]
+Stacking Diagram related resources of *iOffice API*
+
+### Retrieve All Move Plans[GET /move/plans]
+
+This API retrieves the details of all Move Plans from Stacking Diagram Page
+
++ Parameters
+
++ Response 200                
+
+      [
+               {
+                        "depth": {
+                            "code": "co",
+                            "dateCreated": 1181403908747,
+                            "level": 0,
+                            "name": "Company",
+                            "id": 1,
+                            "category": {
+                                "code": "Please do not modify/remove!",
+                                "dateCreated": 1448999612493,
+                                "color": {},
+                                "name": "Default Category",
+                                "id": 1,
+                                "dateUpdated": 1465489481990
+                            }
+                        },
+                        "center": {
+                            "name": "Move Center",
+                            "id": 77
+                        },
+                        "changes": [
+                            {
+                                "categoryItem": {
+                                    "hexColor": "ffffcc",
+                                    "code": "Please do not modify/remove!",
+                                    "dateCreated": 1464968087173,
+                                    "depth": {
+                                        "code": "co",
+                                        "dateCreated": 1181403908747,
+                                        "level": 0,
+                                        "name": "Company",
+                                        "id": 1,
+                                        "category": {
+                                            "code": "Please do not modify/remove!",
+                                            "dateCreated": 1448999612493,
+                                            "color": {},
+                                            "name": "Default Category",
+                                            "id": 1,
+                                            "dateUpdated": 1465489481990
+                                         }
+                                    },
+                                    "color": {},
+                                    "name": "North America",
+                                    "id": 199,
+                                    "category": {
+                                        "code": "Please do not modify/remove!",
+                                        "dateCreated": 1448999612493,
+                                        "color": {},
+                                        "name": "Default Category",
+                                        "id": 1,
+                                        "dateUpdated": 1465489481990
+                                    },
+                                    "dateUpdated": 1464988286367
+                                },
+                                "toFloor": {
+                                    "area": 19662.6148,
+                                    "meRatio": 1.75,
+                                    "dateCreated": 1522704303613,
+                                    "drawingAvailable": true,
+                                    "interiorGross": 0.0,
+                                    "name": "2",
+                                    "leaseArea": 0.0,
+                                    "id": 50,
+                                    "building": {
+                                        "meRatio": 2.5,
+                                        "code": "VIEW",
+                                        "address": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "city": "Houston",
+                                            "street": "901 Bagby St",
+                                            "postalCode": "77002",
+                                            "state": {
+                                                "country": {
+                                                    "defaultSelected": true,
+                                                    "subdivisionCategoryName": "state",
+                                                    "alpha2Code": "US",
+                                                    "isoCode": "US",
+                                                    "name": "United States of America (the)",
+                                                    "id": 223
+                                                },
+                                                "defaultSelected": false,
+                                                "code": "TX",
+                                                "name": "Texas",
+                                                "id": 61,
+                                                "categoryName": "state"
+                                            }
+                                        },
+                                        "dateCreated": 1473436298227,
+                                        "metric": false,
+                                        "name": "View Only",
+                                        "location": {},
+                                        "revitLink": "",
+                                        "id": 65,
+                                        "weRatio": 1.75,
+                                        "dateUpdated": 1674812048407,
+                                        "costCenters": []
+                                    },
+                                    "dateUpdated": 1600271522433
+                                },
+                                "fromFloor": {
+                                    "area": 15338.417,
+                                    "meRatio": 1.65,
+                                    "dateCreated": 1473436298897,
+                                    "drawingAvailable": true,
+                                    "interiorGross": 0.0,
+                                    "name": "1",
+                                    "leaseArea": 0.0,
+                                    "id": 41,
+                                    "weRatio": 0.95,
+                                    "building": {
+                                        "meRatio": 2.5,
+                                        "code": "VIEW",
+                                        "address": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "city": "Houston",
+                                            "street": "901 Bagby St",
+                                            "postalCode": "77002",
+                                            "state": {
+                                                "country": {
+                                                    "defaultSelected": true,
+                                                    "subdivisionCategoryName": "state",
+                                                    "alpha2Code": "US",
+                                                    "isoCode": "US",
+                                                    "name": "United States of America (the)",
+                                                    "id": 223
+                                                },
+                                                "defaultSelected": false,
+                                                "code": "TX",
+                                                "name": "Texas",
+                                                "id": 61,
+                                                "categoryName": "state"
+                                            }
+                                        },
+                                        "dateCreated": 1473436298227,
+                                        "metric": false,
+                                        "name": "View Only",
+                                        "location": {},
+                                        "revitLink": "",
+                                        "id": 65,
+                                        "weRatio": 1.75,
+                                        "dateUpdated": 1674812048407,
+                                        "costCenters": []
+                                    },
+                                    "dateUpdated": 1600271479847
+                                },
+                                "id": 5
+                            }
+                        ],
+                        "name": "Master Plan - DO NOT DELETE",
+                        "id": 1,
+                        "dateUpdated": 1669296962620,
+                        "forecasts": [
+                            {
+                                "categoryItem": {
+                                    "hexColor": "ffffcc",
+                                    "code": "Please do not modify/remove!",
+                                    "dateCreated": 1464968087173,
+                                    "depth": {
+                                        "code": "co",
+                                        "dateCreated": 1181403908747,
+                                        "level": 0,
+                                        "name": "Company",
+                                        "id": 1,
+                                        "category": {
+                                            "code": "Please do not modify/remove!",
+                                            "dateCreated": 1448999612493,
+                                            "color": {},
+                                            "name": "Default Category",
+                                            "id": 1,
+                                            "dateUpdated": 1465489481990
+                                        }
+                                    },
+                                    "color": {},
+                                    "name": "North America",
+                                    "id": 199,
+                                    "category": {
+                                        "code": "Please do not modify/remove!",
+                                        "dateCreated": 1448999612493,
+                                        "color": {},
+                                        "name": "Default Category",
+                                        "id": 1,
+                                        "dateUpdated": 1465489481990
+                                    },
+                                    "dateUpdated": 1464988286367
+                                },
+                                "dateCreated": 1669296962617,
+                                "percentageBased": false,
+                                "categoryMemberCount": 50,
+                                "id": 388,
+                                "building": {
+                                    "meRatio": 2.5,
+                                    "code": "VIEW",
+                                    "address": {
+                                        "country": {
+                                            "defaultSelected": true,
+                                            "subdivisionCategoryName": "state",
+                                            "alpha2Code": "US",
+                                            "isoCode": "US",
+                                            "name": "United States of America (the)",
+                                            "id": 223
+                                        },
+                                        "city": "Houston",
+                                        "street": "901 Bagby St",
+                                        "postalCode": "77002",
+                                        "state": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "defaultSelected": false,
+                                            "code": "TX",
+                                            "name": "Texas",
+                                            "id": 61,
+                                            "categoryName": "state"
+                                        }
+                                    },
+                                    "dateCreated": 1473436298227,
+                                    "metric": false,
+                                    "name": "View Only",
+                                    "location": {},
+                                    "revitLink": "",
+                                    "id": 65,
+                                    "weRatio": 1.75,
+                                    "dateUpdated": 1674812048407,
+                                    "costCenters": []
+                                },
+                                "growthValue": 5
+                            }
+                        ]
+              } 
+              ...
+      ]
+
+### Retrieve single Move Plan [GET /move/plans/{planId}]
+
+This API retrieves the details of single Move Plan from Stacking Diagram Page
+
++ Parameters
+    + planId (number, `70`) ... Plan ID
+
++ Response 200
+
+               {
+                        "depth": {
+                            "code": "co",
+                            "dateCreated": 1181403908747,
+                            "level": 0,
+                            "name": "Company",
+                            "id": 1,
+                            "category": {
+                                "code": "Please do not modify/remove!",
+                                "dateCreated": 1448999612493,
+                                "color": {},
+                                "name": "Default Category",
+                                "id": 1,
+                                "dateUpdated": 1465489481990
+                            }
+                        },
+                        "center": {
+                            "name": "Move Center",
+                            "id": 77
+                        },
+                        "changes": [
+                            {
+                                "categoryItem": {
+                                    "hexColor": "ffffcc",
+                                    "code": "Please do not modify/remove!",
+                                    "dateCreated": 1464968087173,
+                                    "depth": {
+                                        "code": "co",
+                                        "dateCreated": 1181403908747,
+                                        "level": 0,
+                                        "name": "Company",
+                                        "id": 1,
+                                        "category": {
+                                            "code": "Please do not modify/remove!",
+                                            "dateCreated": 1448999612493,
+                                            "color": {},
+                                            "name": "Default Category",
+                                            "id": 1,
+                                            "dateUpdated": 1465489481990
+                                         }
+                                    },
+                                    "color": {},
+                                    "name": "North America",
+                                    "id": 199,
+                                    "category": {
+                                        "code": "Please do not modify/remove!",
+                                        "dateCreated": 1448999612493,
+                                        "color": {},
+                                        "name": "Default Category",
+                                        "id": 1,
+                                        "dateUpdated": 1465489481990
+                                    },
+                                    "dateUpdated": 1464988286367
+                                },
+                                "toFloor": {
+                                    "area": 19662.6148,
+                                    "meRatio": 1.75,
+                                    "dateCreated": 1522704303613,
+                                    "drawingAvailable": true,
+                                    "interiorGross": 0.0,
+                                    "name": "2",
+                                    "leaseArea": 0.0,
+                                    "id": 50,
+                                    "building": {
+                                        "meRatio": 2.5,
+                                        "code": "VIEW",
+                                        "address": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "city": "Houston",
+                                            "street": "901 Bagby St",
+                                            "postalCode": "77002",
+                                            "state": {
+                                                "country": {
+                                                    "defaultSelected": true,
+                                                    "subdivisionCategoryName": "state",
+                                                    "alpha2Code": "US",
+                                                    "isoCode": "US",
+                                                    "name": "United States of America (the)",
+                                                    "id": 223
+                                                },
+                                                "defaultSelected": false,
+                                                "code": "TX",
+                                                "name": "Texas",
+                                                "id": 61,
+                                                "categoryName": "state"
+                                            }
+                                        },
+                                        "dateCreated": 1473436298227,
+                                        "metric": false,
+                                        "name": "View Only",
+                                        "location": {},
+                                        "revitLink": "",
+                                        "id": 65,
+                                        "weRatio": 1.75,
+                                        "dateUpdated": 1674812048407,
+                                        "costCenters": []
+                                    },
+                                    "dateUpdated": 1600271522433
+                                },
+                                "fromFloor": {
+                                    "area": 15338.417,
+                                    "meRatio": 1.65,
+                                    "dateCreated": 1473436298897,
+                                    "drawingAvailable": true,
+                                    "interiorGross": 0.0,
+                                    "name": "1",
+                                    "leaseArea": 0.0,
+                                    "id": 41,
+                                    "weRatio": 0.95,
+                                    "building": {
+                                        "meRatio": 2.5,
+                                        "code": "VIEW",
+                                        "address": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "city": "Houston",
+                                            "street": "901 Bagby St",
+                                            "postalCode": "77002",
+                                            "state": {
+                                                "country": {
+                                                    "defaultSelected": true,
+                                                    "subdivisionCategoryName": "state",
+                                                    "alpha2Code": "US",
+                                                    "isoCode": "US",
+                                                    "name": "United States of America (the)",
+                                                    "id": 223
+                                                },
+                                                "defaultSelected": false,
+                                                "code": "TX",
+                                                "name": "Texas",
+                                                "id": 61,
+                                                "categoryName": "state"
+                                            }
+                                        },
+                                        "dateCreated": 1473436298227,
+                                        "metric": false,
+                                        "name": "View Only",
+                                        "location": {},
+                                        "revitLink": "",
+                                        "id": 65,
+                                        "weRatio": 1.75,
+                                        "dateUpdated": 1674812048407,
+                                        "costCenters": []
+                                    },
+                                    "dateUpdated": 1600271479847
+                                },
+                                "id": 5
+                            }
+                        ],
+                        "name": "Master Plan - DO NOT DELETE",
+                        "id": 1,
+                        "dateUpdated": 1669296962620,
+                        "forecasts": [
+                            {
+                                "categoryItem": {
+                                    "hexColor": "ffffcc",
+                                    "code": "Please do not modify/remove!",
+                                    "dateCreated": 1464968087173,
+                                    "depth": {
+                                        "code": "co",
+                                        "dateCreated": 1181403908747,
+                                        "level": 0,
+                                        "name": "Company",
+                                        "id": 1,
+                                        "category": {
+                                            "code": "Please do not modify/remove!",
+                                            "dateCreated": 1448999612493,
+                                            "color": {},
+                                            "name": "Default Category",
+                                            "id": 1,
+                                            "dateUpdated": 1465489481990
+                                        }
+                                    },
+                                    "color": {},
+                                    "name": "North America",
+                                    "id": 199,
+                                    "category": {
+                                        "code": "Please do not modify/remove!",
+                                        "dateCreated": 1448999612493,
+                                        "color": {},
+                                        "name": "Default Category",
+                                        "id": 1,
+                                        "dateUpdated": 1465489481990
+                                    },
+                                    "dateUpdated": 1464988286367
+                                },
+                                "dateCreated": 1669296962617,
+                                "percentageBased": false,
+                                "categoryMemberCount": 50,
+                                "id": 388,
+                                "building": {
+                                    "meRatio": 2.5,
+                                    "code": "VIEW",
+                                    "address": {
+                                        "country": {
+                                            "defaultSelected": true,
+                                            "subdivisionCategoryName": "state",
+                                            "alpha2Code": "US",
+                                            "isoCode": "US",
+                                            "name": "United States of America (the)",
+                                            "id": 223
+                                        },
+                                        "city": "Houston",
+                                        "street": "901 Bagby St",
+                                        "postalCode": "77002",
+                                        "state": {
+                                            "country": {
+                                                "defaultSelected": true,
+                                                "subdivisionCategoryName": "state",
+                                                "alpha2Code": "US",
+                                                "isoCode": "US",
+                                                "name": "United States of America (the)",
+                                                "id": 223
+                                            },
+                                            "defaultSelected": false,
+                                            "code": "TX",
+                                            "name": "Texas",
+                                            "id": 61,
+                                            "categoryName": "state"
+                                        }
+                                    },
+                                    "dateCreated": 1473436298227,
+                                    "metric": false,
+                                    "name": "View Only",
+                                    "location": {},
+                                    "revitLink": "",
+                                    "id": 65,
+                                    "weRatio": 1.75,
+                                    "dateUpdated": 1674812048407,
+                                    "costCenters": []
+                                },
+                                "growthValue": 5
+                            }
+                        ]
+              } 
+
+      
+
+ 
