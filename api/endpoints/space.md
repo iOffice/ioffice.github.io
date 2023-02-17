@@ -39935,3 +39935,469 @@ Devices related resources of *iOffice API*
 			  "expiresIn": 60,
 			  "startDate": 1670867655990
 			}
+			
+## Sensors [/sensors]
+
+### Retrieve Sensors [GET]
+	
++ Response 200
+			[
+			  {
+				"uid": "@031915ff-fbac-446b-ae3d-911d8c7e5ba0",
+				"name": "54 phone room (suite 3)",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				}
+			  },
+			  {
+				"uid": "@0f018303-33d6-4de6-b392-b8520e24948f",
+				"name": "62 wkst",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				}
+			  },
+			  {
+				"uid": "1007706",
+				"name": "44 Manuel",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007707",
+				"name": "46 Cameron",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007708",
+				"name": "48 Mykal",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007710",
+				"name": "47 Victor",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007712",
+				"name": "49 Natalia",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007725",
+				"name": "50 wkst (Patrick)",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007726",
+				"name": "51 Jason",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007728",
+				"name": "52 kitchen",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007730",
+				"name": "56 lounge by the quiet room",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "1007731",
+				"name": "58 lounge by the window st 3",
+				"type": {
+				  "id": "UTI_LIVE_MOTION",
+				  "name": "UtilLive Motion Sensor"
+				}
+			  },
+			  {
+				"uid": "123",
+				"name": "test",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				}
+			  },
+			  {
+				"uid": "12311111",
+				"name": "",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				},
+				"currentValue": 0,
+				"readType": "utilization",
+				"lastSensorChangeDate": "2020-01-13T20:38:03Z"
+			  },
+			  {
+				"uid": "123123",
+				"name": "",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				},
+				"currentValue": 0,
+				"readType": "utilization",
+				"lastSensorChangeDate": "2020-02-27T16:20:55Z"
+			  },
+			  {
+				"uid": "12345",
+				"name": "testing",
+				"type": {
+				  "id": "HELIUM_GREEN",
+				  "name": "Helium Green Sensor"
+				}
+			  },
+			  {
+				"uid": "897987",
+				"name": "",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				},
+				"currentValue": 0,
+				"readType": "utilization",
+				"lastSensorChangeDate": "2020-02-26T21:43:40Z"
+			  },
+			  {
+				"uid": "kenton",
+				"name": "test",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				}
+			  },
+			  {
+				"uid": "pizza",
+				"name": "",
+				"type": {
+				  "id": "GE_OCCUPANCY",
+				  "name": "General Electric Occupancy Sensor"
+				},
+				"currentValue": 0,
+				"readType": "utilization",
+				"lastSensorChangeDate": "2020-02-26T21:43:28Z"
+			  }
+			]
+
+### Retrieve Sensor Types [GET /sensors/types]
+	
++ Response 200
+			{
+			  "status": "ok",
+			  "response": [
+				{
+				  "id": "HELIUMGREEN",
+				  "name": "Helium Green",
+				  "sensorTypes": [
+					{
+					  "id": "HELIUM_GREEN",
+					  "name": "Helium Green Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "IACONNECTS",
+				  "name": "iaConnects",
+				  "sensorTypes": [
+					{
+					  "id": "IA_UTILIZATION",
+					  "name": "IAConnects Utilization Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "COWORKR",
+				  "name": "CoWorkr",
+				  "sensorTypes": [
+					{
+					  "id": "COWORKR_OCCUPANCY",
+					  "name": "CoWorkr Occupancy Sensor"
+					},
+					{
+					  "id": "COWORKR_PEOPLE_COUNT",
+					  "name": "CoWorkr People Count Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "VERGESENSE",
+				  "name": "Vergesense",
+				  "sensorTypes": [
+					{
+					  "id": "VERGESENSE",
+					  "name": "VergeSense People Count Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "CURRENT",
+				  "name": "Current",
+				  "sensorTypes": [
+					{
+					  "id": "GE_OCCUPANCY",
+					  "name": "General Electric Occupancy Sensor"
+					},
+					{
+					  "id": "GE_PEOPLE_COUNT",
+					  "name": "General Electric People Count Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "IBEACON",
+				  "name": "iBeacon",
+				  "sensorTypes": [
+					{
+					  "id": "IBEACON",
+					  "name": "iBeacon"
+					}
+				  ]
+				},
+				{
+				  "id": "UTILIVE",
+				  "name": "UtiLive",
+				  "sensorTypes": [
+					{
+					  "id": "UTI_LIVE_MOTION",
+					  "name": "UtilLive Motion Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "WORKPLACEFABRIC",
+				  "name": "Workplace Fabric",
+				  "sensorTypes": [
+					{
+					  "id": "WORKPLACE_FABRIC",
+					  "name": "Workplace Fabric Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "RADIANT",
+				  "name": "Radiant",
+				  "sensorTypes": [
+					{
+					  "id": "RADIANT_OCCUPANCY",
+					  "name": "Radiant Occupancy Sensor"
+					}
+				  ]
+				},
+				{
+				  "id": "EMBRAVA",
+				  "name": "Embrava",
+				  "sensorTypes": [
+					{
+					  "id": "EMBRAVA_DESK_SIGN",
+					  "name": "Embrava Desk Sign"
+					}
+				  ]
+				}
+			  ]
+			}
+### Retrieve Sensor Rooms [GET /sensors/rooms]
++ Parameters
+    + activeNow (boolean, `true`)
+
++ Response 200
+			{
+			  "status": "ok",
+			  "response": [
+				{
+				  "roomId": 80426,
+				  "links": [
+					{
+					  "sensorUid": "12345",
+					  "sensorType": {
+						"id": "HELIUM_GREEN",
+						"name": "Helium Green Sensor"
+					  },
+					  "notes": "testing",
+					  "linkStart": "2022-12-12T07:19:17Z"
+					}
+				  ]
+				},
+				{
+				  "roomId": 77468,
+				  "links": [
+					{
+					  "sensorUid": "897987",
+					  "sensorType": {
+						"id": "GE_OCCUPANCY",
+						"name": "General Electric Occupancy Sensor"
+					  },
+					  "notes": "",
+					  "linkStart": "2020-02-26T21:43:28Z"
+					}
+				  ]
+				},
+				{
+				  "roomId": 79782,
+				  "links": [
+					{
+					  "sensorUid": "12311111",
+					  "sensorType": {
+						"id": "GE_OCCUPANCY",
+						"name": "General Electric Occupancy Sensor"
+					  },
+					  "notes": "",
+					  "linkStart": "2020-01-13T20:38:03Z"
+					}
+				  ]
+				},
+				{
+				  "roomId": 77475,
+				  "links": [
+					{
+					  "sensorUid": "123123",
+					  "sensorType": {
+						"id": "GE_OCCUPANCY",
+						"name": "General Electric Occupancy Sensor"
+					  },
+					  "notes": "",
+					  "linkStart": "2020-02-27T16:20:55Z"
+					}
+				  ]
+				}
+			  ]
+			}
+			
+### Add/Move/Deallocate Sensor [POST /sensors/rooms]
+
+Request response for Add/Move Sensor:
+
++ Request (application/json)
+			{
+			  "roomId": 80144,
+			  "links": [
+				{
+				  "sensorUid": "0909",
+				  "notes": "Test",
+				  "vendor": {
+					"id": "IBEACON",
+					"name": "iBeacon",
+					"sensorTypes": [
+					  {
+						"id": "IBEACON",
+						"name": "iBeacon"
+					  }
+					]
+				  },
+				  "sensorType": {
+					"id": "IBEACON",
+					"name": "iBeacon"
+				  }
+				}
+			  ]
+			}
+						
++ Response 200
+			{
+			  "status": "ok",
+			  "response": {
+				"roomId": 80144,
+				"links": [
+				  {
+					"sensorUid": "0909",
+					"sensorType": {
+					  "id": "IBEACON",
+					  "name": "iBeacon"
+					},
+					"notes": "Test",
+					"linkStart": "2023-01-10T15:58:59Z"
+				  }
+				]
+			  }
+			}
+			
+Request response for Deallocate Sensor:
++ Request (application/json)
+			{
+			  "roomId": 80144,
+			  "links": [
+
+			  ]
+			}
+			
++ Response 200			
+			{
+			  "status": "ok",
+			  "response": {
+				"roomId": 80144,
+				"links": [
+
+				]
+			  }
+			}
+		
+### Update Sensor [PUT /sensors]
++ Request (application/json)
+			{
+			  "uid": "0909",
+			  "name": "TestEdit",
+			  "type": {
+				"id": "IBEACON"
+			  }
+			}
+
++ Response 200
+			{
+			  "status": "ok",
+			  "response": 1
+			}
+			
+### Retrieve Sensor Live Room Data [GET /sensors/live-room-utilization]
+
++ Parameters
+    + floorId (int, `408`) ... ID of the floor
+
++ Response 200
+			{
+			  "status": "ok",
+			  "response": {
+
+			  }
+			}
+			
+### Retrieve Sensor Live Room People Count [GET /sensors/live-room-people-count]
+
++ Parameters
+    + floorId (int, `408`) ... ID of the floor
+	+ aggregate (`max`)
+
++ Response 200	
+			{
+			  "status": "ok",
+			  "response": {
+
+			  }
+			}
