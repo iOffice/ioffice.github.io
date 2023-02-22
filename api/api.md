@@ -147,3 +147,5 @@ following these industry best practices.
 <!-- include(endpoints/space.md) -->
 
 <!-- include(endpoints/centers.md) -->
+
+<!-- include(endpoints/neighborhoods.md) -->
