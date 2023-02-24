@@ -4514,6 +4514,226 @@ This API retrieves the details of single Move Plan from Stacking Diagram Page
                         ]
               } 
 
+### Create a Move Plan [POST /move/plans]
+The following attributes are required to create a Move Plan
+
++ Request (application/json)
+
+          {
+            "name": "Rainforest SiteAdmin1234's Plan",
+            "center": {
+                "id": 77
+            },
+            "depth": {
+                "id": 1
+            },
+            "changes": []
+          }
+
++ Response 201
+    + Body
+
+          {
+              "dateCreated": 1677060275338,
+              "depth": {
+                  "code": "co",
+                  "dateCreated": 1181403908747,
+                  "level": 0,
+                  "name": "Company",
+                  "id": 1,
+                  "category": {
+                      "code": "Please do not modify/remove!",
+                      "dateCreated": 1448999612493,
+                      "color": {},
+                      "name": "Default Category",
+                      "id": 1,
+                      "dateUpdated": 1465489481990
+                  }
+              },
+              "center": {
+                  "name": "Move Center",
+                  "id": 77
+              },
+              "changes": [],
+              "name": "Rainforest SiteAdmin1234's Plan",
+              "id": 288,
+              "forecasts": []
+          }
+
+### Edit a Move Plan [PUT /move/plans/{id}]
+The following attributes are required to edit a Move Plan
+
++ Parameters
+
+    + id (string, `287`) ... ID of the Move Plan
+
+      + Request (application/json)
+
+                {
+                    "depth": {
+                        "id": 1
+                    },
+                    "center": {
+                        "id": 77
+                    },
+                    "changes": [],
+                    "name": "Rainforest SiteAdmin12345's Plan",
+                    "dateUpdated": 1677060099650,
+                    "forecasts": [
+                        {
+                            "categoryItem": {
+                                "hexColor": "ffffcc",
+                                "depth": {
+                                    "code": "co",
+                                    "level": 0,
+                                    "name": "Company",
+                                    "id": 1
+                                },
+                                "code": "Please do not modify/remove!",
+                                "name": "North America",
+                                "id": 199,
+                                "parents": []
+                            },
+                            "categoryMemberCount": 111,
+                            "percentageBased": false,
+                            "id": 791,
+                            "building": {
+                                "code": "DO NOT REMOVE",
+                                "name": "Move",
+                                "id": 43
+                            },
+                            "growthValue": 6
+                        }
+                    ]
+                }
+             
+          
+
++ Response 201
+    + Body
+        
+          {
+              "dateCreated": 1677081698810,
+              "depth": {
+                  "code": "co",
+                  "dateCreated": 1181403908747,
+                  "level": 0,
+                  "name": "Company",
+                  "id": 1,
+                  "category": {
+                      "code": "Please do not modify/remove!",
+                      "dateCreated": 1448999612493,
+                      "color": {},
+                      "name": "Default Category",
+                      "id": 1,
+                      "dateUpdated": 1465489481990
+                  }
+              },
+              "center": {
+                  "name": "Move Center",
+                  "id": 77
+              },
+              "changes": [],
+              "name": "Rainforest SiteAdmin12345's Plan",
+              "id": 287,
+              "dateUpdated": 1677062340838,
+              "forecasts": [
+                  {
+                      "categoryItem": {
+                          "hexColor": "ffffcc",
+                          "code": "Please do not modify/remove!",
+                          "dateCreated": 1464968087173,
+                          "depth": {
+                              "code": "co",
+                              "dateCreated": 1181403908747,
+                              "level": 0,
+                              "name": "Company",
+                              "id": 1,
+                              "category": {
+                                  "code": "Please do not modify/remove!",
+                                  "dateCreated": 1448999612493,
+                                  "color": {},
+                                  "name": "Default Category",
+                                  "id": 1,
+                                  "dateUpdated": 1465489481990
+                              }
+                          },
+                          "color": {},
+                          "name": "North America",
+                          "id": 199,
+                          "category": {
+                              "code": "Please do not modify/remove!",
+                              "dateCreated": 1448999612493,
+                              "color": {},
+                              "name": "Default Category",
+                              "id": 1,
+                              "dateUpdated": 1465489481990
+                          },
+                          "dateUpdated": 1464988286367
+                      },
+                      "dateCreated": 1677060099647,
+                      "percentageBased": false,
+                      "categoryMemberCount": 111,
+                      "id": 791,
+                      "building": {
+                          "code": "DO NOT REMOVE",
+                          "address": {
+                              "country": {
+                                  "defaultSelected": true,
+                                  "subdivisionCategoryName": "state",
+                                  "alpha2Code": "US",
+                                  "isoCode": "US",
+                                  "name": "United States of America (the)",
+                                  "id": 223
+                              },
+                              "city": "Houston",
+                              "street": "901 Bagby St",
+                              "postalCode": "77002",
+                              "state": {
+                                  "country": {
+                                      "defaultSelected": true,
+                                      "subdivisionCategoryName": "state",
+                                      "alpha2Code": "US",
+                                      "isoCode": "US",
+                                      "name": "United States of America (the)",
+                                      "id": 223
+                                  },
+                                  "defaultSelected": false,
+                                  "code": "TX",
+                                  "name": "Texas",
+                                  "id": 61,
+                                  "categoryName": "state"
+                              }
+                          },
+                          "dateCreated": 1107466065320,
+                          "metric": false,
+                          "name": "Move",
+                          "leaseArea": 6000.0,
+                          "location": {},
+                          "revitLink": "https://a360.co/2IHVNN4",
+                          "id": 43,
+                          "dateUpdated": 1677019827810,
+                          "costCenters": []
+                      },
+                      "growthValue": 6
+                  }
+              ]
+          }
+
+### Remove a Move Plan [DELETE /move/plans/{id}]
++ Parameters
+
+    + id (string, `287`) ... ID of the Move Plan
+
++ Response 200
+
+        {
+          "response": "Successfully removed"
+        }
+
+
+          
+
       
 
  
