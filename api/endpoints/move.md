@@ -4514,6 +4514,222 @@ This API retrieves the details of single Move Plan from Stacking Diagram Page
                         ]
               } 
 
-      
+## Move Approvals [/approvals]
+Move Approvals related resources of *iOffice API*
 
- 
+### Retrieve Move Statuses[GET /approvals]
+
+This API retrieves the details of all Move Statuses from Move Approvals Page
+
++ Response 200
+
+          [
+              {
+                  "approvalTemplate": {
+                      "notification": {
+                          "dateCreated": 1663143588283,
+                          "id": 27,
+                          "dateUpdated": 1663584320782
+                      },
+                      "dateCreated": 1663143588280,
+                      "color": "#CCCCCC",
+                      "approvalType": "move",
+                      "center": {
+                          "name": "Move Center",
+                          "id": 77
+                      },
+                      "name": "Automation 123",
+                      "trigger": {
+                          "dateCreated": 1663143588280,
+                          "id": 53,
+                          "matchingType": "ALL",
+                          "dateUpdated": 1663584320782
+                      },
+                      "id": 53,
+                      "dateUpdated": 1663584320781
+                  },
+                  "currentStep": {
+                      "dateCreated": 1663157539846,
+                      "rule": "ALL",
+                      "id": 2
+                  },
+                  "notification": {
+                      "dateCreated": 1663157539860,
+                      "id": 1,
+                      "notificationUsers": []
+                  },
+                  "dateCreated": 1663157539853,
+                  "approvalType": "move",
+                  "center": {
+                      "name": "Move Center",
+                      "id": 77
+                  },
+                  "id": 2,
+                  "steps": [
+                      {
+                          "dateCreated": 1663157539846,
+                          "rule": "ALL",
+                          "id": 2
+                      }
+                  ]
+              }
+              ...
+          ]
+
+### Retrieve Move Templates[GET /approvals/templates]
+
+This API retrieves the details of all Move Templates from Move Approvals Page
+
++ Response 200
+
+      [
+        {
+            "dateCreated": 1605767288423,
+            "color": "#f1b2b2",
+            "approvalType": "move",
+            "center": {
+                "name": "Move Center",
+                "id": 77
+            },
+            "name": "Size > 10",
+            "trigger": {
+                "dateCreated": 1605767288410,
+                "id": 1,
+                "matchingType": "ALL"
+            },
+            "id": 1,
+            "dateUpdated": 1677106870244
+        },
+        {
+            "dateCreated": 1605767382263,
+            "color": "#f1c4a7",
+            "approvalType": "move",
+            "center": {
+                "name": "Move Center",
+                "id": 77
+            },
+            "name": "Location = Move",
+            "trigger": {
+                "dateCreated": 1605767382260,
+                "id": 2,
+                "matchingType": "ALL"
+            },
+            "id": 2,
+            "dateUpdated": 1677106870284
+        }
+        ...
+      ]
+
+### Create a Move Template [POST /approvals/templates]
+The following attributes are required to create a Move Template
+
++ Request (application/json)
+
+          {
+            "color": "#72634c",
+            "name": "demo",
+            "steps": [
+                {
+                    "groups": [
+                        {
+                            "approverGroup": {
+                                "groupType": "ANYADM",
+                                "center": {
+                                    "name": "Move Center",
+                                    "id": 77
+                                }
+                            }
+                        }
+                    ],
+                    "rule": "ANY",
+                    "groupType": "ANYADM"
+                }
+            ],
+            "trigger": {
+                "conditions": [
+                    {
+                        "property": "cost",
+                        "qualifier": "IS_GREATER_THAN",
+                        "value": "1"
+                    }
+                ]
+            },
+            "notification": {
+            "id": null
+            },
+            "center": {
+                "id": 77
+            },
+            "sortOrder": 12,
+            "approvalType": "move"
+          }
+
++ Response 201
+    + Body
+
+          {
+              "notification": {
+                  "dateCreated": 1677136556453,
+                  "id": 356
+              },
+              "dateCreated": 1677136556431,
+              "color": "#72634c",
+              "approvalType": "move",
+              "center": {
+                  "name": "Move Center",
+                  "id": 77
+              },
+              "name": "demo",
+              "trigger": {
+                  "dateCreated": 1677136556452,
+                  "id": 382,
+                  "matchingType": "ALL"
+              },
+              "id": 382
+          }
+
+### Edit a Move Template [PUT /approvals/templates]
+The following attributes are required to edit a Move Template
+
++ Request (application/json)
+
+                 {
+                    "id": 381,
+                    "name": "demo1"
+                 }
+
++ Response 200
+    + Body
+
+          {
+                "notification": {
+                    "dateCreated": 1677136321256,
+                    "id": 355
+                },
+                "dateCreated": 1677136321250,
+                "color": "#72634c",
+                "approvalType": "move",
+                "center": {
+                    "name": "Move Center",
+                    "id": 77
+                },
+                "name": "demo1",
+                "trigger": {
+                    "dateCreated": 1677136321240,
+                    "id": 381,
+                    "matchingType": "ALL"
+                },
+                "id": 381,
+                "dateUpdated": 1677138128472
+          }
+
+### Remove a Move Template [DELETE /approvals/templates/{id}]
++ Parameters
+
+    + id (string, `287`) ... ID of the Move Template
+
++ Response 200
+
+        {
+          "response": "Successfully removed"
+        }
