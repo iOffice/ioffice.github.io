@@ -578,10 +578,198 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
         
 ## Archive a Move Request [POST /move/requests///{id}/archive]
 + Parameters
-    + id (string) ... ID of the move request
-+ Response 200
++ id (string) ... ID of the move request
 
-		{ }
++ Request (application/json)
+                            
+        {}
+
++ Response 200
+  + Body
+
+            {
+                "date": 1582845814050,
+                "requester": {
+                    "costCenter1": "",
+                    "lastName": "Customer28",
+                    "extension": "",
+                    "color": "#974B71",
+                    "passwordResetAttemptsRemaining": 3,
+                    "specialNeeds": false,
+                    "custom20": "",
+                    "custom22": "",
+                    "custom21": "",
+                    "custom24": "",
+                    "custom23": "",
+                    "dateCreated": 1465574697757,
+                    "custom26": "",
+                    "custom25": "",
+                    "knownAs": "",
+                    "custom28": "",
+                    "custom27": "",
+                    "custom29": "",
+                    "company": "",
+                    "id": 15624,
+                    "costCenter2": "North America",
+                    "email": "customer28@e.rainforestqa.com",
+                    "floorWarden": false,
+                    "comments": "",
+                    "costCenter": {
+                        "hexColor": "ffffcc",
+                        "code": "Please do not modify/remove!",
+                        "dateCreated": 1464968087173,
+                        "depth": {
+                            "code": "co",
+                            "dateCreated": 1181403908747,
+                            "level": 0,
+                            "name": "Company",
+                            "id": 1,
+                            "category": {
+                                "code": "Please do not modify/remove!",
+                                "dateCreated": 1448999612493,
+                                "color": {},
+                                "name": "Default Category",
+                                "id": 1,
+                                "dateUpdated": 1465489481990
+                            }
+                        },
+                        "color": {},
+                        "name": "North America",
+                        "id": 199,
+                        "category": {
+                            "code": "Please do not modify/remove!",
+                            "dateCreated": 1448999612493,
+                            "color": {},
+                            "name": "Default Category",
+                            "id": 1,
+                            "dateUpdated": 1465489481990
+                        },
+                        "dateUpdated": 1464988286367
+                    },
+                    "mobile": "",
+                    "employeeId": "7307530",
+                    "userName": "customer28",
+                    "room": {
+                        "area": 56.0,
+                        "dateCreated": 1573252658877,
+                        "reservableByRules": false,
+                        "reservable": false,
+                        "name": "B02059F",
+                        "description": "",
+                        "id": 1921,
+                        "type": {
+                            "hexColor": "7bd081",
+                            "contentFlag": 1,
+                            "cost": 0.0,
+                            "color": {},
+                            "name": "WKST",
+                            "occupiable": false,
+                            "id": 1,
+                            "parkingSpace": false,
+                            "dateUpdated": 1677431311790,
+                            "typeCode": ""
+                        },
+                        "floor": {
+                            "area": 49395.5598,
+                            "dateCreated": 1573252598693,
+                            "drawingAvailable": true,
+                            "interiorGross": 10001.0,
+                            "name": "2",
+                            "leaseArea": 0.0,
+                            "id": 55,
+                            "building": {
+                                "code": "DO NOT REMOVE",
+                                "address": {
+                                    "country": {
+                                        "defaultSelected": true,
+                                        "subdivisionCategoryName": "state",
+                                        "alpha2Code": "US",
+                                        "isoCode": "US",
+                                        "name": "United States of America (the)",
+                                        "id": 223
+                                    },
+                                    "city": "Houston",
+                                    "street": "901 Bagby St",
+                                    "postalCode": "77002",
+                                    "state": {
+                                        "country": {
+                                            "defaultSelected": true,
+                                            "subdivisionCategoryName": "state",
+                                            "alpha2Code": "US",
+                                            "isoCode": "US",
+                                            "name": "United States of America (the)",
+                                            "id": 223
+                                        },
+                                        "defaultSelected": false,
+                                        "code": "TX",
+                                        "name": "Texas",
+                                        "id": 61,
+                                        "categoryName": "state"
+                                    }
+                                },
+                                "dateCreated": 1107466065320,
+                                "metric": false,
+                                "name": "Move",
+                                "leaseArea": 6000.0,
+                                "location": {},
+                                "revitLink": "https://a360.co/2IHVNN4",
+                                "id": 43,
+                                "dateUpdated": 1677538229843,
+                                "costCenters": []
+                            },
+                            "dateUpdated": 1671583701540
+                        },
+                        "occupied": true,
+                        "capacity": 1,
+                        "dateUpdated": 1675154843230
+                    },
+                    "custom30": "",
+                    "dateUpdated": 1675154844273,
+                    "custom11": "",
+                    "firstName": "Rainforest",
+                    "custom10": "",
+                    "custom13": "",
+                    "custom12": "",
+                    "custom15": "",
+                    "phone": "",
+                    "custom14": "",
+                    "custom17": "",
+                        "custom16": "",
+                    "name": "Rainforest Customer28",
+                    "custom19": "",
+                    "custom18": "",
+                    "mailStop": {
+                        "name": "Stop 1",
+                        "id": 139
+                    },
+                    "userType": {
+                        "dateCreated": 1430925570820,
+                        "name": "Employee",
+                        "id": 1,
+                        "dateUpdated": 1599768189727
+                    }
+                },
+                "approved": false,
+                "attachments": [],
+                "comments": [],
+                "dateCreated": 1582845814057,
+                "center": {
+                    "name": "Move Center",
+                    "id": 77
+                },
+                "description": "JBen Test Move ",
+                "additionalMoveCost": 0.00,
+                "id": 203,
+                "dateUpdated": 1676567772120,
+                "status": {
+                    "dateCreated": 1202693678817,
+                    "name": "Rejected",
+                    "id": 16,
+                    "locked": false,
+                    "dateUpdated": 1676634643937
+                }
+            }
+                      
 
 
 ## Move Collection [/move/requests///{?statusId,statusCode,modifiedOrCreatedAfter}]
