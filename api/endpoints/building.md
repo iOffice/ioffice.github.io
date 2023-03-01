@@ -31,18 +31,68 @@ To update a Building send JSON with the Building's `ID` and updated value for on
 + Parameters
     + id (string) ... ID of the Building
     
-+ Request (application/json)
+      + Request (application/json)
 
-        {
-        	"id": 43,
-            "address": {
-                "postalCode": "77019"
-            }
-        }
+              {
+                "parking": false,
+                "address": {
+                    "country": {
+                        "name": "United States of America (the)",
+                        "id": 223
+                    },
+                    "state": {
+                        "code": "AL",
+                        "name": "Alabama",
+                        "id": 14
+                    }
+                },
+                "city": "texas",
+                "metric": false,
+                "centers": [],
+                "name": "TestBuilding4",
+                "agreements": [],
+                "id": 2196,
+                "fields": [],
+                "costCenters": []
+              }
 
 + Response 200
-    
-    [Building][]
+
+      {
+            "address": {
+                "country": {
+                    "defaultSelected": true,
+                    "subdivisionCategoryName": "state",
+                    "alpha2Code": "US",
+                    "isoCode": "US",
+                    "name": "United States of America (the)",
+                    "id": 223
+                },
+                "city": "texas",
+                "state": {
+                    "country": {
+                        "defaultSelected": true,
+                        "subdivisionCategoryName": "state",
+                        "alpha2Code": "US",
+                        "isoCode": "US",
+                        "name": "United States of America (the)",
+                        "id": 223
+                    },
+                    "defaultSelected": false,
+                    "code": "AL",
+                    "name": "Alabama",
+                    "id": 14,
+                    "categoryName": "state"
+                }
+            },
+            "dateCreated": 1676557102793,
+            "metric": false,
+            "name": "TestBuilding4",
+            "location": {},
+            "id": 2196,
+            "dateUpdated": 1676621010388,
+            "costCenters": []
+      }
 
 ### Remove a Building [DELETE]
 + Parameters
@@ -100,10 +150,50 @@ The following attribute is required to create a Building: `name`.
 + Request (application/json)
 
             {
-               "name": "Headquarters",
+                "name": "testbuilding1234",
+                "city": "testcity1",
+                "address": {
+                    "country": {
+                        "id": 223
+                        }
+                     },
+                "state": {
+                    "id": 14
+                }
             }
 
 + Response 201
 
-    [Building][]
-
+        {
+            "address": {
+                "country": {
+                    "defaultSelected": true,
+                    "subdivisionCategoryName": "state",
+                    "alpha2Code": "US",
+                    "isoCode": "US",
+                    "name": "United States of America (the)",
+                    "id": 223
+                },
+                "state": {  
+                    "country": {
+                        "defaultSelected": true,
+                        "subdivisionCategoryName": "state",
+                        "alpha2Code": "US",
+                        "isoCode": "US",
+                        "name": "United States of America (the)",
+                        "id": 223
+                    },
+                    "defaultSelected": false,
+                    "code": "AL",
+                    "name": "Alabama",
+                    "id": 14,
+                    "categoryName": "state"
+                }
+            },
+            "dateCreated": 1675853636984,
+            "metric": false,
+            "name": "testbuilding1234",
+            "location": {},
+            "id": 2121,
+            "costCenters": []
+        }
