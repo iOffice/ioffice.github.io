@@ -590,6 +590,7 @@ To update a Move Request send JSON with the Move Request's `ID` and updated valu
     + statusId (optional, number, `66`) ... ID of the Move status to query from
     + statusCode (optional, string, `sub`) ... Code of the Move status to query from
     + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
+    + maintenanceRequestId (optional, number, `14944`) ... ID of the Maintenance to query from
 
 + Model (application/json)
     JSON representation of the Move Collection resource.
