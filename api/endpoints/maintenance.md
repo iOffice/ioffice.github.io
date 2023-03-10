@@ -1431,14 +1431,13 @@ The following attributes are required to Update a Priority: `id` and `name`.
 + Request (application/json)
 
                   {
-                      "dateCreated": 1678427551186,
+                      "id": 409,
                       "sortOrder": 5,
                       "name": "PrashantPriority",
-                      "id": 409,
                       "noticeTime": 0
                   }
 
-+ Response 201
++ Response 200
   [Priority][]
 
 ### Delete a Priority [DELETE]
