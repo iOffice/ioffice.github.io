@@ -1399,16 +1399,13 @@ A single priority object.
 
     + Body
 
-            {
-                "id": 1,
-                "color": {
-                    "red": 102,
-                    "green": 51,
-                    "blue": 153
-                },
-                "sortOrder": 1,
-                "name": "Urgent"
-            }
+                 {
+                   "dateCreated": 1678427551186,
+                   "sortOrder": 5,
+                   "name": "Create Copier/Printer Equipment Service Request",
+                   "id": 409,
+                   "noticeTime": 0
+                 }
 
 ### Retrieve a Single Priority [GET]
 + Response 200
@@ -1416,7 +1413,6 @@ A single priority object.
 
 ### Create a Priority [POST]
 The following attributes are required to create a Priority: `name` and `sortOrder`.
-
 
 + Request (application/json)
 
@@ -1427,6 +1423,32 @@ The following attributes are required to create a Priority: `name` and `sortOrde
 
 + Response 201
   [Priority][]
+
+### Update a Priority [PUT]
+The following attributes are required to Update a Priority: `id` and `name`.
+
+
++ Request (application/json)
+
+                  {
+                      "dateCreated": 1678427551186,
+                      "sortOrder": 5,
+                      "name": "PrashantPriority",
+                      "id": 409,
+                      "noticeTime": 0
+                  }
+
++ Response 201
+  [Priority][]
+
+### Delete a Priority [DELETE]
++ Parameters
+    + id (string) ... ID of the Priority.
++ Response 200
+
+        {
+           {"response":"Successfully removed"}
+        }
 
 ### Priorities Collection [/maintenance/priorities{?modifiedOrCreatedAfter}]
 Collection of all Priorities.
