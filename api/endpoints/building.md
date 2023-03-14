@@ -105,7 +105,7 @@ To update a Building send JSON with the Building's `ID` and updated value for on
             }
         }
 
-## Building Collection [/buildings///{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude,modifiedOrCreatedAfter}]
+## Building Collection [/buildings///{?includeReservable,includeNonReservable,locationSearch,nearLatitude,nearLongitude,modifiedOrCreatedAfter,module}]
 Collection of all Buildings.
 
 + Model (application/json)
@@ -137,6 +137,7 @@ Collection of all Buildings.
     + nearLatitude (optional, number, `29.75613`) ... Latitude to base search on (50 mile radius)
     + nearLongitude (optional, number, `-95.39425`) ... Longitude to base search on (50 mile radius)
     + modifiedOrCreatedAfter (optional, number, `1549319834`) ... Epoch time (milliseconds) to poll recently modified items in the collection.
+    + module (optional, string, `maintenance`) ... selected Module in which buildings displayed.
     
 + Response 200
     
