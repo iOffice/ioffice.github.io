@@ -1425,7 +1425,7 @@ The following attributes are required to create a Priority: `name` and `sortOrde
   [Priority][]
 
 ### Update a Priority [PUT]
-The following attributes are required to Update a Priority: `id` and `name`.
+The following attributes are required to Update a Priority: `id` and `name` ,`sortOrder`,`noticeTime`.
 
 
 + Request (application/json)
