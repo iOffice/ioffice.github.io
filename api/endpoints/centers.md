@@ -316,7 +316,7 @@ This API returns the details of a particular center with list of all buildings
 	  "dateUpdated": 1680622535176
 	}
 	
-### Retrieve Single Holiday Schedule [GET centers/holidays/{id}]
+### Retrieve Single Holiday Schedule [GET /centers/holidays/{id}]
 
 + Parameters
     + id (string) ... ID of the Holiday Schedule
@@ -334,7 +334,7 @@ This API returns the details of a particular center with list of all buildings
 	  "id": 8
 	}
 	
-### Remove Holiday Schedule [DELETE centers/holidays/{id}]
+### Remove Holiday Schedule [DELETE /centers/holidays/{id}]
 
 + Parameters
     + id (string) ... ID of the Holiday Schedule

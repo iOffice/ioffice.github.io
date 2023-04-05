@@ -247,7 +247,7 @@ Devices related resources of *iOffice API*
 			{"response":"Successfully removed"}
 
 
-### Retrieve List Of Devices [GET]
+### Retrieve List Of Devices in Floor [GET]
 
 + Parameters
     + deviceType (optinal, `WAYFINDING`) ... If included, query will return list of devices of given device type
