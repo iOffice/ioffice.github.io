@@ -149,3 +149,7 @@ following these industry best practices.
 <!-- include(endpoints/centers.md) -->
 
 <!-- include(endpoints/neighborhoods.md) -->
+
+<!-- include(endpoints/devices.md) -->
+
+<!-- include(endpoints/sftp.md) -->

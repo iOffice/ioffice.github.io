@@ -172,3 +172,95 @@ A single visitor object.
                 "deviceName": "Desktop"
             }
 
+### Visitor Types [/visitors/types/stringIcon/]
+
+## Retrieve Collection of Visitor Types [GET]
+
++ Response 200
+
+	{
+	  "status": "ok",
+	  "response": [
+		{
+		  "id": {
+			"id": 40
+		  },
+		  "name": "Employee",
+		  "active": true,
+		  "iconUid": "color:microsoft-powerpoint-2019--v2"
+		},
+		{
+		  "id": {
+			"id": 41
+		  },
+		  "name": "Visitor",
+		  "active": true,
+		  "iconUid": "ios7:visa"
+		},
+		{
+		  "id": {
+			"id": 58
+		  },
+		  "name": "Contractor",
+		  "active": true,
+		  "iconUid": "office:maintenance"
+		},
+		{
+		  "id": {
+			"id": 70
+		  },
+		  "name": "Guest new1",
+		  "active": true,
+		  "iconUid": "fluent:star"
+		},
+		{
+		  "id": {
+			"id": 5246
+		  },
+		  "name": "UI Test",
+		  "active": true,
+		  "iconUid": "m_outlined:gear--v2"
+		}
+	  ]
+	}
+
+## Add Visitor Type [POST]
+
++ Request (application/json)
+
+	{
+	  "name": "NewGuest",
+	  "active": true,
+	  "iconUid": "23265"
+	}
+	
++ Response 200
+
+	{
+	  "status": "ok",
+	  "response": {
+		"id": 5248
+	  }
+	}
+	
+## Update/Remove Visitor Type [PUT]
+
++ active (optional, boolean, `false`) ... Set it to false to remove a Visitor Type
+
++ Request (application/json)
+
+	{
+	  "id": {
+		"id": 5248
+	  },
+	  "name": "NewGuestEdited",
+	  "active": true,
+	  "iconUid": "23265"
+	}
+	
++ Response 200
+
+	{
+	  "status": "ok",
+	  "response": 1
+	}

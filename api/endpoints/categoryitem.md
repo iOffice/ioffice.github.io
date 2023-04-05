@@ -9,7 +9,13 @@ Collection of all Items.
     + parent (optional, integer, , `2`) ... If present, query will filter by parent
     + root = `false` (optional, boolean, , `true`) ... If present, query will only return Items without a parent
     + modifiedOrCreatedAfter (optional, number, `1549319834`)... Epoch time (milliseconds) to poll recently modified items in the collection.
-
+	+ lowestLevel (optional, boolean,  `false`)
+	+ orderBy (optional, string, `name`)
+	+ search (optional)
+	+ selector (optional, string, `name,code,color(red,green,blue),depth(level),parents(color(red,green,blue),depth(level)),childCount,
+	+ category(categoryType),parent(id,name,depth)`)
+	+ startAt (optional, int, 0)
+		
 + Model (application/json)
     JSON represenation of the Item Collection Resource
 
