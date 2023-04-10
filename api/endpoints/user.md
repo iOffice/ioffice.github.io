@@ -194,7 +194,47 @@ Collection of all Users.
 + Response 200
     
     [User Collection][]
+	
+### Search Users [GET]
 
++ Parameters
+
+	+ limit (optional, number, `20`) ... To limit the number of result records
+    + orderBy (string, `firstName`) ... To sort the result basis firstName 
+    + orderByType (string, `asc`) ... To sort the result in Ascending order 
+    + search (string, `API`) ... Text to Search
+    + selector: (string, `email%2CfirstName%2Cimage(smallSquare)%2CjobTitle%2ClastName%2CneighborhoodSection(floor(building)%2Cneighborhood%2Crooms(floor(building)))%2Cphone%2Croom(active%2Cfloor(building))%2CseatClassification`)
+    + startAt: (number, `0`)
+
++ Response 200
+	
+	[
+	  {
+		"firstName": "API",
+		"lastName": "USER",
+		"seatClassification": "remote",
+		"name": "API USER",
+		"id": 3482,
+		"email": "vwilliams@iofficecorp.com"
+	  },
+	  {
+		"firstName": "Cutomer",
+		"lastName": "API",
+		"seatClassification": "remote",
+		"name": "Cutomer API",
+		"id": 4293,
+		"email": "Rushikesh.Mali@eptura.com"
+	  },
+	  {
+		"firstName": "Sergo API",
+		"lastName": "Customer",
+		"seatClassification": "remote",
+		"name": "Sergo API Customer",
+		"id": 4294,
+		"email": "sergeo.nevdah+4@eptura.com"
+	  }
+	]
+	
 
 ### Create a User [POST]
 The following attributes are required to create a User: `firstName`, `lastName`, `email`.
@@ -422,3 +462,252 @@ Details of Logged-In User
           },
           "email": "ashitosh.wagh@eptura.com"
       }
+	  
+## User Types [/users/types]
+
+### Retrieve Collection of User Types [GET]
+
++ Parameters
+    + selector (optional, string, `id,name,fields(id,required,sortOrder,baseField(id))`) ... Selector ID
+
++ Response 200
+
+   [
+	  {
+		"name": "Employee",
+		"id": 1,
+		"fields": [
+		  {
+			"code": "custom03",
+			"sortOrder": 3,
+			"name": "Employee ID",
+			"id": 95,
+			"required": false,
+			"baseField": {
+			  "code": "custom03",
+			  "name": "Employee ID",
+			  "id": 25
+			}
+		  },
+		  {
+			"code": "phone",
+			"sortOrder": 3,
+			"name": "Phone",
+			"id": 3,
+			"required": false,
+			"baseField": {
+			  "code": "phone",
+			  "name": "Phone",
+			  "id": 12
+			}
+		  },
+		  {
+			"code": "custom04",
+			"sortOrder": 4,
+			"name": "Custom04 Time_15Mar2023",
+			"id": 96,
+			"required": false,
+			"baseField": {
+			  "code": "custom04",
+			  "name": "Custom04 Time_15Mar2023",
+			  "id": 26
+			}
+		  },
+		  {
+			"code": "postalCode",
+			"sortOrder": 5,
+			"name": "Postal Code",
+			"id": 97,
+			"required": false,
+			"baseField": {
+			  "code": "postalCode",
+			  "name": "Postal Code",
+			  "id": 10
+			}
+		  },
+		  {
+			"code": "employeeId",
+			"sortOrder": 6,
+			"name": "Employee ID",
+			"id": 98,
+			"required": false,
+			"baseField": {
+			  "code": "employeeId",
+			  "name": "Employee ID",
+			  "id": 35
+			}
+		  },
+		  {
+			"code": "department",
+			"sortOrder": 7,
+			"name": "Department",
+			"id": 9,
+			"required": false,
+			"baseField": {
+			  "code": "department",
+			  "name": "Department",
+			  "id": 32
+			}
+		  }
+		]
+	  },
+	  {
+		"name": "Contractors",
+		"id": 2,
+		"fields": [
+		  {
+			"code": "company",
+			"sortOrder": 1,
+			"name": "Company",
+			"id": 16,
+			"required": true,
+			"baseField": {
+			  "code": "company",
+			  "name": "Company",
+			  "id": 21
+			}
+		  },
+		  {
+			"code": "jobTitle",
+			"sortOrder": 2,
+			"name": "Job Titles",
+			"id": 80,
+			"required": false,
+			"baseField": {
+			  "code": "jobTitle",
+			  "name": "Job Titles",
+			  "id": 7
+			}
+		  }
+		]
+	  },
+	  {
+		"name": "Visitor",
+		"id": 7,
+		"fields": [
+		  {
+			"code": "phone",
+			"sortOrder": 1,
+			"name": "Phone",
+			"id": 89,
+			"required": false,
+			"baseField": {
+			  "code": "phone",
+			  "name": "Phone",
+			  "id": 12
+			}
+		  },
+		  {
+			"code": "company",
+			"sortOrder": 2,
+			"name": "Company",
+			"id": 90,
+			"required": false,
+			"baseField": {
+			  "code": "company",
+			  "name": "Company",
+			  "id": 21
+			}
+		  }
+		]
+	  },
+	  {
+		"name": "Client",
+		"id": 8,
+		"fields": []
+	  }
+	]
+	
+### Retrieve Single User Type [GET /users/types/{id}?{selector}]
+
++ Parameters
+    + id (string) ... ID of the User Type
+	+ selector (optional, string, `id,name,fields(id,required,sortOrder,baseField(id))`) ... Selector ID
+
++ Response 200
+	{
+		"id":8,
+		"fields": [],
+		"name": "Client"
+	}
+
+
+
+### Create New User Type [POST]
+
+This API creates new User Type
+
++ Request (application/json)
+
+    {
+		"fields": [],
+		"name": "Client"
+	}
+
++ Response 201
+
+    {
+		"dateCreated": 1680535828250,
+		"name": "Client",
+		"id": 8
+	}
+
+### Update/Remove User Type [PUT /users/types/{id}]
+
++ active (optional, boolean, `false`) ... Set it to false to remove a User Type
+
++ Request (application/json)
+
+    {
+	  "name": "Client",
+	  "id": 8,
+	  "fields": [],
+	  "active": false
+	}
+
++ Response 200
+
+    {
+	  "name": "Client",
+	  "id": 8,
+	  "dateUpdated": 1680536803197
+	}
+	
+## User Fields [/fields]
+
+### Retrieve Collection of User Fields [GET]
+
++ Parameters
+	+ limit (number, `1000`)
+	+ mappingCode (string, `user`)
+
++ Response 200
+
+	[
+	  {
+		"displayType": "Input",
+		"code": "firstName",
+		"validationAlert": "You must enter a first name.",
+		"dataType": "TEXT",
+		"length": 30,
+		"name": "First Name",
+		"options": "{\"password\":false,\"multiline\":false}",
+		"dynamic": false,
+		"id": 1,
+		"mappingCode": "user",
+		"required": false
+	  },
+	  {
+		"displayType": "Input",
+		"code": "middleName",
+		"validationAlert": "You must enter a middle name.",
+		"dataType": "NUMBER",
+		"length": 30,
+		"name": "Middle Nameee POOP",
+		"options": "{\"validators\":[\"IsCurrency\"],\"precision\":2,\"currency\":true}",
+		"dynamic": false,
+		"id": 2,
+		"mappingCode": "user",
+		"required": false
+	  }
+	]
