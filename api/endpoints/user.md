@@ -672,42 +672,248 @@ This API creates new User Type
 	  "id": 8,
 	  "dateUpdated": 1680536803197
 	}
-	
+
+
 ## User Fields [/fields]
+Fields related resources of *iOffice API*
+
++ Model (application/json)
+  JSON representation of the Category	Resource
 
 ### Retrieve Collection of User Fields [GET]
-
 + Parameters
-	+ limit (number, `1000`)
-	+ mappingCode (string, `user`)
+    + mappingCode (`categoryDepth or building` )
 
 + Response 200
+  [
+  {
+  "displayType": "Input",
+  "code": "description",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Description",
+  "dynamic": false,
+  "id": 395,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom01",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Hello",
+  "dynamic": false,
+  "id": 401,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom02",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom02",
+  "dynamic": false,
+  "id": 402,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom03",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom03",
+  "dynamic": false,
+  "id": 403,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom04",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom04",
+  "dynamic": false,
+  "id": 404,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom05",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom05",
+  "dynamic": false,
+  "id": 405,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom06",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom06",
+  "dynamic": false,
+  "id": 406,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom07",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom07",
+  "dynamic": false,
+  "id": 407,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom08",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom08",
+  "dynamic": false,
+  "id": 408,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom09",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom09",
+  "dynamic": false,
+  "id": 409,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom10",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom10",
+  "dynamic": false,
+  "id": 410,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom11",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom11",
+  "dynamic": false,
+  "id": 411,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom12",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom12",
+  "dynamic": false,
+  "id": 412,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom13",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom13",
+  "dynamic": false,
+  "id": 413,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom14",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom14",
+  "dynamic": false,
+  "id": 414,
+  "mappingCode": "categoryDepth",
+  "required": false
+  },
+  {
+  "displayType": "Input",
+  "code": "custom15",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "Custom15",
+  "dynamic": false,
+  "id": 415,
+  "mappingCode": "categoryDepth",
+  "required": false
+  }
+  ]
 
-	[
-	  {
-		"displayType": "Input",
-		"code": "firstName",
-		"validationAlert": "You must enter a first name.",
-		"dataType": "TEXT",
-		"length": 30,
-		"name": "First Name",
-		"options": "{\"password\":false,\"multiline\":false}",
-		"dynamic": false,
-		"id": 1,
-		"mappingCode": "user",
-		"required": false
-	  },
-	  {
-		"displayType": "Input",
-		"code": "middleName",
-		"validationAlert": "You must enter a middle name.",
-		"dataType": "NUMBER",
-		"length": 30,
-		"name": "Middle Nameee POOP",
-		"options": "{\"validators\":[\"IsCurrency\"],\"precision\":2,\"currency\":true}",
-		"dynamic": false,
-		"id": 2,
-		"mappingCode": "user",
-		"required": false
-	  }
-	]
+### Update Field [PUT]
++ Request (application/json)
+  {
+  "id":385,
+  "name":"My test"
+  }
++ Response 200
+  {
+  "displayType": "Input",
+  "code": "custom06",
+  "validationAlert": "You must enter a valid value for this field.",
+  "dataType": "TEXT",
+  "options": "{\"password\":false,\"multiline\":false}",
+  "length": 500,
+  "name": "My test ",
+  "dynamic": false,
+  "id": 385,
+  "mappingCode": "building",
+  "required": false
+  }
+
